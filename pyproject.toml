@@ -1,7 +1,7 @@
 [project]
 name = "weekly-geoai"
 version = "0.1.0"
-description = "Editorial workflow for the Weekly GeoAI newsletter"
+description = "GeoAI Atlas site and Weekly GeoAI editorial workflow"
 requires-python = ">=3.11"
 dependencies = []
 

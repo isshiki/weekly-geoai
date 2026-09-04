@@ -1,9 +1,9 @@
 ---
 layout: default
-title: バックナンバー
+title: 週刊GeoAI バックナンバー
 ---
 
-# バックナンバー
+# 週刊GeoAI バックナンバー
 
 <!-- ISSUES:START -->
 まだ公開号はありません。
