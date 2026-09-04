@@ -42,10 +42,10 @@ def collect_items(publication_date: date, root: Path = REPO_ROOT) -> list[DailyI
     if publication_date.weekday() != 4:
         raise ValueError("発行日は金曜日を指定してください")
     daily_dir = configured_path("GEOAI_DAILY_DIR", "daily", root)
-    monday = publication_date - timedelta(days=4)
+    period_start = publication_date - timedelta(days=7)
     merged: OrderedDict[str, DailyItem] = OrderedDict()
-    for offset in range(4):
-        source_date = monday + timedelta(days=offset)
+    for offset in range(7):
+        source_date = period_start + timedelta(days=offset)
         path = daily_dir / f"{source_date.isoformat()}.md"
         if not path.exists():
             continue
@@ -61,10 +61,7 @@ def collect_items(publication_date: date, root: Path = REPO_ROOT) -> list[DailyI
 
 
 def next_issue_number(root: Path = REPO_ROOT) -> int:
-    candidates = [
-        configured_path("GEOAI_DRAFT_DIR", "drafts", root),
-        configured_path("GEOAI_PUBLIC_DIR", "docs/issues", root),
-    ]
+    candidates = [configured_path("GEOAI_DRAFT_DIR", "drafts", root)]
     numbers: list[int] = []
     for directory in candidates:
         if not directory.exists():
@@ -106,7 +103,7 @@ def build(
         raise ValueError("発行日は金曜日を指定してください")
     items = collect_items(publication_date, root)
     if not items:
-        raise ValueError("対象となる月曜から木曜の日次URLがありません")
+        raise ValueError("対象となる前週金曜から木曜の日次URLがありません")
     number = issue_number if issue_number is not None else next_issue_number(root)
     if number < 1:
         raise ValueError("号数は1以上を指定してください")

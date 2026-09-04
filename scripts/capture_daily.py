@@ -12,6 +12,11 @@ def _one_line(value: str) -> str:
     return " / ".join(part.strip() for part in value.splitlines() if part.strip())
 
 
+def _field(label: str, value: str) -> str:
+    normalized = _one_line(value)
+    return f"  - {label}: {normalized}" if normalized else f"  - {label}:"
+
+
 def _validate_url(url: str) -> None:
     parsed = urlparse(url)
     if parsed.scheme not in {"http", "https"} or not parsed.netloc:
@@ -25,6 +30,10 @@ def capture(
     *,
     note: str = "",
     title: str = "",
+    kind: str = "",
+    topics: str = "",
+    summary: str = "",
+    atlas_path: str = "",
     entry_date: date | None = None,
     root: Path = REPO_ROOT,
 ) -> tuple[Path, bool]:
@@ -44,8 +53,17 @@ def capture(
     if marker in content.splitlines():
         return output, False
 
-    block = ["", marker, f"  - タイトル: {_one_line(title)}"]
-    block.append(f"  - 一言: {_one_line(note)}")
+    block = [
+        "",
+        marker,
+        _field("タイトル", title),
+        _field("種別", kind),
+        _field("テーマ", topics),
+        _field("要約", summary),
+        _field("一言", note),
+        _field("Atlas", atlas_path),
+        "  - 週刊候補: 検討中",
+    ]
     output.write_text(content.rstrip() + "\n" + "\n".join(block) + "\n", encoding="utf-8")
     return output, True
 
@@ -55,6 +73,10 @@ def main() -> int:
     parser.add_argument("url")
     parser.add_argument("--note", default="", help="公開可能な一言")
     parser.add_argument("--title", default="", help="確認済みのタイトル")
+    parser.add_argument("--kind", default="", help="記事、論文、リリースなどの種別")
+    parser.add_argument("--topics", default="", help="カンマ区切りのテーマ")
+    parser.add_argument("--summary", default="", help="確認済み情報による公開用の短い要約")
+    parser.add_argument("--atlas-path", default="", help="対応するAtlasページのリポジトリ相対パス")
     parser.add_argument("--date", type=date.fromisoformat, dest="entry_date")
     args = parser.parse_args()
 
@@ -63,6 +85,10 @@ def main() -> int:
             args.url,
             note=args.note,
             title=args.title,
+            kind=args.kind,
+            topics=args.topics,
+            summary=args.summary,
+            atlas_path=args.atlas_path,
             entry_date=args.entry_date,
         )
     except (OSError, ValueError) as exc:

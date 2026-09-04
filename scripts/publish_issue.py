@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import html
-import json
 import re
 from datetime import date
 from pathlib import Path
@@ -114,76 +113,33 @@ def markdown_to_substack_html(body: str) -> str:
     return "\n".join(output) + "\n"
 
 
-def _update_archive(index_path: Path, title: str, filename: str) -> None:
-    content = index_path.read_text(encoding="utf-8")
-    start_marker = "<!-- ISSUES:START -->"
-    end_marker = "<!-- ISSUES:END -->"
-    if start_marker not in content or end_marker not in content:
-        raise ValueError("docs/issues/index.mdの更新マーカーがありません")
-    current = re.search(
-        rf"{re.escape(start_marker)}\n(.*)\n{re.escape(end_marker)}",
-        content,
-        flags=re.DOTALL,
-    )
-    if current is None:
-        raise ValueError("docs/issues/index.mdの更新範囲が不正です")
-    lines = [line for line in current.group(1).splitlines() if line.startswith("- [")]
-    new_line = f"- [{title}](./{filename}.html)"
-    lines = [line for line in lines if not line.endswith(f"(./{filename}.html)")]
-    lines.append(new_line)
-
-    def sort_key(line: str) -> str:
-        match = re.search(r"\./(\d{4}-\d{2}-\d{2})\.html", line)
-        return match.group(1) if match else ""
-
-    replacement = "\n".join(sorted(lines, key=sort_key, reverse=True))
-    updated = content[: current.start(1)] + replacement + content[current.end(1) :]
-    index_path.write_text(updated, encoding="utf-8")
-
-
-def publish(draft: Path, *, force: bool = False, root: Path = REPO_ROOT) -> tuple[Path, Path]:
+def publish(draft: Path, *, force: bool = False, root: Path = REPO_ROOT) -> Path:
     text = draft.read_text(encoding="utf-8")
     metadata, body = parse_front_matter(text)
-    number, publication_date, title = validate(metadata, body)
+    _, publication_date, _ = validate(metadata, body)
     clean_body = remove_source_comments(body).strip() + "\n"
 
-    public_dir = configured_path("GEOAI_PUBLIC_DIR", "docs/issues", root)
     substack_dir = configured_path("GEOAI_SUBSTACK_DIR", "substack", root)
-    public_dir.mkdir(parents=True, exist_ok=True)
     substack_dir.mkdir(parents=True, exist_ok=True)
     stem = publication_date.isoformat()
-    public_path = public_dir / f"{stem}.md"
     substack_path = substack_dir / f"{stem}.html"
-    existing = [path for path in (public_path, substack_path) if path.exists()]
-    if existing and not force:
-        joined = ", ".join(str(path) for path in existing)
-        raise FileExistsError(f"出力が既にあります: {joined}")
+    if substack_path.exists() and not force:
+        raise FileExistsError(f"出力が既にあります: {substack_path}")
 
-    front_matter = (
-        "---\n"
-        "layout: default\n"
-        f"title: {json.dumps(title, ensure_ascii=False)}\n"
-        f"issue_number: {number}\n"
-        f"date: {publication_date.isoformat()}\n"
-        "---\n\n"
-    )
-    public_path.write_text(front_matter + clean_body, encoding="utf-8")
     substack_path.write_text(markdown_to_substack_html(clean_body), encoding="utf-8")
-    _update_archive(public_dir / "index.md", title, stem)
-    return public_path, substack_path
+    return substack_path
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="確認済み原稿をPages用MarkdownとSubstack用HTMLへ出力する")
+    parser = argparse.ArgumentParser(description="確認済み原稿をSubstack貼り付け用HTMLへ出力する")
     parser.add_argument("draft", type=Path)
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
     draft = args.draft if args.draft.is_absolute() else REPO_ROOT / args.draft
     try:
-        public_path, substack_path = publish(draft, force=args.force)
+        substack_path = publish(draft, force=args.force)
     except (FileExistsError, OSError, ValueError) as exc:
         parser.error(str(exc))
-    print(f"Pages: {public_path.relative_to(REPO_ROOT)}")
     print(f"Substack: {substack_path.relative_to(REPO_ROOT)}")
     return 0
 

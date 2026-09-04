@@ -22,8 +22,6 @@ class WorkflowTest(unittest.TestCase):
         self.temporary = tempfile.TemporaryDirectory()
         self.root = Path(self.temporary.name)
         shutil.copytree(REPO_ROOT / "editorial", self.root / "editorial")
-        (self.root / "docs" / "issues").mkdir(parents=True)
-        shutil.copy2(REPO_ROOT / "docs" / "issues" / "index.md", self.root / "docs" / "issues")
 
     def tearDown(self) -> None:
         self.temporary.cleanup()
@@ -32,6 +30,10 @@ class WorkflowTest(unittest.TestCase):
         first_path, first_created = capture(
             "https://example.com/a",
             note="公開できるメモ",
+            kind="記事",
+            topics="地図, AI",
+            summary="確認済みの短い要約である。",
+            atlas_path="docs/atlas/methods/example.md",
             entry_date=date(2026, 9, 7),
             root=self.root,
         )
@@ -43,11 +45,26 @@ class WorkflowTest(unittest.TestCase):
         self.assertEqual(first_path, second_path)
         self.assertTrue(first_created)
         self.assertFalse(second_created)
-        self.assertEqual(first_path.read_text(encoding="utf-8").count("https://example.com/a"), 1)
+        content = first_path.read_text(encoding="utf-8")
+        self.assertEqual(content.count("https://example.com/a"), 1)
+        self.assertIn("  - 種別: 記事", content)
+        self.assertIn("  - テーマ: 地図, AI", content)
+        self.assertIn("  - 要約: 確認済みの短い要約である。", content)
+        self.assertIn("  - Atlas: docs/atlas/methods/example.md", content)
 
     def test_build_rejects_non_friday(self) -> None:
         with self.assertRaisesRegex(ValueError, "金曜日"):
             build(date(2026, 9, 12), issue_number=1, root=self.root)
+
+    def test_build_includes_previous_friday(self) -> None:
+        capture(
+            "https://example.com/friday",
+            title="金曜の記事",
+            entry_date=date(2026, 9, 4),
+            root=self.root,
+        )
+        draft = build(date(2026, 9, 11), issue_number=1, root=self.root)
+        self.assertIn("https://example.com/friday", draft.read_text(encoding="utf-8"))
 
     def test_build_and_publish_issue(self) -> None:
         capture(
@@ -67,14 +84,12 @@ class WorkflowTest(unittest.TestCase):
         )
         draft.write_text(content, encoding="utf-8")
 
-        public_path, substack_path = publish(draft, root=self.root)
-        public = public_path.read_text(encoding="utf-8")
+        substack_path = publish(draft, root=self.root)
         substack = substack_path.read_text(encoding="utf-8")
-        self.assertIn("週刊GeoAI #1（2026年9月11日）", public)
-        self.assertNotIn("source-note", public)
+        self.assertIn("週刊GeoAI #1（2026年9月11日）", substack)
+        self.assertNotIn("source-note", substack)
         self.assertIn('<a href="https://example.com/map-ai_(demo)">地図AIの事例</a>', substack)
-        archive = (self.root / "docs" / "issues" / "index.md").read_text(encoding="utf-8")
-        self.assertIn("./2026-09-11.html", archive)
+        self.assertFalse((self.root / "docs" / "issues").exists())
 
     def test_publish_rejects_placeholders(self) -> None:
         capture(

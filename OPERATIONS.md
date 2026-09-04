@@ -4,13 +4,14 @@
 
 GIS・位置情報の仕事をしていて、AI・機械学習側の動きを短時間で追いたい人のための日本語ニュースレターです。1週間分のニュース・論文・事例を、毎週金曜にまとめて配信します。
 
-ニュースレターはSubstackで配信する。原稿確認後、生成したHTMLをSubstackへ手動で貼り付ける。同じ内容のMarkdownは、知識サイト「GeoAIアトラス」でバックナンバーとして公開する。
+ニュースレターはSubstackで配信する。原稿確認後、生成したHTMLをSubstackへ手動で貼り付ける。バックナンバーもSubstackに集約し、知識サイト「GeoAIアトラス」からはアーカイブへ直接リンクする。
 
 ## ディレクトリ
 
 - `daily/`: 日次の「今日の気になったもの」。`YYYY-MM-DD.md`で保存する。
 - `drafts/`: 金曜発行分の週次原稿。`YYYY-MM-DD.md`で保存する。
-- `docs/issues/`: GeoAIアトラスで公開する週刊GeoAIのバックナンバー。
+- `docs/atlas/`: GeoAIアトラスのテーマ別知識ページ。
+- `docs/updates/`: GeoAIアトラスの日付別更新記録。
 - `substack/`: Substack貼り付け用に生成したHTML。
 - `editorial/`: 日次・週次テンプレートと文体規則。
 - `.agents/skills/`: Codexが日次保存・週次編集に使うリポジトリ固有スキル。
@@ -37,29 +38,33 @@ URLだけを保存する例：
 python scripts/capture_daily.py "https://example.com/article"
 ```
 
-公開可能な一言と既知のタイトルを添える例：
+公開可能な一言と確認済みの整理情報を添える例：
 
 ```powershell
 python scripts/capture_daily.py "https://example.com/article" `
   --title "記事タイトル" `
-  --note "自治体での実装例として確認したい"
+  --kind "記事" `
+  --topics "人流データ, OD" `
+  --summary "位置点と集計データの違いを整理した記事である。" `
+  --note "自治体での実装例として確認したい" `
+  --atlas-path "docs/atlas/data/human-flow-data-types.md"
 ```
 
 保存日はローカル日付になる。過去日を指定するときは`--date YYYY-MM-DD`を使う。同じURLは同じ日付のファイルへ重複登録しない。
 
-Codexには、URLを貼って「今日の気になったものとして保存」と依頼すれば、`geoai-save-daily`スキルがこの処理を行う。
+Codexには、URLやニュースチェックを貼って「今日の気になったものとして保存」と依頼すれば、`geoai-save-daily`スキルが出典を確認し、日次ログ、Atlasページ、日付別更新記録へ整理する。貼り付けた文章そのものは保存せず、公開可能な確認済み情報へ書き直す。
 
 ## 週次原稿
 
-発行日を指定して、月曜から木曜までのURLを下書きへ集約する。
+発行日を指定して、前週金曜から木曜までのURLを下書きへ集約する。
 
 ```powershell
 python scripts/build_weekly.py --date 2026-09-11
 ```
 
-発行日は金曜だけを受け付ける。番号を省略した場合、既存の下書きと公開号から次の号数を採番する。金曜に保存したURLは次週号の対象になる。
+発行日は金曜だけを受け付ける。番号を省略した場合、既存の下書きから次の号数を採番する。金曜に保存したURLは次週号の対象になる。
 
-Codexには「今週号をまとめて」と依頼すれば、`geoai-build-weekly`スキルがリンク先を確認し、タイトルと1〜2文の紹介文を完成させる。所感2段落は書き手用の空欄として残る。
+木曜にはCodexへ「今週号の候補を提案して」と依頼する。`geoai-build-weekly`スキルが候補、順序、まとまり、所感の切り口を提案する。選定とコメントの確認後に同じスキルでMarkdown原稿を作り、タイトルと1〜2文の紹介文を完成させる。所感が未確定なら2段落の空欄を残す。
 
 ## 公開とSubstack用HTML
 
@@ -69,10 +74,7 @@ Codexには「今週号をまとめて」と依頼すれば、`geoai-build-weekl
 python scripts/publish_issue.py drafts/2026-09-11.md
 ```
 
-次の2ファイルが同時に生成され、`docs/issues/index.md`も更新される。
-
-- `docs/issues/2026-09-11.md`: GeoAIアトラスで公開するバックナンバー
-- `substack/2026-09-11.html`: Substack本文へ貼り付けるHTML断片
+確認済みのMarkdown原稿は`drafts/`に残り、`substack/2026-09-11.html`へSubstack本文用のHTML断片が生成される。GitHub Pagesには週刊GeoAI本文を複製しない。
 
 所感、紹介文、タイトルの確認用プレースホルダが残っている場合や、紹介文が1〜2文でない場合は公開しない。生成済みファイルを意図的に更新するときだけ`--force`を付ける。
 
@@ -93,7 +95,7 @@ GitHub Pagesは次の設定で公開している。
 1. `daily/`の一言に個人情報、社内情報、未公開情報がない。
 2. `drafts/`に公開できないメモや引用がない。
 3. `.env`、APIキー、アクセストークン、秘密鍵が追跡されていない。
-4. 所感と紹介文にプレースホルダが残っていない。
+4. Substack用HTMLを生成するとき、所感と紹介文にプレースホルダが残っていない。
 5. 記事タイトル、リンク先、日付、号数が正しい。
 6. `git diff --cached`で実際に公開される差分を読む。
 

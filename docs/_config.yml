@@ -3,5 +3,5 @@ description: 地図・位置情報データ×AIの知見を、体系的に整理
 lang: ja
 theme: minima
 header_pages:
+  - atlas/index.md
   - about.md
-  - issues/index.md
