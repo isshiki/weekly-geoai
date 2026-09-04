@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 160 160"
+     width="160"
+     height="160"
+     role="img"
+     aria-labelledby="logo-title logo-description">
+  <title id="logo-title">週刊GeoAI</title>
+  <desc id="logo-description">濃紺の正方形に、AIの文字を載せたオレンジ色の地図ピン</desc>
+
+  <rect width="160" height="160" fill="#1E3A5F"/>
+
+  <path fill="#FF8A3D"
+        d="M80 154
+           C72 146 43 122 27 101
+           C17 88 12 74 13 60
+           C13 28 42 8 80 8
+           C118 8 147 28 147 60
+           C148 74 143 88 133 101
+           C117 122 88 146 80 154
+           Z"/>
+
+  <g fill="#1E3A5F" fill-rule="evenodd" aria-label="AI">
+    <path d="M40 91
+             L59 39
+             H73
+             L92 91
+             H76
+             L72.5 80
+             H59.5
+             L56 91
+             Z
+             M63 69
+             H69.5
+             L66.25 56
+             Z"/>
+    <path d="M98 39 H114 V91 H98 Z"/>
+  </g>
+</svg>
