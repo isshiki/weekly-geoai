@@ -18,36 +18,6 @@ GIS・位置情報の仕事をしていて、AI・機械学習側の動きを短
 
 `daily/`と`drafts/`もGit管理対象であり、パブリックリポジトリでは内容が公開される。日次メモには、第三者に読まれても問題のない一言だけを書くこと。
 
-## ロゴ
-
-マスターは`assets/logo.svg`である。背景は透明で、オレンジ色のピンを濃紺の輪郭で囲んでいる。文字はパスへ変換済みなのでフォントには依存しない。ロゴ本体は濃紺`#1E3A5F`とオレンジ`#FF8A3D`のベタ塗り2色だけを使用する。
-
-PNGの再生成に限り、通常の実行環境とは分離した`logo`依存グループを使用する。
-
-```powershell
-uv sync --group logo
-uv run --group logo python scripts/export_logo.py
-```
-
-次のファイルが生成される。
-
-- `assets/logo-1024.png`: Substackのパブリケーションロゴ用
-- `assets/logo-256.png`: faviconなどの小サイズ用
-- `assets/logo-preview.png`: 160px・64px・48px・32pxの実寸比較
-
-### CairoSVGを導入しない場合
-
-SVGはブラウザで直接開ける。ブラウザの開発者ツールで表示領域を正方形に固定し、1024×1024または256×256でスクリーンショットを保存する方法がある。ただし、余白やデバイススケールの影響を受けやすいため、書き出し寸法を確認する。
-
-Inkscapeがインストール済みなら、Python依存なしで次のように書き出せる。
-
-```powershell
-inkscape assets/logo.svg --export-type=png --export-filename=assets/logo-1024.png --export-width=1024 --export-height=1024
-inkscape assets/logo.svg --export-type=png --export-filename=assets/logo-256.png --export-width=256 --export-height=256
-```
-
-Inkscapeだけでは比較プレビューを自動合成しないため、160px・64px・48px・32pxへそれぞれ書き出して画像編集ソフト上で実寸配置する。
-
 ## セットアップ
 
 Python 3.11以上を使用する。外部パッケージへの依存はない。
