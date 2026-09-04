@@ -11,3 +11,8 @@ package = false
 [tool.ruff]
 line-length = 100
 target-version = "py311"
+
+[dependency-groups]
+site = [
+    "mkdocs-material==9.7.7",
+]

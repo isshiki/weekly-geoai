@@ -1,0 +1,160 @@
+:root {
+  --md-primary-fg-color: #1e3a5f;
+  --md-primary-fg-color--light: #315b88;
+  --md-primary-fg-color--dark: #142a45;
+  --md-accent-fg-color: #e96f20;
+  --atlas-navy: #1e3a5f;
+  --atlas-orange: #ff8a3d;
+  --atlas-teal: #2e7d7a;
+  --atlas-paper: #f7f8f6;
+  --atlas-line: #d9e1e8;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1e3a5f;
+  --md-accent-fg-color: #ff9d5c;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+.md-header {
+  border-bottom: 3px solid var(--atlas-orange);
+  box-shadow: none;
+}
+
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.md-main__inner {
+  margin-top: 1.4rem;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    border-right: 1px solid var(--atlas-line);
+    padding-right: 0.8rem;
+  }
+
+  [data-md-color-scheme="slate"] .md-sidebar--primary {
+    border-right-color: rgba(255, 255, 255, 0.12);
+  }
+}
+
+.md-nav__title {
+  color: var(--atlas-navy);
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-nav__title {
+  color: var(--atlas-orange);
+}
+
+.md-typeset h1 {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #ff9d5c;
+}
+
+.md-nav__link--active,
+.md-typeset a {
+  color: #d96216;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #ff9d5c;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid var(--atlas-line);
+  padding-bottom: 0.3em;
+}
+
+.atlas-hero {
+  align-items: center;
+  background: var(--atlas-navy);
+  border-left: 8px solid var(--atlas-orange);
+  border-radius: 0.6rem;
+  color: #fff;
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: 5.5rem 1fr;
+  margin-bottom: 2rem;
+  padding: 1.6rem 1.8rem;
+}
+
+.atlas-hero img {
+  display: block;
+  width: 5.5rem;
+}
+
+.atlas-hero h1 {
+  color: #fff;
+  margin: 0 0 0.35rem;
+}
+
+.atlas-hero p {
+  color: rgba(255, 255, 255, 0.86);
+  margin: 0;
+}
+
+.atlas-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.2rem 0 2rem;
+}
+
+.atlas-card {
+  background: var(--atlas-paper);
+  border: 1px solid var(--atlas-line);
+  border-radius: 0.45rem;
+  border-top: 4px solid var(--atlas-teal);
+  padding: 0.9rem 1rem 0.75rem;
+}
+
+.atlas-card--accent {
+  border-top-color: var(--atlas-orange);
+}
+
+.atlas-card h3 {
+  color: var(--atlas-navy);
+  margin: 0 0 0.35rem;
+}
+
+.atlas-card p {
+  margin: 0;
+}
+
+[data-md-color-scheme="slate"] .atlas-card {
+  background: rgba(30, 58, 95, 0.28);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+[data-md-color-scheme="slate"] .atlas-card h3 {
+  color: #fff;
+}
+
+@media screen and (max-width: 44.9844em) {
+  .atlas-hero {
+    grid-template-columns: 3.8rem 1fr;
+    padding: 1.2rem;
+  }
+
+  .atlas-hero img {
+    width: 3.8rem;
+  }
+
+  .atlas-grid {
+    grid-template-columns: 1fr;
+  }
+}

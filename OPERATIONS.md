@@ -12,6 +12,8 @@ GIS・位置情報の仕事をしていて、AI・機械学習側の動きを短
 - `drafts/`: 金曜発行分の週次原稿。`YYYY-MM-DD.md`で保存する。
 - `docs/atlas/`: GeoAIアトラスのテーマ別知識ページ。
 - `docs/updates/`: GeoAIアトラスの日付別更新記録。
+- `docs/assets/`: MkDocsから配信するロゴなどの静的ファイル。
+- `docs/stylesheets/`: GeoAIアトラス固有の表示調整。
 - `substack/`: Substack貼り付け用に生成したHTML。
 - `editorial/`: 日次・週次テンプレートと文体規則。
 - `.agents/skills/`: Codexが日次保存・週次編集に使うリポジトリ固有スキル。
@@ -21,12 +23,13 @@ GIS・位置情報の仕事をしていて、AI・機械学習側の動きを短
 
 ## セットアップ
 
-Python 3.11以上を使用する。外部パッケージへの依存はない。
+Python 3.11以上を使用する。ニュースレター用スクリプトは標準ライブラリだけで動作する。サイトのローカル表示とビルドには、`site`依存グループのMaterial for MkDocsを使用する。
 
 ローカル設定を変更するときだけ、`.env.example`を`.env`へコピーする。`.env`はGit管理対象外である。
 
 ```powershell
 Copy-Item .env.example .env
+uv sync --group site
 python -m unittest discover -s tests
 ```
 
@@ -78,15 +81,31 @@ python scripts/publish_issue.py drafts/2026-09-11.md
 
 所感、紹介文、タイトルの確認用プレースホルダが残っている場合や、紹介文が1〜2文でない場合は公開しない。生成済みファイルを意図的に更新するときだけ`--force`を付ける。
 
+## GeoAIアトラスのローカル確認
+
+ルートのSVGロゴをサイト側へ同期してから、MkDocsの開発サーバーを起動する。
+
+```powershell
+uv run --group site python scripts/sync_site_assets.py
+uv run --group site mkdocs serve
+```
+
+ブラウザで`http://127.0.0.1:8000/weekly-geoai/`を開く。静的ファイルだけを検査するときは、次を実行する。
+
+```powershell
+uv run --group site mkdocs build --strict
+```
+
 ## GitHub Pages設定
 
-GitHub Pagesは次の設定で公開している。
+GitHub Pagesは次の設定で公開する。
 
-- Source: Deploy from a branch
-- Branch: `main`
-- Folder: `/docs`
+- Source: GitHub Actions
+- Workflow: `.github/workflows/pages.yml`
 
-`docs/`へのpushに応じて標準Jekyllが自動公開する。独自ドメインや独自のActionsワークフローは使用しない。
+`main`へのpushに応じてMkDocsをビルドし、生成された`site/`をGitHub Pagesへ公開する。独自ドメインは使用しない。
+
+サイトのロゴとファビコンには`assets/logo.svg`を使用する。`scripts/sync_site_assets.py`がMkDocs配信用の`docs/assets/logo.svg`へ同期し、GitHub Actionsでもビルド前に必ず実行する。
 
 ## 公開前チェック
 

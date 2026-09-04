@@ -1,0 +1,73 @@
+site_name: GeoAIアトラス
+site_url: https://isshiki.github.io/weekly-geoai/
+site_description: 地図・位置情報データとAIの知見を体系的に整理する
+repo_url: https://github.com/isshiki/weekly-geoai
+repo_name: isshiki/weekly-geoai
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ja
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替える
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替える
+
+nav:
+  - ホーム: index.md
+  - 知識マップ:
+      - 全体を見る: atlas/index.md
+      - 概念:
+          - リアリティーマッピングとデジタルツイン: atlas/concepts/reality-mapping-and-digital-twins.md
+      - 手法:
+          - 知識グラフとLLMエージェントによる地理空間データ探索: atlas/methods/intelligent-geospatial-data-discovery.md
+      - データ:
+          - 人流データの種類: atlas/data/human-flow-data-types.md
+      - ツール:
+          - ゼンリン地図ナビ: atlas/tools/zenrin-map-navigation.md
+          - GeoLibre: atlas/tools/geolibre.md
+          - Cesium: atlas/tools/cesium.md
+  - 更新記録:
+      - 更新記録一覧: updates/index.md
+      - 2026年9月4日: updates/2026-09-04.md
+  - このサイトについて: about.md
+  - 週刊GeoAI バックナンバー: https://weeklygeoai.substack.com/archive
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - meta
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+
+copyright: GeoAIアトラス — 地図・位置情報データとAIの知識をつなぐ

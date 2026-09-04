@@ -15,6 +15,7 @@ from build_weekly import build  # noqa: E402
 from capture_daily import capture  # noqa: E402
 from common import COMMENTARY_PLACEHOLDERS, INTRO_PLACEHOLDER  # noqa: E402
 from publish_issue import publish  # noqa: E402
+from sync_site_assets import sync_logo  # noqa: E402
 
 
 class WorkflowTest(unittest.TestCase):
@@ -100,6 +101,16 @@ class WorkflowTest(unittest.TestCase):
         draft = build(date(2026, 9, 11), issue_number=1, root=self.root)
         with self.assertRaisesRegex(ValueError, "プレースホルダ"):
             publish(draft, root=self.root)
+
+    def test_sync_site_logo(self) -> None:
+        (self.root / "assets").mkdir(parents=True)
+        master = self.root / "assets" / "logo.svg"
+        master.write_text("<svg>master</svg>\n", encoding="utf-8")
+
+        destination = sync_logo(self.root)
+
+        self.assertEqual(destination, self.root / "docs" / "assets" / "logo.svg")
+        self.assertEqual(destination.read_text(encoding="utf-8"), "<svg>master</svg>\n")
 
 
 if __name__ == "__main__":
