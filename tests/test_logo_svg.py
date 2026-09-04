@@ -14,12 +14,15 @@ class LogoSvgTest(unittest.TestCase):
         root = ET.parse(REPO_ROOT / "assets" / "logo.svg").getroot()
         self.assertEqual(root.attrib["viewBox"], "0 0 160 160")
 
-        background = root.find("svg:rect", SVG_NAMESPACE)
-        self.assertIsNotNone(background)
-        assert background is not None
-        self.assertEqual(background.attrib["width"], "160")
-        self.assertEqual(background.attrib["height"], "160")
-        self.assertNotIn("rx", background.attrib)
+        self.assertIsNone(root.find("svg:rect", SVG_NAMESPACE))
+
+        pin = root.find("svg:path", SVG_NAMESPACE)
+        self.assertIsNotNone(pin)
+        assert pin is not None
+        self.assertEqual(pin.attrib["fill"], "#FF8A3D")
+        self.assertEqual(pin.attrib["stroke"], "#1E3A5F")
+        self.assertEqual(pin.attrib["stroke-width"], "6")
+        self.assertEqual(pin.attrib["paint-order"], "stroke fill")
 
         fills = {
             element.attrib["fill"]

@@ -85,8 +85,8 @@ def export_logo(svg_path: Path, assets_dir: Path) -> list[Path]:
             if image.size != (size, size):
                 raise RuntimeError(f"出力サイズが不正です: {output} = {image.size}")
             corner = image.convert("RGBA").getpixel((0, 0))
-            if corner != (30, 58, 95, 255):
-                raise RuntimeError(f"背景の四隅が不透明な濃紺ではありません: {output} = {corner}")
+            if corner[3] != 0:
+                raise RuntimeError(f"背景の四隅が透明ではありません: {output} = {corner}")
         outputs.append(output)
 
     preview = assets_dir / "logo-preview.png"
