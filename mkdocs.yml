@@ -44,11 +44,14 @@ nav:
       - データ:
           - 人流データの種類: atlas/data/human-flow-data-types.md
       - ツール:
+          - Galuchat: atlas/tools/galuchat.md
+          - DOCOYAフード&ビバレッジ: atlas/tools/docoya-food-beverage.md
           - ゼンリン地図ナビ: atlas/tools/zenrin-map-navigation.md
           - GeoLibre: atlas/tools/geolibre.md
           - Cesium: atlas/tools/cesium.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月5日: updates/2026-09-05.md
       - 2026年9月4日: updates/2026-09-04.md
   - このサイトについて: about.md
   - 週刊GeoAI バックナンバー: https://weeklygeoai.substack.com/archive

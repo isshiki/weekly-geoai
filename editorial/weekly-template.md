@@ -1,6 +1,7 @@
 ---
 issue_number: {{issue_number}}
 publication_date: {{publication_date}}
+subtitle: ［サブタイトルをここに記入］
 status: draft
 ---
 

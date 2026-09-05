@@ -16,6 +16,7 @@ COMMENTARY_PLACEHOLDERS = (
     "［所感2段落目をここに記入］",
 )
 INTRO_PLACEHOLDER = "［紹介文を1〜2文で記入］"
+SUBTITLE_PLACEHOLDER = "［サブタイトルをここに記入］"
 
 
 def load_dotenv(root: Path = REPO_ROOT) -> dict[str, str]:

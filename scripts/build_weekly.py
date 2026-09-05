@@ -77,7 +77,7 @@ def next_issue_number(root: Path = REPO_ROOT) -> int:
 
 def _render_items(items: list[DailyItem]) -> str:
     blocks: list[str] = []
-    for item in items:
+    for index, item in enumerate(items, start=1):
         notes = []
         for source_date, note in item.sources:
             safe_note = note.replace("--", "—")
@@ -86,7 +86,7 @@ def _render_items(items: list[DailyItem]) -> str:
         title = item.title or "タイトル要確認"
         blocks.append(
             f"<!-- source-note\n{source_note}\n-->\n"
-            f"### [{title}](<{item.url}>)\n\n"
+            f"### {index}. [{title}](<{item.url}>)\n\n"
             "［紹介文を1〜2文で記入］"
         )
     return "\n\n".join(blocks)

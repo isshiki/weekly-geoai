@@ -77,6 +77,9 @@ class WorkflowTest(unittest.TestCase):
         )
         draft = build(date(2026, 9, 11), issue_number=1, root=self.root)
         content = draft.read_text(encoding="utf-8")
+        self.assertIn("subtitle: ［サブタイトルをここに記入］", content)
+        self.assertIn("### 1. [地図AIの事例]", content)
+        content = content.replace("［サブタイトルをここに記入］", "地図AIによる更新手法を読む")
         content = content.replace(COMMENTARY_PLACEHOLDERS[0], "今週は地図データの更新手法に動きがあった。")
         content = content.replace(COMMENTARY_PLACEHOLDERS[1], "実務で試す際の入力条件も見ておきたい。")
         content = content.replace(
@@ -99,6 +102,9 @@ class WorkflowTest(unittest.TestCase):
             root=self.root,
         )
         draft = build(date(2026, 9, 11), issue_number=1, root=self.root)
+        content = draft.read_text(encoding="utf-8")
+        content = content.replace("［サブタイトルをここに記入］", "地図AIによる更新手法を読む")
+        draft.write_text(content, encoding="utf-8")
         with self.assertRaisesRegex(ValueError, "プレースホルダ"):
             publish(draft, root=self.root)
 

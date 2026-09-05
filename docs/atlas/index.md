@@ -21,6 +21,8 @@ title: 知識マップ
 
 ## ツール
 
+- [Galuchat](tools/galuchat.md)
+- [DOCOYAフード&ビバレッジ](tools/docoya-food-beverage.md)
 - [ゼンリン地図ナビ](tools/zenrin-map-navigation.md)
 - [GeoLibre](tools/geolibre.md)
 - [Cesium](tools/cesium.md)

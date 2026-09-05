@@ -11,6 +11,7 @@ from common import (
     DEFINITION,
     INTRO_PLACEHOLDER,
     REPO_ROOT,
+    SUBTITLE_PLACEHOLDER,
     configured_path,
     issue_title,
     parse_front_matter,
@@ -18,7 +19,7 @@ from common import (
 )
 
 
-ITEM_HEADING = re.compile(r"^### \[(.+)\]\(<(https?://.+)>\)$", re.MULTILINE)
+ITEM_HEADING = re.compile(r"^### (\d+)\. \[(.+)\]\(<(https?://.+)>\)$", re.MULTILINE)
 
 
 def _paragraphs(text: str) -> list[str]:
@@ -37,6 +38,12 @@ def validate(metadata: dict[str, str], body: str) -> tuple[int, date, str]:
         raise ValueError("issue_numberまたはpublication_dateが不正です") from exc
     if number < 1 or publication_date.weekday() != 4:
         raise ValueError("号数は1以上、発行日は金曜日である必要があります")
+
+    subtitle = metadata.get("subtitle", "").strip()
+    if not subtitle or subtitle == SUBTITLE_PLACEHOLDER:
+        raise ValueError("サブタイトルを記入してください")
+    if len(subtitle) > 60:
+        raise ValueError("サブタイトルは60文字以内にしてください")
 
     expected_title = issue_title(number, publication_date)
     clean = remove_source_comments(body).strip()
@@ -60,6 +67,11 @@ def validate(metadata: dict[str, str], body: str) -> tuple[int, date, str]:
     matches = list(ITEM_HEADING.finditer(clean))
     if not matches:
         raise ValueError("ニュース＆記事がありません")
+
+    item_numbers = [int(match.group(1)) for match in matches]
+    if item_numbers != list(range(1, len(matches) + 1)):
+        raise ValueError("ニュース＆記事の番号は1からの連番にしてください")
+
     for index, match in enumerate(matches):
         start = match.end()
         end = matches[index + 1].start() if index + 1 < len(matches) else len(clean)
@@ -67,7 +79,7 @@ def validate(metadata: dict[str, str], body: str) -> tuple[int, date, str]:
         count = _sentence_count(introduction)
         if count not in {1, 2}:
             raise ValueError(
-                f"「{match.group(1)}」の紹介文は句点で終わる1〜2文にしてください（現在{count}文）"
+                f"「{match.group(2)}」の紹介文は句点で終わる1〜2文にしてください（現在{count}文）"
             )
     return number, publication_date, expected_title
 
@@ -140,6 +152,8 @@ def main() -> int:
         substack_path = publish(draft, force=args.force)
     except (FileExistsError, OSError, ValueError) as exc:
         parser.error(str(exc))
+    metadata, _ = parse_front_matter(draft.read_text(encoding="utf-8"))
+    print(f"Substackサブタイトル: {metadata['subtitle']}")
     print(f"Substack: {substack_path.relative_to(REPO_ROOT)}")
     return 0
 
