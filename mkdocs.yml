@@ -38,12 +38,18 @@ nav:
   - 知識マップ:
       - 全体を見る: atlas/index.md
       - 概念:
+          - 地図投影法:
+              - 選び方と分類: atlas/concepts/map-projections.md
+              - メルカトル図法: atlas/concepts/mercator-projection.md
+              - イコールアース図法: atlas/concepts/equal-earth-projection.md
           - リアリティーマッピングとデジタルツイン: atlas/concepts/reality-mapping-and-digital-twins.md
       - 手法:
           - 知識グラフとLLMエージェントによる地理空間データ探索: atlas/methods/intelligent-geospatial-data-discovery.md
       - データ:
           - 人流データの種類: atlas/data/human-flow-data-types.md
+          - Foursquare Placesへのパートナーデータ取り込み: atlas/data/foursquare-partner-places.md
       - ツール:
+          - 高徳地図（AMAP）: atlas/tools/amap.md
           - Galuchat: atlas/tools/galuchat.md
           - DOCOYAフード&ビバレッジ: atlas/tools/docoya-food-beverage.md
           - ゼンリン地図ナビ: atlas/tools/zenrin-map-navigation.md
@@ -51,6 +57,7 @@ nav:
           - Cesium: atlas/tools/cesium.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月6日: updates/2026-09-06.md
       - 2026年9月5日: updates/2026-09-05.md
       - 2026年9月4日: updates/2026-09-04.md
   - このサイトについて: about.md
