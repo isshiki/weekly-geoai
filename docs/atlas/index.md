@@ -9,6 +9,7 @@ title: 知識マップ
 
 ## 概念
 
+- [ロケーションインテリジェンス](concepts/location-intelligence.md)
 - 地図投影法
   - [選び方と分類](concepts/map-projections.md)
   - [メルカトル図法](concepts/mercator-projection.md)
@@ -21,11 +22,15 @@ title: 知識マップ
 
 ## データ
 
-- [人流データの種類](data/human-flow-data-types.md)
+- 人流データ
+  - [種類と加工段階](data/human-flow-data-types.md)
+  - [日本で使えるデータ](data/human-flow-data-sources-japan.md)
 - [Foursquare Placesへのパートナーデータ取り込み](data/foursquare-partner-places.md)
 
 ## ツール
 
+- [日本のロケーションインテリジェンス製品・サービス](tools/location-intelligence-products-japan.md)
+- [H3](tools/h3.md)
 - [高徳地図（AMAP）](tools/amap.md)
 - [Galuchat](tools/galuchat.md)
 - [DOCOYAフード&ビバレッジ](tools/docoya-food-beverage.md)

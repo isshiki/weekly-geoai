@@ -38,6 +38,7 @@ nav:
   - 知識マップ:
       - 全体を見る: atlas/index.md
       - 概念:
+          - ロケーションインテリジェンス: atlas/concepts/location-intelligence.md
           - 地図投影法:
               - 選び方と分類: atlas/concepts/map-projections.md
               - メルカトル図法: atlas/concepts/mercator-projection.md
@@ -46,9 +47,13 @@ nav:
       - 手法:
           - 知識グラフとLLMエージェントによる地理空間データ探索: atlas/methods/intelligent-geospatial-data-discovery.md
       - データ:
-          - 人流データの種類: atlas/data/human-flow-data-types.md
+          - 人流データ:
+              - 種類と加工段階: atlas/data/human-flow-data-types.md
+              - 日本で使えるデータ: atlas/data/human-flow-data-sources-japan.md
           - Foursquare Placesへのパートナーデータ取り込み: atlas/data/foursquare-partner-places.md
       - ツール:
+          - 日本のロケーションインテリジェンス製品・サービス: atlas/tools/location-intelligence-products-japan.md
+          - H3: atlas/tools/h3.md
           - 高徳地図（AMAP）: atlas/tools/amap.md
           - Galuchat: atlas/tools/galuchat.md
           - DOCOYAフード&ビバレッジ: atlas/tools/docoya-food-beverage.md
