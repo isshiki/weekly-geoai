@@ -41,6 +41,7 @@ nav:
           - ロケーションインテリジェンス: atlas/concepts/location-intelligence.md
           - 地図投影法:
               - 選び方と分類: atlas/concepts/map-projections.md
+              - 座標参照系（CRS）との関係: atlas/concepts/coordinate-reference-systems.md
               - メルカトル図法: atlas/concepts/mercator-projection.md
               - イコールアース図法: atlas/concepts/equal-earth-projection.md
           - リアリティーマッピングとデジタルツイン: atlas/concepts/reality-mapping-and-digital-twins.md

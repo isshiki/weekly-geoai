@@ -12,6 +12,7 @@ title: 知識マップ
 - [ロケーションインテリジェンス](concepts/location-intelligence.md)
 - 地図投影法
   - [選び方と分類](concepts/map-projections.md)
+  - [座標参照系（CRS）との関係](concepts/coordinate-reference-systems.md)
   - [メルカトル図法](concepts/mercator-projection.md)
   - [イコールアース図法](concepts/equal-earth-projection.md)
 - [リアリティーマッピングとデジタルツイン](concepts/reality-mapping-and-digital-twins.md)

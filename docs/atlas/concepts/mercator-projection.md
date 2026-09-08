@@ -2,7 +2,7 @@
 layout: default
 title: メルカトル図法
 category: concepts
-updated: 2026-09-06
+updated: 2026-09-08
 ---
 
 # メルカトル図法
@@ -34,6 +34,12 @@ EPSG:3395は「WGS 84 / World Mercator」で、楕円体を考慮した世界メ
 ## 実装
 
 PROJでは `+proj=merc` を使う。WebサービスではEPSGコードだけでなく、データ、タイル、描画ライブラリが期待するCRSを確認する必要がある。
+
+## 関連項目
+
+- [地図投影法の選び方](map-projections.md)
+- [座標参照系（CRS）と地図投影法](coordinate-reference-systems.md)
+- [イコールアース図法](equal-earth-projection.md)
 
 ## 出典
 

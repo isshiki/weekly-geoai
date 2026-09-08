@@ -2,7 +2,7 @@
 layout: default
 title: イコールアース図法
 category: concepts
-updated: 2026-09-07
+updated: 2026-09-08
 ---
 
 # イコールアース図法
@@ -45,6 +45,7 @@ PROJは球面と楕円体の両方を扱える。ライブラリ間でモデル�
 ## 関連項目
 
 - [地図投影法の選び方](map-projections.md)
+- [座標参照系（CRS）と地図投影法](coordinate-reference-systems.md)
 - [メルカトル図法](mercator-projection.md)
 
 ## 出典
