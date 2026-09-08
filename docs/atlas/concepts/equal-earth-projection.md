@@ -2,7 +2,7 @@
 layout: default
 title: イコールアース図法
 category: concepts
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # イコールアース図法
@@ -54,3 +54,4 @@ PROJは球面と楕円体の両方を扱える。ライブラリ間でモデル�
 - [EPSG:8857 WGS 84 / Equal Earth Greenwich](https://epsg.io/8857)（2026-09-06確認）
 - [EPSG:8859 WGS 84 / Equal Earth Asia-Pacific](https://epsg.io/8859)（2026-09-06確認）
 - [BBCニュース「国連総会、アフリカの実際の面積を反映した世界地図への置き換えを決議」](https://www.bbc.com/japanese/articles/cvgy7g9wlw8o)（2026-09-06確認）
+- [読売新聞「世界地図『メルカトル図法』ではなく『イコールアース図法』使用促す国連決議」](https://www.yomiuri.co.jp/world/20260906-GYT1T00008/)（ユーザー提供の本文により2026-09-07確認）

@@ -19,6 +19,7 @@ title: 知識マップ
 ## 手法
 
 - [知識グラフとLLMエージェントによる地理空間データ探索](methods/intelligent-geospatial-data-discovery.md)
+- [人流データの時間処理と集計定義](methods/human-flow-time-processing.md)
 
 ## データ
 
@@ -31,6 +32,7 @@ title: 知識マップ
 
 - [日本のロケーションインテリジェンス製品・サービス](tools/location-intelligence-products-japan.md)
 - [H3](tools/h3.md)
+- [Google Places Insights](tools/google-places-insights.md)
 - [高徳地図（AMAP）](tools/amap.md)
 - [Galuchat](tools/galuchat.md)
 - [DOCOYAフード&ビバレッジ](tools/docoya-food-beverage.md)
@@ -40,7 +42,8 @@ title: 知識マップ
 
 ## 事例
 
-今後追加する。
+- [マクドナルド価格帯マップ](cases/mcdonalds-price-map.md)
+- [小売出店候補地のロケーションインテリジェンス](cases/retail-site-selection.md)
 
 ## 更新記録
 

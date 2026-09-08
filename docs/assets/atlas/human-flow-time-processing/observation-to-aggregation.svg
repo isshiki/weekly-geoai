@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+  <title id="title">人流データの観測から集計まで</title>
+  <desc id="desc">不規則な位置観測をセッションに分け、滞在や来訪を判定し、時間窓で集計する流れ</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF8A3D"/>
+    </marker>
+    <style>
+      .heading { font: 700 28px sans-serif; fill: #1E3A5F; }
+      .label { font: 700 22px sans-serif; fill: #1E3A5F; }
+      .small { font: 500 18px sans-serif; fill: #1E3A5F; }
+      .box { fill: #fff; stroke: #1E3A5F; stroke-width: 4; }
+      .accent { fill: #FF8A3D; }
+      .line { fill: none; stroke: #FF8A3D; stroke-width: 5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="480" rx="24" fill="#F5F7FA"/>
+  <text x="60" y="58" class="heading">観測点を意味のある集計へ変換する</text>
+
+  <rect x="55" y="105" width="245" height="275" rx="18" class="box"/>
+  <text x="177" y="150" text-anchor="middle" class="label">不規則な位置観測</text>
+  <line x1="93" y1="255" x2="263" y2="255" stroke="#1E3A5F" stroke-width="4"/>
+  <circle cx="100" cy="235" r="10" class="accent"/>
+  <circle cx="142" cy="270" r="10" class="accent"/>
+  <circle cx="164" cy="220" r="10" class="accent"/>
+  <circle cx="240" cy="278" r="10" class="accent"/>
+  <circle cx="264" cy="232" r="10" class="accent"/>
+  <text x="177" y="332" text-anchor="middle" class="small">欠測・位置誤差を確認</text>
+
+  <path d="M310 242 H365" class="line"/>
+
+  <rect x="380" y="105" width="250" height="275" rx="18" class="box"/>
+  <text x="505" y="150" text-anchor="middle" class="label">区切る・判定する</text>
+  <rect x="417" y="190" width="176" height="47" rx="23" fill="#1E3A5F"/>
+  <text x="505" y="221" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#fff">セッション化</text>
+  <rect x="417" y="259" width="176" height="47" rx="23" class="accent"/>
+  <text x="505" y="290" text-anchor="middle" class="small" font-weight="700">滞在・来訪判定</text>
+  <text x="505" y="342" text-anchor="middle" class="small">閾値と境界を記録</text>
+
+  <path d="M640 242 H695" class="line"/>
+
+  <rect x="710" y="105" width="435" height="275" rx="18" class="box"/>
+  <text x="927" y="150" text-anchor="middle" class="label">時間窓で集計する</text>
+  <rect x="758" y="190" width="105" height="76" rx="10" fill="#1E3A5F"/>
+  <rect x="873" y="190" width="105" height="76" rx="10" fill="#1E3A5F"/>
+  <rect x="988" y="190" width="105" height="76" rx="10" fill="#1E3A5F"/>
+  <text x="810" y="235" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#fff">10時台</text>
+  <text x="925" y="235" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#fff">11時台</text>
+  <text x="1040" y="235" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#fff">12時台</text>
+  <path d="M790 300 H1058" stroke="#FF8A3D" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="910" cy="300" r="15" fill="#1E3A5F"/>
+  <text x="927" y="345" text-anchor="middle" class="small">固定窓／移動窓・ユニーク／延べ</text>
+  <text x="600" y="438" text-anchor="middle" class="small">処理条件を変えると、同じ位置点から得られる人数・滞在・ODも変わる</text>
+</svg>

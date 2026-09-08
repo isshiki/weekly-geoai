@@ -46,6 +46,7 @@ nav:
           - リアリティーマッピングとデジタルツイン: atlas/concepts/reality-mapping-and-digital-twins.md
       - 手法:
           - 知識グラフとLLMエージェントによる地理空間データ探索: atlas/methods/intelligent-geospatial-data-discovery.md
+          - 人流データの時間処理と集計定義: atlas/methods/human-flow-time-processing.md
       - データ:
           - 人流データ:
               - 種類と加工段階: atlas/data/human-flow-data-types.md
@@ -54,14 +55,19 @@ nav:
       - ツール:
           - 日本のロケーションインテリジェンス製品・サービス: atlas/tools/location-intelligence-products-japan.md
           - H3: atlas/tools/h3.md
+          - Google Places Insights: atlas/tools/google-places-insights.md
           - 高徳地図（AMAP）: atlas/tools/amap.md
           - Galuchat: atlas/tools/galuchat.md
           - DOCOYAフード&ビバレッジ: atlas/tools/docoya-food-beverage.md
           - ゼンリン地図ナビ: atlas/tools/zenrin-map-navigation.md
           - GeoLibre: atlas/tools/geolibre.md
           - Cesium: atlas/tools/cesium.md
+      - 事例:
+          - マクドナルド価格帯マップ: atlas/cases/mcdonalds-price-map.md
+          - 小売出店候補地のロケーションインテリジェンス: atlas/cases/retail-site-selection.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月7日: updates/2026-09-07.md
       - 2026年9月6日: updates/2026-09-06.md
       - 2026年9月5日: updates/2026-09-05.md
       - 2026年9月4日: updates/2026-09-04.md

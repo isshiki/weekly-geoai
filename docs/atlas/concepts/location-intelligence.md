@@ -2,7 +2,7 @@
 layout: default
 title: ロケーションインテリジェンス
 category: concepts
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # ロケーションインテリジェンス
@@ -47,6 +47,8 @@ updated: 2026-09-06
 - [人流データの種類](../data/human-flow-data-types.md)
 - [Foursquare Placesへのパートナーデータ取り込み](../data/foursquare-partner-places.md)
 - [DOCOYAフード&ビバレッジ](../tools/docoya-food-beverage.md)
+- [マクドナルド価格帯マップ](../cases/mcdonalds-price-map.md)
+- [小売出店候補地のロケーションインテリジェンス](../cases/retail-site-selection.md)
 
 ## 出典
 
