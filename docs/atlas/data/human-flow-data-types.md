@@ -2,7 +2,7 @@
 layout: default
 title: 人流データの種類
 category: data
-updated: 2026-09-07
+updated: 2026-09-08
 ---
 
 # 人流データの種類
@@ -58,6 +58,7 @@ GPSとODは対立する分類ではない。GPSは取得方式であり、その
 
 ## 関連項目
 
+- [人流データの計測誤差と推計誤差](human-flow-data-quality.md)
 - [人流データの時間処理と集計定義](../methods/human-flow-time-processing.md)
 - [日本で使える人流データ](human-flow-data-sources-japan.md)
 - [H3](../tools/h3.md)

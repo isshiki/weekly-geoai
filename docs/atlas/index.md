@@ -25,14 +25,17 @@ title: 知識マップ
 
 - 人流データ
   - [種類と加工段階](data/human-flow-data-types.md)
+  - [計測誤差と推計誤差](data/human-flow-data-quality.md)
   - [日本で使えるデータ](data/human-flow-data-sources-japan.md)
 - [Foursquare Placesへのパートナーデータ取り込み](data/foursquare-partner-places.md)
+- [Portolan](data/portolan.md)
 
 ## ツール
 
 - [日本のロケーションインテリジェンス製品・サービス](tools/location-intelligence-products-japan.md)
 - [H3](tools/h3.md)
 - [Google Places Insights](tools/google-places-insights.md)
+- [geoparquet-io](tools/geoparquet-io.md)
 - [高徳地図（AMAP）](tools/amap.md)
 - [Galuchat](tools/galuchat.md)
 - [DOCOYAフード&ビバレッジ](tools/docoya-food-beverage.md)
@@ -42,7 +45,7 @@ title: 知識マップ
 
 ## 事例
 
-- [マクドナルド価格帯マップ](cases/mcdonalds-price-map.md)
+- [pricemap](cases/pricemap.md)
 - [小売出店候補地のロケーションインテリジェンス](cases/retail-site-selection.md)
 
 ## 更新記録

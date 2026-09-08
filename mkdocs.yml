@@ -50,12 +50,15 @@ nav:
       - データ:
           - 人流データ:
               - 種類と加工段階: atlas/data/human-flow-data-types.md
+              - 計測誤差と推計誤差: atlas/data/human-flow-data-quality.md
               - 日本で使えるデータ: atlas/data/human-flow-data-sources-japan.md
           - Foursquare Placesへのパートナーデータ取り込み: atlas/data/foursquare-partner-places.md
+          - Portolan: atlas/data/portolan.md
       - ツール:
           - 日本のロケーションインテリジェンス製品・サービス: atlas/tools/location-intelligence-products-japan.md
           - H3: atlas/tools/h3.md
           - Google Places Insights: atlas/tools/google-places-insights.md
+          - geoparquet-io: atlas/tools/geoparquet-io.md
           - 高徳地図（AMAP）: atlas/tools/amap.md
           - Galuchat: atlas/tools/galuchat.md
           - DOCOYAフード&ビバレッジ: atlas/tools/docoya-food-beverage.md
@@ -63,10 +66,11 @@ nav:
           - GeoLibre: atlas/tools/geolibre.md
           - Cesium: atlas/tools/cesium.md
       - 事例:
-          - マクドナルド価格帯マップ: atlas/cases/mcdonalds-price-map.md
+          - pricemap: atlas/cases/pricemap.md
           - 小売出店候補地のロケーションインテリジェンス: atlas/cases/retail-site-selection.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月8日: updates/2026-09-08.md
       - 2026年9月7日: updates/2026-09-07.md
       - 2026年9月6日: updates/2026-09-06.md
       - 2026年9月5日: updates/2026-09-05.md

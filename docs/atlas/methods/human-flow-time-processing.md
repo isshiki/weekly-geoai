@@ -2,7 +2,7 @@
 layout: default
 title: 人流データの時間処理と集計定義
 category: methods
-updated: 2026-09-07
+updated: 2026-09-08
 ---
 
 # 人流データの時間処理と集計定義
@@ -72,6 +72,7 @@ updated: 2026-09-07
 ## 関連項目
 
 - [人流データの種類](../data/human-flow-data-types.md)
+- [人流データの計測誤差と推計誤差](../data/human-flow-data-quality.md)
 - [日本で使える人流データ](../data/human-flow-data-sources-japan.md)
 
 ## 出典
