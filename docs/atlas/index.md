@@ -11,10 +11,10 @@ title: 知識マップ
 
 - [ロケーションインテリジェンス](concepts/location-intelligence.md)
 - 地図投影法
-  - [選び方と分類](concepts/map-projections.md)
-  - [座標参照系（CRS）との関係](concepts/coordinate-reference-systems.md)
-  - [メルカトル図法](concepts/mercator-projection.md)
-  - [イコールアース図法](concepts/equal-earth-projection.md)
+    - [選び方と分類](concepts/map-projections.md)
+    - [座標参照系（CRS）との関係](concepts/coordinate-reference-systems.md)
+    - [メルカトル図法](concepts/mercator-projection.md)
+    - [イコールアース図法](concepts/equal-earth-projection.md)
 - [リアリティーマッピングとデジタルツイン](concepts/reality-mapping-and-digital-twins.md)
 
 ## 手法
@@ -25,9 +25,9 @@ title: 知識マップ
 ## データ
 
 - 人流データ
-  - [種類と加工段階](data/human-flow-data-types.md)
-  - [計測誤差と推計誤差](data/human-flow-data-quality.md)
-  - [日本で使えるデータ](data/human-flow-data-sources-japan.md)
+    - [種類と加工段階](data/human-flow-data-types.md)
+    - [計測誤差と推計誤差](data/human-flow-data-quality.md)
+    - [日本で使えるデータ](data/human-flow-data-sources-japan.md)
 - [Foursquare Placesへのパートナーデータ取り込み](data/foursquare-partner-places.md)
 - [Portolan](data/portolan.md)
 
