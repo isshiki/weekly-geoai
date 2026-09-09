@@ -48,6 +48,7 @@ nav:
       - 手法:
           - 知識グラフとLLMエージェントによる地理空間データ探索: atlas/methods/intelligent-geospatial-data-discovery.md
           - 人流データの時間処理と集計定義: atlas/methods/human-flow-time-processing.md
+          - 全国メッシュデータのWeb配信: atlas/methods/national-grid-web-delivery.md
       - データ:
           - 人流データ:
               - 種類と加工段階: atlas/data/human-flow-data-types.md
@@ -59,6 +60,7 @@ nav:
           - 日本のロケーションインテリジェンス製品・サービス: atlas/tools/location-intelligence-products-japan.md
           - H3: atlas/tools/h3.md
           - Google Places Insights: atlas/tools/google-places-insights.md
+          - MapLibre GL JS: atlas/tools/maplibre-gl-js.md
           - geoparquet-io: atlas/tools/geoparquet-io.md
           - 高徳地図（AMAP）: atlas/tools/amap.md
           - Galuchat: atlas/tools/galuchat.md
@@ -66,11 +68,13 @@ nav:
           - ゼンリン地図ナビ: atlas/tools/zenrin-map-navigation.md
           - GeoLibre: atlas/tools/geolibre.md
           - Cesium: atlas/tools/cesium.md
+          - CARTO MCP Server: atlas/tools/carto-mcp-server.md
       - 事例:
           - pricemap: atlas/cases/pricemap.md
           - 小売出店候補地のロケーションインテリジェンス: atlas/cases/retail-site-selection.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月9日: updates/2026-09-09.md
       - 2026年9月8日: updates/2026-09-08.md
       - 2026年9月7日: updates/2026-09-07.md
       - 2026年9月6日: updates/2026-09-06.md

@@ -21,6 +21,7 @@ title: 知識マップ
 
 - [知識グラフとLLMエージェントによる地理空間データ探索](methods/intelligent-geospatial-data-discovery.md)
 - [人流データの時間処理と集計定義](methods/human-flow-time-processing.md)
+- [全国メッシュデータのWeb配信](methods/national-grid-web-delivery.md)
 
 ## データ
 
@@ -36,6 +37,7 @@ title: 知識マップ
 - [日本のロケーションインテリジェンス製品・サービス](tools/location-intelligence-products-japan.md)
 - [H3](tools/h3.md)
 - [Google Places Insights](tools/google-places-insights.md)
+- [MapLibre GL JS](tools/maplibre-gl-js.md)
 - [geoparquet-io](tools/geoparquet-io.md)
 - [高徳地図（AMAP）](tools/amap.md)
 - [Galuchat](tools/galuchat.md)
@@ -43,6 +45,7 @@ title: 知識マップ
 - [ゼンリン地図ナビ](tools/zenrin-map-navigation.md)
 - [GeoLibre](tools/geolibre.md)
 - [Cesium](tools/cesium.md)
+- [CARTO MCP Server](tools/carto-mcp-server.md)
 
 ## 事例
 

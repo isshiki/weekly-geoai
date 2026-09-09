@@ -2,7 +2,7 @@
 layout: default
 title: 知識グラフとLLMエージェントによる地理空間データ探索
 category: methods
-updated: 2026-09-04
+updated: 2026-09-09
 ---
 
 # 知識グラフとLLMエージェントによる地理空間データ探索
@@ -14,6 +14,11 @@ updated: 2026-09-04
 - 2026年の論文では、異種メタデータを統合オントロジーへ写像するIGDDフレームワークが提案された。
 - Intent Parsing、Graph Retrieval、Answer Synthesisの各エージェントが処理を分担する。
 - 知識グラフによる制約付き検索と、LLMによる候補の再順位付けおよび説明生成を組み合わせる。
+
+## 関連項目
+
+- [CARTO MCP Server](../tools/carto-mcp-server.md)
+- [Portolan](../data/portolan.md)
 
 ## 出典
 
