@@ -10,6 +10,7 @@ title: 知識マップ
 ## 概念
 
 - [ロケーションインテリジェンス](concepts/location-intelligence.md)
+- [Location AI](concepts/location-ai.md)
 - 地図投影法
     - [選び方と分類](concepts/map-projections.md)
     - [座標参照系（CRS）との関係](concepts/coordinate-reference-systems.md)
@@ -20,6 +21,8 @@ title: 知識マップ
 ## 手法
 
 - [知識グラフとLLMエージェントによる地理空間データ探索](methods/intelligent-geospatial-data-discovery.md)
+- [AIが扱いやすい地理空間開発環境](methods/ai-ready-geospatial-development.md)
+- [GISデータセットカタログ](methods/gis-dataset-catalog-for-agents.md)
 - [人流データの時間処理と集計定義](methods/human-flow-time-processing.md)
 - [全国メッシュデータのWeb配信](methods/national-grid-web-delivery.md)
 
@@ -51,6 +54,7 @@ title: 知識マップ
 
 - [pricemap](cases/pricemap.md)
 - [小売出店候補地のロケーションインテリジェンス](cases/retail-site-selection.md)
+- [来店検知を使う位置連動リテールメディア](cases/location-triggered-retail-media.md)
 
 ## 更新記録
 

@@ -2,7 +2,7 @@
 layout: default
 title: ロケーションインテリジェンス
 category: concepts
-updated: 2026-09-08
+updated: 2026-09-10
 ---
 
 # ロケーションインテリジェンス
@@ -43,6 +43,7 @@ updated: 2026-09-08
 
 ## 関連項目
 
+- [Location AI](location-ai.md)
 - [日本のロケーションインテリジェンス製品・サービス](../tools/location-intelligence-products-japan.md)
 - [人流データの種類](../data/human-flow-data-types.md)
 - [Foursquare Placesへのパートナーデータ取り込み](../data/foursquare-partner-places.md)

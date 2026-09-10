@@ -2,7 +2,7 @@
 layout: default
 title: 知識グラフとLLMエージェントによる地理空間データ探索
 category: methods
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # 知識グラフとLLMエージェントによる地理空間データ探索
@@ -17,6 +17,8 @@ updated: 2026-09-09
 
 ## 関連項目
 
+- [Location AI](../concepts/location-ai.md)
+- [GISデータセットカタログ](gis-dataset-catalog-for-agents.md)
 - [CARTO MCP Server](../tools/carto-mcp-server.md)
 - [Portolan](../data/portolan.md)
 

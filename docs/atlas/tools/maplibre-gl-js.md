@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # MapLibre GL JS
@@ -15,6 +15,14 @@ MapLibre GL JSは、ベクタータイルなどからインタラクティブな
 - レイヤー、カメラ、Marker、Popup、ユーザー操作をAPIから制御する。
 - メルカトル表示に加え、globe表示や3D terrainを扱う。
 - PMTilesなど、追加プロトコルを介した配信形式と組み合わせられる。
+
+## v6.9.0で確認した変更
+
+2026年9月9日に公開されたv6.9.0では、デーヴァナーガリー、クメール、ビルマ語などの複雑な文字体系と、アラビア語・ヘブライ語の右から左へ書くラベルの描画が改善された。右横書き用プラグインを読み込まずに描画できるようになり、`setRTLTextPlugin` と `getRTLTextPluginStatus` は非推奨となった。
+
+性能面では、Spriteや画像のピクセル読み出しに利用可能な環境で `OffscreenCanvas` を使い、現在のズームで非表示のレイヤーに対するクリッピングマスクや、キャッシュ済みVertex Arrayの不要な再Bindを省いた。terrainでは古いdrapeの再描画を1フレーム最大1件に制限している。
+
+このほか、terrain読み込み中の `setStyle()`、GeoJSONの `updateData`、カメラ操作へ `undefined` を渡した場合、非表示コンテナから表示した直後のサイズ、`iframe` と `srcdoc` のDOM sanitizationなどが修正された。
 
 ## v6.8.0で確認した変更
 
@@ -45,3 +53,4 @@ MapLibre GL JSは、ベクタータイルなどからインタラクティブな
 
 - [MapLibre GL JS documentation](https://maplibre.org/maplibre-gl-js/docs/)（2026-09-09確認）
 - [MapLibre GL JS v6.8.0 release](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.8.0)（2026-09-09確認）
+- [MapLibre GL JS v6.9.0 release](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.9.0)（2026-09-10確認）

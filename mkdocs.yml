@@ -39,6 +39,7 @@ nav:
       - 全体を見る: atlas/index.md
       - 概念:
           - ロケーションインテリジェンス: atlas/concepts/location-intelligence.md
+          - Location AI: atlas/concepts/location-ai.md
           - 地図投影法:
               - 選び方と分類: atlas/concepts/map-projections.md
               - 座標参照系（CRS）との関係: atlas/concepts/coordinate-reference-systems.md
@@ -47,6 +48,8 @@ nav:
           - リアリティーマッピングとデジタルツイン: atlas/concepts/reality-mapping-and-digital-twins.md
       - 手法:
           - 知識グラフとLLMエージェントによる地理空間データ探索: atlas/methods/intelligent-geospatial-data-discovery.md
+          - AIが扱いやすい地理空間開発環境: atlas/methods/ai-ready-geospatial-development.md
+          - GISデータセットカタログ: atlas/methods/gis-dataset-catalog-for-agents.md
           - 人流データの時間処理と集計定義: atlas/methods/human-flow-time-processing.md
           - 全国メッシュデータのWeb配信: atlas/methods/national-grid-web-delivery.md
       - データ:
@@ -72,8 +75,10 @@ nav:
       - 事例:
           - pricemap: atlas/cases/pricemap.md
           - 小売出店候補地のロケーションインテリジェンス: atlas/cases/retail-site-selection.md
+          - 来店検知を使う位置連動リテールメディア: atlas/cases/location-triggered-retail-media.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月10日: updates/2026-09-10.md
       - 2026年9月9日: updates/2026-09-09.md
       - 2026年9月8日: updates/2026-09-08.md
       - 2026年9月7日: updates/2026-09-07.md

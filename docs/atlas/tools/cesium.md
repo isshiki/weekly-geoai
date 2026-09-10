@@ -2,7 +2,7 @@
 layout: default
 title: Cesium
 category: tools
-updated: 2026-09-08
+updated: 2026-09-10
 ---
 
 # Cesium
@@ -27,11 +27,15 @@ Cesiumは2026年9月2日、3D Tiles 2.0へ向けたベクタータイルの技�
 
 ## その他の2026年9月更新
 
-- CesiumJS 1.145では、地形や3D Tiles上へのベクターデータのドレープとクリッピングポリゴンが改善された。
+- CesiumJS 1.145では、地形や3D Tiles上への線・面のドレープに加え、広い範囲でのクリッピング品質と、ポリゴン内のホール指定が改善された。
+- BIM/CAD Databaseモデルを対象に、サーバー側で形状へスナップする実験的な `IonSnapService` が追加された。
 - Cesium ionでは、元ソースとタイル化済みアセットを分離して管理する変更が案内された。
+- Cesium ion Self-Hosted 1.11.0では、iTwin Captureを使う再構築ジョブ、ラベル、IFC metadataなどが更新された。
+
+月次リリースには正式機能、実験的API、技術プレビュー、今後提供予定の変更が混在する。導入時は、利用する製品と機能の成熟度を個別に確認する。
 
 ## 出典
 
-- [Cesium Releases in September 2026](https://cesium.com/blog/2026/09/02/cesium-releases-in-september-2026/)（2026-09-04確認）
+- [Cesium Releases in September 2026](https://cesium.com/blog/2026/09/02/cesium-releases-in-september-2026/)（2026-09-10確認）
 - [Vector Tiles: A Technology Preview for Cesium and 3D Tiles](https://cesium.com/blog/2026/09/02/vector-tiles-technology-preview-cesium-and-3d-tiles/)（2026-09-08確認）
 - [【Cesium】ベクタータイルの技術プレビューを公開](https://note.com/pacificspatial/n/n20e3f2309503)（2026-09-08確認）

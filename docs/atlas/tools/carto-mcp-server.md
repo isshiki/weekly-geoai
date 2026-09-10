@@ -2,7 +2,7 @@
 layout: default
 title: CARTO MCP Server
 category: tools
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # CARTO MCP Server
@@ -35,6 +35,8 @@ AIは分析方法の提案と構築を支援するが、保存後のWorkflowは�
 
 ## 関連項目
 
+- [Location AI](../concepts/location-ai.md)
+- [AIが扱いやすい地理空間開発環境](../methods/ai-ready-geospatial-development.md)
 - [知識グラフとLLMエージェントによる地理空間データ探索](../methods/intelligent-geospatial-data-discovery.md)
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
 

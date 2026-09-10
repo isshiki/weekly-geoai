@@ -20,7 +20,13 @@ PATTERNS = {
 
 def _tracked_files(root: Path) -> list[Path]:
     result = subprocess.run(
-        ["git", "-c", f"safe.directory={root.resolve()}", "ls-files", "-z"],
+        [
+            "git",
+            f"--git-dir={root / '.git'}",
+            f"--work-tree={root}",
+            "ls-files",
+            "-z",
+        ],
         cwd=root,
         check=True,
         capture_output=True,
