@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Cloud Native Geospatialの役割分担</title>
+  <desc id="desc">オブジェクトストレージとHTTPSを基盤に、COG、GeoParquet、Zarrのデータ層、STACのカタログ層、ブラウザ、GIS、分析エンジンの処理層を重ねた構成図</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#FF8A3D"/>
+    </marker>
+    <style>
+      .title { font: 700 31px sans-serif; fill: #1E3A5F; }
+      .heading { font: 700 25px sans-serif; fill: #1E3A5F; }
+      .label { font: 700 21px sans-serif; fill: #1E3A5F; }
+      .small { font: 500 17px sans-serif; fill: #1E3A5F; }
+      .white { font: 700 22px sans-serif; fill: #FFFFFF; }
+      .box { fill: #FFFFFF; stroke: #1E3A5F; stroke-width: 4; }
+      .soft { fill: #FFF3EB; stroke: #FF8A3D; stroke-width: 4; }
+      .arrow { fill: none; stroke: #FF8A3D; stroke-width: 5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="650" rx="24" fill="#F5F7FA"/>
+  <text x="60" y="62" class="title">必要な地理空間データだけを発見し、直接読む</text>
+
+  <text x="82" y="135" class="heading">処理</text>
+  <rect x="250" y="95" width="260" height="85" rx="16" class="box"/>
+  <text x="380" y="132" text-anchor="middle" class="label">ブラウザ・GIS</text>
+  <text x="380" y="158" text-anchor="middle" class="small">表示と対話</text>
+  <rect x="545" y="95" width="260" height="85" rx="16" class="box"/>
+  <text x="675" y="132" text-anchor="middle" class="label">クエリエンジン</text>
+  <text x="675" y="158" text-anchor="middle" class="small">抽出・集計</text>
+  <rect x="840" y="95" width="260" height="85" rx="16" class="box"/>
+  <text x="970" y="132" text-anchor="middle" class="label">分析ライブラリ</text>
+  <text x="970" y="158" text-anchor="middle" class="small">計算とモデル入力</text>
+
+  <path d="M380 188 V235" class="arrow"/>
+  <path d="M675 188 V235" class="arrow"/>
+  <path d="M970 188 V235" class="arrow"/>
+
+  <text x="82" y="282" class="heading">発見</text>
+  <rect x="250" y="225" width="850" height="92" rx="18" fill="#1E3A5F"/>
+  <text x="675" y="263" text-anchor="middle" class="white">STAC</text>
+  <text x="675" y="292" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#FFFFFF">場所・時間・内容・取得先を記述するカタログ</text>
+
+  <path d="M380 325 V372" class="arrow"/>
+  <path d="M675 325 V372" class="arrow"/>
+  <path d="M970 325 V372" class="arrow"/>
+
+  <text x="82" y="420" class="heading">データ</text>
+  <rect x="250" y="365" width="260" height="100" rx="18" class="soft"/>
+  <text x="380" y="408" text-anchor="middle" class="label">COG</text>
+  <text x="380" y="438" text-anchor="middle" class="small">ラスタ</text>
+  <rect x="545" y="365" width="260" height="100" rx="18" class="soft"/>
+  <text x="675" y="408" text-anchor="middle" class="label">GeoParquet</text>
+  <text x="675" y="438" text-anchor="middle" class="small">ベクター</text>
+  <rect x="840" y="365" width="260" height="100" rx="18" class="soft"/>
+  <text x="970" y="408" text-anchor="middle" class="label">Zarr</text>
+  <text x="970" y="438" text-anchor="middle" class="small">多次元配列</text>
+
+  <path d="M380 473 V520" class="arrow"/>
+  <path d="M675 473 V520" class="arrow"/>
+  <path d="M970 473 V520" class="arrow"/>
+
+  <text x="82" y="565" class="heading">配信基盤</text>
+  <rect x="250" y="510" width="850" height="92" rx="18" fill="#1E3A5F"/>
+  <text x="675" y="550" text-anchor="middle" class="white">オブジェクトストレージ + HTTPS</text>
+  <text x="675" y="580" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#FFFFFF">Range Request・チャンク・列・overviewで部分取得</text>
+</svg>
+

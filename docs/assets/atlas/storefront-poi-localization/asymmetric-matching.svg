@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+  <title id="title">店舗画像による非対称なPOI照合</title>
+  <desc id="desc">店舗の接写画像から街並み全体の候補画像を検索し、候補内の小さな店舗領域を照合してPOIを特定する3段階の模式図</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#FF8A3D"/>
+    </marker>
+    <style>
+      .title { font: 700 31px sans-serif; fill: #1E3A5F; }
+      .step { font: 700 24px sans-serif; fill: #1E3A5F; }
+      .label { font: 700 19px sans-serif; fill: #1E3A5F; }
+      .small { font: 500 16px sans-serif; fill: #1E3A5F; }
+      .frame { fill: #FFFFFF; stroke: #1E3A5F; stroke-width: 4; }
+      .road { fill: #DCE6F2; }
+      .building { fill: #FFFFFF; stroke: #1E3A5F; stroke-width: 3; }
+      .accent { fill: #FF8A3D; stroke: #1E3A5F; stroke-width: 3; }
+      .arrow { fill: none; stroke: #FF8A3D; stroke-width: 6; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="610" rx="24" fill="#F5F7FA"/>
+  <text x="60" y="62" class="title">接写された店舗を、広い街並みの中から探す</text>
+
+  <text x="190" y="120" text-anchor="middle" class="step">1. 接写クエリ</text>
+  <rect x="60" y="145" width="260" height="300" rx="18" class="frame"/>
+  <rect x="86" y="178" width="208" height="226" rx="8" fill="#DCE6F2"/>
+  <rect x="104" y="214" width="172" height="164" class="accent"/>
+  <rect x="126" y="238" width="128" height="54" rx="5" fill="#1E3A5F"/>
+  <text x="190" y="273" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">STORE</text>
+  <rect x="129" y="312" width="48" height="66" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="3"/>
+  <rect x="196" y="312" width="48" height="66" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="3"/>
+  <text x="190" y="478" text-anchor="middle" class="small">対象が画面の大部分を占める</text>
+
+  <path d="M335 294 H430" class="arrow"/>
+  <text x="382" y="270" text-anchor="middle" class="label">全体検索</text>
+
+  <text x="600" y="120" text-anchor="middle" class="step">2. 参照候補</text>
+  <rect x="445" y="145" width="310" height="300" rx="18" class="frame"/>
+  <rect x="470" y="178" width="260" height="226" rx="8" class="road"/>
+  <rect x="486" y="227" width="68" height="130" class="building"/>
+  <rect x="554" y="205" width="78" height="152" class="building"/>
+  <rect x="632" y="220" width="82" height="137" class="building"/>
+  <rect x="572" y="242" width="42" height="41" class="accent"/>
+  <path d="M470 357 H730 L708 404 H493 Z" fill="#AABBD0"/>
+  <path d="M502 382 H698" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="22 16"/>
+  <text x="600" y="478" text-anchor="middle" class="small">対象は背景に混じった小領域になる</text>
+
+  <path d="M770 294 H865" class="arrow"/>
+  <text x="817" y="270" text-anchor="middle" class="label">局所照合</text>
+
+  <text x="1025" y="120" text-anchor="middle" class="step">3. POIを特定</text>
+  <rect x="880" y="145" width="260" height="300" rx="18" class="frame"/>
+  <rect x="905" y="178" width="210" height="226" rx="8" class="road"/>
+  <rect x="930" y="220" width="160" height="140" class="building"/>
+  <rect x="975" y="246" width="70" height="68" class="accent"/>
+  <rect x="960" y="231" width="100" height="98" rx="8" fill="none" stroke="#FF8A3D" stroke-width="7"/>
+  <path d="M1010 329 V382" stroke="#FF8A3D" stroke-width="7"/>
+  <circle cx="1010" cy="390" r="10" fill="#FF8A3D"/>
+  <text x="1010" y="478" text-anchor="middle" class="small">候補内の対応領域を確認する</text>
+
+  <rect x="205" y="525" width="790" height="50" rx="25" fill="#1E3A5F"/>
+  <text x="600" y="558" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">画角と縮尺が異なるため、画像全体だけの比較では対象が薄まりやすい</text>
+</svg>
+
