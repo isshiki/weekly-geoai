@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">最多カテゴリ地図が省略する差</title>
+  <desc id="desc">地図上ではどちらもAが最多と表示される2地域について、実際はA対Bが51対49の僅差と90対10の大差であり、比較対象にCを加えると最多が変わる例</desc>
+  <defs>
+    <style>
+      .title { font: 700 31px sans-serif; fill: #1E3A5F; }
+      .heading { font: 700 24px sans-serif; fill: #1E3A5F; }
+      .label { font: 700 20px sans-serif; fill: #1E3A5F; }
+      .small { font: 500 17px sans-serif; fill: #1E3A5F; }
+      .white { font: 700 25px sans-serif; fill: #FFFFFF; }
+      .frame { fill: #FFFFFF; stroke: #1E3A5F; stroke-width: 4; }
+      .a { fill: #FF8A3D; }
+      .b { fill: #1E3A5F; }
+      .c { fill: #8AA3BF; }
+    </style>
+  </defs>
+  <rect width="1200" height="650" rx="24" fill="#F5F7FA"/>
+  <text x="60" y="62" class="title">同じ「Aが最多」でも、地図の内側は同じではない</text>
+
+  <rect x="60" y="105" width="510" height="350" rx="20" class="frame"/>
+  <text x="315" y="145" text-anchor="middle" class="heading">最多カテゴリだけを表示</text>
+  <path d="M120 195 H280 V365 H120 Z" class="a" stroke="#1E3A5F" stroke-width="4"/>
+  <path d="M350 195 H510 V365 H350 Z" class="a" stroke="#1E3A5F" stroke-width="4"/>
+  <text x="200" y="290" text-anchor="middle" class="white">地域1</text>
+  <text x="200" y="323" text-anchor="middle" class="white">A</text>
+  <text x="430" y="290" text-anchor="middle" class="white">地域2</text>
+  <text x="430" y="323" text-anchor="middle" class="white">A</text>
+  <text x="315" y="415" text-anchor="middle" class="small">地図では同じオレンジになる</text>
+
+  <rect x="630" y="105" width="510" height="350" rx="20" class="frame"/>
+  <text x="885" y="145" text-anchor="middle" class="heading">件数を見ると差が分かる</text>
+  <text x="690" y="212" class="label">地域1</text>
+  <rect x="780" y="185" width="153" height="38" rx="6" class="a"/>
+  <rect x="933" y="185" width="147" height="38" rx="6" class="b"/>
+  <text x="856" y="211" text-anchor="middle" class="small">A 51</text>
+  <text x="1006" y="211" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="500" fill="#FFFFFF">B 49</text>
+  <text x="690" y="292" class="label">地域2</text>
+  <rect x="780" y="265" width="270" height="38" rx="6" class="a"/>
+  <rect x="1050" y="265" width="30" height="38" rx="6" class="b"/>
+  <text x="915" y="291" text-anchor="middle" class="small">A 90</text>
+  <text x="1065" y="291" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">10</text>
+  <text x="885" y="365" text-anchor="middle" class="small">地域1は僅差、地域2は大差</text>
+  <text x="885" y="410" text-anchor="middle" class="label">1位と2位の差を併記する</text>
+
+  <rect x="60" y="500" width="1080" height="105" rx="20" fill="#1E3A5F"/>
+  <text x="95" y="545" font-family="sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">比較対象が A・B だけ</text>
+  <rect x="350" y="521" width="92" height="40" rx="8" class="a"/>
+  <text x="396" y="548" text-anchor="middle" class="small">A 40</text>
+  <rect x="455" y="521" width="87" height="40" rx="8" fill="#FFFFFF"/>
+  <text x="498" y="548" text-anchor="middle" class="small">B 38</text>
+  <text x="580" y="548" font-family="sans-serif" font-size="25" font-weight="700" fill="#FF8A3D">→ Aが最多</text>
+  <text x="95" y="584" font-family="sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Cも含める</text>
+  <rect x="350" y="568" width="92" height="27" rx="6" class="a"/>
+  <rect x="455" y="568" width="87" height="27" rx="6" fill="#FFFFFF"/>
+  <rect x="555" y="568" width="124" height="27" rx="6" class="c"/>
+  <text x="396" y="589" text-anchor="middle" class="small">A</text>
+  <text x="498" y="589" text-anchor="middle" class="small">B</text>
+  <text x="617" y="589" text-anchor="middle" class="small">C</text>
+  <text x="700" y="590" font-family="sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">→ Cが最多</text>
+  <text x="1100" y="565" text-anchor="end" font-family="sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">対象集合を変えると</text>
+  <text x="1100" y="590" text-anchor="end" font-family="sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">地図の答えも変わる</text>
+</svg>

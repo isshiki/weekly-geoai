@@ -21,6 +21,7 @@ title: 知識マップ
 
 ## 手法
 
+- [地域別最多カテゴリ地図の読み方](methods/regional-winner-maps.md)
 - [店舗画像によるPOIローカライゼーション](methods/storefront-poi-localization.md)
 - [知識グラフとLLMエージェントによる地理空間データ探索](methods/intelligent-geospatial-data-discovery.md)
 - [AIが扱いやすい地理空間開発環境](methods/ai-ready-geospatial-development.md)
@@ -36,6 +37,7 @@ title: 知識マップ
     - [日本で使えるデータ](data/human-flow-data-sources-japan.md)
 - [Foursquare Placesへのパートナーデータ取り込み](data/foursquare-partner-places.md)
 - [Portolan](data/portolan.md)
+- [国土数値情報](data/national-land-numerical-information.md)
 
 ## ツール
 
@@ -51,6 +53,7 @@ title: 知識マップ
 - [GeoLibre](tools/geolibre.md)
 - [Cesium](tools/cesium.md)
 - [CARTO MCP Server](tools/carto-mcp-server.md)
+- [Felt](tools/felt.md)
 
 ## 事例
 
