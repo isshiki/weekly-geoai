@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="510" viewBox="0 0 880 510" role="img" aria-labelledby="title desc">
+<title id="title">米作モニタリングのデータ統合構想</title>
+<desc id="desc">農業統計、圃場、干ばつ、衛星指標を年と地域で統合し比較する計画。検証済みの結果ではない。</desc>
+<rect width="880" height="510" rx="16" fill="#F5F7FA"/>
+<g font-family="'Yu Gothic',Meiryo,sans-serif" text-anchor="middle" fill="#1E3A5F">
+<text x="440" y="43" font-size="25" font-weight="bold">米作モニタリング：データ統合の構想</text>
+<g fill="#FFFFFF" stroke="#1E3A5F" stroke-width="2">
+<rect x="35" y="80" width="385" height="90" rx="10"/><rect x="460" y="80" width="385" height="90" rx="10"/>
+<rect x="35" y="200" width="385" height="90" rx="10"/><rect x="460" y="200" width="385" height="90" rx="10"/>
+</g>
+<g font-size="22" font-weight="bold">
+<text x="227" y="116">USDA NASS</text><text x="652" y="116">DWRの米作圃場</text>
+<text x="227" y="236">U.S. Drought Monitor</text><text x="652" y="236">Sentinel-2 / GEE</text>
+</g>
+<g font-size="19">
+<text x="227" y="148">作付・収穫面積、単収、生産量</text><text x="652" y="148">圃場抽出・面積計算・統計との比較</text>
+<text x="227" y="268">圃場と重ねて区分別面積を集計</text><text x="652" y="268">植生・水分指標を時系列化</text>
+</g>
+<path d="M35 125 H16 V316 H440 V341 M845 125 H864 V316 H440 M227 290 V316 M652 290 V316" fill="none" stroke="#1E3A5F" stroke-width="3"/>
+<path d="M432 331 L440 343 L448 331" fill="#1E3A5F"/>
+<rect x="155" y="345" width="570" height="68" rx="10" fill="#1E3A5F"/>
+<text x="440" y="372" font-size="22" fill="white" font-weight="bold">年・地域単位の分析テーブル</text>
+<text x="440" y="399" font-size="18" fill="white">面積 ＋ 干ばつ区分 ＋ 衛星指標 ＋ 収量</text>
+<path d="M440 416 V438" stroke="#FF8A3D" stroke-width="4"/><path d="M432 430 L440 442 L448 430" fill="#FF8A3D"/>
+<text x="440" y="467" font-size="22" font-weight="bold">比較・相関・回帰の検討</text>
+<text x="440" y="497" font-size="17">2026年9月14日の記事に基づく計画図。分析結果は未報告。</text>
+</g></svg>

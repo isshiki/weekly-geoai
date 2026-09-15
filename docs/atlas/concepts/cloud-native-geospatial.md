@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-09-11
+updated: 2026-09-15
 ---
 
 # Cloud Native Geospatial
@@ -35,6 +35,12 @@ CNGでは、オブジェクトストレージとHTTPSを使い、ファイルの
 
 ファイル形式だけを変えても、配信サーバーがRange RequestやCORSに対応していなければ、ブラウザや分析ツールからの部分読み込みは機能しない。データ配置、メタデータ、HTTP配信、利用側ツールを一体で設計する必要がある。
 
+## データの種類と利用者層
+
+2026年9月14日のPSS解説は、データ層をCOGなどの画像、Zarrの多次元配列、COPCの点群、GeoParquetやFlatGeobufのベクターとして整理している。Atlasでは点群を画像ラスタとは区別し、既存図の「データ」へ対応づける。
+
+処理層にはDuckDBやXarrayとDaskの組み合わせなどがある。AIエージェントはカタログや処理ツールを利用する側に位置づけられる。エージェントの追加によって、データ形式と処理エンジンの役割が同一になるわけではない。
+
 ## コミュニティと標準化
 
 Cloud-Native Geospatial ForumはRadiant Earthのイニシアチブであり、ベンダー中立なイベント、文書、教育、コミュニティ運営を行う。CNG自体は標準化団体ではなく、STAC、COG、GeoParquet、Zarrの規格やコードを直接管理する組織でもない。実務コミュニティで有効性が確かめられた実践の一部が、OGCなどの標準化へつながる関係にある。
@@ -48,8 +54,9 @@ Cloud-Native Geospatial ForumはRadiant Earthのイニシアチブであり、�
 
 ## 出典
 
+- [【CNG】レイヤーで理解するCloud Native Geospatial](https://note.com/pacificspatial/n/na2a0217a4adf)（2026-09-14公開、2026-09-15確認）
+
 - [About CNG](https://cloudnativegeo.org/about/)（2026-09-11確認）
 - [Introducing CNG](https://cloudnativegeo.org/blog/2024/09/introducing-cng/)（2026-09-11確認）
 - [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org/overview.html)（2026-09-11確認）
 - [【CNG】Cloud Native Geospatialって結局何なのか](https://note.com/pacificspatial/n/nbaab8d8f3cab)（2026-09-11確認）
-

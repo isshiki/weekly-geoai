@@ -2,7 +2,7 @@
 layout: default
 title: Portolan
 category: data
-updated: 2026-09-09
+updated: 2026-09-15
 ---
 
 # Portolan
@@ -11,7 +11,7 @@ Portolanは、地理空間データを人とAIエージェントの双方が発�
 
 ## データ公開の構成
 
-Portolanカタログでは、ベクターをGeoParquetとPMTiles、ラスターをCOG、点群をCOPCなどの形式で配置する。これらをSTACの `catalog.json` または `collection.json` で記述し、同じ階層に人向けの `README.md` とAIエージェント向けの `AGENTS.md` を置く。
+2026年9月2日の公式紹介では、ベクターにGeoParquetとPMTiles、ラスターにCOGを用い、ZarrとCOPCは今後の対応予定としている。対応範囲は採用する仕様バージョンで確認する。データはSTACの `catalog.json` または `collection.json` で記述し、人向けの `README.md` とAIエージェント向けの `AGENTS.md` を添える。
 
 ```text
 catalog.json     機械が読む構造化メタデータ
@@ -55,12 +55,21 @@ Portolanはファイルの種類だけでなく、ネットワーク越しに部
 
 仕様は2026年9月時点で1.0未満であり、要件は変更され得る。カタログは特定のサービスが終了しても標準形式のファイルとして利用できるが、導入時には宣言されたPortolan仕様バージョンとバリデーターの結果を確認する。
 
+## 作成から利用まで
+
+公式紹介では、CLIが取り込み、形式変換、メタデータ管理、公開を担い、rashidが仕様への適合を検査する。エージェント向けスキルはこれらの工程を組み合わせる。
+
+2026年9月14日のQiita記事は、架空の公園を使って変換・検証・Browserでの閲覧を試している。GeoParquetを分析用、PMTilesを表示用に分け、検索には名前・説明・キーワードなどの整備と利用側ツールが必要であると説明する。静的ファイルを置くだけで任意の日本語検索が完成するわけではない。
+
 ## 関連項目
 
 - [geoparquet-io](../tools/geoparquet-io.md)
 - [知識グラフとLLMエージェントによる地理空間データ探索](../methods/intelligent-geospatial-data-discovery.md)
 
 ## 出典
+
+- [Introducing Portolan（CNG公式）](https://cloudnativegeo.org/blog/2026/09/introducing-portolan/)（2026-09-02公開、2026-09-15確認）
+- [PortolanでAI-Readyな地理空間情報カタログを作ってみた](https://qiita.com/nokonoko_1203/items/614f699efd768cdaf3a6)（2026-09-14公開、2026-09-15確認）
 
 - [Portolan公式サイト](https://www.portolan-sdi.org/)（2026-09-08確認）
 - [Portolan specification](https://github.com/portolan-sdi/portolan-spec)（2026-09-08確認）

@@ -2,7 +2,7 @@
 layout: default
 title: CARTO MCP Server
 category: tools
-updated: 2026-09-10
+updated: 2026-09-15
 ---
 
 # CARTO MCP Server
@@ -33,6 +33,12 @@ ClaudeではCARTO MCP Serverをカスタムコネクタとして登録し、CART
 
 AIは分析方法の提案と構築を支援するが、保存後のWorkflowは明示的な処理パイプラインとして実行される。継続的な業務では、会話ログだけを成果物にせず、再現可能な処理と地図を残すことが重要である。
 
+## Snowflake CoWorkからの利用
+
+2026年9月14日の公式記事は、CoWorkの外部MCPコネクターへCARTOを登録し、Builderの地図やWorkflowsを作成・修正する方法を示している。SQLはSnowflakeの元テーブルに対して実行され、利用者ごとのCARTO認証を通じてロール、行アクセスポリシー、マスキングが適用される。
+
+設定にはSnowflakeのACCOUNTADMIN権限と、CARTOで作成するconfidential SPA OAuth clientが必要である。Claude向けの接続条件とは区別する。店舗を地域・業態で絞り、車の到達圏を計算して地図にするWorkflowを、再利用可能なMCPツールとして公開する例が示されている。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -41,6 +47,8 @@ AIは分析方法の提案と構築を支援するが、保存後のWorkflowは�
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
 
 ## 出典
+
+- [Access advanced geospatial capabilities in Snowflake CoWork](https://carto.com/blog/access-advanced-geospatial-capabilities-in-snowflake-cowork/)（2026-09-14公開、2026-09-15確認）
 
 - [Geospatial Analysis in Claude with the CARTO MCP Server](https://carto.com/blog/geospatial-analysis-claude-mcp-server/)（2026-09-09確認）
 - [All of CARTO, in every agent](https://carto.com/blog/all-of-carto-in-every-agent/)（2026-09-09確認）

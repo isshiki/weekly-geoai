@@ -21,6 +21,9 @@ title: 知識マップ
 
 ## 手法
 
+- [位置情報データのプライバシー保護](methods/location-data-privacy.md)
+- [農業統計・圃場・衛星データを統合する米作モニタリング](methods/california-rice-monitoring.md)
+
 - [地域別最多カテゴリ地図の読み方](methods/regional-winner-maps.md)
 - [店舗画像によるPOIローカライゼーション](methods/storefront-poi-localization.md)
 - [知識グラフとLLMエージェントによる地理空間データ探索](methods/intelligent-geospatial-data-discovery.md)
@@ -41,6 +44,11 @@ title: 知識マップ
 
 ## ツール
 
+- [LightBox](tools/lightbox.md)
+- [Spatial Polars](tools/spatial-polars.md)
+- [MovingPandas](tools/movingpandas.md)
+- [コンプレノ](tools/kompreno.md)
+
 - [日本のロケーションインテリジェンス製品・サービス](tools/location-intelligence-products-japan.md)
 - [H3](tools/h3.md)
 - [Google Places Insights](tools/google-places-insights.md)
@@ -56,6 +64,9 @@ title: 知識マップ
 - [Felt](tools/felt.md)
 
 ## 事例
+
+- [富士山閉山期の人流分析](cases/mount-fuji-offseason-human-flow.md)
+- [人流データによるオフィス訪問指数](cases/office-visitation-index.md)
 
 - [pricemap](cases/pricemap.md)
 - [小売出店候補地のロケーションインテリジェンス](cases/retail-site-selection.md)
