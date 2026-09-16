@@ -66,6 +66,9 @@ nav:
           - Portolan: atlas/data/portolan.md
           - 国土数値情報: atlas/data/national-land-numerical-information.md
       - ツール:
+          - GeoServer: atlas/tools/geoserver.md
+          - Mapbox Search Box API: atlas/tools/mapbox-search-box.md
+          - PASSER-MARKETING: atlas/tools/passer-marketing.md
           - LightBox: atlas/tools/lightbox.md
           - Spatial Polars: atlas/tools/spatial-polars.md
           - MovingPandas: atlas/tools/movingpandas.md
@@ -84,6 +87,7 @@ nav:
           - CARTO MCP Server: atlas/tools/carto-mcp-server.md
           - Felt: atlas/tools/felt.md
       - 事例:
+          - ブラックフライデーの小売来訪分析: atlas/cases/black-friday-retail-visitation.md
           - 富士山閉山期の人流分析: atlas/cases/mount-fuji-offseason-human-flow.md
           - 人流データによるオフィス訪問指数: atlas/cases/office-visitation-index.md
           - pricemap: atlas/cases/pricemap.md
@@ -91,6 +95,7 @@ nav:
           - 来店検知を使う位置連動リテールメディア: atlas/cases/location-triggered-retail-media.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月16日: updates/2026-09-16.md
       - 2026年9月15日: updates/2026-09-15.md
       - 2026年9月14日: updates/2026-09-14.md
       - 2026年9月11日: updates/2026-09-11.md

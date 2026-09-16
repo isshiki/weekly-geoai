@@ -44,6 +44,10 @@ title: 知識マップ
 
 ## ツール
 
+- [GeoServer](tools/geoserver.md)
+- [Mapbox Search Box API](tools/mapbox-search-box.md)
+- [PASSER-MARKETING](tools/passer-marketing.md)
+
 - [LightBox](tools/lightbox.md)
 - [Spatial Polars](tools/spatial-polars.md)
 - [MovingPandas](tools/movingpandas.md)
@@ -64,6 +68,8 @@ title: 知識マップ
 - [Felt](tools/felt.md)
 
 ## 事例
+
+- [ブラックフライデーの小売来訪分析](cases/black-friday-retail-visitation.md)
 
 - [富士山閉山期の人流分析](cases/mount-fuji-offseason-human-flow.md)
 - [人流データによるオフィス訪問指数](cases/office-visitation-index.md)

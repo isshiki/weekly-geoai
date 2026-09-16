@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-09-10
+updated: 2026-09-16
 ---
 
 # MapLibre GL JS
@@ -15,6 +15,14 @@ MapLibre GL JSは、ベクタータイルなどからインタラクティブな
 - レイヤー、カメラ、Marker、Popup、ユーザー操作をAPIから制御する。
 - メルカトル表示に加え、globe表示や3D terrainを扱う。
 - PMTilesなど、追加プロトコルを介した配信形式と組み合わせられる。
+
+## v6.10.0で確認した変更
+
+2026年9月15日（GitHub表示日）のv6.10.0では、globe表示の空を高度に応じてフェードさせるよう変更し、fill・fill-extrusionの三角形分割で頂点インデックスの重複参照を減らした。
+
+terrainに隠れたMarkerの判定は、GPUの深度バッファー読み戻しから、DEM上をたどるCPU処理へ変更された。地形付き地図の移動中にMarkerごとに発生するGPU待ちをなくす変更として説明されている。
+
+古いSafariでの部分的な空白表示、style diff中のterrain変更、高ズーム時のモバイルGPUのhillshade表示を修正した。地形へ重ねる描画用テクスチャも、地図の静止時やterrain削除時に解放するようになった。これらはリリースノートの記録であり、端末別の性能をAtlas側で検証したものではない。
 
 ## v6.9.0で確認した変更
 
@@ -50,6 +58,8 @@ MapLibre GL JSは、ベクタータイルなどからインタラクティブな
 - [Cesium](cesium.md)
 
 ## 出典
+
+- [MapLibre GL JS v6.10.0 release](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.10.0)（2026-09-15公開、2026-09-16確認）
 
 - [MapLibre GL JS documentation](https://maplibre.org/maplibre-gl-js/docs/)（2026-09-09確認）
 - [MapLibre GL JS v6.8.0 release](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.8.0)（2026-09-09確認）
