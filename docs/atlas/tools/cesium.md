@@ -2,7 +2,7 @@
 layout: default
 title: Cesium
 category: tools
-updated: 2026-09-10
+updated: 2026-09-17
 ---
 
 # Cesium
@@ -34,7 +34,22 @@ Cesiumは2026年9月2日、3D Tiles 2.0へ向けたベクタータイルの技�
 
 月次リリースには正式機能、実験的API、技術プレビュー、今後提供予定の変更が混在する。導入時は、利用する製品と機能の成熟度を個別に確認する。
 
+## 設計モデルの更新と変更検出
+
+2026年9月16日、設計モデル向け第2弾技術プレビューが発表された。既存アセットに新しいモデルバージョンを追加し、要素の追加・削除・変更をAPIで調べられる。
+
+| 紹介された機能 | 用途 |
+| --- | --- |
+| GPUによるクリッピング | 穴のあるポリゴンも使い、地形と設計モデルを重ねる |
+| 元形状へのスナップ | 簡略化された表示形状ではなく、ソースモデルの辺・頂点・中点を参照する |
+| CRS Search API | 座標参照系を検索してモデルの配置に使う |
+| 取り込み時のフィルター | メッシュ・線・文字のうち不要な内容を除く |
+
+スナップ精度はCesiumがミリメートル水準と説明している。自動フットプリント生成、対話型の位置合わせ、スナップを使う計測ツールなどは今後の予定であり、今回の提供機能と区別する。
+
 ## 出典
+
+- [More design model workflows with Cesium](https://cesium.com/blog/2026/09/16/more-design-model-workflows-with-cesium/)（2026-09-17確認）
 
 - [Cesium Releases in September 2026](https://cesium.com/blog/2026/09/02/cesium-releases-in-september-2026/)（2026-09-10確認）
 - [Vector Tiles: A Technology Preview for Cesium and 3D Tiles](https://cesium.com/blog/2026/09/02/vector-tiles-technology-preview-cesium-and-3d-tiles/)（2026-09-08確認）

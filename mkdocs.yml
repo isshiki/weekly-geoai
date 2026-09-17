@@ -48,6 +48,7 @@ nav:
               - イコールアース図法: atlas/concepts/equal-earth-projection.md
           - リアリティーマッピングとデジタルツイン: atlas/concepts/reality-mapping-and-digital-twins.md
       - 手法:
+          - 空間分析への埋め込みの組み込み: atlas/methods/spatial-embeddings.md
           - 位置情報データのプライバシー保護: atlas/methods/location-data-privacy.md
           - 農業統計・圃場・衛星データを統合する米作モニタリング: atlas/methods/california-rice-monitoring.md
           - 地域別最多カテゴリ地図の読み方: atlas/methods/regional-winner-maps.md
@@ -58,6 +59,7 @@ nav:
           - 人流データの時間処理と集計定義: atlas/methods/human-flow-time-processing.md
           - 全国メッシュデータのWeb配信: atlas/methods/national-grid-web-delivery.md
       - データ:
+          - Overtureのデータスキーマ: atlas/data/overture-schema.md
           - 人流データ:
               - 種類と加工段階: atlas/data/human-flow-data-types.md
               - 計測誤差と推計誤差: atlas/data/human-flow-data-quality.md
@@ -66,6 +68,10 @@ nav:
           - Portolan: atlas/data/portolan.md
           - 国土数値情報: atlas/data/national-land-numerical-information.md
       - ツール:
+          - Mapbox Traffic: atlas/tools/mapbox-traffic.md
+          - ArcGIS StoryMaps: atlas/tools/arcgis-storymaps.md
+          - maplibre-gl-streetview: atlas/tools/maplibre-gl-streetview.md
+          - MCP for ArcGIS Location Services: atlas/tools/arcgis-location-services-mcp.md
           - GeoServer: atlas/tools/geoserver.md
           - Mapbox Search Box API: atlas/tools/mapbox-search-box.md
           - PASSER-MARKETING: atlas/tools/passer-marketing.md
@@ -87,6 +93,8 @@ nav:
           - CARTO MCP Server: atlas/tools/carto-mcp-server.md
           - Felt: atlas/tools/felt.md
       - 事例:
+          - 来訪傾向を使う音声広告セグメント: atlas/cases/behavior-affinity-audio-ads.md
+          - 配送経路の最適化と現場フィードバック: atlas/cases/here-fleet-route-intelligence.md
           - ブラックフライデーの小売来訪分析: atlas/cases/black-friday-retail-visitation.md
           - 富士山閉山期の人流分析: atlas/cases/mount-fuji-offseason-human-flow.md
           - 人流データによるオフィス訪問指数: atlas/cases/office-visitation-index.md
@@ -95,6 +103,7 @@ nav:
           - 来店検知を使う位置連動リテールメディア: atlas/cases/location-triggered-retail-media.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月17日: updates/2026-09-17.md
       - 2026年9月16日: updates/2026-09-16.md
       - 2026年9月15日: updates/2026-09-15.md
       - 2026年9月14日: updates/2026-09-14.md

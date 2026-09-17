@@ -21,6 +21,8 @@ title: 知識マップ
 
 ## 手法
 
+- [空間分析への埋め込みの組み込み](methods/spatial-embeddings.md)
+
 - [位置情報データのプライバシー保護](methods/location-data-privacy.md)
 - [農業統計・圃場・衛星データを統合する米作モニタリング](methods/california-rice-monitoring.md)
 
@@ -34,6 +36,8 @@ title: 知識マップ
 
 ## データ
 
+- [Overtureのデータスキーマ](data/overture-schema.md)
+
 - 人流データ
     - [種類と加工段階](data/human-flow-data-types.md)
     - [計測誤差と推計誤差](data/human-flow-data-quality.md)
@@ -43,6 +47,11 @@ title: 知識マップ
 - [国土数値情報](data/national-land-numerical-information.md)
 
 ## ツール
+
+- [Mapbox Traffic](tools/mapbox-traffic.md)
+- [ArcGIS StoryMaps](tools/arcgis-storymaps.md)
+- [maplibre-gl-streetview](tools/maplibre-gl-streetview.md)
+- [MCP for ArcGIS Location Services](tools/arcgis-location-services-mcp.md)
 
 - [GeoServer](tools/geoserver.md)
 - [Mapbox Search Box API](tools/mapbox-search-box.md)
@@ -68,6 +77,9 @@ title: 知識マップ
 - [Felt](tools/felt.md)
 
 ## 事例
+
+- [来訪傾向を使う音声広告セグメント](cases/behavior-affinity-audio-ads.md)
+- [配送経路の最適化と現場フィードバック](cases/here-fleet-route-intelligence.md)
 
 - [ブラックフライデーの小売来訪分析](cases/black-friday-retail-visitation.md)
 
