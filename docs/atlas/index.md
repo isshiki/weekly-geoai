@@ -36,6 +36,7 @@ title: 知識マップ
 
 ### AIによる分析と位置推定
 
+- [空間特徴とLLMエージェントによる次の訪問地点予測](methods/spatial-agent-mobility-prediction.md)
 - [空間分析への埋め込みの組み込み](methods/spatial-embeddings.md)
 - [店舗画像によるPOIローカライゼーション](methods/storefront-poi-localization.md)
 
@@ -66,11 +67,13 @@ title: 知識マップ
 
 ### 地理空間データとPOI
 
+- [ハザードデータの再利用条件](data/hazard-data-reuse.md)
 - [国土数値情報](data/national-land-numerical-information.md)
 - [Foursquare Placesへのパートナーデータ取り込み](data/foursquare-partner-places.md)
 
 ### スキーマとカタログ
 
+- [地理空間データの来歴とレコード単位のメタデータ](data/geospatial-record-provenance.md)
 - [Overtureのデータスキーマ](data/overture-schema.md)
 - [Portolan](data/portolan.md)
 
@@ -103,11 +106,13 @@ title: 知識マップ
 
 ### AI・MCP連携
 
+- [Mapbox Figma MCP Server](tools/mapbox-figma-mcp.md)
 - [MCP for ArcGIS Location Services](tools/arcgis-location-services-mcp.md)
 - [CARTO MCP Server](tools/carto-mcp-server.md)
 
 ### 人流・商圏・不動産分析
 
+- [STLOCAL](tools/stlocal.md)
 - [日本のロケーションインテリジェンス製品・サービス](tools/location-intelligence-products-japan.md)
 - [コンプレノ](tools/kompreno.md)
 - [PASSER-MARKETING](tools/passer-marketing.md)

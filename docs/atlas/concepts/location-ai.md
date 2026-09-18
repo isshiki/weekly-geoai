@@ -2,7 +2,7 @@
 layout: default
 title: Location AI
 category: concepts
-updated: 2026-09-10
+updated: 2026-09-18
 ---
 
 # Location AI
@@ -41,6 +41,21 @@ MCPは主にエージェントとデータ・ツールを接続する。Agent Sk
 - 地図や集計が空でも成功扱いにならないよう、スキーマ検証、エラー、件数、表示状態をエージェントへ返す。
 - 個人に関係する位置情報では、同意、利用目的、集計方法、再識別リスク、保存期間を確認する。
 
+## BUILD with Mapbox 2026での発表
+
+Mapboxの総括記事と9月17日の発表は、位置情報をアプリ、エージェント、開発ツールへ渡す構成を示した。
+
+| 対象 | 内容と提供段階 |
+| --- | --- |
+| Places API | 営業情報や入口、活動傾向などを返すPublic Preview |
+| Search Box API | 複数条件の自然言語検索をPublic Previewで提供 |
+| Traffic 2.0 | 既存の対象API・SDKへ適用済み |
+| Static Images APIのAI Mode | 地図画像をプロンプトで変える機能の事前発表 |
+| Agent Toolkit | 地図・ナビゲーションの35以上の操作をAIへ公開すると発表 |
+| 開発・接続 | CLI、Demo Access、Notion Agents連携、Figma向けMCPを紹介 |
+
+総合発表に含まれていても、すべてが同じ提供段階とは限らない。[Figma向けMCP](../tools/mapbox-figma-mcp.md)の利用条件、[自然言語検索](../tools/mapbox-search-box.md)の対象API、[Traffic](../tools/mapbox-traffic.md)の評価条件は個別に確認する。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](location-intelligence.md)
@@ -49,6 +64,9 @@ MCPは主にエージェントとデータ・ツールを接続する。Agent Sk
 - [知識グラフとLLMエージェントによる地理空間データ探索](../methods/intelligent-geospatial-data-discovery.md)
 
 ## 出典
+
+- [Top announcements from BUILD with Mapbox 2026](https://www.mapbox.com/blog/top-announcements-from-build-with-mapbox-2026)（2026-09-18確認）
+- [Mapbox Announces Location Infrastructure for AI](https://www.prnewswire.com/news-releases/mapbox-announces-location-infrastructure-for-ai-mapbox-announces-location-infrastructure-for-ai-302882326.html)（2026-09-18確認）
 
 - [Location AI at Mapbox](https://docs.mapbox.com/help/getting-started/location-ai/)（2026-09-10確認）
 - [xMap](https://www.xmap.ai/ja)（2026-09-10確認）

@@ -2,7 +2,7 @@
 layout: default
 title: GISデータセットカタログ
 category: methods
-updated: 2026-09-10
+updated: 2026-09-18
 ---
 
 # GISデータセットカタログ
@@ -48,6 +48,17 @@ datasetsへ確定
 - 登録済みデータを読み取り専用で扱う処理と、更新・削除の権限を分離する。
 - CRSが存在するだけで正しいとは限らないため、範囲と単位も検証する。
 
+## 読み取り専用のMCP公開
+
+2026年9月17日のStep 2記事は、既存の`CatalogService`の外側へFastMCPの層を追加する。CLIとMCPでカタログ処理を二重実装せず、共通サービスを呼び出す構成である。
+
+- Tool：`gis_list_datasets`、`gis_describe_dataset`、`gis_list_versions`、`gis_runtime_status`。
+- Resource：`gis://catalog`と`gis://dataset/{dataset_id}`。
+- 公開する情報：データの意味、CRS、geometry、件数など。コンテナー内部の保存パスは返さない。
+- 検証：メモリ内、プロセス内HTTP、Docker Composeの別コンテナーからの接続を分けて確認する。
+
+記事の実装はFastMCP 3.4.7を固定し、Streamable HTTPを利用する。登録やGIS解析をMCP Toolへ追加する前に、カタログの読み取りを検証する段階である。記事が示す実装内容を整理したもので、Atlasでコードを実行・検証したものではない。
+
 ## 関連項目
 
 - [AIが扱いやすい地理空間開発環境](ai-ready-geospatial-development.md)
@@ -55,5 +66,7 @@ datasetsへ確定
 - [全国メッシュデータのWeb配信](national-grid-web-delivery.md)
 
 ## 出典
+
+- [FastMCP 3 + Docker でGIS MCP Serverを作る ― Step 2](https://qiita.com/rino_yume/items/71a5872200aa24af24c1)（2026-09-18確認）
 
 - [FastMCP 3 + Docker でGIS MCP Serverを作る ― Step 1 Dataset CatalogとVector GIS登録基盤](https://qiita.com/rino_yume/items/24ee23e203af14682e97)（2026-09-10確認）

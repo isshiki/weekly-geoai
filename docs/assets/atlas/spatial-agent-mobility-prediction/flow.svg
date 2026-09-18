@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+<title id="title">空間特徴を事前計算する次POI予測</title>
+<desc id="desc">行動履歴からエージェント1がプロフィールを作る。候補地点の距離・道路距離・所属地域をGISで事前計算し、プロフィールとともにエージェント2へ渡す。エージェント3が各結果と候補情報を統合して上位5地点を返す。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#1E3A5F"/></marker></defs>
+<rect width="900" height="650" rx="16" fill="#fff"/>
+<g font-family="sans-serif" fill="#1E3A5F" text-anchor="middle">
+<text x="450" y="45" font-size="26" font-weight="bold">空間計算はGIS、候補の解釈はLLM</text>
+<g fill="#eef3f8" stroke="#1E3A5F" stroke-width="2">
+<rect x="40" y="80" width="360" height="65" rx="10"/>
+<rect x="500" y="80" width="360" height="65" rx="10"/>
+<rect x="40" y="190" width="360" height="100" rx="10"/>
+<rect x="500" y="190" width="360" height="100" rx="10"/>
+<rect x="245" y="345" width="410" height="85" rx="10"/>
+<rect x="245" y="485" width="410" height="85" rx="10"/>
+</g>
+<g font-size="22">
+<text x="220" y="121">過去の行動履歴</text><text x="680" y="121">候補POI・道路網・地域境界</text>
+<text x="220" y="227" font-weight="bold">Agent 1：行動パターン抽出</text><text x="220" y="265" font-size="19">時間帯・カテゴリ・頻出地点</text>
+<text x="680" y="227" font-weight="bold">GISによる事前計算</text><text x="680" y="265" font-size="19">距離・道路距離・所属地域</text>
+<text x="450" y="380" font-weight="bold">Agent 2：空間推論</text><text x="450" y="409" font-size="19">行動プロフィールと空間特徴を照合</text>
+<text x="450" y="520" font-weight="bold">Agent 3：判断統合</text><text x="450" y="549" font-size="19">行動・空間分析・候補情報を統合</text>
+<text x="450" y="627" font-weight="bold">上位5地点を出力</text>
+</g></g>
+<g fill="none" stroke="#1E3A5F" stroke-width="3" marker-end="url(#arrow)">
+<path d="M220 145V185"/><path d="M680 145V185"/>
+<path d="M220 290V315H355V340"/><path d="M680 290V315H545V340"/>
+<path d="M450 430V480"/><path d="M450 570V600"/>
+<path d="M40 240H20V527H240"/><path d="M860 113H880V527H660"/>
+</g>
+</svg>

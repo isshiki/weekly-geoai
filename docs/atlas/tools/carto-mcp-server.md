@@ -2,7 +2,7 @@
 layout: default
 title: CARTO MCP Server
 category: tools
-updated: 2026-09-15
+updated: 2026-09-18
 ---
 
 # CARTO MCP Server
@@ -39,6 +39,14 @@ AIは分析方法の提案と構築を支援するが、保存後のWorkflowは�
 
 設定にはSnowflakeのACCOUNTADMIN権限と、CARTOで作成するconfidential SPA OAuth clientが必要である。Claude向けの接続条件とは区別する。店舗を地域・業態で絞り、車の到達圏を計算して地図にするWorkflowを、再利用可能なMCPツールとして公開する例が示されている。
 
+## Databricks Genie Codeからの利用
+
+2026年9月17日の公式記事は、CARTO MCP ServerをDatabricks AI Gatewayへ登録し、Genie CodeでコネクターとAgent Skillsを有効化する手順を示している。
+
+地図作成、ジオコーディング、到達圏、経路、Workflowを扱い、SQLは利用者のDatabricks環境でUnity Catalogのテーブルに対して実行する。WorkflowもネイティブなDatabricks workflowへ変換して実行すると説明している。
+
+必要条件はModel Serving対応リージョンのUnity Catalog workspaceと、利用範囲に応じたCARTOの認証である。全ツールにはOAuthクライアント、閲覧・クエリにはAPI access tokenという違いがある。Snowflake CoWork向けの接続条件と混同しない。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -47,6 +55,8 @@ AIは分析方法の提案と構築を支援するが、保存後のWorkflowは�
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
 
 ## 出典
+
+- [Extend Databricks Genie Code with CARTO's Agentic GIS platform](https://carto.com/blog/extend-databricks-genie-code-with-cartos-agentic-gis-platform/)（2026-09-18確認）
 
 - [Access advanced geospatial capabilities in Snowflake CoWork](https://carto.com/blog/access-advanced-geospatial-capabilities-in-snowflake-cowork/)（2026-09-14公開、2026-09-15確認）
 

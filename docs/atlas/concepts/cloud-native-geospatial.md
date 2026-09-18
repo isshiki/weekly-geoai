@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-09-15
+updated: 2026-09-18
 ---
 
 # Cloud Native Geospatial
@@ -45,6 +45,17 @@ CNGでは、オブジェクトストレージとHTTPSを使い、ファイルの
 
 Cloud-Native Geospatial ForumはRadiant Earthのイニシアチブであり、ベンダー中立なイベント、文書、教育、コミュニティ運営を行う。CNG自体は標準化団体ではなく、STAC、COG、GeoParquet、Zarrの規格やコードを直接管理する組織でもない。実務コミュニティで有効性が確かめられた実践の一部が、OGCなどの標準化へつながる関係にある。
 
+## ベクター形式の使い分け
+
+2026年9月18日のPSSの記事は、GeoParquetとFlatGeobufを処理目的で比較している。
+
+| 形式 | 記事が示す特徴と用途 |
+| --- | --- |
+| GeoParquet | 列指向のParquetを基盤に、SQL分析やクラウドDWHなど既存のデータ処理環境へつなぐ |
+| FlatGeobuf | 地物単位の構造と任意の空間インデックスを使い、逐次読み込みやWeb地図表示へつなぐ |
+
+用途ごとの傾向であり、どちらかが常に高速であるという比較結果ではない。必要な範囲だけを読むためには、ファイルの構成、配信方法、利用する処理系の対応も確認する。
+
 ## 関連項目
 
 - [Portolan](../data/portolan.md)
@@ -53,6 +64,8 @@ Cloud-Native Geospatial ForumはRadiant Earthのイニシアチブであり、�
 - [GISデータセットカタログ](../methods/gis-dataset-catalog-for-agents.md)
 
 ## 出典
+
+- [【CNG】地理データを「特別扱いしない」という発想 - ベクタ編](https://note.com/pacificspatial/n/na46641323f6f)（2026-09-18確認）
 
 - [【CNG】レイヤーで理解するCloud Native Geospatial](https://note.com/pacificspatial/n/na2a0217a4adf)（2026-09-14公開、2026-09-15確認）
 
