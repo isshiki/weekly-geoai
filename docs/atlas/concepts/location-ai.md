@@ -2,7 +2,7 @@
 layout: default
 title: Location AI
 category: concepts
-updated: 2026-09-18
+updated: 2026-09-19
 ---
 
 # Location AI
@@ -30,7 +30,7 @@ MCPは主にエージェントとデータ・ツールを接続する。Agent Sk
 
 - MapboxはLocation AIの構成として、位置検索やルート計算などを公開するMCP Server、開発支援用のDevKit MCP Server、Agent Skills、Feedback Agent、MapGPTを挙げている。
 - xMapはPOI、人流、道路交通、土地などのデータを、MCP、REST API、Python SDK、SQL、ダウンロードで提供するとしている。件数や解像度などはベンダー公表値であり、地域、期間、更新頻度、生成方法を導入前に確認する必要がある。
-- TomTom Orbisについては、位置情報をAI向けの空間知識レイヤーとして扱い、API、MCP Server、Agent Toolkitから利用する構想が報じられている。現時点の情報源は第三者記事であるため、機能や提供条件はTomTomの最新資料で再確認する。
+- [TomTom Orbis APIs](../tools/tomtom-orbis.md)は、共通仕様の6 APIとOpenAPI・MCPによる利用を公式に説明している。会話中の複数API呼び出しと、単一APIをコードへ組み込む用途を区別する。
 - CARTO MCP Serverは、権限を引き継いだ空間分析と地図作成をエージェントへ公開し、処理を再利用可能なWorkflowとして残す。
 
 ## 評価するときの確認点
@@ -72,3 +72,4 @@ Mapboxの総括記事と9月17日の発表は、位置情報をアプリ、エ�
 - [xMap](https://www.xmap.ai/ja)（2026-09-10確認）
 - [TomTom: location intelligence an important growth market](https://www.marketscreener.com/news/tomtom-location-intelligence-an-important-growth-market-ce785bd8db81f32d)（2026-09-10確認、第三者記事）
 - [Geospatial Analysis in Claude with the CARTO MCP Server](https://carto.com/blog/geospatial-analysis-claude-mcp-server/)（2026-09-10確認）
+- [TomTom Orbis APIs are now in general availability](https://www.tomtom.com/newsroom/product-focus/tomtom-orbis-apis-are-now-in-general-availability/)（2026-09-19確認）

@@ -81,6 +81,7 @@ title: 知識マップ
 
 ### 地図表示とWeb GIS
 
+- [Mapbox Standard](tools/mapbox-standard.md)
 - [MapLibre GL JS](tools/maplibre-gl-js.md)
 - [maplibre-gl-streetview](tools/maplibre-gl-streetview.md)
 - [GeoLibre](tools/geolibre.md)
@@ -90,6 +91,8 @@ title: 知識マップ
 
 ### 空間分析・データ処理・配信
 
+- [pandas](tools/pandas.md)
+- [FME](tools/fme.md)
 - [Spatial Polars](tools/spatial-polars.md)
 - [MovingPandas](tools/movingpandas.md)
 - [H3](tools/h3.md)
@@ -98,6 +101,7 @@ title: 知識マップ
 
 ### 場所検索・交通・ナビゲーション
 
+- [TomTom Orbis APIs](tools/tomtom-orbis.md)
 - [Mapbox Search Box API](tools/mapbox-search-box.md)
 - [Galuchat](tools/galuchat.md)
 - [Mapbox Traffic](tools/mapbox-traffic.md)
@@ -106,6 +110,7 @@ title: 知識マップ
 
 ### AI・MCP連携
 
+- [Google Maps Agentic UI Toolkit](tools/google-maps-agentic-ui.md)
 - [Mapbox Figma MCP Server](tools/mapbox-figma-mcp.md)
 - [MCP for ArcGIS Location Services](tools/arcgis-location-services-mcp.md)
 - [CARTO MCP Server](tools/carto-mcp-server.md)

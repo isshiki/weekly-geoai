@@ -79,6 +79,7 @@ nav:
               - Portolan: atlas/data/portolan.md
       - ツール:
           - 地図表示とWeb GIS:
+              - Mapbox Standard: atlas/tools/mapbox-standard.md
               - MapLibre GL JS: atlas/tools/maplibre-gl-js.md
               - maplibre-gl-streetview: atlas/tools/maplibre-gl-streetview.md
               - GeoLibre: atlas/tools/geolibre.md
@@ -86,18 +87,22 @@ nav:
               - Felt: atlas/tools/felt.md
               - ArcGIS StoryMaps: atlas/tools/arcgis-storymaps.md
           - 空間分析・データ処理・配信:
+              - pandas: atlas/tools/pandas.md
+              - FME: atlas/tools/fme.md
               - Spatial Polars: atlas/tools/spatial-polars.md
               - MovingPandas: atlas/tools/movingpandas.md
               - H3: atlas/tools/h3.md
               - geoparquet-io: atlas/tools/geoparquet-io.md
               - GeoServer: atlas/tools/geoserver.md
           - 場所検索・交通・ナビゲーション:
+              - TomTom Orbis APIs: atlas/tools/tomtom-orbis.md
               - Mapbox Search Box API: atlas/tools/mapbox-search-box.md
               - Galuchat: atlas/tools/galuchat.md
               - Mapbox Traffic: atlas/tools/mapbox-traffic.md
               - 高徳地図（AMAP）: atlas/tools/amap.md
               - ゼンリン地図ナビ: atlas/tools/zenrin-map-navigation.md
           - AI・MCP連携:
+              - Google Maps Agentic UI Toolkit: atlas/tools/google-maps-agentic-ui.md
               - Mapbox Figma MCP Server: atlas/tools/mapbox-figma-mcp.md
               - MCP for ArcGIS Location Services: atlas/tools/arcgis-location-services-mcp.md
               - CARTO MCP Server: atlas/tools/carto-mcp-server.md
@@ -123,6 +128,7 @@ nav:
               - 配送経路の最適化と現場フィードバック: atlas/cases/here-fleet-route-intelligence.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月19日: updates/2026-09-19.md
       - 2026年9月18日: updates/2026-09-18.md
       - 2026年9月17日: updates/2026-09-17.md
       - 2026年9月16日: updates/2026-09-16.md
