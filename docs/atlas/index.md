@@ -53,6 +53,8 @@ title: 知識マップ
 
 ### 主題図・モニタリング・配信
 
+- [街歩きによるバリア情報マッピング](methods/barrier-information-mapping.md)
+- [手描き地図の座標校正と表示](methods/illustrated-map-coordinates.md)
 - [地域別最多カテゴリ地図の読み方](methods/regional-winner-maps.md)
 - [農業統計・圃場・衛星データを統合する米作モニタリング](methods/california-rice-monitoring.md)
 - [全国メッシュデータのWeb配信](methods/national-grid-web-delivery.md)
@@ -81,6 +83,7 @@ title: 知識マップ
 
 ### 地図表示とWeb GIS
 
+- [OH3 今昔マップビューア](tools/oh3-konjaku.md)
 - [Mapbox Standard](tools/mapbox-standard.md)
 - [MapLibre GL JS](tools/maplibre-gl-js.md)
 - [maplibre-gl-streetview](tools/maplibre-gl-streetview.md)
@@ -101,6 +104,7 @@ title: 知識マップ
 
 ### 場所検索・交通・ナビゲーション
 
+- [Valhalla](tools/valhalla.md)
 - [TomTom Orbis APIs](tools/tomtom-orbis.md)
 - [Mapbox Search Box API](tools/mapbox-search-box.md)
 - [Galuchat](tools/galuchat.md)
@@ -140,6 +144,7 @@ title: 知識マップ
 
 ### 観光・働き方・物流
 
+- [旅客船のAIS位置情報の可視化](cases/ais-passenger-vessels.md)
 - [富士山閉山期の人流分析](cases/mount-fuji-offseason-human-flow.md)
 - [人流データによるオフィス訪問指数](cases/office-visitation-index.md)
 - [配送経路の最適化と現場フィードバック](cases/here-fleet-route-intelligence.md)

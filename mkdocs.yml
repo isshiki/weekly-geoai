@@ -61,6 +61,8 @@ nav:
               - 人流データの時間処理と集計定義: atlas/methods/human-flow-time-processing.md
               - 位置情報データのプライバシー保護: atlas/methods/location-data-privacy.md
           - 主題図・モニタリング・配信:
+              - 街歩きによるバリア情報マッピング: atlas/methods/barrier-information-mapping.md
+              - 手描き地図の座標校正と表示: atlas/methods/illustrated-map-coordinates.md
               - 地域別最多カテゴリ地図の読み方: atlas/methods/regional-winner-maps.md
               - 農業統計・圃場・衛星データを統合する米作モニタリング: atlas/methods/california-rice-monitoring.md
               - 全国メッシュデータのWeb配信: atlas/methods/national-grid-web-delivery.md
@@ -79,6 +81,7 @@ nav:
               - Portolan: atlas/data/portolan.md
       - ツール:
           - 地図表示とWeb GIS:
+              - OH3 今昔マップビューア: atlas/tools/oh3-konjaku.md
               - Mapbox Standard: atlas/tools/mapbox-standard.md
               - MapLibre GL JS: atlas/tools/maplibre-gl-js.md
               - maplibre-gl-streetview: atlas/tools/maplibre-gl-streetview.md
@@ -95,6 +98,7 @@ nav:
               - geoparquet-io: atlas/tools/geoparquet-io.md
               - GeoServer: atlas/tools/geoserver.md
           - 場所検索・交通・ナビゲーション:
+              - Valhalla: atlas/tools/valhalla.md
               - TomTom Orbis APIs: atlas/tools/tomtom-orbis.md
               - Mapbox Search Box API: atlas/tools/mapbox-search-box.md
               - Galuchat: atlas/tools/galuchat.md
@@ -123,11 +127,13 @@ nav:
               - 来店検知を使う位置連動リテールメディア: atlas/cases/location-triggered-retail-media.md
               - 来訪傾向を使う音声広告セグメント: atlas/cases/behavior-affinity-audio-ads.md
           - 観光・働き方・物流:
+              - 旅客船のAIS位置情報の可視化: atlas/cases/ais-passenger-vessels.md
               - 富士山閉山期の人流分析: atlas/cases/mount-fuji-offseason-human-flow.md
               - 人流データによるオフィス訪問指数: atlas/cases/office-visitation-index.md
               - 配送経路の最適化と現場フィードバック: atlas/cases/here-fleet-route-intelligence.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月20日: updates/2026-09-20.md
       - 2026年9月19日: updates/2026-09-19.md
       - 2026年9月18日: updates/2026-09-18.md
       - 2026年9月17日: updates/2026-09-17.md
