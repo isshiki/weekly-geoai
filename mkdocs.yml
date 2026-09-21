@@ -61,6 +61,7 @@ nav:
               - 人流データの時間処理と集計定義: atlas/methods/human-flow-time-processing.md
               - 位置情報データのプライバシー保護: atlas/methods/location-data-privacy.md
           - 主題図・モニタリング・配信:
+              - CADからGeoPackageへの変換と検証: atlas/methods/cad-to-geopackage.md
               - 街歩きによるバリア情報マッピング: atlas/methods/barrier-information-mapping.md
               - 手描き地図の座標校正と表示: atlas/methods/illustrated-map-coordinates.md
               - 地域別最多カテゴリ地図の読み方: atlas/methods/regional-winner-maps.md
@@ -133,6 +134,7 @@ nav:
               - 配送経路の最適化と現場フィードバック: atlas/cases/here-fleet-route-intelligence.md
   - 更新記録:
       - 更新記録一覧: updates/index.md
+      - 2026年9月21日: updates/2026-09-21.md
       - 2026年9月20日: updates/2026-09-20.md
       - 2026年9月19日: updates/2026-09-19.md
       - 2026年9月18日: updates/2026-09-18.md

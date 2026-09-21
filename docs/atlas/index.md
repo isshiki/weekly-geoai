@@ -53,6 +53,7 @@ title: 知識マップ
 
 ### 主題図・モニタリング・配信
 
+- [CADからGeoPackageへの変換と検証](methods/cad-to-geopackage.md)
 - [街歩きによるバリア情報マッピング](methods/barrier-information-mapping.md)
 - [手描き地図の座標校正と表示](methods/illustrated-map-coordinates.md)
 - [地域別最多カテゴリ地図の読み方](methods/regional-winner-maps.md)

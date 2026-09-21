@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-09-18
+updated: 2026-09-21
 ---
 
 # Cloud Native Geospatial
@@ -56,6 +56,21 @@ Cloud-Native Geospatial ForumはRadiant Earthのイニシアチブであり、�
 
 用途ごとの傾向であり、どちらかが常に高速であるという比較結果ではない。必要な範囲だけを読むためには、ファイルの構成、配信方法、利用する処理系の対応も確認する。
 
+## AIエージェントが利用する基盤
+
+2026年9月20日のPSS解説は、CNGのカタログ・データ・処理の仕組みを、AIエージェントも利用する基盤として捉える。新しい利用者を加える際にも、各技術の役割を区別する。
+
+| 役割 | 解説で関連付けられるもの |
+| --- | --- |
+| 場所の特徴を数値で表す | 地理空間の基盤モデルや埋め込み |
+| データを記述し発見する | STACとその拡張 |
+| 外部処理を呼び出す | MCPサーバー |
+| 既存資産を分析・配信へつなぐ | FMEなどの変換・統合ワークフロー |
+
+Sparkgeoのレジストリ紹介は、確認時点の本文で82サーバー・10カテゴリを挙げる。これは同社が収集した登録件数であり、地理空間MCPの総数や、全サーバーの品質・互換性を保証する数値ではない。
+
+[空間分析への埋め込みの組み込み](../methods/spatial-embeddings.md)と[GISデータセットカタログ](../methods/gis-dataset-catalog-for-agents.md)も参照。モデルの特徴表現を使うことと、業務タスクでの精度を検証することは別に考える。
+
 ## 関連項目
 
 - [Portolan](../data/portolan.md)
@@ -73,3 +88,6 @@ Cloud-Native Geospatial ForumはRadiant Earthのイニシアチブであり、�
 - [Introducing CNG](https://cloudnativegeo.org/blog/2024/09/introducing-cng/)（2026-09-11確認）
 - [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org/overview.html)（2026-09-11確認）
 - [【CNG】Cloud Native Geospatialって結局何なのか](https://note.com/pacificspatial/n/nbaab8d8f3cab)（2026-09-11確認）
+
+- [【CNG】地図を読むのは、もう人間だけではない - 向かっている先は？](https://note.com/pacificspatial/n/n172bcc83a126)（2026-09-20公開、2026-09-21確認）
+- [77+ Geospatial MCP Servers, Mapped and Categorized](https://sparkgeo.com/blog/geospatial-mcp-servers-mapped-and-categorized/)（2026-09-21確認）
