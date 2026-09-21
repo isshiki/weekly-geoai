@@ -35,7 +35,7 @@ hide:
 </div>
 
 [知識マップを見る](atlas/index.md){ .md-button .md-button--primary }
-[更新記録を見る](updates/index.md){ .md-button }
+[更新履歴を見る](updates/index.md){ .md-button }
 
 ## 週刊GeoAI
 

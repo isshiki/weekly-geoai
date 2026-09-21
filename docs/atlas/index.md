@@ -150,6 +150,6 @@ title: 知識マップ
 - [人流データによるオフィス訪問指数](cases/office-visitation-index.md)
 - [配送経路の最適化と現場フィードバック](cases/here-fleet-route-intelligence.md)
 
-## 更新記録
+## 更新履歴
 
-[日付別の更新記録](../updates/index.md)
+[日付別の更新履歴](../updates/index.md)
