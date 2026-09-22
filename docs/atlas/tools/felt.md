@@ -2,7 +2,7 @@
 layout: default
 title: Felt
 category: tools
-updated: 2026-09-14
+updated: 2026-09-22
 ---
 
 # Felt
@@ -42,6 +42,19 @@ Feltは自然言語から地図や空間分析を作るFelt AIを提供する。
 
 MCP経由の操作にはFeltユーザーの権限が引き継がれ、結果は閲覧・編集可能な地図として残る。公式発表時点ではMCP ServerはEnterprise workspace向けであるため、利用可否と契約条件は最新情報を確認する。
 
+## ラスタ分析とAIからの呼び出し
+
+2026年9月15日、ラスタ分析の拡張が発表された。Felt AI AssistantとMCPから呼び出せる処理として、範囲別の統計、バンド分析、空間フィルタ、標高プロファイル、ベクターデータへのラスタ値の付与が紹介されている。
+
+| 操作 | 分析につながる出力 |
+| --- | --- |
+| Sample raster | 点の値、線に沿う値、ポリゴン内の集計値 |
+| バンド分析 | NDVIなどの派生バンドも使う統計カードやグラフ |
+| 空間フィルタ | 指定範囲に絞ったラスタ表示と集計 |
+| 経路の計測 | 経路に沿う標高などの断面プロファイル |
+
+自然言語で処理を呼び出せても、分析条件の確認は必要である。対象バンド、解像度、欠測値の扱い、集計範囲や統計量が質問の意図に合うかを確認する。土地被覆の分類コードの平均など、計算可能でも意味を持たない集計を避ける。
+
 ## 導入時の確認点
 
 - 正式な原本とFelt上の派生データを区別する。
@@ -58,6 +71,9 @@ MCP経由の操作にはFeltユーザーの権限が引き継がれ、結果は�
 - [AIが扱いやすい地理空間開発環境](../methods/ai-ready-geospatial-development.md)
 
 ## 出典
+
+- [Felt: AI raster analysis is here](https://felt.com/blog/raster-analysis)（2026-09-15公開、2026-09-22確認）
+- [PSS：Feltのラスタ新機能](https://note.com/pacificspatial/n/n7e9941da8c5a)（2026-09-22公開・確認）
 
 - [Every AI agent now has a full GIS: Introducing Felt’s MCP server](https://felt.com/blog/introducing-felt-mcp-server)（2026-09-14確認）
 - [Felt Help Center: Files](https://help.felt.com/upload-anything/files)（2026-09-14確認）

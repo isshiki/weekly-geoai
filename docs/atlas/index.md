@@ -122,6 +122,7 @@ title: 知識マップ
 
 ### 人流・商圏・不動産分析
 
+- [エリアブースト](tools/area-boost.md)
 - [STLOCAL](tools/stlocal.md)
 - [日本のロケーションインテリジェンス製品・サービス](tools/location-intelligence-products-japan.md)
 - [コンプレノ](tools/kompreno.md)
@@ -143,8 +144,9 @@ title: 知識マップ
 - [来店検知を使う位置連動リテールメディア](cases/location-triggered-retail-media.md)
 - [来訪傾向を使う音声広告セグメント](cases/behavior-affinity-audio-ads.md)
 
-### 観光・働き方・物流
+### 都市・観光・働き方・物流
 
+- [渋谷の街区別年代構成と人流の読み方](cases/shibuya-age-distribution.md)
 - [旅客船のAIS位置情報の可視化](cases/ais-passenger-vessels.md)
 - [富士山閉山期の人流分析](cases/mount-fuji-offseason-human-flow.md)
 - [人流データによるオフィス訪問指数](cases/office-visitation-index.md)

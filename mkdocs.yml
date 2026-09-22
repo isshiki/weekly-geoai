@@ -111,6 +111,7 @@ nav:
               - MCP for ArcGIS Location Services: atlas/tools/arcgis-location-services-mcp.md
               - CARTO MCP Server: atlas/tools/carto-mcp-server.md
           - 人流・商圏・不動産分析:
+              - エリアブースト: atlas/tools/area-boost.md
               - STLOCAL: atlas/tools/stlocal.md
               - 日本のロケーションインテリジェンス製品・サービス: atlas/tools/location-intelligence-products-japan.md
               - コンプレノ: atlas/tools/kompreno.md
@@ -126,7 +127,8 @@ nav:
           - 位置情報を使う広告:
               - 来店検知を使う位置連動リテールメディア: atlas/cases/location-triggered-retail-media.md
               - 来訪傾向を使う音声広告セグメント: atlas/cases/behavior-affinity-audio-ads.md
-          - 観光・働き方・物流:
+          - 都市・観光・働き方・物流:
+              - 渋谷の街区別年代構成と人流の読み方: atlas/cases/shibuya-age-distribution.md
               - 旅客船のAIS位置情報の可視化: atlas/cases/ais-passenger-vessels.md
               - 富士山閉山期の人流分析: atlas/cases/mount-fuji-offseason-human-flow.md
               - 人流データによるオフィス訪問指数: atlas/cases/office-visitation-index.md
@@ -137,6 +139,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 9月:
         - 月の一覧: updates/2026/09/index.md
+        - 9月22日: updates/2026-09-22.md
         - 9月21日: updates/2026-09-21.md
         - 9月20日: updates/2026-09-20.md
         - 9月19日: updates/2026-09-19.md
