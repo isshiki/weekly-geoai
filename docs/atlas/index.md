@@ -95,6 +95,7 @@ title: 知識マップ
 
 ### 空間分析・データ処理・配信
 
+- [GeoAI（geoai-py）](tools/geoai-py.md)
 - [pandas](tools/pandas.md)
 - [FME](tools/fme.md)
 - [Spatial Polars](tools/spatial-polars.md)
@@ -122,6 +123,7 @@ title: 知識マップ
 
 ### 人流・商圏・不動産分析
 
+- [IPinfo Places](tools/ipinfo-places.md)
 - [エリアブースト](tools/area-boost.md)
 - [STLOCAL](tools/stlocal.md)
 - [日本のロケーションインテリジェンス製品・サービス](tools/location-intelligence-products-japan.md)
@@ -130,6 +132,10 @@ title: 知識マップ
 - [Google Places Insights](tools/google-places-insights.md)
 - [DOCOYAフード&ビバレッジ](tools/docoya-food-beverage.md)
 - [LightBox](tools/lightbox.md)
+
+### 学習・キャリア
+
+- [GIS Career Hub](tools/gis-career-hub.md)
 
 ## 事例
 

@@ -2,7 +2,7 @@
 layout: default
 title: 位置情報データのプライバシー保護
 category: methods
-updated: 2026-09-15
+updated: 2026-09-23
 ---
 
 # 位置情報データのプライバシー保護
@@ -21,11 +21,26 @@ updated: 2026-09-15
 
 差分プライバシーは、個人のデータが含まれるかどうかを出力から判別しにくくする考え方を数学的に定義する。集計やID置換だけで同等の保証が得られるものではない。
 
+## 収集・利用・保存の説明も確認する
+
+匿名化や集計の設計に加えて、何のために位置情報を使うか、利用者がそれを理解できるか、必要な期間を超えて保存していないかも確認する。
+
+アイルランドのDPCは2026年9月21日、Google Irelandの位置情報処理についてGDPR違反を認定し、総額4億300万ユーロの制裁金と6か月以内の是正を発表した。調査対象期間は2018年5月25日から2020年2月4日である。
+
+| 対象機能 | DPC発表が挙げる問題 |
+| --- | --- |
+| Web & App Activity、Location History | 処理の適法性・公正性、透明性、位置情報の保存 |
+| Location Accuracy | 適法性・公正性・透明性の原則への適合を示す説明責任、透明性 |
+
+発表時点では決定全文は後日公表予定である。この認定を現在のすべてのGoogleサービスや別のデータ利用へ一般化しない。技術的に識別しにくくする措置と、収集から削除までの運用上の説明・管理は、両方を検討する必要がある。
+
 ## 関連項目
 
 - [人流データの種類と加工段階](../data/human-flow-data-types.md)
 - [人流データの時間処理と集計定義](human-flow-time-processing.md)
 
 ## 出典
+
+- [アイルランドDPC：Googleの位置情報処理に関する決定発表](https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location)（2026-09-21公開、2026-09-23確認）
 
 - [いっしきまさひこBLOG：位置情報データはどうプライバシーを守る？　匿名化・集計・秘匿化を整理する](https://blog.masahiko.info/entry/2026/09/14/193224)（公開日：2026-09-14、2026-09-15確認）
