@@ -72,6 +72,7 @@ title: 知識マップ
 
 ### 地理空間データとPOI
 
+- [POIオープンデータの比較と地域特徴量](data/poi-open-data-comparison.md)
 - [ハザードデータの再利用条件](data/hazard-data-reuse.md)
 - [国土数値情報](data/national-land-numerical-information.md)
 - [Foursquare Placesへのパートナーデータ取り込み](data/foursquare-partner-places.md)

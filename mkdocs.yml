@@ -74,6 +74,7 @@ nav:
               - 計測誤差と推計誤差: atlas/data/human-flow-data-quality.md
               - 日本で使えるデータ: atlas/data/human-flow-data-sources-japan.md
           - 地理空間データとPOI:
+              - POIオープンデータの比較と地域特徴量: atlas/data/poi-open-data-comparison.md
               - ハザードデータの再利用条件: atlas/data/hazard-data-reuse.md
               - 国土数値情報: atlas/data/national-land-numerical-information.md
               - Foursquare Placesへのパートナーデータ取り込み: atlas/data/foursquare-partner-places.md
