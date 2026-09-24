@@ -19,6 +19,7 @@ title: 知識マップ
 
 - [ロケーションインテリジェンス](concepts/location-intelligence.md)
 - [Location AI](concepts/location-ai.md)
+- [地理空間モデルの予測と地理的理解](concepts/geographic-model-reasoning.md)
 
 ### 座標参照系と地図投影法
 
@@ -59,6 +60,7 @@ title: 知識マップ
 - [地域別最多カテゴリ地図の読み方](methods/regional-winner-maps.md)
 - [農業統計・圃場・衛星データを統合する米作モニタリング](methods/california-rice-monitoring.md)
 - [全国メッシュデータのWeb配信](methods/national-grid-web-delivery.md)
+- [外部地図サービスの廃止と依存関係の点検](methods/map-service-lifecycle.md)
 
 ## データ
 
@@ -74,11 +76,12 @@ title: 知識マップ
 - [国土数値情報](data/national-land-numerical-information.md)
 - [Foursquare Placesへのパートナーデータ取り込み](data/foursquare-partner-places.md)
 
-### スキーマとカタログ
+### 形式・スキーマ・カタログ
 
 - [地理空間データの来歴とレコード単位のメタデータ](data/geospatial-record-provenance.md)
 - [Overtureのデータスキーマ](data/overture-schema.md)
 - [Portolan](data/portolan.md)
+- [ParquetのALP浮動小数点符号化](data/parquet-alp.md)
 
 ## ツール
 
@@ -120,6 +123,7 @@ title: 知識マップ
 - [Mapbox Figma MCP Server](tools/mapbox-figma-mcp.md)
 - [MCP for ArcGIS Location Services](tools/arcgis-location-services-mcp.md)
 - [CARTO MCP Server](tools/carto-mcp-server.md)
+- [BigGeo AI](tools/biggeo-ai.md)
 
 ### 人流・商圏・不動産分析
 

@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-09-16
+updated: 2026-09-24
 ---
 
 # MapLibre GL JS
@@ -51,6 +51,12 @@ terrainに隠れたMarkerの判定は、GPUの深度バッファー読み戻し�
 - 大量のMarkerをDOM要素として配置する前に、シンボルレイヤーやクラスタリングとの使い分けを検討する。
 - タイル配信では、空レスポンス、CORS、キャッシュ、Range Requestなど、ライブラリ外の配信条件も確認する。
 
+## v6.11.0で確認した変更
+
+2026年9月22日UTC（日本時間9月23日）公開のv6.11.0では、タッチ端末の長押しによる`contextmenu`イベントと、地理座標を指定した画面位置に置くカメラ設定を計算する`Map#calculateAnchoredCameraOptions`を追加した。後者は計算だけを行い、呼び出し自体では地図を動かさない。
+
+`promoteId`付きソースのタイル間シンボル照合を高速化したほか、macOSのFirefoxで6.8.0以降に発生した移動・ズームの遅さ、投影変更や地形の遅延読み込みによるMarker・Popupの位置ずれを修正している。端末別性能は本ページでは実測していない。
+
 ## 関連項目
 
 - [全国メッシュデータのWeb配信](../methods/national-grid-web-delivery.md)
@@ -58,6 +64,8 @@ terrainに隠れたMarkerの判定は、GPUの深度バッファー読み戻し�
 - [Cesium](cesium.md)
 
 ## 出典
+
+- [今回確認した出典](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.11.0)（2026-09-24確認）
 
 - [MapLibre GL JS v6.10.0 release](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.10.0)（2026-09-15公開、2026-09-16確認）
 

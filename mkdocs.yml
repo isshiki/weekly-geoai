@@ -39,6 +39,7 @@ nav:
           - 位置情報の活用とAI:
               - ロケーションインテリジェンス: atlas/concepts/location-intelligence.md
               - Location AI: atlas/concepts/location-ai.md
+              - 地理空間モデルの予測と地理的理解: atlas/concepts/geographic-model-reasoning.md
           - 座標参照系と地図投影法:
               - 選び方と分類: atlas/concepts/map-projections.md
               - 座標参照系（CRS）との関係: atlas/concepts/coordinate-reference-systems.md
@@ -66,6 +67,7 @@ nav:
               - 地域別最多カテゴリ地図の読み方: atlas/methods/regional-winner-maps.md
               - 農業統計・圃場・衛星データを統合する米作モニタリング: atlas/methods/california-rice-monitoring.md
               - 全国メッシュデータのWeb配信: atlas/methods/national-grid-web-delivery.md
+              - 外部地図サービスの廃止と依存関係の点検: atlas/methods/map-service-lifecycle.md
       - データ:
           - 人流データ:
               - 種類と加工段階: atlas/data/human-flow-data-types.md
@@ -75,10 +77,11 @@ nav:
               - ハザードデータの再利用条件: atlas/data/hazard-data-reuse.md
               - 国土数値情報: atlas/data/national-land-numerical-information.md
               - Foursquare Placesへのパートナーデータ取り込み: atlas/data/foursquare-partner-places.md
-          - スキーマとカタログ:
+          - 形式・スキーマ・カタログ:
               - 地理空間データの来歴とレコード単位のメタデータ: atlas/data/geospatial-record-provenance.md
               - Overtureのデータスキーマ: atlas/data/overture-schema.md
               - Portolan: atlas/data/portolan.md
+              - ParquetのALP浮動小数点符号化: atlas/data/parquet-alp.md
       - ツール:
           - 地図表示とWeb GIS:
               - OH3 今昔マップビューア: atlas/tools/oh3-konjaku.md
@@ -111,6 +114,7 @@ nav:
               - Mapbox Figma MCP Server: atlas/tools/mapbox-figma-mcp.md
               - MCP for ArcGIS Location Services: atlas/tools/arcgis-location-services-mcp.md
               - CARTO MCP Server: atlas/tools/carto-mcp-server.md
+              - BigGeo AI: atlas/tools/biggeo-ai.md
           - 人流・商圏・不動産分析:
               - IPinfo Places: atlas/tools/ipinfo-places.md
               - エリアブースト: atlas/tools/area-boost.md
@@ -143,6 +147,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 9月:
         - 月の一覧: updates/2026/09/index.md
+        - 9月24日: updates/2026-09-24.md
         - 9月23日: updates/2026-09-23.md
         - 9月22日: updates/2026-09-22.md
         - 9月21日: updates/2026-09-21.md
