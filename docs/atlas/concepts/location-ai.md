@@ -2,7 +2,7 @@
 layout: default
 title: Location AI
 category: concepts
-updated: 2026-09-19
+updated: 2026-09-25
 ---
 
 # Location AI
@@ -56,6 +56,12 @@ Mapboxの総括記事と9月17日の発表は、位置情報をアプリ、エ�
 
 総合発表に含まれていても、すべてが同じ提供段階とは限らない。[Figma向けMCP](../tools/mapbox-figma-mcp.md)の利用条件、[自然言語検索](../tools/mapbox-search-box.md)の対象API、[Traffic](../tools/mapbox-traffic.md)の評価条件は個別に確認する。
 
+## Amap Qianyuの空間エージェント
+
+Amapは2026年9月24日、POI・道路・建物・地域・時系列情報を統合するQianyuを発表した。同社は、自然言語の指示から時空間範囲を決め、情報収集と複数ソースの照合を行い、立地選定や近隣分析を実行する構成を説明している。
+
+Qianyuの収録規模と、同時に紹介された別サービスWorld Mapの収録規模は異なる。発表にある「open platform」は、データのオープンライセンスや、他社製品との標準互換性を保証する表現ではない。分析精度、出典の追跡方法、日本で利用できるデータと契約条件は未検証である。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](location-intelligence.md)
@@ -73,3 +79,5 @@ Mapboxの総括記事と9月17日の発表は、位置情報をアプリ、エ�
 - [TomTom: location intelligence an important growth market](https://www.marketscreener.com/news/tomtom-location-intelligence-an-important-growth-market-ce785bd8db81f32d)（2026-09-10確認、第三者記事）
 - [Geospatial Analysis in Claude with the CARTO MCP Server](https://carto.com/blog/geospatial-analysis-claude-mcp-server/)（2026-09-10確認）
 - [TomTom Orbis APIs are now in general availability](https://www.tomtom.com/newsroom/product-focus/tomtom-orbis-apis-are-now-in-general-availability/)（2026-09-19確認）
+
+- [Amap：Spatial Intelligence Open Platform for No-Code AI Agents](https://www.prnewswire.com/news-releases/amap-launches-spatial-intelligence-open-platform-for-no-code-ai-agents-in-location-services-302888910.html)（2026-09-25確認）

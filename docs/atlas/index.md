@@ -30,6 +30,7 @@ title: 知識マップ
 
 ### データ基盤と3D空間
 
+- [GeoAIの標準化と実務での採用](concepts/geoai-standards-and-adoption.md)
 - [Cloud Native Geospatial](concepts/cloud-native-geospatial.md)
 - [リアリティーマッピングとデジタルツイン](concepts/reality-mapping-and-digital-twins.md)
 
@@ -43,6 +44,7 @@ title: 知識マップ
 
 ### AI向けのデータ探索と開発
 
+- [位置情報PaaSの選び方と相互運用性](methods/location-paas-selection.md)
 - [知識グラフとLLMエージェントによる地理空間データ探索](methods/intelligent-geospatial-data-discovery.md)
 - [GISデータセットカタログ](methods/gis-dataset-catalog-for-agents.md)
 - [AIが扱いやすい地理空間開発環境](methods/ai-ready-geospatial-development.md)
@@ -72,6 +74,7 @@ title: 知識マップ
 
 ### 地理空間データとPOI
 
+- [オープンな基盤地図データと共同整備](data/open-foundational-map-data.md)
 - [POIオープンデータの比較と地域特徴量](data/poi-open-data-comparison.md)
 - [ハザードデータの再利用条件](data/hazard-data-reuse.md)
 - [国土数値情報](data/national-land-numerical-information.md)
@@ -157,6 +160,7 @@ title: 知識マップ
 
 ### 都市・観光・働き方・物流
 
+- [運転支援と地図の継続更新](cases/streaming-maps-driver-assistance.md)
 - [渋谷の街区別年代構成と人流の読み方](cases/shibuya-age-distribution.md)
 - [旅客船のAIS位置情報の可視化](cases/ais-passenger-vessels.md)
 - [富士山閉山期の人流分析](cases/mount-fuji-offseason-human-flow.md)

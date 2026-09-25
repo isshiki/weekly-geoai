@@ -46,6 +46,7 @@ nav:
               - メルカトル図法: atlas/concepts/mercator-projection.md
               - イコールアース図法: atlas/concepts/equal-earth-projection.md
           - データ基盤と3D空間:
+              - GeoAIの標準化と実務での採用: atlas/concepts/geoai-standards-and-adoption.md
               - Cloud Native Geospatial: atlas/concepts/cloud-native-geospatial.md
               - リアリティーマッピングとデジタルツイン: atlas/concepts/reality-mapping-and-digital-twins.md
       - 手法:
@@ -54,6 +55,7 @@ nav:
               - 空間分析への埋め込みの組み込み: atlas/methods/spatial-embeddings.md
               - 店舗画像によるPOIローカライゼーション: atlas/methods/storefront-poi-localization.md
           - AI向けのデータ探索と開発:
+              - 位置情報PaaSの選び方と相互運用性: atlas/methods/location-paas-selection.md
               - 知識グラフとLLMエージェントによる地理空間データ探索: atlas/methods/intelligent-geospatial-data-discovery.md
               - GISデータセットカタログ: atlas/methods/gis-dataset-catalog-for-agents.md
               - AIが扱いやすい地理空間開発環境: atlas/methods/ai-ready-geospatial-development.md
@@ -74,6 +76,7 @@ nav:
               - 計測誤差と推計誤差: atlas/data/human-flow-data-quality.md
               - 日本で使えるデータ: atlas/data/human-flow-data-sources-japan.md
           - 地理空間データとPOI:
+              - オープンな基盤地図データと共同整備: atlas/data/open-foundational-map-data.md
               - POIオープンデータの比較と地域特徴量: atlas/data/poi-open-data-comparison.md
               - ハザードデータの再利用条件: atlas/data/hazard-data-reuse.md
               - 国土数値情報: atlas/data/national-land-numerical-information.md
@@ -137,6 +140,7 @@ nav:
               - 来店検知を使う位置連動リテールメディア: atlas/cases/location-triggered-retail-media.md
               - 来訪傾向を使う音声広告セグメント: atlas/cases/behavior-affinity-audio-ads.md
           - 都市・観光・働き方・物流:
+              - 運転支援と地図の継続更新: atlas/cases/streaming-maps-driver-assistance.md
               - 渋谷の街区別年代構成と人流の読み方: atlas/cases/shibuya-age-distribution.md
               - 旅客船のAIS位置情報の可視化: atlas/cases/ais-passenger-vessels.md
               - 富士山閉山期の人流分析: atlas/cases/mount-fuji-offseason-human-flow.md
@@ -148,6 +152,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 9月:
         - 月の一覧: updates/2026/09/index.md
+        - 9月25日: updates/2026-09-25.md
         - 9月24日: updates/2026-09-24.md
         - 9月23日: updates/2026-09-23.md
         - 9月22日: updates/2026-09-22.md
