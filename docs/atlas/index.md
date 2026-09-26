@@ -91,6 +91,8 @@ title: 知識マップ
 
 ### 地図表示とWeb GIS
 
+- [OH3（Open Hinata 3）](tools/open-hinata3.md)
+- [ShadeMapと建物データの更新](tools/shademap.md)
 - [OH3 今昔マップビューア](tools/oh3-konjaku.md)
 - [Mapbox Standard](tools/mapbox-standard.md)
 - [MapLibre GL JS](tools/maplibre-gl-js.md)
@@ -102,6 +104,7 @@ title: 知識マップ
 
 ### 空間分析・データ処理・配信
 
+- [ArcGIS API for Python](tools/arcgis-api-python.md)
 - [GeoAI（geoai-py）](tools/geoai-py.md)
 - [pandas](tools/pandas.md)
 - [FME](tools/fme.md)
@@ -131,6 +134,7 @@ title: 知識マップ
 
 ### 人流・商圏・不動産分析
 
+- [LAPと人流アナリティクス](tools/location-ai-platform.md)
 - [IPinfo Places](tools/ipinfo-places.md)
 - [エリアブースト](tools/area-boost.md)
 - [STLOCAL](tools/stlocal.md)

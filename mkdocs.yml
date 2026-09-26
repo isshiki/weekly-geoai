@@ -88,6 +88,8 @@ nav:
               - ParquetのALP浮動小数点符号化: atlas/data/parquet-alp.md
       - ツール:
           - 地図表示とWeb GIS:
+              - OH3（Open Hinata 3）: atlas/tools/open-hinata3.md
+              - ShadeMapと建物データの更新: atlas/tools/shademap.md
               - OH3 今昔マップビューア: atlas/tools/oh3-konjaku.md
               - Mapbox Standard: atlas/tools/mapbox-standard.md
               - MapLibre GL JS: atlas/tools/maplibre-gl-js.md
@@ -97,6 +99,7 @@ nav:
               - Felt: atlas/tools/felt.md
               - ArcGIS StoryMaps: atlas/tools/arcgis-storymaps.md
           - 空間分析・データ処理・配信:
+              - ArcGIS API for Python: atlas/tools/arcgis-api-python.md
               - GeoAI（geoai-py）: atlas/tools/geoai-py.md
               - pandas: atlas/tools/pandas.md
               - FME: atlas/tools/fme.md
@@ -120,6 +123,7 @@ nav:
               - CARTO MCP Server: atlas/tools/carto-mcp-server.md
               - BigGeo AI: atlas/tools/biggeo-ai.md
           - 人流・商圏・不動産分析:
+              - LAPと人流アナリティクス: atlas/tools/location-ai-platform.md
               - IPinfo Places: atlas/tools/ipinfo-places.md
               - エリアブースト: atlas/tools/area-boost.md
               - STLOCAL: atlas/tools/stlocal.md
@@ -152,6 +156,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 9月:
         - 月の一覧: updates/2026/09/index.md
+        - 9月26日: updates/2026-09-26.md
         - 9月25日: updates/2026-09-25.md
         - 9月24日: updates/2026-09-24.md
         - 9月23日: updates/2026-09-23.md
