@@ -2,7 +2,7 @@
 layout: default
 title: Portolan
 category: data
-updated: 2026-09-15
+updated: 2026-09-27
 ---
 
 # Portolan
@@ -61,6 +61,20 @@ Portolanはファイルの種類だけでなく、ネットワーク越しに部
 
 2026年9月14日のQiita記事は、架空の公園を使って変換・検証・Browserでの閲覧を試している。GeoParquetを分析用、PMTilesを表示用に分け、検索には名前・説明・キーワードなどの整備と利用側ツールが必要であると説明する。静的ファイルを置くだけで任意の日本語検索が完成するわけではない。
 
+## QGISからカタログを作成する
+
+Kohei Haraの「Portolan Catalog Builder for QGIS」は、QGISに読み込んだ2Dベクターレイヤーから静的カタログをGUIで作るプラグインである。GeoParquet、STACメタデータ、README、AGENTS.mdを出力し、PMTilesとMapLibreスタイルは任意で追加する。
+
+全地物、選択地物、指定範囲と交差する地物、範囲で切り抜いた地物を選べる。未保存の編集、フィルター、結合、計算属性も反映する。公開列と属性の説明を指定できるため、データと利用文脈を一緒に整える入口となる。
+
+| 段階 | 確認範囲 |
+| --- | --- |
+| QGIS内の基本チェック | 出力件数、属性・形状とスナップショットの照合、JSON、ローカル参照先など |
+| 別環境での詳細検証 | rashidによるPortolan適合性など。プラグイン内では未実施と表示 |
+| 公開後の配信確認 | 公開URLのCORS・HTTP Rangeなど。ローカル検証では確認できない |
+
+2026年9月27日確認時点でREADMEは0.2.0を案内するが、変更履歴ではUnreleased表記であり、正式な公開日は確認していない。公式QGISプラグインリポジトリでは未承認で、初期動作確認環境はWindows x64／QGIS 3.44.13である。GeoParquet対応GDALとPyArrowが必要で、Z/M・曲線・混在型・日付変更線を横断するデータなどは対象外。ラスターやクラウドへのアップロードも現段階の対象外である。
+
 ## 関連項目
 
 - [geoparquet-io](../tools/geoparquet-io.md)
@@ -78,3 +92,7 @@ Portolanはファイルの種類だけでなく、ネットワーク越しに部
 - [Portolan Registry](https://www.portolan-sdi.org/registry)（2026-09-08確認）
 - [【GeoAI】第16回：「地図データを配る」時代の終わり—AIが直接読める空間インフラ「Portolan」とは](https://note.com/pacificspatial/n/nf8466fae24dd)（2026-09-08確認）
 - [Portolanとは何か ― GeoParquet・PMTiles・COG・STACで考えるサーバーレスな地理空間データ基盤](https://qiita.com/rino_yume/items/9b0ff6dfa6d7ad5f3f83)（2026-09-09確認）
+
+- [Portolan Catalog Builder README](https://github.com/hrko9gis/portolan-catalog-builder/blob/main/README.md)（2026-09-27確認）
+- [日本語利用手順](https://github.com/hrko9gis/portolan-catalog-builder/blob/main/docs/user-guide-ja.md)（2026-09-27確認）
+- [変更履歴](https://github.com/hrko9gis/portolan-catalog-builder/blob/main/CHANGELOG.md)（2026-09-27確認）

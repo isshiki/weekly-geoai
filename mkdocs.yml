@@ -85,6 +85,7 @@ nav:
               - 地理空間データの来歴とレコード単位のメタデータ: atlas/data/geospatial-record-provenance.md
               - Overtureのデータスキーマ: atlas/data/overture-schema.md
               - Portolan: atlas/data/portolan.md
+              - Cloud Optimized GeoParquet（COGP）: atlas/data/cloud-optimized-geoparquet.md
               - ParquetのALP浮動小数点符号化: atlas/data/parquet-alp.md
       - ツール:
           - 地図表示とWeb GIS:
@@ -156,6 +157,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 9月:
         - 月の一覧: updates/2026/09/index.md
+        - 9月27日: updates/2026-09-27.md
         - 9月26日: updates/2026-09-26.md
         - 9月25日: updates/2026-09-25.md
         - 9月24日: updates/2026-09-24.md

@@ -85,6 +85,7 @@ title: 知識マップ
 - [地理空間データの来歴とレコード単位のメタデータ](data/geospatial-record-provenance.md)
 - [Overtureのデータスキーマ](data/overture-schema.md)
 - [Portolan](data/portolan.md)
+- [Cloud Optimized GeoParquet（COGP）](data/cloud-optimized-geoparquet.md)
 - [ParquetのALP浮動小数点符号化](data/parquet-alp.md)
 
 ## ツール
