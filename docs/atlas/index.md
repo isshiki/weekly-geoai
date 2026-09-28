@@ -38,6 +38,7 @@ title: 知識マップ
 
 ### AIによる分析と位置推定
 
+- [地図探索エージェントの記憶と空間推論](methods/map-agent-memory.md)
 - [空間特徴とLLMエージェントによる次の訪問地点予測](methods/spatial-agent-mobility-prediction.md)
 - [空間分析への埋め込みの組み込み](methods/spatial-embeddings.md)
 - [店舗画像によるPOIローカライゼーション](methods/storefront-poi-localization.md)
@@ -135,6 +136,7 @@ title: 知識マップ
 
 ### 人流・商圏・不動産分析
 
+- [GEOSPACE 地番地図とちばんAPIワイド](tools/geospace-chiban.md)
 - [LAPと人流アナリティクス](tools/location-ai-platform.md)
 - [IPinfo Places](tools/ipinfo-places.md)
 - [エリアブースト](tools/area-boost.md)

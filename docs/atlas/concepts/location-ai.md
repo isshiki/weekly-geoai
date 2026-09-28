@@ -2,7 +2,7 @@
 layout: default
 title: Location AI
 category: concepts
-updated: 2026-09-25
+updated: 2026-09-28
 ---
 
 # Location AI
@@ -62,6 +62,12 @@ Amapは2026年9月24日、POI・道路・建物・地域・時系列情報を統
 
 Qianyuの収録規模と、同時に紹介された別サービスWorld Mapの収録規模は異なる。発表にある「open platform」は、データのオープンライセンスや、他社製品との標準互換性を保証する表現ではない。分析精度、出典の追跡方法、日本で利用できるデータと契約条件は未検証である。
 
+## xMapのPOI属性と更新時点
+
+xMapの「Global advanced POI data」は、233カ国・3億件超のPOI、各地点に最大36項目を収録すると説明している。4階層のカテゴリ、ブランド、住所・座標のほか、開閉店日や最終確認日を扱う。カタログで地域・カテゴリなどを絞り込み、ファイルやAPIで取得する。
+
+収録件数はベンダー公表値であり、対象地域の網羅率や精度を実測した結果ではない。属性が仕様に存在することと、各レコードに値が入っていることも区別する。POIを分析に使う際は、件数に加えて営業状態と確認時点、必要な属性の欠損率をサンプルで確認する。ページの公開日は記載されておらず、2026年9月28日時点の確認内容である。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](location-intelligence.md)
@@ -81,3 +87,5 @@ Qianyuの収録規模と、同時に紹介された別サービスWorld Mapの�
 - [TomTom Orbis APIs are now in general availability](https://www.tomtom.com/newsroom/product-focus/tomtom-orbis-apis-are-now-in-general-availability/)（2026-09-19確認）
 
 - [Amap：Spatial Intelligence Open Platform for No-Code AI Agents](https://www.prnewswire.com/news-releases/amap-launches-spatial-intelligence-open-platform-for-no-code-ai-agents-in-location-services-302888910.html)（2026-09-25確認）
+
+- [xMap：Global advanced POI data](https://www.xmap.ai/global-advanced-rich-poi-data)（2026-09-28確認）
