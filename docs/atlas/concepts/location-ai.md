@@ -2,7 +2,7 @@
 layout: default
 title: Location AI
 category: concepts
-updated: 2026-09-28
+updated: 2026-09-29
 ---
 
 # Location AI
@@ -68,6 +68,12 @@ xMapの「Global advanced POI data」は、233カ国・3億件超のPOI、各地
 
 収録件数はベンダー公表値であり、対象地域の網羅率や精度を実測した結果ではない。属性が仕様に存在することと、各レコードに値が入っていることも区別する。POIを分析に使う際は、件数に加えて営業状態と確認時点、必要な属性の欠損率をサンプルで確認する。ページの公開日は記載されておらず、2026年9月28日時点の確認内容である。
 
+## 地図データ・実務・操作から見る比較
+
+Pacific Spatial Solutionsの2026年9月28日の解説は、Googleを地図データの提供、EsriをGIS実務への統合、CARTOをエージェントによるGIS操作、Mapboxを現実の場所に基づくAI向け基盤という軸で整理する。これは筆者の比較・解釈であり、各社の公式な役割分担ではない。
+
+Geo Week Newsの9月21日記事は、既に記録したMapboxの9月17日発表を掲載した関連資料である。公開プレビューのPlaces APIが扱う営業時間・入口・訪問傾向などは、POIの件数だけでは分からない場所の条件をAIへ渡す要素となる。新たな提供開始や独立した性能検証としては扱わない。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](location-intelligence.md)
@@ -89,3 +95,6 @@ xMapの「Global advanced POI data」は、233カ国・3億件超のPOI、各地
 - [Amap：Spatial Intelligence Open Platform for No-Code AI Agents](https://www.prnewswire.com/news-releases/amap-launches-spatial-intelligence-open-platform-for-no-code-ai-agents-in-location-services-302888910.html)（2026-09-25確認）
 
 - [xMap：Global advanced POI data](https://www.xmap.ai/global-advanced-rich-poi-data)（2026-09-28確認）
+
+- [Mapbox Announces Location Infrastructure for AI（発表掲載）](https://www.geoweeknews.com/articles/mapbox-announces-location-infrastructure-for-ai/)（2026-09-29確認）
+- [PSS：Google・Esri・CARTO・Mapboxはそれぞれ何を狙っているのか](https://note.com/pacificspatial/n/n6e6a847d4b87)（2026-09-29確認）

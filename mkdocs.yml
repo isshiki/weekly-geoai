@@ -111,6 +111,7 @@ nav:
               - geoparquet-io: atlas/tools/geoparquet-io.md
               - GeoServer: atlas/tools/geoserver.md
           - 場所検索・交通・ナビゲーション:
+              - Google MapsのAsk MapsとImmersive Navigation: atlas/tools/google-maps-gemini.md
               - Valhalla: atlas/tools/valhalla.md
               - TomTom Orbis APIs: atlas/tools/tomtom-orbis.md
               - Mapbox Search Box API: atlas/tools/mapbox-search-box.md
@@ -119,6 +120,7 @@ nav:
               - 高徳地図（AMAP）: atlas/tools/amap.md
               - ゼンリン地図ナビ: atlas/tools/zenrin-map-navigation.md
           - AI・MCP連携:
+              - GIS Data Agent: atlas/tools/gis-data-agent.md
               - Google Maps Agentic UI Toolkit: atlas/tools/google-maps-agentic-ui.md
               - Mapbox Figma MCP Server: atlas/tools/mapbox-figma-mcp.md
               - MCP for ArcGIS Location Services: atlas/tools/arcgis-location-services-mcp.md
@@ -147,6 +149,7 @@ nav:
               - 来店検知を使う位置連動リテールメディア: atlas/cases/location-triggered-retail-media.md
               - 来訪傾向を使う音声広告セグメント: atlas/cases/behavior-affinity-audio-ads.md
           - 都市・観光・働き方・物流:
+              - 紅葉時期の変化と空間補間: atlas/cases/maple-phenology.md
               - 運転支援と地図の継続更新: atlas/cases/streaming-maps-driver-assistance.md
               - 渋谷の街区別年代構成と人流の読み方: atlas/cases/shibuya-age-distribution.md
               - 旅客船のAIS位置情報の可視化: atlas/cases/ais-passenger-vessels.md
@@ -159,6 +162,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 9月:
         - 月の一覧: updates/2026/09/index.md
+        - 9月29日: updates/2026-09-29.md
         - 9月28日: updates/2026-09-28.md
         - 9月27日: updates/2026-09-27.md
         - 9月26日: updates/2026-09-26.md

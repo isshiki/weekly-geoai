@@ -118,6 +118,7 @@ title: 知識マップ
 
 ### 場所検索・交通・ナビゲーション
 
+- [Google MapsのAsk MapsとImmersive Navigation](tools/google-maps-gemini.md)
 - [Valhalla](tools/valhalla.md)
 - [TomTom Orbis APIs](tools/tomtom-orbis.md)
 - [Mapbox Search Box API](tools/mapbox-search-box.md)
@@ -128,6 +129,7 @@ title: 知識マップ
 
 ### AI・MCP連携
 
+- [GIS Data Agent](tools/gis-data-agent.md)
 - [Google Maps Agentic UI Toolkit](tools/google-maps-agentic-ui.md)
 - [Mapbox Figma MCP Server](tools/mapbox-figma-mcp.md)
 - [MCP for ArcGIS Location Services](tools/arcgis-location-services-mcp.md)
@@ -167,6 +169,7 @@ title: 知識マップ
 
 ### 都市・観光・働き方・物流
 
+- [紅葉時期の変化と空間補間](cases/maple-phenology.md)
 - [運転支援と地図の継続更新](cases/streaming-maps-driver-assistance.md)
 - [渋谷の街区別年代構成と人流の読み方](cases/shibuya-age-distribution.md)
 - [旅客船のAIS位置情報の可視化](cases/ais-passenger-vessels.md)

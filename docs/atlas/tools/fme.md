@@ -2,7 +2,7 @@
 layout: default
 title: FME
 category: tools
-updated: 2026-09-19
+updated: 2026-09-29
 ---
 
 # FME
@@ -27,8 +27,16 @@ Safe Softwareの2026年1月27日の解説は、GeoParquetを既存の編集・�
 
 [Cloud Native Geospatial](../concepts/cloud-native-geospatial.md)も参照。
 
+## 道路LOD1に向けた前処理
+
+G空間情報センターのニュースレター第57号（2026年9月）は、アサミ情報システムによる道路LOD1の作成手順を掲載する。DMの道路縁から面を作り、交差部・橋梁部・トンネル部などで区切って属性を付ける。対象は2Dの道路面整備までで、CityGML出力は別工程である。
+
+穴のあるポリゴンを使う道路候補の抽出は、標準で必須の方法ではなく記事の前処理例である。候補外の面も保存し、立体交差などで道路を取りこぼしていないか目視確認する。自動抽出の結果と、確認・修正を経た成果物を分ける点が参考になる。
+
 ## 出典
 
 - [【CNG】FMEは「クラウドネイティブ地理空間」の橋渡し役になれるか - CNG Forum 2026予習](https://note.com/pacificspatial/n/n6bb98de03001)（2026-09-19確認）
 - [How to migrate to GeoParquet (without disrupting existing GIS workflows)](https://fme.safe.com/blog/2026/01/how-to-migrate-to-geoparquet-without-disrupting-existing-gis-workflows/)（2026-09-19確認）
 - [8 ways to automate your data with FME Flow](https://fme.safe.com/blog/2025/06/8-ways-to-automate-your-data-with-fme-flow/)（2026-09-19確認）
+
+- [G空間情報センター ニュースレター第57号（7〜14ページ）](https://front.geospatial.jp/wp-content/uploads/2026/09/NL57.pdf)（2026-09-29確認）

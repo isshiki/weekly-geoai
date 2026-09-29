@@ -12,7 +12,7 @@ TEXT_SUFFIXES = {".html", ".md", ".py", ".svg", ".toml", ".txt", ".yml", ".yaml"
 IGNORED_DIRECTORIES = {".git", ".venv", "__pycache__", ".pytest_cache"}
 PATTERNS = {
     "秘密鍵": re.compile("-----BEGIN " + r"(?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
-    "OpenAI APIキーらしい値": re.compile("sk-" + r"[A-Za-z0-9_-]{20,}"),
+    "OpenAI APIキーらしい値": re.compile(r"(?<![A-Za-z0-9_])" + "sk-" + r"[A-Za-z0-9_-]{20,}"),
     "GitHubトークンらしい値": re.compile("gh" + r"[pousr]_[A-Za-z0-9]{30,}"),
     "AWSアクセスキーらしい値": re.compile("AKIA" + r"[A-Z0-9]{16}"),
 }

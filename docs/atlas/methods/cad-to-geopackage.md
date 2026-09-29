@@ -2,7 +2,7 @@
 layout: default
 title: CADからGeoPackageへの変換と検証
 category: methods
-updated: 2026-09-21
+updated: 2026-09-29
 ---
 
 # CADからGeoPackageへの変換と検証
@@ -37,6 +37,14 @@ GDALのDXFドライバーの文字コード処理には`DXF_ENCODING`による�
 
 目的はGIS向けの形状抽出である。図面の見た目の完全再現や、すべてのブロック・HATCH・特殊オブジェクトへの対応を保証するものではない。
 
+## 確認用DXFを残す改訂
+
+2026年9月28日のv0.3.4解説では、元のCAD座標を保つDXFと、単位倍率・EPSGを適用するGeoPackageを分けた。同名のDXF・PRJ・WLD・GPKGを標準成果物として残し、変換工程のどこで形状が変わったかを追跡する。
+
+mmからmへの例ではGeoPackageの座標を0.001倍する。DXF自体は変えず、ArcGIS ProではPRJとWLDで位置を合わせる。記事のWLDは倍率0.001・回転なし・平行移動なしの固定設定であり、他の単位や任意のローカル座標へそのまま適用するものではない。
+
+GeoPackage作成前後のDXFのSHA-256を比較し、座標・件数・geometryを検証する。不正なPolygonは修復後も成立しなければrejectedとし、成功件数に混ぜない。一時ファイルの検証後に正式なGeoPackageへ置き換える。上記の初期版と異なり、DXFの世代は元DWGと同世代を基本とする。記事の実装を確認したもので、今回コードを実行してはいない。
+
 ## 関連項目
 
 - [座標参照系（CRS）との関係](../concepts/coordinate-reference-systems.md)
@@ -46,3 +54,5 @@ GDALのDXFドライバーの文字コード処理には`DXF_ENCODING`による�
 
 - [CADとGISをつなぐ ── LibreDWG × GDALでDWGをQGIS/ArcGIS pro 対応GeoPackageへ変換する](https://qiita.com/rino_yume/items/dad684526717a806fec8)（2026-09-20公開、2026-09-21確認）
 - [GDAL AutoCAD DXF driver](https://gdal.org/en/stable/drivers/vector/dxf.html)（2026-09-21確認）
+
+- [LibreDWG × GDALによるCAD変換 v0.3.4改訂版](https://qiita.com/rino_yume/items/0e1326ae8585e4f90c7c)（2026-09-29確認）
