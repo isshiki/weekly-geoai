@@ -2,7 +2,7 @@
 layout: default
 title: Location AI
 category: concepts
-updated: 2026-09-29
+updated: 2026-09-30
 ---
 
 # Location AI
@@ -74,6 +74,10 @@ Pacific Spatial Solutionsの2026年9月28日の解説は、Googleを地図デー
 
 Geo Week Newsの9月21日記事は、既に記録したMapboxの9月17日発表を掲載した関連資料である。公開プレビューのPlaces APIが扱う営業時間・入口・訪問傾向などは、POIの件数だけでは分からない場所の条件をAIへ渡す要素となる。新たな提供開始や独立した性能検証としては扱わない。
 
+## Mapbox公式発表を参照する
+
+2026年9月30日に、9月17日発表のMapbox公式掲載ページを確認した。前述のBUILD with Mapboxの発表と同じ内容であり、新しい提供開始としては数えない。Places APIは公開プレビュー、Static Images APIのAI Modeは事前発表として、機能ごとの提供段階を区別する。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](location-intelligence.md)
@@ -98,3 +102,5 @@ Geo Week Newsの9月21日記事は、既に記録したMapboxの9月17日発表�
 
 - [Mapbox Announces Location Infrastructure for AI（発表掲載）](https://www.geoweeknews.com/articles/mapbox-announces-location-infrastructure-for-ai/)（2026-09-29確認）
 - [PSS：Google・Esri・CARTO・Mapboxはそれぞれ何を狙っているのか](https://note.com/pacificspatial/n/n6e6a847d4b87)（2026-09-29確認）
+
+- [Mapbox公式：Location Infrastructure for AI](https://www.mapbox.com/press-releases/mapbox-announces-location-infrastructure-for-ai)（2026-09-30確認）

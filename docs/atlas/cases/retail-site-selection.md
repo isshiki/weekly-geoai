@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-09-24
+updated: 2026-09-30
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -47,6 +47,12 @@ SENSYは2026年9月、食品スーパーマーケットのベルクで、AI店�
 
 原文では圏外来訪と居住者の比率が本文で約15倍、結論で約30対1と一致しないため、この比率は分析根拠として採用しない。
 
+## 候補地の選定からデータ要件を見直す
+
+技研商事インターナショナルの9月29日のTHE NOVEL開発記事は、2026年1月8日の会議を振り返る。店舗形態ごとに人口・駅の乗降客数・競合などで候補を絞り、売上予測で順位付けする業務が、有償POI・駅データを再検討するきっかけとなった。
+
+利用者の問いは「どこに出せるか」に加え「あと何店舗出せるか」である。会議で決まったのはデータの採用や実装ではなく、必要な成果物・業務手順、画面、他機能との共通化、費用を確認することであった。完成した売上予測機能の精度検証や、有償データ採用済みの報告として扱わない。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -58,3 +64,5 @@ SENSYは2026年9月、食品スーパーマーケットのベルクで、AI店�
 
 - [Retail Location Intelligence Sharpens Site Selection](https://www.credaily.com/briefs/retail-location-intelligence-sharpens-site-selection/)（2026-09-07確認）
 - [SENSY、ベルクにAI店舗開発DXサービス「SENSY GeoScope」を本格導入](https://prtimes.jp/main/html/rd/p/000000059.000013501.html)（2026-09-08確認）
+
+- [THE NOVEL：一度使わないと決めたデータを再検討した日](https://note.com/gsi_note/n/nad364124f4b4)（2026-09-30確認）

@@ -57,6 +57,7 @@ title: 知識マップ
 
 ### 主題図・モニタリング・配信
 
+- [標高タイルによる地形指標と測定スケール](methods/terrain-scale.md)
 - [CADからGeoPackageへの変換と検証](methods/cad-to-geopackage.md)
 - [街歩きによるバリア情報マッピング](methods/barrier-information-mapping.md)
 - [手描き地図の座標校正と表示](methods/illustrated-map-coordinates.md)
@@ -106,6 +107,9 @@ title: 知識マップ
 
 ### 空間分析・データ処理・配信
 
+- [TorchGeo](tools/torchgeo.md)
+- [SateAIs](tools/sateais.md)
+- [ArcGIS Solutions](tools/arcgis-solutions.md)
 - [ArcGIS API for Python](tools/arcgis-api-python.md)
 - [GeoAI（geoai-py）](tools/geoai-py.md)
 - [pandas](tools/pandas.md)
