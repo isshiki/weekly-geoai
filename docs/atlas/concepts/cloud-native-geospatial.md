@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-09-21
+updated: 2026-10-01
 ---
 
 # Cloud Native Geospatial
@@ -71,6 +71,12 @@ Sparkgeoのレジストリ紹介は、確認時点の本文で82サーバー・1
 
 [空間分析への埋め込みの組み込み](../methods/spatial-embeddings.md)と[GISデータセットカタログ](../methods/gis-dataset-catalog-for-agents.md)も参照。モデルの特徴表現を使うことと、業務タスクでの精度を検証することは別に考える。
 
+## 公共部門での運用見直し
+
+CARTOの2026年9月30日の解説は、データを別のGIS環境へ複製する前に、既存のデータ基盤で分析する構成を検討するよう提案する。移行対象のアプリは利用実態で棚卸しし、廃止・簡素化・再構築を判断する。
+
+既存の権限・監査を分析やAIエージェントにも引き継ぎ、日常のBI・AIツールから空間情報を使うという提案である。まず依頼を2週間記録して定型質問を見極め、専門担当者は地図の品質や正式な成果物に責任を持つ。クラウド化だけで権限管理や品質確認が不要になるわけではない。これはベンダーによる運用上の提案であり、導入効果を比較実証した結果ではない。
+
 ## 関連項目
 
 - [Portolan](../data/portolan.md)
@@ -91,3 +97,4 @@ Sparkgeoのレジストリ紹介は、確認時点の本文で82サーバー・1
 
 - [【CNG】地図を読むのは、もう人間だけではない - 向かっている先は？](https://note.com/pacificspatial/n/n172bcc83a126)（2026-09-20公開、2026-09-21確認）
 - [77+ Geospatial MCP Servers, Mapped and Categorized](https://sparkgeo.com/blog/geospatial-mcp-servers-mapped-and-categorized/)（2026-09-21確認）
+- [CARTO：公共部門のGIS近代化](https://carto.com/blog/5-ways-gis-is-modernizing-public-sector/)（2026-10-01確認）

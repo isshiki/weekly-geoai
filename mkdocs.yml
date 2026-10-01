@@ -104,6 +104,7 @@ nav:
           - 空間分析・データ処理・配信:
               - TorchGeo: atlas/tools/torchgeo.md
               - SateAIs: atlas/tools/sateais.md
+              - ArcFM: atlas/tools/arcfm.md
               - ArcGIS Solutions: atlas/tools/arcgis-solutions.md
               - ArcGIS API for Python: atlas/tools/arcgis-api-python.md
               - GeoAI（geoai-py）: atlas/tools/geoai-py.md
@@ -115,6 +116,7 @@ nav:
               - geoparquet-io: atlas/tools/geoparquet-io.md
               - GeoServer: atlas/tools/geoserver.md
           - 場所検索・交通・ナビゲーション:
+              - ArcGIS Geocoding Service: atlas/tools/arcgis-geocoding.md
               - Google MapsのAsk MapsとImmersive Navigation: atlas/tools/google-maps-gemini.md
               - Valhalla: atlas/tools/valhalla.md
               - TomTom Orbis APIs: atlas/tools/tomtom-orbis.md
@@ -164,6 +166,9 @@ nav:
     - 一覧: updates/index.md
     - 2026年:
       - 年の一覧: updates/2026/index.md
+      - 10月:
+        - 月の一覧: updates/2026/10/index.md
+        - 10月1日: updates/2026-10-01.md
       - 9月:
         - 月の一覧: updates/2026/09/index.md
         - 9月30日: updates/2026-09-30.md

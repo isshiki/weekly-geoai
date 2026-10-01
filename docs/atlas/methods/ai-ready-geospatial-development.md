@@ -2,7 +2,7 @@
 layout: default
 title: AIが扱いやすい地理空間開発環境
 category: methods
-updated: 2026-09-10
+updated: 2026-10-01
 ---
 
 # AIが扱いやすい地理空間開発環境
@@ -43,6 +43,21 @@ Agent SkillsはAPIそのものではない。エージェントが最新資料�
 5. エラー、データ件数、地図状態、ユーザー操作を機械的に確認する。
 6. 人が地図表現と分析上の妥当性をレビューする。
 
+## QGISとMCPを使う取得・加工・表示の分担
+
+ソフトバンク テックブログの2026年9月30日の記事は、Claude Codeから外部ツールを組み合わせる構成を紹介する。本文は同年6月時点の情報である。
+
+| 段階 | 実装例 |
+| --- | --- |
+| 統合 | Claude CodeとClaude Sonnet 4.6 |
+| 取得 | 第三者製のmlit-geospatial-mcpで国土交通省のAPIを呼び出す。一部の人流データは事前に用意する |
+| 加工 | 動的に生成したPythonコードで集計する |
+| 表示 | QGISとQGIS MCPでレイヤーを描画する |
+
+港区の2019年・2020年を比べる例では、駅別乗降客数と1kmメッシュの昼夜の滞在人口差を重ねる。後者は人流データの換算人口値から算出し、国勢調査の昼間人口・夜間人口とは異なる。2年で同じ色階調と記号サイズの基準を使うことで、表示設定による差を避けている。
+
+環境構築と一部のデータ準備は手動である。記事は検証時のコミットを示し、接続表示の確認だけで終えず、各MCPツールを一度呼んで応答を確かめる手順も紹介している。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -55,3 +70,4 @@ Agent SkillsはAPIそのものではない。エージェントが最新資料�
 - [Making deck.gl AI-Ready: What Seven Frontier Models Taught Us About Maps](https://carto.com/blog/making-deckgl-ai-ready/)（2026-09-10確認）
 - [Google Maps Platform Agent Skills](https://github.com/googlemaps/agent-skills)（2026-09-10確認）
 - [Google Maps Platform Main Skill](https://github.com/googlemaps/agent-skills/blob/main/skills/google-maps-platform/SKILL.md)（2026-09-10確認）
+- [ソフトバンク：自然言語による地物情報の取得・可視化](https://zenn.dev/softbank/articles/a83d02f48e0e84)（2026-10-01確認）

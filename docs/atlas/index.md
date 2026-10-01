@@ -109,6 +109,7 @@ title: 知識マップ
 
 - [TorchGeo](tools/torchgeo.md)
 - [SateAIs](tools/sateais.md)
+- [ArcFM](tools/arcfm.md)
 - [ArcGIS Solutions](tools/arcgis-solutions.md)
 - [ArcGIS API for Python](tools/arcgis-api-python.md)
 - [GeoAI（geoai-py）](tools/geoai-py.md)
@@ -122,6 +123,7 @@ title: 知識マップ
 
 ### 場所検索・交通・ナビゲーション
 
+- [ArcGIS Geocoding Service](tools/arcgis-geocoding.md)
 - [Google MapsのAsk MapsとImmersive Navigation](tools/google-maps-gemini.md)
 - [Valhalla](tools/valhalla.md)
 - [TomTom Orbis APIs](tools/tomtom-orbis.md)
