@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-09-30
+updated: 2026-10-02
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -53,6 +53,18 @@ SENSYは2026年9月、食品スーパーマーケットのベルクで、AI店�
 
 利用者の問いは「どこに出せるか」に加え「あと何店舗出せるか」である。会議で決まったのはデータの採用や実装ではなく、必要な成果物・業務手順、画面、他機能との共通化、費用を確認することであった。完成した売上予測機能の精度検証や、有償データ採用済みの報告として扱わない。
 
+## 店舗評価を地域指標へ集計する
+
+DataForSEOの2026年9月29日更新記事は、ミラノ周辺46自治体の飲食店8,706件をPostGISで3,746国勢調査区へ結び付けた。口コミ件数で重み付けした平均評価と、人口1,000人当たりの店舗数を計算する。未評価店舗は密度に含め、平均評価からは除外する。
+
+約3.8ドルは記事の取得例の費用である。口コミによる地域評価は、居住者全体の満足度や将来の売上そのものではない。記事は生の店舗一覧の再公開を避け、集計結果を公開するよう案内している。
+
+## 直線距離から移動時間の商圏へ
+
+Mapboxの2026年10月1日のTableau事例は、道路網に沿った到達圏で商圏を調べる。18店舗・10段階の移動時間・820国勢調査地区を組み合わせ、約14万8,000回の交差計算をTableau Prep Builderで事前に行い、所得情報とともに操作できる画面へつなぐ。
+
+同記事は電気工事業者とEV充電施設の移動時間行列から、対応可能な業者とサービス空白地域を表示する例も紹介する。円形の距離圏と道路網上の到達圏を区別し、重い計算を画面操作の前に済ませる設計の参考になる。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -66,3 +78,5 @@ SENSYは2026年9月、食品スーパーマーケットのベルクで、AI店�
 - [SENSY、ベルクにAI店舗開発DXサービス「SENSY GeoScope」を本格導入](https://prtimes.jp/main/html/rd/p/000000059.000013501.html)（2026-09-08確認）
 
 - [THE NOVEL：一度使わないと決めたデータを再検討した日](https://note.com/gsi_note/n/nad364124f4b4)（2026-09-30確認）
+- [How to Turn Business Listings Data into a Neighborhood Rating Map with the Business Listings API](https://dataforseo.com/help-center/how-to-turn-business-listings-data-into-a-neighborhood-rating-map-with-the-business-listings-api)（2026-10-02確認）
+- [Expanding spatial intelligence in Tableau with Mapbox](https://www.mapbox.com/blog/expanding-spatial-intelligence-in-tableau-with-mapbox)（2026-10-02確認）

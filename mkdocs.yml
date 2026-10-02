@@ -56,6 +56,8 @@ nav:
               - 空間分析への埋め込みの組み込み: atlas/methods/spatial-embeddings.md
               - 店舗画像によるPOIローカライゼーション: atlas/methods/storefront-poi-localization.md
           - AI向けのデータ探索と開発:
+              - 空間索引の選択と評価条件: atlas/methods/spatial-index-selection.md
+              - POI検索の取得効率と網羅性: atlas/methods/poi-retrieval-coverage.md
               - 位置情報PaaSの選び方と相互運用性: atlas/methods/location-paas-selection.md
               - 知識グラフとLLMエージェントによる地理空間データ探索: atlas/methods/intelligent-geospatial-data-discovery.md
               - GISデータセットカタログ: atlas/methods/gis-dataset-catalog-for-agents.md
@@ -64,6 +66,7 @@ nav:
               - 人流データの時間処理と集計定義: atlas/methods/human-flow-time-processing.md
               - 位置情報データのプライバシー保護: atlas/methods/location-data-privacy.md
           - 主題図・モニタリング・配信:
+              - 画像からGIS情報を作る解析と検証: atlas/methods/imagery-to-gis.md
               - 標高タイルによる地形指標と測定スケール: atlas/methods/terrain-scale.md
               - CADからGeoPackageへの変換と検証: atlas/methods/cad-to-geopackage.md
               - 街歩きによるバリア情報マッピング: atlas/methods/barrier-information-mapping.md
@@ -78,6 +81,7 @@ nav:
               - 計測誤差と推計誤差: atlas/data/human-flow-data-quality.md
               - 日本で使えるデータ: atlas/data/human-flow-data-sources-japan.md
           - 地理空間データとPOI:
+              - 地図の提供日と現況の時点: atlas/data/map-update-dates.md
               - オープンな基盤地図データと共同整備: atlas/data/open-foundational-map-data.md
               - POIオープンデータの比較と地域特徴量: atlas/data/poi-open-data-comparison.md
               - ハザードデータの再利用条件: atlas/data/hazard-data-reuse.md
@@ -91,6 +95,7 @@ nav:
               - ParquetのALP浮動小数点符号化: atlas/data/parquet-alp.md
       - ツール:
           - 地図表示とWeb GIS:
+              - Geospect: atlas/tools/geospect.md
               - OH3（Open Hinata 3）: atlas/tools/open-hinata3.md
               - ShadeMapと建物データの更新: atlas/tools/shademap.md
               - OH3 今昔マップビューア: atlas/tools/oh3-konjaku.md
@@ -117,6 +122,7 @@ nav:
               - GeoServer: atlas/tools/geoserver.md
           - 場所検索・交通・ナビゲーション:
               - ArcGIS Geocoding Service: atlas/tools/arcgis-geocoding.md
+              - OpenPOI API: atlas/tools/openpoi-api.md
               - Google MapsのAsk MapsとImmersive Navigation: atlas/tools/google-maps-gemini.md
               - Valhalla: atlas/tools/valhalla.md
               - TomTom Orbis APIs: atlas/tools/tomtom-orbis.md
@@ -168,6 +174,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月2日: updates/2026-10-02.md
         - 10月1日: updates/2026-10-01.md
       - 9月:
         - 月の一覧: updates/2026/09/index.md

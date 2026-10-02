@@ -2,7 +2,7 @@
 layout: default
 title: GeoLibre
 category: tools
-updated: 2026-09-27
+updated: 2026-10-02
 ---
 
 # GeoLibre
@@ -41,6 +41,12 @@ v3.1.0（2026年9月26日日本時間公開）は、MapboxとArcGIS Maps SDK for
 
 Windows、macOS、Linux、Android、iOS向けの配布ファイルが掲載されている。ファイルの掲載と各OSでの動作確認は区別し、今回インストールや外部サービス接続は実施していない。
 
+## 点群の注釈と外部データへの接続
+
+v3.2.0は2026年10月2日日本時間に公開された。点群へのラベル、3D枠、線・面・キーポイント、事前ラベル付け、LAZ・NumPy出力を拡充し、PythonとMCPから扱う機能も追加した。
+
+Tessera v1.1の衛星画像埋め込みを表示でき、非公開S3には認証情報・SSO・IAMロールで接続する。デスクトップ版ではWMSの座標系選択・再投影やOSキーチェーンへの認証情報保存、WFSではGeoJSONを出さないサーバーのGML読み込みに対応した。リリースノートの確認であり、点群分類の精度や各接続環境を検証した結果ではない。
+
 ## 出典
 
 - [@geolibre/map README](https://github.com/opengeos/GeoLibre/blob/main/packages/map/README.md)（2026-09-17確認）
@@ -52,3 +58,4 @@ Windows、macOS、Linux、Android、iOS向けの配布ファイルが掲載さ�
 - [GeoLibre v2.9.0](https://github.com/opengeos/GeoLibre/releases/tag/v2.9.0)（2026-09-04確認）
 
 - [GeoLibre v3.1.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.1.0)（2026-09-27確認）
+- [GeoLibre v3.2.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.2.0)（2026-10-02確認）

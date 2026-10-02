@@ -45,6 +45,8 @@ title: 知識マップ
 
 ### AI向けのデータ探索と開発
 
+- [空間索引の選択と評価条件](methods/spatial-index-selection.md)
+- [POI検索の取得効率と網羅性](methods/poi-retrieval-coverage.md)
 - [位置情報PaaSの選び方と相互運用性](methods/location-paas-selection.md)
 - [知識グラフとLLMエージェントによる地理空間データ探索](methods/intelligent-geospatial-data-discovery.md)
 - [GISデータセットカタログ](methods/gis-dataset-catalog-for-agents.md)
@@ -57,6 +59,7 @@ title: 知識マップ
 
 ### 主題図・モニタリング・配信
 
+- [画像からGIS情報を作る解析と検証](methods/imagery-to-gis.md)
 - [標高タイルによる地形指標と測定スケール](methods/terrain-scale.md)
 - [CADからGeoPackageへの変換と検証](methods/cad-to-geopackage.md)
 - [街歩きによるバリア情報マッピング](methods/barrier-information-mapping.md)
@@ -76,6 +79,7 @@ title: 知識マップ
 
 ### 地理空間データとPOI
 
+- [地図の提供日と現況の時点](data/map-update-dates.md)
 - [オープンな基盤地図データと共同整備](data/open-foundational-map-data.md)
 - [POIオープンデータの比較と地域特徴量](data/poi-open-data-comparison.md)
 - [ハザードデータの再利用条件](data/hazard-data-reuse.md)
@@ -94,6 +98,7 @@ title: 知識マップ
 
 ### 地図表示とWeb GIS
 
+- [Geospect](tools/geospect.md)
 - [OH3（Open Hinata 3）](tools/open-hinata3.md)
 - [ShadeMapと建物データの更新](tools/shademap.md)
 - [OH3 今昔マップビューア](tools/oh3-konjaku.md)
@@ -124,6 +129,7 @@ title: 知識マップ
 ### 場所検索・交通・ナビゲーション
 
 - [ArcGIS Geocoding Service](tools/arcgis-geocoding.md)
+- [OpenPOI API](tools/openpoi-api.md)
 - [Google MapsのAsk MapsとImmersive Navigation](tools/google-maps-gemini.md)
 - [Valhalla](tools/valhalla.md)
 - [TomTom Orbis APIs](tools/tomtom-orbis.md)

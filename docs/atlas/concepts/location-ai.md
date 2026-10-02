@@ -2,7 +2,7 @@
 layout: default
 title: Location AI
 category: concepts
-updated: 2026-09-30
+updated: 2026-10-02
 ---
 
 # Location AI
@@ -78,6 +78,16 @@ Geo Week Newsの9月21日記事は、既に記録したMapboxの9月17日発表�
 
 2026年9月30日に、9月17日発表のMapbox公式掲載ページを確認した。前述のBUILD with Mapboxの発表と同じ内容であり、新しい提供開始としては数えない。Places APIは公開プレビュー、Static Images APIのAI Modeは事前発表として、機能ごとの提供段階を区別する。
 
+## 企業データに地理的な文脈を加える
+
+TomTomは2026年9月30日、MicrosoftのIQ Sharingプレビューを通じ、OneLakeの自社データと位置情報を組み合わせ、Foundryへ接続する構成を発表した。道路・規制・リスク・時間変化などの関係をAIエージェントへ渡すことを狙う。Overtureとオープン標準を基盤とするという説明は、製品全体の無償利用やオープンライセンスを意味しない。
+
+## 店舗情報の鮮度とエージェントの誤推薦
+
+PinMeToの2026年10月1日の論考は、Yahoo Financeの試用報告を引用し、Meta Museが閉業済み店舗を推薦し、電話番号を生成した例を紹介する。記事はMuseの参照データ源が未公表であると明記しており、Overtureを原因とした不具合とは確認していない。
+
+著者は店名・住所・電話・営業時間・座標を複数の掲載先で揃え、移転・閉業を反映するよう提案する。これは店舗データ整備を提供する企業の論考であり、AI全般の誤推薦率を測定した研究ではない。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](location-intelligence.md)
@@ -104,3 +114,6 @@ Geo Week Newsの9月21日記事は、既に記録したMapboxの9月17日発表�
 - [PSS：Google・Esri・CARTO・Mapboxはそれぞれ何を狙っているのか](https://note.com/pacificspatial/n/n6e6a847d4b87)（2026-09-29確認）
 
 - [Mapbox公式：Location Infrastructure for AI](https://www.mapbox.com/press-releases/mapbox-announces-location-infrastructure-for-ai)（2026-09-30確認）
+- [TomTom公式発表](https://www.tomtom.com/newsroom/press-releases/general/224935140570399/tomtom-brings-location-intelligence-to-microsoft-fabric/)（2026-10-02確認）
+- [TomTom brings location intelligence to Microsoft Fabric](https://finance.yahoo.com/technology/ai/articles/tomtom-brings-location-intelligence-microsoft-053000575.html)（2026-10-02確認）
+- [What Meta’s Muse AI Agent Means for Your Location Data](https://www.pinmeto.com/blog/meta-muse-ai-agent-local-data/)（2026-10-02確認）
