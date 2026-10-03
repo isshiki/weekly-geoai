@@ -98,6 +98,8 @@ title: 知識マップ
 
 ### 地図表示とWeb GIS
 
+- [Kumoy](tools/kumoy.md)
+- [GeoTools](tools/geotools.md)
 - [Geospect](tools/geospect.md)
 - [OH3（Open Hinata 3）](tools/open-hinata3.md)
 - [ShadeMapと建物データの更新](tools/shademap.md)

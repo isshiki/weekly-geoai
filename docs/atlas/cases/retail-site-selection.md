@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -65,6 +65,12 @@ Mapboxの2026年10月1日のTableau事例は、道路網に沿った到達圏で
 
 同記事は電気工事業者とEV充電施設の移動時間行列から、対応可能な業者とサービス空白地域を表示する例も紹介する。円形の距離圏と道路網上の到達圏を区別し、重い計算を画面操作の前に済ませる設計の参考になる。
 
+## 山田うどんの出店分析支援
+
+SENSYの2026年10月2日発表は、山田食品産業へのSENSY GeoScope導入を紹介する。人流・人口・周辺施設・競合などを使い、候補物件の売上予測と正負の要因を自動算出し、候補選定や社内説明に利用する。
+
+同社は収集・分析の作業が丸1日〜数日から数十秒程度へ短縮したと説明する。これは導入企業と提供者の報告であり、予測誤差や検証用データの条件は示されていない。投資回収シミュレーションと適正家賃の可視化は今後の予定である。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -80,3 +86,5 @@ Mapboxの2026年10月1日のTableau事例は、道路網に沿った到達圏で
 - [THE NOVEL：一度使わないと決めたデータを再検討した日](https://note.com/gsi_note/n/nad364124f4b4)（2026-09-30確認）
 - [How to Turn Business Listings Data into a Neighborhood Rating Map with the Business Listings API](https://dataforseo.com/help-center/how-to-turn-business-listings-data-into-a-neighborhood-rating-map-with-the-business-listings-api)（2026-10-02確認）
 - [Expanding spatial intelligence in Tableau with Mapbox](https://www.mapbox.com/blog/expanding-spatial-intelligence-in-tableau-with-mapbox)（2026-10-02確認）
+
+- [SENSY、飲食業界初となるAI店舗開発DXサービス「SENSY GeoScope」を山田うどん（山田食品産業）に導入](https://prtimes.jp/main/html/rd/p/000000060.000013501.html)（2026-10-03確認）

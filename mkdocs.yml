@@ -95,6 +95,8 @@ nav:
               - ParquetのALP浮動小数点符号化: atlas/data/parquet-alp.md
       - ツール:
           - 地図表示とWeb GIS:
+              - Kumoy: atlas/tools/kumoy.md
+              - GeoTools: atlas/tools/geotools.md
               - Geospect: atlas/tools/geospect.md
               - OH3（Open Hinata 3）: atlas/tools/open-hinata3.md
               - ShadeMapと建物データの更新: atlas/tools/shademap.md
@@ -174,6 +176,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月3日: updates/2026-10-03.md
         - 10月2日: updates/2026-10-02.md
         - 10月1日: updates/2026-10-01.md
       - 9月:

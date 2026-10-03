@@ -2,7 +2,7 @@
 layout: default
 title: POIオープンデータの比較と地域特徴量
 category: data
-updated: 2026-09-29
+updated: 2026-10-03
 ---
 
 # POIオープンデータの比較と地域特徴量
@@ -73,6 +73,18 @@ Overtureの実践記事は、schema v2.0.0で旧categoriesを使わず、basic_c
 
 9月29日の入門記事では、SQL分析ならOverture、Placesとして整理された店舗・施設データならFoursquare、道路や建物を含む地理情報ならOpenStreetMapを入口として提案している。これは用途別の選択であり、品質の順位ではない。継続利用では更新頻度・閉店情報・運用体制を別途確認する。
 
+## オープン版と商用サービスの料金を分ける
+
+2026年10月3日に確認したFoursquare公式料金は、Open Source Placesのデータ取得と別に、Places APIやSpatial製品の利用料を案内している。APIの無料枠を、オープン版データセットの範囲や再配布条件と混同しない。
+
+| サービス | 確認時点の条件 |
+| --- | --- |
+| Spatial Desktop | Basicは2026年中の無料プレビュー。Standardは月25ドル、Proは月100ドル |
+| Places API Pro | 月500回まで無料。サンドボックスの最大10,000回無料とは別の案内 |
+| Spatial Workbench | 30日試用は購読料が無料だが、計算・保存の利用料は発生 |
+
+PulseSignalのAI整理一覧を手掛かりに公式ページと照合した。特にBasicを期限のない無料プランと解釈しない。料金は確認時点の情報である。
+
 ## 関連項目
 
 - [地理空間データの来歴とレコード単位のメタデータ](geospatial-record-provenance.md)
@@ -89,3 +101,6 @@ Overtureの実践記事は、schema v2.0.0で旧categoriesを使わず、basic_c
 - [OSMnxで吉祥寺周辺のPOIを取得する](https://blog.masahiko.info/entry/2026/09/27/193301)（2026-09-29確認）
 - [POI件数・住所・電話・Webサイトの比較](https://blog.masahiko.info/entry/2026/09/28/163408)（2026-09-29確認）
 - [POIオープンデータ入門](https://qiita.com/isshiki/items/4a50f54cc8e5cd649f03)（2026-09-29確認）
+
+- [Foursquare公式料金](https://foursquare.com/pricing/)（2026-10-03確認）
+- [PulseSignal：Foursquare pricing (2026)](https://getpulsesignal.com/pricing/foursquare)（2026-10-03確認）

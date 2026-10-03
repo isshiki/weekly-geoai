@@ -2,7 +2,7 @@
 layout: default
 title: 位置情報PaaSの選び方と相互運用性
 category: methods
-updated: 2026-09-25
+updated: 2026-10-03
 ---
 
 # 位置情報PaaSの選び方と相互運用性
@@ -22,6 +22,12 @@ updated: 2026-09-25
 
 Esriの記事はLeaflet、OpenLayers、MapLibre GL JS、CesiumJSなどとの連携を紹介する製品提供者の解説である。APIが公開されていること、OSSから呼べること、データを自由に再配布できることは別々に確認する。記事でいう「オープン開発」を、サービス全体がオープンソースであるという意味には使わない。
 
+## ArcGISで組み合わせられるサービス
+
+公式開発文書は、背景地図・静的地図、住所検索、POI検索、経路計算、人口統計などのデータ付加、標高取得を提供機能として整理している。経路には車両群のルート計画や到達圏計算も含まれる。ArcGIS Location PlatformまたはArcGIS Onlineのアカウントを使い、必要なサービスを選ぶ。
+
+2026年10月2日の紹介記事は公式一覧で掲載を確認したが、本文を取得できなかったため、ここでは別の公式開発文書で確認できた機能だけを記載する。言語数や対象国数など、記事固有の数値は未検証である。
+
 ## 関連項目
 
 - [外部地図サービスの廃止と依存関係の点検](map-service-lifecycle.md)
@@ -31,3 +37,6 @@ Esriの記事はLeaflet、OpenLayers、MapLibre GL JS、CesiumJSなどとの連�
 
 - [Esri Community：ロケーション サービスにオープンな開発をサポートする PaaS を選ぶべき理由](https://community.esri.com/ja/discussion/1720940/)（2026-09-25確認）
 - [Esri：For Location Services, Pick a PaaS That Supports Open Development](https://www.esri.com/arcgis-blog/products/platform/developers/for-location-services-pick-a-paas-that-supports-open-development-heres-why)（2026-09-25確認）
+
+- [Esri Developer：Mapping and location services](https://developers.arcgis.com/documentation/mapping-and-location-services/)（2026-10-03確認）
+- [Esri：位置情報サービスの紹介](https://www.esri.com/arcgis-blog/products/platform/developers/location-services-available-through-arcgis-location-platform)（2026-10-03確認）

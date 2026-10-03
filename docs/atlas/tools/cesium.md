@@ -2,7 +2,7 @@
 layout: default
 title: Cesium
 category: tools
-updated: 2026-09-22
+updated: 2026-10-03
 ---
 
 # Cesium
@@ -49,6 +49,14 @@ Cesiumは2026年9月2日、3D Tiles 2.0へ向けたベクタータイルの技�
 
 スナップ精度はCesiumがミリメートル水準と説明している。自動フットプリント生成、対話型の位置合わせ、スナップを使う計測ツールなどは今後の予定であり、今回の提供機能と区別する。
 
+## 基礎機能の独立と大規模データの読み込み
+
+2026年10月2日の更新で、CesiumJS 1.146は数学・幾何・時間などの基礎クラスを`@cesium/core`へ分離した。外部依存のないパッケージとして、描画エンジン全体を導入せず必要な基礎機能を利用できる。
+
+暗黙的タイルセットの読み込みも改善した。公式記事は大規模建物データのベンチマークで読み込み23倍高速、メモリ使用量1/13と報告する。すべてのデータや描画処理で同じ改善率になるという意味ではない。
+
+UnrealではBlueprintsによるスタイリングを拡充し、UnityではGeoJSONのPoint・MultiPoint描画とポリゴン読み込みに対応した。ionのBIM/CADバージョン管理と変更検出は9月発表の技術プレビューを含む月次整理であり、すべてが10月初出の機能ではない。
+
 ## 出典
 
 - [PSS：設計データを3D地図に重ねるCesiumの新機能](https://note.com/pacificspatial/n/n09d882d31390)（2026-09-21公開、2026-09-22確認）
@@ -58,3 +66,5 @@ Cesiumは2026年9月2日、3D Tiles 2.0へ向けたベクタータイルの技�
 - [Cesium Releases in September 2026](https://cesium.com/blog/2026/09/02/cesium-releases-in-september-2026/)（2026-09-10確認）
 - [Vector Tiles: A Technology Preview for Cesium and 3D Tiles](https://cesium.com/blog/2026/09/02/vector-tiles-technology-preview-cesium-and-3d-tiles/)（2026-09-08確認）
 - [【Cesium】ベクタータイルの技術プレビューを公開](https://note.com/pacificspatial/n/n20e3f2309503)（2026-09-08確認）
+
+- [Cesium Releases in October 2026](https://cesium.com/blog/2026/10/02/cesium-releases-in-october-2026/)（2026-10-03確認）
