@@ -2,7 +2,7 @@
 layout: default
 title: Felt
 category: tools
-updated: 2026-09-22
+updated: 2026-10-04
 ---
 
 # Felt
@@ -63,6 +63,23 @@ MCP経由の操作にはFeltユーザーの権限が引き継がれ、結果は�
 - 高度な数値計算や再現可能なバッチ処理は、適切な分析環境へ残す。
 - プラン、API、MCPツール、料金の変更を前提に依存範囲を決める。
 
+## QGISからの公開と集計値の照合
+
+2026年10月3日のQiita記事は、Pythonで架空の防災データ4レイヤーを作り、QGISからAdd to Feltプラグインで送る手順を示す。距離・面積の処理はEPSG:6676で行い、直接アップロード用にはEPSG:4326のGeoJSONも用意する。
+
+浸水区域は差分処理で重ならない3段階に分け、面積の二重計上を防ぐ。公開後のDashboardは、生成時に保存した次の基準値と照合する。
+
+| 架空サンプルの指標 | 基準値 |
+| --- | ---: |
+| 最大浸水深 | 2.4 m |
+| 浸水面積 | 2.588 km² |
+| 避難施設 | 6件 |
+| 浸水区域内の避難施設 | 5件 |
+
+これらは実在する災害情報ではない。著者はデータ検証などの自動テスト9件成功と報告するが、QGIS・Docker等は未確認と明記している。全工程を実機で検証済みの事例とは扱わない。今回も配布コードは実行していない。
+
+共有時は閲覧・編集権限と属性の公開範囲を確認する。地図表示だけでなく、件数・面積・属性が受け渡し後も一致するかを見る手順として参照できる。
+
 ## 関連項目
 
 - [Cloud Native Geospatial](../concepts/cloud-native-geospatial.md)
@@ -79,3 +96,5 @@ MCP経由の操作にはFeltユーザーの権限が引き継がれ、結果は�
 - [Felt Help Center: Files](https://help.felt.com/upload-anything/files)（2026-09-14確認）
 - [Felt Help Center: Organizing your raster data](https://help.felt.com/upload-anything/raster-infrastructure/organizing-your-raster-data)（2026-09-14確認）
 - [Feltを調べてみた ― Cloud Native GISはどこまで身近になったのか](https://qiita.com/rino_yume/items/b76443c5010bf0de2ceb)（2026-09-14確認）
+
+- [Feltを使ってみる Step 2 ー QGISからWeb GISへ公開してみる](https://qiita.com/rino_yume/items/feebb0b31dcc07ee9557)（2026-10-04確認）
