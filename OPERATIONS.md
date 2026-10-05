@@ -113,7 +113,7 @@ GitHub Pagesは次の設定で公開する。
 
 ## Atlasの月次整理
 
-初心者案内・POI案内・OpenLayersの構成図は、`python scripts/build_atlas_learning_figures.py`でSVGを再生成できる。生成先は`docs/assets/atlas/`。本文と図の説明をそろえ、変更時はスマートフォン幅と明暗テーマでも表示を確認する。
+初心者案内・POI案内・OpenLayers・空間結合・検証方法の図は、`python scripts/build_atlas_learning_figures.py`でSVGを再生成できる。生成先は`docs/assets/atlas/`。本文と図の説明をそろえ、変更時はスマートフォン幅と明暗テーマでも表示を確認する。
 
 毎月第1月曜日の9:00（日本時間）に、このチャットのCodex自動実行「GeoAIアトラスの月次整理」で見直す。初回は2026年10月5日に実施。予約はCodexアプリで管理し、GitHub Actionsの定期ジョブではない。
 

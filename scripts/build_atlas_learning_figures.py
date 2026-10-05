@@ -1,4 +1,4 @@
-"""Regenerate the three introductory Atlas diagrams (Python standard library)."""
+"""Regenerate introductory Atlas diagrams (Python standard library)."""
 
 from html import escape
 from pathlib import Path
@@ -95,5 +95,35 @@ def main():
          "OpenLayersの部品の関係", "MapはViewとレイヤー群を持つ。Viewは中心、ズーム、投影法を管理し、各レイヤーはSourceからデータを受け取る。背景と店舗の二つのレイヤーを重ねる例。", body)
 
 
+def foundations():
+    body = text(270, 82, "点と区域の対応を考える模式例", 22)
+    body += '<rect x="50" y="110" width="220" height="200" fill="#e8eef5" stroke="#1E3A5F" stroke-width="2"/>'
+    body += '<rect x="270" y="110" width="220" height="200" fill="#fff0e6" stroke="#1E3A5F" stroke-width="2"/>'
+    body += text(140, 143, "区域A", 24, True) + text(390, 143, "区域B", 24, True)
+    for x, y, label in [(130, 200, "P1"), (395, 200, "P2"), (270, 265, "P3")]:
+        body += f'<circle cx="{x}" cy="{y}" r="9" fill="{NAVY}" stroke="white" stroke-width="2"/>'
+        body += text(x, y - 18, label, 22, True)
+    body += text(270, 347, "P3はAとBの共有境界上", 22)
+    body += box(30, 375, 480, 76, "内部だけ：within", "P1 → A ／ P2 → B ／ P3 → 未所属")
+    body += box(30, 470, 480, 76, "境界も含む：covered_by", "P1 → A ／ P2 → B ／ P3 → A・B", "#fff0e6")
+    body += text(270, 587, "元の点3件に対し、対応は2行または4行", 21)
+    save("spatial-join-and-aggregation", "boundary-example.svg", 615,
+         "境界上の点をどう数えるか", "P1はA、P2はBの内部。P3は共有境界。withinではP3が未所属、covered_byではAとBの両方に対応する。実在の地域ではない。", body)
+
+    body = text(270, 82, "何を予測するかで、検証を選ぶ", 22)
+    for y, title, sub in [
+        (110, "観測点の近くも含む地図", "対象地域を代表する地点で確かめる"),
+        (220, "学習していない地域", "地域を分け、距離・環境差を確かめる"),
+        (330, "将来の時点", "時間で分け、未来情報の混入を防ぐ"),
+    ]:
+        body += box(30, y, 480, 80, title, sub)
+    body += text(270, 458, "三つは組み合わせて評価することもある", 22)
+    body += box(30, 495, 480, 80, "スコアと適用範囲を一緒に記録", "地域・時点・分割条件・誤差の内訳", "#fff0e6")
+    body += text(270, 614, "空間分割だけで正しさは保証されない", 22)
+    save("spatial-analysis-validation", "evaluation-target.svg", 645,
+         "評価は使う場面から決める", "観測点付近を含む地図、未知の地域、将来の時点に応じて検証を設計する。三つの用途は排他的ではなく、性能の優劣を示す図ではない。", body)
+
+
 if __name__ == "__main__":
     main()
+    foundations()

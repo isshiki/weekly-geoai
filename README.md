@@ -16,6 +16,8 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 目的別の読む順序と、概念・手法・データ・ツール・事例の索引から内容を探せる。日次の情報追加に加え、毎月第1月曜日に分類・説明・情報の鮮度を見直す。運用は[月次整理](OPERATIONS.md#atlas-monthly)を参照する。
 
+[基礎5テーマと経験別ルート](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/#foundations)では、GeoAIの全体像、座標と測定、空間結合、予測・説明・因果、結果の検証をつなぐ。GIS経験者、Python経験者、画面操作中心の読者が入口を選べる。
+
 ## 週刊GeoAI
 
 「週刊GeoAI」は、GIS・位置情報の仕事をしていて、AI・機械学習側の動きを短時間で追いたい人のための日本語ニュースレターである。1週間分のニュース・論文・事例を、毎週金曜にSubstackで配信する。

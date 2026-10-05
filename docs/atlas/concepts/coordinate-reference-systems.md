@@ -2,7 +2,7 @@
 layout: default
 title: 座標参照系（CRS）と地図投影法
 category: concepts
-updated: 2026-09-08
+updated: 2026-10-05
 ---
 
 # 座標参照系（CRS）と地図投影法
@@ -55,6 +55,27 @@ UTMは対象ゾーン内とその周辺でひずみを抑える。世界全体�
 
 日本国内の公共測量や地域分析では、日本の平面直角座標系が選択肢になる。UTMと同様に、対象地域、測地基準、必要精度を確認して選ぶ。
 
+## 設定と変換を区別する { #assign-or-transform }
+
+CRSの**設定**は「この数字はどの基準の座標か」というラベルを付けること、**変換**は同じ場所を別の基準の数字で表し直すことである。GeoPandasでは`set_crs`と`to_crs`がそれぞれに対応する。
+
+例えば経度139度台・緯度35度台のデータに、メートル座標のCRSを設定するだけでは正しい場所へ変換されない。元のCRSを提供元で確認し、正しく設定してから必要な変換を行う。すでに目的に合うCRSなら、変換を増やす必要はない。
+
+## 距離・面積は計算方法まで確認する { #measurement }
+
+「緯度経度の差をメートルとして扱わない」ことが出発点である。計算には、適切な投影座標系上の平面計算と、地球を近似した楕円体などの曲面上の計算がある。投影変換だけが選択肢ではない。
+
+| 方法・道具 | 計算時に確かめること |
+| --- | --- |
+| GeoPandasの`.area`や`.distance` | 平面上の計算である。用途と地域に合う投影座標系を選び、座標の単位を確認する |
+| PostGISの`ST_Distance`（geography型） | 既定では楕円体上の距離をメートルで計算する。同名関数でもgeometry型とは計算が異なる |
+| QGISの`$area` | プロジェクトの楕円体と面積単位の設定に従う。レイヤーが緯度経度でも、必ず度²が出るわけではない |
+| QGISの`area(geometry)` | ジオメトリのCRSに基づく平面計算であり、`$area`と区別する |
+
+EPSG:3857はメートル単位だが、表示用の座標をそのまま地表の距離・面積と解釈しない。地域に合う投影法でも、距離と面積の両方をどこでも完全に保存するわけではない。必要な精度と範囲に合わせて選ぶ。
+
+確認用には既知の2地点や公表面積のある区域を選び、計算方法・単位・データ時点を記録して照合する。公表値との違いには、境界の版や測定方法の違いも含まれる。
+
 ## 実装時のチェックリスト
 
 1. 入力と出力のCRSを識別できるか。
@@ -67,12 +88,18 @@ UTMは対象ゾーン内とその周辺でひずみを抑える。世界全体�
 
 ## 関連項目
 
+- [空間結合と集計の基本](../methods/spatial-join-and-aggregation.md)：座標をそろえたデータで区域別の集計へ進む。
+- [分析結果の検証と適用範囲](../methods/spatial-analysis-validation.md)：位置・単位・既知値を照合する。
 - [地図投影法の選び方](map-projections.md)
 - [メルカトル図法](mercator-projection.md)
 - [イコールアース図法](equal-earth-projection.md)
 
 ## 出典
 
+- [GeoPandas: Projections](https://geopandas.org/en/stable/docs/user_guide/projections.html)（2026-10-05確認）
+- [GeoPandas: GeoSeries.area](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.area.html)（2026-10-05確認）
+- [PostGIS: ST_Distance](https://postgis.net/docs/ST_Distance.html)（2026-10-05確認）
+- [QGIS: Geometry functions](https://docs.qgis.org/3.44/en/docs/user_manual/expressions/functions_list.html#geometry-functions)（3.44、2026-10-05確認）
 - [PROJ: Cartographic projection](https://proj.org/en/stable/usage/projections.html)（2026-09-08確認）
 - [PROJ: Universal Transverse Mercator](https://proj.org/en/stable/operations/projections/utm.html)（2026-09-08確認）
 - [EPSG:4326 WGS 84](https://epsg.org/crs_4326/WGS-84.html)（2026-09-08確認）

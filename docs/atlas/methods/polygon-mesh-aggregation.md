@@ -28,6 +28,11 @@ updated: 2026-10-05
 
 125mメッシュは緯度経度で定義され、全国一律の125m四方ではない。メッシュコードと計算に使う境界を一致させる。データ対象外・未取得・変換失敗・非交差を区別し、行がないことを安全と解釈しない。元のポリゴンと出典を残し、集計値から住所単位の状況を復元できるとは説明しない。
 
+## 次に読む
+
+- [空間結合と集計の基本](spatial-join-and-aggregation.md)：点と区域の対応から集計の前提を確認する。
+- [分析結果の検証と適用範囲](spatial-analysis-validation.md)：入力・計算・結果を照合する。
+
 ## 出典
 
 - [防災DBのポリゴンをメッシュに集計する：BigQueryの交差判定と面積の落とし穴](https://zenn.dev/nakato_tomohito/articles/bousaidb-polygon-mesh-bigquery)（2026-10-05確認）

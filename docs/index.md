@@ -20,7 +20,7 @@ hide:
 <div class="atlas-grid" markdown>
 <div class="atlas-card" markdown>
 ### [初めてのGeoAI](atlas/guides/getting-started.md)
-基本の言葉と、問い・データ・分析・検証の流れをつかむ。
+基礎5テーマと経験別ルートで、問い・データ・分析・検証の流れをつかむ。
 </div>
 <div class="atlas-card atlas-card--accent" markdown>
 ### [POIデータを選び、分析する](atlas/guides/poi-workflow.md)

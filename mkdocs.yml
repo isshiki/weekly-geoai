@@ -40,6 +40,7 @@ nav:
     - 全体を見る: atlas/index.md
     - 概念:
       - 位置情報の活用とAI:
+        - GeoAIの全体像: atlas/concepts/geoai-overview.md
         - ロケーションインテリジェンス: atlas/concepts/location-intelligence.md
         - Location AI: atlas/concepts/location-ai.md
         - 地理空間モデルの予測と地理的理解: atlas/concepts/geographic-model-reasoning.md
@@ -53,6 +54,9 @@ nav:
         - Cloud Native Geospatial: atlas/concepts/cloud-native-geospatial.md
         - リアリティーマッピングとデジタルツイン: atlas/concepts/reality-mapping-and-digital-twins.md
     - 手法:
+      - 分析の基礎と検証:
+        - 空間結合と集計の基本: atlas/methods/spatial-join-and-aggregation.md
+        - 分析結果の検証と適用範囲: atlas/methods/spatial-analysis-validation.md
       - AIによる分析と位置推定:
         - 地図探索エージェントの記憶と空間推論: atlas/methods/map-agent-memory.md
         - 空間特徴とLLMエージェントによる次の訪問地点予測: atlas/methods/spatial-agent-mobility-prediction.md

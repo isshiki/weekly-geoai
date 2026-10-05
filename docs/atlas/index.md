@@ -12,6 +12,8 @@ updated: 2026-10-05
 
 | 目的 | 読む順序 |
 | --- | --- |
+| 基礎から順に学ぶ | [5テーマと経験別ルート](guides/getting-started.md#foundations) → [GeoAIの全体像](concepts/geoai-overview.md) |
+| 集計や予測の結果を確かめる | [空間結合](methods/spatial-join-and-aggregation.md) → [予測・説明・因果](concepts/geographic-model-reasoning.md) → [検証と適用範囲](methods/spatial-analysis-validation.md) |
 | 店舗・施設のデータを分析する | [POIの案内](guides/poi-workflow.md) → [データ比較](data/poi-open-data-comparison.md) → [取得の網羅性](methods/poi-retrieval-coverage.md) |
 | 人の動きを分析する | [種類](data/human-flow-data-types.md) → [品質](data/human-flow-data-quality.md) → [集計](methods/human-flow-time-processing.md) → [プライバシー](methods/location-data-privacy.md) |
 | 地図を作り、公開する | [座標系](concepts/coordinate-reference-systems.md) → [Felt](tools/felt.md)／[MapLibre](tools/maplibre-gl-js.md)／[OpenLayers](tools/openlayers.md) → [Web配信](methods/national-grid-web-delivery.md) |
@@ -28,6 +30,7 @@ updated: 2026-10-05
 
 ### 位置情報の活用とAI
 
+- [GeoAIの全体像](concepts/geoai-overview.md)
 - [ロケーションインテリジェンス](concepts/location-intelligence.md)
 - [Location AI](concepts/location-ai.md)
 - [地理空間モデルの予測と地理的理解](concepts/geographic-model-reasoning.md)
@@ -46,6 +49,11 @@ updated: 2026-10-05
 - [リアリティーマッピングとデジタルツイン](concepts/reality-mapping-and-digital-twins.md)
 
 ## 手法 { #methods }
+
+### 分析の基礎と検証
+
+- [空間結合と集計の基本](methods/spatial-join-and-aggregation.md)
+- [分析結果の検証と適用範囲](methods/spatial-analysis-validation.md)
 
 ### AIによる分析と位置推定
 
