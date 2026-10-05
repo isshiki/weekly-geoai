@@ -1,7 +1,7 @@
 ---
 title: 初めてのGeoAI
 category: guides
-updated: 2026-10-05
+updated: 2026-10-06
 ---
 
 # 初めてのGeoAI
@@ -37,6 +37,8 @@ updated: 2026-10-05
 単純な集計や地図表示にも価値がある。AIを組み合わせる場合も、この流れのどの段階を任せるかを決め、出力を確かめる。店舗数だけから人気や売上を結論付けることはできない。
 
 ## 基礎を五つのテーマで学ぶ { #foundations }
+
+点・線・面と画像の違いから確認したい場合は、[ベクターとラスター](../concepts/vector-raster-data.md)を先に読む。5テーマの後は、[空間索引](../methods/spatial-index-selection.md)で検索の効率化、[データの来歴](../data/geospatial-record-provenance.md)で再現に必要な記録へ進める。
 
 | 順序 | 読むページ | 読み終えたら確かめること |
 | --- | --- | --- |

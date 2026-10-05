@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 知識マップ
-updated: 2026-10-05
+updated: 2026-10-06
 ---
 
 # GeoAIアトラス 知識マップ
@@ -44,6 +44,8 @@ updated: 2026-10-05
 - [イコールアース図法](concepts/equal-earth-projection.md)
 
 ### データ基盤と3D空間
+
+- [ベクターとラスター：データの表し方](concepts/vector-raster-data.md)
 
 - [GeoAIの標準化と実務での採用](concepts/geoai-standards-and-adoption.md)
 - [Cloud Native Geospatial](concepts/cloud-native-geospatial.md)
