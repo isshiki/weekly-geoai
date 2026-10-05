@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-09-24
+updated: 2026-10-05
 ---
 
 # MapLibre GL JS
@@ -57,6 +57,14 @@ terrainに隠れたMarkerの判定は、GPUの深度バッファー読み戻し�
 
 `promoteId`付きソースのタイル間シンボル照合を高速化したほか、macOSのFirefoxで6.8.0以降に発生した移動・ズームの遅さ、投影変更や地形の遅延読み込みによるMarker・Popupの位置ずれを修正している。端末別性能は本ページでは実測していない。
 
+## 継続的なデータ更新と描画の改善
+
+v6.12.0は2026年10月4日日本時間に公開された。現在地追跡のズーム調整を制御する`zoomToUserAccuracy`と、既存余白へ加算せず適用する`absolutePadding`を追加した。表示タイル変更時のラベル更新も必要部分に絞った。
+
+GeoJSONでは、ワーカー処理より速い`setData`呼び出しによるメモリ増大・クラッシュ、古い処理結果による上書き、クラスタ更新の不整合を修正した。継続的にデータを差し替える地図で確認する変更である。
+
+地形下のカメラから描画タイル外の標高を読む際に0となる問題も修正し、その読み取り処理を約40倍効率化したと説明する。地図全体の描画速度が40倍になったという意味ではない。今回はリリースノートの確認であり、実機性能は測定していない。
+
 ## 関連項目
 
 - [全国メッシュデータのWeb配信](../methods/national-grid-web-delivery.md)
@@ -72,3 +80,5 @@ terrainに隠れたMarkerの判定は、GPUの深度バッファー読み戻し�
 - [MapLibre GL JS documentation](https://maplibre.org/maplibre-gl-js/docs/)（2026-09-09確認）
 - [MapLibre GL JS v6.8.0 release](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.8.0)（2026-09-09確認）
 - [MapLibre GL JS v6.9.0 release](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.9.0)（2026-09-10確認）
+
+- [MapLibre GL JS v6.12.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.12.0)（2026-10-05確認）

@@ -59,6 +59,7 @@ title: 知識マップ
 
 ### 主題図・モニタリング・配信
 
+- [ポリゴンのメッシュ集計と被覆率](methods/polygon-mesh-aggregation.md)
 - [画像からGIS情報を作る解析と検証](methods/imagery-to-gis.md)
 - [標高タイルによる地形指標と測定スケール](methods/terrain-scale.md)
 - [CADからGeoPackageへの変換と検証](methods/cad-to-geopackage.md)
@@ -105,6 +106,7 @@ title: 知識マップ
 - [ShadeMapと建物データの更新](tools/shademap.md)
 - [OH3 今昔マップビューア](tools/oh3-konjaku.md)
 - [Mapbox Standard](tools/mapbox-standard.md)
+- [OpenLayers](tools/openlayers.md)
 - [MapLibre GL JS](tools/maplibre-gl-js.md)
 - [maplibre-gl-streetview](tools/maplibre-gl-streetview.md)
 - [GeoLibre](tools/geolibre.md)
@@ -152,6 +154,7 @@ title: 知識マップ
 
 ### 人流・商圏・不動産分析
 
+- [ゼンリン まっちず](tools/zenrin-matchz.md)
 - [GEOSPACE 地番地図とちばんAPIワイド](tools/geospace-chiban.md)
 - [LAPと人流アナリティクス](tools/location-ai-platform.md)
 - [IPinfo Places](tools/ipinfo-places.md)

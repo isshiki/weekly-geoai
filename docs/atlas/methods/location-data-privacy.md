@@ -2,7 +2,7 @@
 layout: default
 title: 位置情報データのプライバシー保護
 category: methods
-updated: 2026-10-03
+updated: 2026-10-05
 ---
 
 # 位置情報データのプライバシー保護
@@ -47,6 +47,14 @@ LBMA Japanは2026年10月2日、デバイスロケーションデータ利活用
 
 ここでは団体の改定発表を確認した。ガイドライン全文の条項照合は行っていない。施行日は発表冒頭の10月2日と概要欄の10月1日で食い違うため、確定日として扱わない。
 
+## コネティカット州の精密位置情報の販売規制
+
+Huntonの2026年6月5日の解説は、SB4の成立と、当時署名見込みだったHB5222・HB5563を合わせて説明している。新しい10月の記事ではなく、施行時期に関連する背景資料として読む。
+
+成立法Public Act 26-64の第14・15節は、2026年10月1日を施行日とし、controllerと第三者による消費者の精密位置情報の販売禁止を規定する。通信内容や公益事業の高度計量設備に関係するデータへの例外も記載する。第2節は2027年1月1日以降のデータブローカー登録、第5節は2028年7月1日までの削除請求機構整備を定める。
+
+ここでは上記成立法を照合したが、関連修正法を統合した現行条文全体の確認は行っていない。日本の位置情報全般や、すべての匿名・集計データの販売へ一律に適用される規則とは扱わない。
+
 ## 関連項目
 
 - [人流データの種類と加工段階](../data/human-flow-data-types.md)
@@ -59,3 +67,6 @@ LBMA Japanは2026年10月2日、デバイスロケーションデータ利活用
 - [いっしきまさひこBLOG：位置情報データはどうプライバシーを守る？　匿名化・集計・秘匿化を整理する](https://blog.masahiko.info/entry/2026/09/14/193224)（公開日：2026-09-14、2026-09-15確認）
 
 - [位置情報データ利活用の業界共通ガイドラインを「Ver4.1.0」に改定 ― 技術革新・社会情勢の変化をふまえ、アップデートを実施](https://prtimes.jp/main/html/rd/p/000000047.000055226.html)（2026-10-03確認）
+
+- [Connecticut Privacy Law Updates: Data Broker Rules, Geolocation Sale Ban, Surveillance Pricing Restrictions, and Genetic Data Regulations](https://www.hunton.com/privacy-and-cybersecurity-law-blog/connecticut-privacy-law-updates-data-broker-rules-geolocation-sale-ban-surveillance-pricing-restrictions-and-genetic-data-regulations)（2026-10-05確認）
+- [Connecticut General Assembly：Public Act 26-64](https://prdext2.cga.ct.gov/2026/act/pa/pdf/2026PA-00064-R00SB-00004-PA.pdf)（2026-10-05確認）

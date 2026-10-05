@@ -2,7 +2,7 @@
 layout: default
 title: 日本のロケーションインテリジェンス製品・サービス
 category: tools
-updated: 2026-09-30
+updated: 2026-10-05
 ---
 
 # 日本のロケーションインテリジェンス製品・サービス
@@ -55,6 +55,12 @@ CSVやParquetなどを受け取り、自社で加工・分析する場合は、�
 
 MarketAnalyzer 5は統計・POI・自社データを重ねて分析し、商圏レポートAIで地域特性や出店ポテンシャルを言語化する。KDDI Location AnalyzerはKDDIとの共同開発による人流分析製品である。同社はデータ拡充、ノウハウの体系化、多用途展開、AIによる属人化解消を導入拡大の背景に挙げる。導入規模と分析精度・業務効果は別の指標であり、この発表は独立した効果検証ではない。
 
+## 地図APIと高精度3次元データの提供形態
+
+2026年10月1日のGFS解説は、ゼンリンの地図・GIS・APIと、ダイナミックマッププラットフォームの自動運転・ADAS向け高精度3次元地図を対比する。位置情報関連企業を一括りにせず、どのデータを、どの用途・製品形態で提供しているかを読む資料である。
+
+投資教育メディアによる二次解説として参照し、収益見通しや投資判断をAtlasの評価として採用しない。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -67,3 +73,5 @@ MarketAnalyzer 5は統計・POI・自社データを重ねて分析し、商圏�
 - [日本で使えるロケーションインテリジェンス製品・サービスを整理してみた【2026年版】](https://blog.masahiko.info/entry/2026/08/31/080000)（2026-09-06確認）
 
 - [技研商事インターナショナル：GIS製品シリーズの導入3,000社](https://prtimes.jp/main/html/rd/p/000000076.000098428.html)（2026-09-30確認）
+
+- [「位置情報」が未来を変える！地図・自動運転を支える注目上場企業2社](https://official.gfs.tokyo/blog/hayashi-location-data-is-changing-the-future-two-notable-listed-companies-powering-mapping-and-autonomous-driving)（2026-10-05確認）

@@ -2,7 +2,7 @@
 layout: default
 title: POIオープンデータの比較と地域特徴量
 category: data
-updated: 2026-10-03
+updated: 2026-10-05
 ---
 
 # POIオープンデータの比較と地域特徴量
@@ -85,6 +85,14 @@ Overtureの実践記事は、schema v2.0.0で旧categoriesを使わず、basic_c
 
 PulseSignalのAI整理一覧を手掛かりに公式ページと照合した。特にBasicを期限のない無料プランと解釈しない。料金は確認時点の情報である。
 
+## 公開Web情報で補完するときの来歴と更新
+
+GISuserの2026年10月3日解説は、POIを収集した後の名寄せ、住所正規化、座標精度、カテゴリ統一、更新を継続的な作業として整理する。施設名だけで同一施設と判断せず、住所や近接性も照合する。
+
+原本と統合済みデータを分け、出典、最終確認日、初回・最終観測日、取得失敗を残す。地域別の抜き取りや、チェーンが公表する店舗数との照合で欠落を調べ、名寄せルールを変更した場合に再処理できるようにする。
+
+飲食・小売の月次更新、安定した業種の四半期更新は記事の提案例である。取得失敗や検索結果からの消失だけを閉業と断定しない。記事にはプロキシ製品の紹介も含まれるが、Atlasでは品質管理の論点を参照する。公開ページで読めることと再利用許諾は別であり、公式API・オープンデータと出典ごとの利用条件を確認する。
+
 ## 関連項目
 
 - [地理空間データの来歴とレコード単位のメタデータ](geospatial-record-provenance.md)
@@ -104,3 +112,5 @@ PulseSignalのAI整理一覧を手掛かりに公式ページと照合した。�
 
 - [Foursquare公式料金](https://foursquare.com/pricing/)（2026-10-03確認）
 - [PulseSignal：Foursquare pricing (2026)](https://getpulsesignal.com/pricing/foursquare)（2026-10-03確認）
+
+- [What It Takes to Build POI Datasets From Public Web Sources](https://gisuser.com/2026/10/what-it-takes-to-build-poi-datasets-from-public-web-sources/)（2026-10-05確認）
