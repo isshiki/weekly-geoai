@@ -15,27 +15,30 @@ hide:
 
 ニュースや論文を日付順に並べるだけでなく、概念、手法、データ、ツール、事例という切り口で知見を蓄積するナレッジサイトです。
 
-<div class="atlas-grid">
-  <div class="atlas-card">
-    <h3>概念・手法</h3>
-    <p>GeoAIを理解し、実装するための考え方とアプローチを整理する。</p>
-  </div>
-  <div class="atlas-card atlas-card--accent">
-    <h3>データ</h3>
-    <p>地理空間データの種類、生成過程、読み解く際の注意点を整理する。</p>
-  </div>
-  <div class="atlas-card atlas-card--accent">
-    <h3>ツール</h3>
-    <p>製品、サービス、OSSの役割と主要な更新を追う。</p>
-  </div>
-  <div class="atlas-card">
-    <h3>事例</h3>
-    <p>GeoAIが業務や社会でどのように使われているかを記録する。</p>
-  </div>
+## どこから読みますか
+
+<div class="atlas-grid" markdown>
+<div class="atlas-card" markdown>
+### [初めてのGeoAI](atlas/guides/getting-started.md)
+基本の言葉と、問い・データ・分析・検証の流れをつかむ。
+</div>
+<div class="atlas-card atlas-card--accent" markdown>
+### [POIデータを選び、分析する](atlas/guides/poi-workflow.md)
+Foursquare・Overture・OpenStreetMapを目的に合わせて試す。
+</div>
+<div class="atlas-card atlas-card--accent" markdown>
+### [目的から探す](atlas/index.md#by-purpose)
+人流、Web地図、AIによるGIS操作、防災など、やりたいことから読む。
+</div>
+<div class="atlas-card" markdown>
+### [分類から探す](atlas/index.md#by-category)
+概念・手法・データ・ツール・事例の索引から調べる。
+</div>
 </div>
 
 [知識マップを見る](atlas/index.md){ .md-button .md-button--primary }
-[更新履歴を見る](updates/index.md){ .md-button }
+
+最近の変更箇所は[更新履歴](updates/index.md)から確認できます。
 
 ## 週刊GeoAI
 

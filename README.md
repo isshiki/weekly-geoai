@@ -4,6 +4,8 @@
 
 - [GeoAIアトラス](https://isshiki.github.io/weekly-geoai/)
 - [知識マップ](https://isshiki.github.io/weekly-geoai/atlas/)
+- [初めてのGeoAI](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/)
+- [POIデータを選び、分析する](https://isshiki.github.io/weekly-geoai/atlas/guides/poi-workflow/)
 - [週刊GeoAI バックナンバー](https://weeklygeoai.substack.com/archive)
 
 ## このリポジトリについて
@@ -11,6 +13,8 @@
 このリポジトリでは、GeoAIに関する技術、データ、ツール、活用事例などを、長く参照できる形で整理していく。あわせて、ニュースレター「週刊GeoAI」の制作に使用する。
 
 GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーションと全文検索を備えたWiki形式で公開する。
+
+目的別の読む順序と、概念・手法・データ・ツール・事例の索引から内容を探せる。日次の情報追加に加え、毎月第1月曜日に分類・説明・情報の鮮度を見直す。運用は[月次整理](OPERATIONS.md#atlas-monthly)を参照する。
 
 ## 週刊GeoAI
 

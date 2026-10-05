@@ -59,6 +59,8 @@ Codexには、URLやニュースチェックを貼って「今日の気になっ
 
 ## 週次原稿
 
+週次原稿は以下の手順で作成する。Atlasの月次整理は[後述の運用](#atlas-monthly)を使う。
+
 発行日を指定して、前週金曜から木曜までのURLを下書きへ集約する。
 
 ```powershell
@@ -107,6 +109,24 @@ GitHub Pagesは次の設定で公開する。
 
 サイトのロゴとファビコンには`assets/logo.svg`を使用する。`scripts/sync_site_assets.py`がMkDocs配信用の`docs/assets/logo.svg`へ同期し、GitHub Actionsでもビルド前に必ず実行する。
 
+<a id="atlas-monthly"></a>
+
+## Atlasの月次整理
+
+毎月第1月曜日の9:00（日本時間）に、このチャットのCodex自動実行「GeoAIアトラスの月次整理」で見直す。初回は2026年10月5日に実施。予約はCodexアプリで管理し、GitHub Actionsの定期ジョブではない。
+
+内容の基準は[Atlas編集ガイド](editorial/atlas-guide.md#月次整理)を参照する。前月の蓄積から5〜10ページ程度を選び、入口・分類・基礎説明・情報の鮮度を改善する。変更がない場合は通知を控え、改善結果、失敗、要対応事項を報告する。
+
+実施日の`docs/updates/YYYY-MM-DD.md`に整理内容と次回候補を残す。同日のニュース追加がある場合は、当日の最初の変更より前のコミットを比較元にして、Atlasだけの確認リンクを再生成する。
+
+```powershell
+python scripts/sync_update_history.py --date YYYY-MM-DD --base <当日の最初の変更より前のコミット>
+python -m mkdocs build --strict
+python scripts/check_public.py --all
+```
+
+リンク・表示・差分と公開内容を確認した後、対象変更だけをコミット・プッシュする。公開URLの到達とGitHub Pagesのデプロイ結果を確認して報告する。ニュースレターの原稿や配信設定は月次整理の対象に含めない。
+
 ## 公開前チェック
 
 このリポジトリは全履歴を含めて公開される。push前に毎回、次を確認する。
@@ -119,6 +139,8 @@ GitHub Pagesは次の設定で公開する。
 6. `git diff --cached`で実際に公開される差分を読む。
 
 全ファイルまたはGit追跡対象を次のコマンドで検査できる。
+
+`--all`は無視対象のローカル`.env`も検出する。その場合は内容を表示せず、`git check-ignore .env`と`git ls-files .env`で無視・未追跡を確認し、新規ファイルを明示的にステージした後、`--all`なしの追跡対象チェックでも検証する。検出された秘密情報を公開対象へ加えてはならない。
 
 ```powershell
 python scripts/check_public.py --all

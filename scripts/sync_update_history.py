@@ -84,7 +84,12 @@ def review_link(path: str, current: str, before: str, after: str, site_url: str)
     for text in changed:
         value = encode(text)
         directives.append("text=" + value)
-    url = site_url.rstrip("/") + "/" + path.removeprefix("docs/").removesuffix(".md") + "/"
+    route = path.removeprefix("docs/").removesuffix(".md")
+    if route == "index":
+        route = ""
+    elif route.endswith("/index"):
+        route = route.removesuffix("/index")
+    url = site_url.rstrip("/") + "/" + (route + "/" if route else "")
     state = "新規" if not before else "更新"
     if directives:
         url += "#:~:" + "&".join(directives)

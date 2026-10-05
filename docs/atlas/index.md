@@ -1,19 +1,30 @@
 ---
 layout: default
 title: 知識マップ
+updated: 2026-10-05
 ---
 
 # GeoAIアトラス 知識マップ
 
-日々確認した情報を、長く参照できるテーマ単位で整理する。大分類から用途・テーマを選び、個別の項目へ進む。
+やりたいことから読む順序を選ぶか、分類から個別の項目を探せる。初めて読む場合は[初めてのGeoAI](guides/getting-started.md)から始める。
 
-- **概念**：用語や技術の関係を理解する。
-- **手法**：分析・探索・集計の進め方を調べる。
-- **データ**：データの種類・品質・仕様を確認する。
-- **ツール**：目的に合う製品・OSS・サービスを探す。
-- **事例**：業務や社会での活用を知る。
+## 目的から探す { #by-purpose }
 
-## 概念
+| 目的 | 読む順序 |
+| --- | --- |
+| 店舗・施設のデータを分析する | [POIの案内](guides/poi-workflow.md) → [データ比較](data/poi-open-data-comparison.md) → [取得の網羅性](methods/poi-retrieval-coverage.md) |
+| 人の動きを分析する | [種類](data/human-flow-data-types.md) → [品質](data/human-flow-data-quality.md) → [集計](methods/human-flow-time-processing.md) → [プライバシー](methods/location-data-privacy.md) |
+| 地図を作り、公開する | [座標系](concepts/coordinate-reference-systems.md) → [Felt](tools/felt.md)／[MapLibre](tools/maplibre-gl-js.md)／[OpenLayers](tools/openlayers.md) → [Web配信](methods/national-grid-web-delivery.md) |
+| AIにGIS操作を任せる | [仕組み](concepts/location-ai.md) → [開発環境](methods/ai-ready-geospatial-development.md) → [CARTO MCP](tools/carto-mcp-server.md) |
+| 防災・地形データを使う | [再利用条件](data/hazard-data-reuse.md) → [メッシュ集計](methods/polygon-mesh-aggregation.md) → [地形のスケール](methods/terrain-scale.md) |
+
+## 分類から探す { #by-category }
+
+[概念](#concepts) / [手法](#methods) / [データ](#data) / [ツール](#tools) / [事例](#cases)
+
+ツールには、画面で操作するサービスと、コードに組み込むライブラリがある。小分類は主な使い道で整理している。個別ページで必要な準備と利用条件を確認する。
+
+## 概念 { #concepts }
 
 ### 位置情報の活用とAI
 
@@ -34,7 +45,7 @@ title: 知識マップ
 - [Cloud Native Geospatial](concepts/cloud-native-geospatial.md)
 - [リアリティーマッピングとデジタルツイン](concepts/reality-mapping-and-digital-twins.md)
 
-## 手法
+## 手法 { #methods }
 
 ### AIによる分析と位置推定
 
@@ -43,11 +54,14 @@ title: 知識マップ
 - [空間分析への埋め込みの組み込み](methods/spatial-embeddings.md)
 - [店舗画像によるPOIローカライゼーション](methods/storefront-poi-localization.md)
 
-### AI向けのデータ探索と開発
+### データの検索・取得とサービス選定
 
 - [空間索引の選択と評価条件](methods/spatial-index-selection.md)
 - [POI検索の取得効率と網羅性](methods/poi-retrieval-coverage.md)
 - [位置情報PaaSの選び方と相互運用性](methods/location-paas-selection.md)
+
+### AI向けのデータ探索と開発
+
 - [知識グラフとLLMエージェントによる地理空間データ探索](methods/intelligent-geospatial-data-discovery.md)
 - [GISデータセットカタログ](methods/gis-dataset-catalog-for-agents.md)
 - [AIが扱いやすい地理空間開発環境](methods/ai-ready-geospatial-development.md)
@@ -57,20 +71,26 @@ title: 知識マップ
 - [人流データの時間処理と集計定義](methods/human-flow-time-processing.md)
 - [位置情報データのプライバシー保護](methods/location-data-privacy.md)
 
-### 主題図・モニタリング・配信
+### 空間集計・地形と主題図
 
 - [ポリゴンのメッシュ集計と被覆率](methods/polygon-mesh-aggregation.md)
-- [画像からGIS情報を作る解析と検証](methods/imagery-to-gis.md)
 - [標高タイルによる地形指標と測定スケール](methods/terrain-scale.md)
+- [地域別最多カテゴリ地図の読み方](methods/regional-winner-maps.md)
+
+### データ作成・変換と現地調査
+
+- [画像からGIS情報を作る解析と検証](methods/imagery-to-gis.md)
 - [CADからGeoPackageへの変換と検証](methods/cad-to-geopackage.md)
 - [街歩きによるバリア情報マッピング](methods/barrier-information-mapping.md)
 - [手描き地図の座標校正と表示](methods/illustrated-map-coordinates.md)
-- [地域別最多カテゴリ地図の読み方](methods/regional-winner-maps.md)
+
+### モニタリングと継続運用
+
 - [農業統計・圃場・衛星データを統合する米作モニタリング](methods/california-rice-monitoring.md)
 - [全国メッシュデータのWeb配信](methods/national-grid-web-delivery.md)
 - [外部地図サービスの廃止と依存関係の点検](methods/map-service-lifecycle.md)
 
-## データ
+## データ { #data }
 
 ### 人流データ
 
@@ -95,40 +115,52 @@ title: 知識マップ
 - [Cloud Optimized GeoParquet（COGP）](data/cloud-optimized-geoparquet.md)
 - [ParquetのALP浮動小数点符号化](data/parquet-alp.md)
 
-## ツール
+## ツール { #tools }
 
-### 地図表示とWeb GIS
+### ブラウザーで地図を探索する
 
 - [Kumoy](tools/kumoy.md)
-- [GeoTools](tools/geotools.md)
 - [Geospect](tools/geospect.md)
 - [OH3（Open Hinata 3）](tools/open-hinata3.md)
 - [ShadeMapと建物データの更新](tools/shademap.md)
 - [OH3 今昔マップビューア](tools/oh3-konjaku.md)
-- [Mapbox Standard](tools/mapbox-standard.md)
-- [OpenLayers](tools/openlayers.md)
-- [MapLibre GL JS](tools/maplibre-gl-js.md)
-- [maplibre-gl-streetview](tools/maplibre-gl-streetview.md)
+
+### 地図を作成・共有する
+
 - [GeoLibre](tools/geolibre.md)
-- [Cesium](tools/cesium.md)
 - [Felt](tools/felt.md)
 - [ArcGIS StoryMaps](tools/arcgis-storymaps.md)
 
-### 空間分析・データ処理・配信
+### Web地図をコードで作る
 
-- [TorchGeo](tools/torchgeo.md)
-- [SateAIs](tools/sateais.md)
-- [ArcFM](tools/arcfm.md)
-- [ArcGIS Solutions](tools/arcgis-solutions.md)
-- [ArcGIS API for Python](tools/arcgis-api-python.md)
-- [GeoAI（geoai-py）](tools/geoai-py.md)
+- [MapLibre GL JS](tools/maplibre-gl-js.md)
+- [OpenLayers](tools/openlayers.md)
+- [Cesium](tools/cesium.md)
+- [Mapbox Standard](tools/mapbox-standard.md)
+- [maplibre-gl-streetview](tools/maplibre-gl-streetview.md)
+
+### 分析・変換をコードで行う
+
+- [GeoTools](tools/geotools.md)
 - [pandas](tools/pandas.md)
-- [FME](tools/fme.md)
 - [Spatial Polars](tools/spatial-polars.md)
 - [MovingPandas](tools/movingpandas.md)
 - [H3](tools/h3.md)
 - [geoparquet-io](tools/geoparquet-io.md)
+- [ArcGIS API for Python](tools/arcgis-api-python.md)
+
+### 画像解析・機械学習
+
+- [TorchGeo](tools/torchgeo.md)
+- [SateAIs](tools/sateais.md)
+- [GeoAI（geoai-py）](tools/geoai-py.md)
+
+### データ連携・配信と業務GIS
+
+- [FME](tools/fme.md)
 - [GeoServer](tools/geoserver.md)
+- [ArcFM](tools/arcfm.md)
+- [ArcGIS Solutions](tools/arcgis-solutions.md)
 
 ### 場所検索・交通・ナビゲーション
 
@@ -171,7 +203,7 @@ title: 知識マップ
 
 - [GIS Career Hub](tools/gis-career-hub.md)
 
-## 事例
+## 事例 { #cases }
 
 ### 小売・出店・価格比較
 
@@ -184,16 +216,18 @@ title: 知識マップ
 - [来店検知を使う位置連動リテールメディア](cases/location-triggered-retail-media.md)
 - [来訪傾向を使う音声広告セグメント](cases/behavior-affinity-audio-ads.md)
 
-### 都市・観光・働き方・物流
+### 都市・観光と働き方
 
-- [紅葉時期の変化と空間補間](cases/maple-phenology.md)
-- [運転支援と地図の継続更新](cases/streaming-maps-driver-assistance.md)
 - [渋谷の街区別年代構成と人流の読み方](cases/shibuya-age-distribution.md)
-- [旅客船のAIS位置情報の可視化](cases/ais-passenger-vessels.md)
 - [富士山閉山期の人流分析](cases/mount-fuji-offseason-human-flow.md)
 - [人流データによるオフィス訪問指数](cases/office-visitation-index.md)
+
+### 交通・物流
+
+- [運転支援と地図の継続更新](cases/streaming-maps-driver-assistance.md)
+- [旅客船のAIS位置情報の可視化](cases/ais-passenger-vessels.md)
 - [配送経路の最適化と現場フィードバック](cases/here-fleet-route-intelligence.md)
 
-## 更新履歴
+### 気候・季節の変化
 
-[日付別の更新履歴](../updates/index.md)
+- [紅葉時期の変化と空間補間](cases/maple-phenology.md)

@@ -28,6 +28,13 @@ class ReviewLinksTest(unittest.TestCase):
     def test_delimiters_are_encoded(self):
         self.assertEqual(encode("a-b,c&d"), "a%2Db%2Cc%26d")
 
+    def test_index_routes_match_mkdocs_directory_urls(self):
+        source = "---\ntitle: 索引\n---\n\n目的から個別の知識ページを探せる。"
+        for path, route in [("docs/atlas/index.md", "atlas/"), ("docs/index.md", ""), ("docs/atlas/guides/poi-workflow.md", "atlas/guides/poi-workflow/")]:
+            with self.subTest(path=path):
+                link = review_link(path, source, "", source, "https://example.com/project/")
+                self.assertIn("https://example.com/project/" + route + "#:~:text=", link)
+
 
 if __name__ == "__main__":
     unittest.main()
