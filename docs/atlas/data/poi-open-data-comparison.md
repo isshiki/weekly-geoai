@@ -97,6 +97,10 @@ GISuserの2026年10月3日解説は、POIを収集した後の名寄せ、住所
 
 ## 関連項目
 
+- [4店舗の空間結合演習](../guides/spatial-join-exercise.md)：店舗ID、対応行数、区域別件数の違いを小例で確かめる。
+- [座標参照系と距離・面積](../concepts/coordinate-reference-systems.md#measurement)：範囲や密度を比較する前に計算方法と単位をそろえる。
+- [分析結果の検証と適用範囲](../methods/spatial-analysis-validation.md)：件数の多さと網羅性・予測性能を分けて確認する。
+
 - [地理空間データの来歴とレコード単位のメタデータ](geospatial-record-provenance.md)
 - [Overtureのデータスキーマ](overture-schema.md)
 - [小売出店候補地のロケーションインテリジェンス](../cases/retail-site-selection.md)

@@ -49,6 +49,8 @@ Shapelyの`within`と`covered_by`には上記の境界の違いがある。[2][3
 
 ## 次に読む
 
+- [4店舗で試す空間結合と件数の検証](../guides/spatial-join-exercise.md)：区域外の点を追加し、手計算とShapelyで件数の落とし穴を確かめる。
+
 - [ポリゴンのメッシュ集計と被覆率](polygon-mesh-aggregation.md)：面同士の重なりと二重計上を扱う。
 - [POIデータを選び、分析する](../guides/poi-workflow.md)：入力データの取得・比較へ進む。
 - [分析結果の検証と適用範囲](spatial-analysis-validation.md)：件数の照合からモデル評価までを整理する。

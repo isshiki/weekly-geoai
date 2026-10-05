@@ -18,6 +18,8 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 [基礎5テーマと経験別ルート](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/#foundations)では、GeoAIの全体像、座標と測定、空間結合、予測・説明・因果、結果の検証をつなぐ。GIS経験者、Python経験者、画面操作中心の読者が入口を選べる。
 
+[4店舗の空間結合演習](https://isshiki.github.io/weekly-geoai/atlas/guides/spatial-join-exercise/)では、手計算と実行用Pythonコードで、境界・未所属・重複が件数へ与える影響を確かめられる。
+
 ## 週刊GeoAI
 
 「週刊GeoAI」は、GIS・位置情報の仕事をしていて、AI・機械学習側の動きを短時間で追いたい人のための日本語ニュースレターである。1週間分のニュース・論文・事例を、毎週金曜にSubstackで配信する。

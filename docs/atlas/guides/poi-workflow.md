@@ -53,6 +53,8 @@ bboxは緯度・経度で囲む矩形の範囲である。最初は小さなbbox
 
 ## 5. 集計し、結果を説明する
 
+区域別の件数を作る前に、[4店舗の空間結合演習](spatial-join-exercise.md)で境界上の点と未所属の扱いを確かめられる。計算の前提は[座標と測定](../concepts/coordinate-reference-systems.md#measurement)、結果の点検は[検証と適用範囲](../methods/spatial-analysis-validation.md)へ進む。
+
 範囲とカテゴリをそろえて、件数・密度・構成比を作る。その際は「データに収録された施設の分布」を表していることを明記する。POIの多さは、売上や来訪者の多さを直接表さない。
 
 成果物には、取得条件、データ版、カテゴリ対応、欠損と重複の扱いを添える。小さなサンプルを原典と照合してから、別の地域へ広げる。[来歴の残し方](../data/geospatial-record-provenance.md)と[検索の網羅性](../methods/poi-retrieval-coverage.md)も参照するとよい。

@@ -2,7 +2,7 @@
 layout: default
 title: 人流データの計測誤差と推計誤差
 category: data
-updated: 2026-09-08
+updated: 2026-10-05
 ---
 
 # 人流データの計測誤差と推計誤差
@@ -49,6 +49,10 @@ updated: 2026-09-08
 6. 可能なら歩行者調査や既存統計と小規模に比較し、乖離の方向を確認したか。
 
 ## 関連項目
+
+- [空間結合と集計の基本](../methods/spatial-join-and-aggregation.md)：区域への割り当てと重複を確認する。観測点数をそのまま人数と解釈しない。
+- [地理空間モデルの予測と地理的理解](../concepts/geographic-model-reasoning.md#prediction-explanation-causality)：人流と売上の関連を、施策による因果効果と区別する。
+- [分析結果の検証と適用範囲](../methods/spatial-analysis-validation.md)：地域・時点・対象者の偏りを記録し、評価の対象を明確にする。
 
 - [人流データの種類](human-flow-data-types.md)
 - [人流データの時間処理と集計定義](../methods/human-flow-time-processing.md)
