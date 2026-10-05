@@ -24,6 +24,11 @@ POIは店舗・施設などの場所の情報である。この案内は、「�
 
 詳しい違いは[3種類の比較](../data/poi-open-data-comparison.md)にまとめている。利用・加工・公開の条件は、採用するデータ版のライセンスで確認する。
 
+<figure markdown="span" id="poi-choice">
+  ![用途に応じてOverture、Foursquare、OpenStreetMapを候補とし、いずれも小さな範囲で取得して条件と品質を確認する](../../assets/atlas/poi-workflow/poi-choice-and-check.svg)
+  <figcaption>候補は用途から選び、共通の確認手順へ進む。並び順は品質の順位を示さず、複数を試してよい。本文の選択基準を基にGeoAIアトラス作成。</figcaption>
+</figure>
+
 ## 3. 小さな範囲で取得する
 
 bboxは緯度・経度で囲む矩形の範囲である。最初は小さなbboxを使い、取得処理と保存を確認する。件数上限がある検索結果は、その地域の全件とは限らない。

@@ -20,6 +20,11 @@ OpenLayersは、地図タイル、ベクターデータ、マーカーなどをW
 | Layer | 背景地図や店舗の点など、重ねる表示の単位 |
 | Source | 各レイヤーが読むデータの取得元 |
 
+<figure markdown="span" id="component-diagram">
+  ![MapがViewと複数のLayerを持ち、背景と店舗の各Sourceが対応するLayerへデータを渡す構成](../../assets/atlas/openlayers/map-view-layer-source.svg)
+  <figcaption>MapにViewとレイヤー群を設定し、各LayerへSourceを結び付ける例。公式Quick Startを基にGeoAIアトラス作成。クラスの継承関係や処理時間の順序を表す図ではない。</figcaption>
+</figure>
+
 [公式Quick Start](https://openlayers.org/doc/quickstart.html)で背景地図を表示し、その後に手元の地物を重ねると流れをつかみやすい。座標が緯度・経度なのか、表示用の投影座標なのかを確認する。背景タイルの利用条件と出典表示も別途必要になる。
 
 比較する際は、対応形式だけでなく、自分のデータを読み込めるか、必要な操作を実装できるかを小さな例で確かめる。[MapLibre GL JS](maplibre-gl-js.md)もWeb地図の開発部品であり、[Felt](felt.md)は地図の作成・共有をブラウザーで扱うサービスである。
