@@ -55,6 +55,12 @@ Huntonの2026年6月5日の解説は、SB4の成立と、当時署名見込み�
 
 ここでは上記成立法を照合したが、関連修正法を統合した現行条文全体の確認は行っていない。日本の位置情報全般や、すべての匿名・集計データの販売へ一律に適用される規則とは扱わない。
 
+## 日本の機微データ提供に関する制度検討の報道
+
+共同通信は2026年10月4日、政府が位置情報・医療情報・生体認証情報などの第三者提供について、国への事前報告と提供可否の審査を導入する方向で調整中と報じた。大量のデータを保有する病院・銀行など数百程度の事業者を想定し、外部クラウドやデータセンターへの保管も対象に含める方針という。
+
+報道では、2027年通常国会への経済安全保障推進法改正案提出を目指す。安全保障上の悪用リスクへの対応として検討されているもので、成立・施行済みの義務ではない。対象事業者やデータの範囲、審査基準は確定した制度として扱わず、今後の法案・公式資料で確認する。
+
 ## 関連項目
 
 - [人流データの種類と加工段階](../data/human-flow-data-types.md)
@@ -70,3 +76,5 @@ Huntonの2026年6月5日の解説は、SB4の成立と、当時署名見込み�
 
 - [Connecticut Privacy Law Updates: Data Broker Rules, Geolocation Sale Ban, Surveillance Pricing Restrictions, and Genetic Data Regulations](https://www.hunton.com/privacy-and-cybersecurity-law-blog/connecticut-privacy-law-updates-data-broker-rules-geolocation-sale-ban-surveillance-pricing-restrictions-and-genetic-data-regulations)（2026-10-05確認）
 - [Connecticut General Assembly：Public Act 26-64](https://prdext2.cga.ct.gov/2026/act/pa/pdf/2026PA-00064-R00SB-00004-PA.pdf)（2026-10-05確認）
+
+- [共同通信／NEWSjp：【独自】個人情報提供、事前報告を義務化　病歴・指紋・位置、安保上脅威に](https://news.jp/i/1479448629865988290)（2026-10-04公開、10-05更新・確認）
