@@ -10,3 +10,4 @@ htmlcov/
 site/
 .DS_Store
 Thumbs.db
+local-research/

@@ -1,62 +1,64 @@
-# 調査とAtlasの暫定対応表
+# 調査とAtlasの対応表
 
-2026-10-06作成。元の調査9本は指定されていたDownloads直下・その配下・プロジェクト内で見つからなかった。以下は[整備計画](atlas-roadmap.md)と現行ページを照合した表であり、9本の原文を逐条照合した結果ではない。モデル別の一致率・誤り数・網羅率は算出しない。
+2026-10-06更新。9本の原資料を再受領し、主要な提案・論点を現行Atlasへ照合した。全引用文献・全事実主張の逐条検証は未完了で、モデル別の一致率・誤り数・網羅率は算出しない。
 
 ## 原資料の受領・確認状態
 
-| 原資料 | 原文の再照合 | 次の処理 |
+原文9本は `local-research/2026-10-06/` にコピーし、コピー元とSHA-256が一致した。Git対象外のローカル保管であり、リモートのバックアップではない。[受領台帳](atlas-research-manifest.json)に固定ID・ファイル名・行数・ハッシュを保存した。行番号は受領時の原文を基準とする。
+
+| ID | 資料 | 今回の照合範囲 |
 | --- | --- | --- |
-| ChatGPT-1-deep-research-report.md | 未了・ファイル所在未確認 | 再受領後に論点へ分解 |
-| ChatGPT-2-deep-research-report.md | 未了・ファイル所在未確認 | 同上 |
-| ChatGPT-3-deep-research-report.md | 未了・ファイル所在未確認 | 同上 |
-| Claude-1-compass_artifact_wf-8cb9a989-8759-5584-af63-3a9c7083bd31_text_markdown.md | 未了・ファイル所在未確認 | 同上 |
-| Claude-2-compass_artifact_wf-751cc3fd-d2cb-5933-a8b2-6de3eb8e3d48_text_markdown.md | 未了・ファイル所在未確認 | 同上 |
-| Claude-3-compass_artifact_wf-47a29bfe-564a-5cb6-9f7b-ea4f8157c5b5_text_markdown.md | 未了・ファイル所在未確認 | 同上 |
-| Gemini-1-GeoAI知識サイト体系化調査.md | 未了・ファイル所在未確認 | 同上 |
-| Gemini-2-GeoAI実務知識体系の調査.md | 未了・ファイル所在未確認 | 同上 |
-| Gemini-3-GeoAI初心者向け学習サイト設計.md | 未了・ファイル所在未確認 | 同上 |
+| GPT1 / C1 / G1 | 各モデルの第1レポート | 定義・分類・重要テーマ・成熟度の主要提案 |
+| GPT2 / C2 / G2 | 各モデルの第2レポート | 実務フロー・ツール選択・更新方針の主要提案 |
+| GPT3 / C3 / G3 | 各モデルの第3レポート | 学習導線・誤解・演習・ページ構成の主要提案 |
+
+[共通点・食い違いと採否](atlas-research-findings.md)を別記した。原資料の記述は証拠そのものとは扱わず、重要な断定は一次資料で確認する。
 
 ## 現行実装との対応
 
-「対応済み」は下記の範囲の解説が存在するという判断であり、研究全体の検証完了ではない。状態は対応済み・不足・採用しない・根拠未確認を使う。原文再受領までは各行の原資料箇所を「未照合」のまま保持する。
+「対応済み」は下記の範囲の解説が存在するという判断であり、研究全体の検証完了ではない。状態は対応済み・不足・採用しない・根拠未確認を使う。原資料箇所は主要な対応箇所の例であり、全出現箇所の一覧ではない。
 
 | ID | 論点 | Atlasの対応先 | 実装状態 | 原資料箇所 | 残る作業 |
 | --- | --- | --- | --- | --- | --- |
-| R01 | 全体像・手法選択 | [全体像](../docs/atlas/concepts/geoai-overview.md) | 対応済み | 未照合 | 分析と操作支援の区別を維持 |
-| R02 | 座標・測定 | [CRS](../docs/atlas/concepts/coordinate-reference-systems.md) | 対応済み | 未照合 | 単位・投影の前提を巡回確認 |
-| R03 | ベクター・ラスター | [表現と解像度](../docs/atlas/concepts/vector-raster-data.md) | 対応済み | 未照合 | 精度と解像度の区別を維持 |
-| R04 | 空間集計・検証 | [検証](../docs/atlas/methods/spatial-analysis-validation.md)・[空間結合演習](../docs/atlas/guides/spatial-join-exercise.md) | 対応済み（架空データ） | 未照合 | 実データの一連の処理は不足 |
-| R05 | 空間索引 | [索引の選択](../docs/atlas/methods/spatial-index-selection.md) | 対応済み（基礎）／根拠未確認（レビュー全文） | 未照合 | 論文全文と研究別の条件、性能比較 |
-| R06 | 予測・説明・因果 | [モデルの目的](../docs/atlas/concepts/geographic-model-reasoning.md) | 対応済み | 未照合 | 性能と因果の説明を混同しない |
-| R07 | 解像度・集計単位 | [地形スケール](../docs/atlas/methods/terrain-scale.md) | 対応済み（既存ページ間の接続） | 未照合 | 総合ページ新設は採用しない（現時点で重複が大きい） |
-| R08 | データの来歴 | [入力・処理・出力の記録](../docs/atlas/data/geospatial-record-provenance.md) | 対応済み | 未照合 | 実データ演習で記録を具体化 |
-| R09 | CNG・形式の役割 | [CNG](../docs/atlas/concepts/cloud-native-geospatial.md) | 対応済み（説明）／不足（測定） | 未照合 | 転送量・要求数・時間の実測は別企画 |
-| R10 | 画像解析・評価 | [画像からGIS](../docs/atlas/methods/imagery-to-gis.md)・[16画素演習](../docs/atlas/guides/imagery-evaluation-exercise.md) | 対応済み（基礎・架空データ） | 未照合 | 実モデルの比較は未実施 |
-| R11 | 埋め込み | [検索と予測](../docs/atlas/methods/spatial-embeddings.md) | 対応済み（具体例） | 未照合 | 実データの精度改善は未検証 |
-| R12 | GISエージェント | [依頼設計](../docs/atlas/concepts/location-ai.md) | 対応済み（ひな形） | 未照合 | 実行・権限・失敗時挙動の試験は未実施 |
-| R13 | 初心者の学習導線 | [3ルート](../docs/atlas/guides/getting-started.md) | 対応済み | 未照合 | 月次に行き止まりと前提を確認 |
+| R01 | 全体像・手法選択 | [全体像](../docs/atlas/concepts/geoai-overview.md) | 対応済み | GPT1:17–60 / C1:62–142 / G1:28–47 | 分析と操作支援の区別を維持 |
+| R02 | 座標・測定 | [CRS](../docs/atlas/concepts/coordinate-reference-systems.md) | 対応済み | GPT3:73–80 / C3:147–151 / G3:101 | 単位・投影の前提を巡回確認 |
+| R03 | ベクター・ラスター | [表現と解像度](../docs/atlas/concepts/vector-raster-data.md) | 対応済み | GPT3:61–72 / C3:119–137 / G3:85–96 | 精度と解像度の区別を維持 |
+| R04 | 空間集計・検証 | [検証](../docs/atlas/methods/spatial-analysis-validation.md)・[空間結合演習](../docs/atlas/guides/spatial-join-exercise.md) | 対応済み（架空データ） | GPT3:98–109 / C2:35–49 / C3:152–159 | 実データの一連の処理は不足 |
+| R05 | 空間索引 | [索引の選択](../docs/atlas/methods/spatial-index-selection.md) | 対応済み（基礎）／根拠未確認（レビュー全文） | C1:73–128 / G1:62–75 | 論文全文と研究別の条件、性能比較 |
+| R06 | 予測・説明・因果 | [モデルの目的](../docs/atlas/concepts/geographic-model-reasoning.md) | 対応済み | C1:212–219 / C3:160–164 / G3:103 | 性能と因果の説明を混同しない |
+| R07 | 解像度・集計単位 | [地形スケール](../docs/atlas/methods/terrain-scale.md) | 対応済み（既存ページ間の接続） | C1:149–165 / C3:176–185 | 総合ページ新設は採用しない（現時点で重複が大きい） |
+| R08 | データの来歴 | [入力・処理・出力の記録](../docs/atlas/data/geospatial-record-provenance.md) | 対応済み | GPT2:8–23 / C2:62–67 / G2:12–19 | 実データ演習で記録を具体化 |
+| R09 | CNG・形式の役割 | [CNG](../docs/atlas/concepts/cloud-native-geospatial.md) | 対応済み（説明）／不足（測定） | GPT2:81–96 / C2:209–223 / G2:52–70 | 転送量・要求数・時間の実測は別企画 |
+| R10 | 画像解析・評価 | [画像からGIS](../docs/atlas/methods/imagery-to-gis.md)・[16画素演習](../docs/atlas/guides/imagery-evaluation-exercise.md) | 対応済み（基礎・架空データ） | C1:149–165 / C3:233–248 / G2:32–39 | 実モデルの比較は未実施 |
+| R11 | 埋め込み | [検索と予測](../docs/atlas/methods/spatial-embeddings.md) | 対応済み（具体例） | C1:149–165 / G1:48–61 | 実データの精度改善は未検証 |
+| R12 | GISエージェント | [依頼設計](../docs/atlas/concepts/location-ai.md) | 対応済み（ひな形） | C2:177–187 / G2:100–112 / C3:165–169 | 実行・権限・失敗時挙動の試験は未実施 |
+| R13 | 初心者の学習導線 | [3ルート](../docs/atlas/guides/getting-started.md) | 一部対応 | GPT3:10–31 / C3:36–93 / G3:11–33 | 目的別3ルートはあるが、ノーコードの実操作演習は不足 |
 
-## 原文が戻った後の照合方法
+## 追加で見つかった不足と保留
 
-1. 各資料へ固定IDを付け、見出しと行番号を記録する。原文や私的なメモを無条件に公開リポジトリへコピーしない。
-2. 一つの提案・事実主張を一行に分け、上記IDへ対応付ける。新しい論点は追記する。
-3. 共通する主張でも一次資料を確認する。Geminiを含め全モデルへ同じ基準を適用し、架空の引用・名称・性能数値・提供条件を優先確認する。
-4. 食い違いは対象年、定義、対象地域、評価条件の違いかを調べ、根拠URLと確認範囲を残す。
-5. 全論点に状態・対応先または不採用理由・未確認理由が付いたら初回照合を完了する。未確認を「対応済み」へまとめない。
+| ID | 原資料の提案・箇所 | 判断・次の扱い |
+| --- | --- | --- |
+| R14 | 空間自己相関・異質性・MAUP・適用範囲（C1:149–165） | 既存の検証・スケール解説で一部対応。Moran's Iなどの実例は不足。統計の独立講座は優先度を見て追加 |
+| R15 | 経路・住所照合・時空間分析（C2:81–91,114–135 / G2:28–43） | 個別ニュース・ツール紹介と体系的演習は区別。横断的な学習導線は今後の候補 |
+| R16 | 実画像NDVI・空間CV比較・ノーコード演習（C3:233–292） | 不足。既存の架空16画素演習だけで対応完了としない。原資料の演習自体も未実行 |
+| R17 | 学習データ仕様・モデル運用・公平性（C1:62–142,183–211 / G1:76–91） | 根拠・対象読者の確認後に採否判断。初心者の必修にはしない |
+| R18 | 規模だけによる製品選択（G2:58,75–88） | 固定閾値は採用しない。データ形状・索引・同時利用・運用条件を含む実測が必要 |
 
-## 初回の月次候補
+## 初回の重点点検（2026-10-06）
 
-全体点検は未実施。次の5ページから始め、必要なら10ページまで広げる。
+5ページの指定論点を確認した。全ページの全出典を再監査したという意味ではなく、台帳でも全体点検日を付けない。
 
-| ページ | 優先する確認 |
-| --- | --- |
-| [Mapbox Search Box](../docs/atlas/tools/mapbox-search-box.md) | POI取得・保存条件、料金・利用枠と対象地域 |
-| [POI比較](../docs/atlas/data/poi-open-data-comparison.md) | 取得上限、カテゴリ、データ版、件数比較の前提 |
-| [地域埋め込み](../docs/atlas/methods/spatial-embeddings.md) | PDIの対象地域・提供条件と発表時点の区別 |
-| [GeoLibre](../docs/atlas/tools/geolibre.md) | 操作機能の前提、版ごとの記述の統合 |
-| [Kodawari](../docs/atlas/tools/kodawari.md) | 評価式・データ出典・更新頻度の公開有無 |
+| ページ | 確認した範囲 | 残る確認 |
+| --- | --- | --- |
+| [Mapbox Search Box](../docs/atlas/tools/mapbox-search-box.md) | 一時利用条件、課金単位、料金表、日本向け案内との対象差 | 日本の自然言語POI検索の実測・契約別条件 |
+| [POI比較](../docs/atlas/data/poi-open-data-comparison.md) | Overture現行フィールドと比較時の条件 | 旧記事の件数再現、Foursquare料金等の再確認 |
+| [地域埋め込み](../docs/atlas/methods/spatial-embeddings.md) | PDI日本リスティング、申請・権限、入力信号 | 契約・費用と取得・性能の検証 |
+| [GeoLibre](../docs/atlas/tools/geolibre.md) | v3.3.0の操作対象を再確認、用途別の入口を整理 | 各環境でのインストール・MCP接続試験 |
+| [Kodawari](../docs/atlas/tools/kodawari.md) | 実画面のスコア説明、出典、更新目安 | 算式全体・結果の再現と精度 |
 
-これは作業候補であり、確認結果ではない。既存の月次枠で[確認台帳](atlas-review-register.md)とともに見直す。
+## 残りの逐条照合
+
+主要提案との対応付けは今回実施。今後は引用の実在・主張との一致、モデル性能値、法制度・ライセンスなどを小分けに検証する。未確認の文献を誤りと断定しない。初回照合の残作業と、月次5〜10ページの保守、実データ比較は別の作業として扱う。
 
 ## 実データ演習の設計案（実行前）
 

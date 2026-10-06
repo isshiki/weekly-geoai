@@ -2,7 +2,7 @@
 layout: default
 title: POIオープンデータの比較と地域特徴量
 category: data
-updated: 2026-10-05
+updated: 2026-10-06
 ---
 
 # POIオープンデータの比較と地域特徴量
@@ -53,6 +53,12 @@ POIは施設の分布という供給側の情報であり、需要や出店適�
 2種類の件数をそのまま比較しない。取得上限とカテゴリの定義が異なり、どちらも営業中のカフェ店舗数を示す結果ではない。Overtureのカフェ相当202件はoperating_statusがすべてNULLであり、営業中とも閉店とも判定できない。
 
 Overtureの実践記事は、schema v2.0.0で旧categoriesを使わず、basic_categoryとtaxonomyを確認している。また、sourcesにFoursquare由来の情報があるため、両データに同じ施設があっても独立した2ソースによる確認とは限らない。
+
+### 仕様と実行結果を分けて記録する
+
+2026-10-06にOvertureの公式Placeスキーマで `basic_category`・`taxonomy` を確認した。`confidence` は任意項目で、情報不足によるNULLを低品質の0と同一視しない。カテゴリや営業状態の欠損を、無条件に「該当しない」「閉店」と変換しない。
+
+上記の件数は9月の記事の実行記録であり、今回取得し直した結果ではない。再現時はデータのリリースとスキーマ版を別々に記録し、取得上限、bbox候補、geometry判定後、カテゴリ抽出後の件数を段階ごとに残す。新版で同じ件数になることは完了条件にしない。
 
 ## 次の比較に向けた確認点
 
@@ -120,3 +126,5 @@ GISuserの2026年10月3日解説は、POIを収集した後の名寄せ、住所
 - [PulseSignal：Foursquare pricing (2026)](https://getpulsesignal.com/pricing/foursquare)（2026-10-03確認）
 
 - [What It Takes to Build POI Datasets From Public Web Sources](https://gisuser.com/2026/10/what-it-takes-to-build-poi-datasets-from-public-web-sources/)（2026-10-05確認）
+
+- [Overture Placeスキーマ](https://docs.overturemaps.org/schema/reference/places/place/)（2026-10-06確認。カテゴリ・confidenceの定義。データ取得の再実行は未実施）

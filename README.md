@@ -36,8 +36,10 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 基礎解説の整備状況と次の優先課題は[Atlasの点検・整備計画](editorial/atlas-roadmap.md)にまとめる。
 
-継続保守には[全ページの確認台帳](editorial/atlas-review-register.md)と[調査との暫定対応表](editorial/atlas-research-crosswalk.md)を使う。原調査9本の再照合と実データ比較は、毎月の必須作業とは分けて管理する。
+継続保守には[全ページの確認台帳](editorial/atlas-review-register.md)と[調査との対応表](editorial/atlas-research-crosswalk.md)を使う。原調査9本の再照合と実データ比較は、毎月の必須作業とは分けて管理する。
 
 公開前には `scripts/check_site_links.py` で生成HTMLの内部リンク・アンカー・画像参照と更新履歴のハイライトを検査する。GitHub Actionsでも実行する。範囲と実行方法は[運用手順](OPERATIONS.md#リンクとハイライトの検査)を参照。
 
 日次メモ、週次原稿、Substack用HTML、GitHub Pagesへの公開手順は[OPERATIONS.md](./OPERATIONS.md)にまとめている。
+
+調査9本の原文はGit対象外の `local-research/2026-10-06/` に保管。[受領台帳](editorial/atlas-research-manifest.json)と[共通点・食い違い](editorial/atlas-research-findings.md)はリポジトリで管理する。ローカル原文はpushに含まれない。

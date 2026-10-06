@@ -113,7 +113,7 @@ GitHub Pagesは次の設定で公開する。
 
 ## Atlasの月次整理
 
-月次の点検は[確認台帳](editorial/atlas-review-register.md)から5〜10ページを選ぶ。元の調査9本の照合は初回に一度、実データの性能比較は個別企画として扱う。[暫定対応表と初回候補](editorial/atlas-research-crosswalk.md)に未完了事項を残す。予約の実行頻度は変更しない。
+月次の点検は[確認台帳](editorial/atlas-review-register.md)から5〜10ページを選ぶ。元の調査9本の照合は初回に一度、実データの性能比較は個別企画として扱う。[対応表と重点点検結果](editorial/atlas-research-crosswalk.md)に未完了事項を残す。予約の実行頻度は変更しない。
 
 日次追加・月次編集の後は `python scripts/build_atlas_review_register.py` で台帳を更新する。`--check` は再生成が必要なら失敗する。外部サイトを取得するツールではなく、既存本文の出典確認日と未確認表記を集める。
 
@@ -181,3 +181,7 @@ git diff --cached
 ```
 
 秘密情報を一度コミットすると、後からファイルを削除してもGit履歴に残る。見つけた場合はpushせず、まず認証情報を失効・再発行する。
+
+### 調査原資料の保管
+
+`local-research/` はGit対象外。原文9本を `2026-10-06/` に保存し、受領時のファイル名・行数・SHA-256を `editorial/atlas-research-manifest.json` に記録する。Downloadsを消しても参照できるが、Gitによる遠隔バックアップはない。原文を編集せず、分析結果だけを対応表・照合結果へ記す。部分点検では `atlas-review-records.json` の evidence と next_action に範囲・日付・残課題を記録し、全体点検日 reviewed_on は付けない。

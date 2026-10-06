@@ -96,7 +96,13 @@ GoogleのPopulation Dynamics Insights（PDI）は、地域の特徴を機械学�
 
 成功店舗に似た地域の探索や、既存の需要予測モデルへ特徴を追加する用途を想定する。衛星画像由来の埋め込みとは入力情報が異なり、個人の移動履歴そのものを受け取るデータではない。自社の店舗・商圏とセルの大きさ、予測時点と月次更新の対応を確認する。
 
-Googleは米国の29予測対象などで性能向上を報告しているが、任意の地域や自社売上での改善を保証するものではない。今回確認したのは発表記事であり、提供地域・契約条件の個別確認、データ取得、性能比較は未実施。10月の新規発表とは区別する。
+Googleは米国の29予測対象などで性能向上を報告しているが、任意の地域や自社売上での改善を保証するものではない。発表時点の評価であり、10月の新規発表とは区別する。
+
+### 日本で試すための前提
+
+2026-10-06に確認した公式セットアップ資料では、日本を含む17か国が提供先として列挙されている。利用申請とオンボーディング後、国別のBigQueryリスティングを購読する。Google Cloudアカウント、BigQuery・Analytics HubのAPI有効化と所定の権限が必要で、匿名で取得できるオープンデータとは区別する。
+
+330次元の入力信号は検索傾向、Maps・混雑、天候・大気質に分かれるが、個々の次元がそのまま「カフェ数」などを表すわけではない。生の検索履歴や移動履歴は提供されない。国・セル・時点を揃えて自社データへ結合する必要がある。契約ごとの費用・利用条件、実際のデータ取得、予測性能の比較は未確認である。
 
 ## 次に読む
 
@@ -112,3 +118,6 @@ Googleは米国の29予測対象などで性能向上を報告しているが、
 - [scikit-learn: euclidean_distances](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.euclidean_distances.html)（[4]。定義を2026-10-06確認）
 
 - [Google：Population Dynamics Insightsのプレビュー発表](https://mapsplatform.google.com/resources/blog/from-static-maps-to-geospatial-ai-announcing-population-dynamics-insights/)（2026-04-22公開、2026-10-06確認）
+
+- [PDIセットアップ・対象国](https://developers.google.com/maps/documentation/population-dynamics-insights/cloud-setup)（2026-10-06確認）
+- [PDIデータ構造・提供範囲](https://developers.google.com/maps/documentation/population-dynamics-insights/about-data)（2026-10-06確認）

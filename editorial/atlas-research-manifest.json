@@ -1,0 +1,69 @@
+{
+  "received_on": "2026-10-06",
+  "local_directory": "local-research/2026-10-06",
+  "reports": [
+    {
+      "id": "GPT1",
+      "file": "ChatGPT-1-deep-research-report.md",
+      "bytes": 23132,
+      "lines": 194,
+      "sha256": "53d3c00884dcf93777c393748816f72bde42431843b65fc4dab2b37f30295fef"
+    },
+    {
+      "id": "GPT2",
+      "file": "ChatGPT-2-deep-research-report.md",
+      "bytes": 19245,
+      "lines": 135,
+      "sha256": "264b373e9086d783db8497cbf785f0102a853a8018ffaae7296abbe46edbca34"
+    },
+    {
+      "id": "GPT3",
+      "file": "ChatGPT-3-deep-research-report.md",
+      "bytes": 30561,
+      "lines": 210,
+      "sha256": "d535903778aa1ce281e4017d0844de60dd7d1e4a0d0e64852e6ba1e1ce1eac64"
+    },
+    {
+      "id": "C1",
+      "file": "Claude-1-compass_artifact_wf-8cb9a989-8759-5584-af63-3a9c7083bd31_text_markdown.md",
+      "bytes": 60369,
+      "lines": 394,
+      "sha256": "1bf72ea02fb00ac3b5a1853124e359a789779651705332189281c36a6a7b8bc1"
+    },
+    {
+      "id": "C2",
+      "file": "Claude-2-compass_artifact_wf-751cc3fd-d2cb-5933-a8b2-6de3eb8e3d48_text_markdown.md",
+      "bytes": 60938,
+      "lines": 503,
+      "sha256": "2b0955fa2eafae090996b94656376d0a050801afb784056724fd192c3337f5fe"
+    },
+    {
+      "id": "C3",
+      "file": "Claude-3-compass_artifact_wf-47a29bfe-564a-5cb6-9f7b-ea4f8157c5b5_text_markdown.md",
+      "bytes": 49332,
+      "lines": 483,
+      "sha256": "4ca59199a0e3457226286ffb49a187358581b3b0bdbc78893bc8ed53247bbec1"
+    },
+    {
+      "id": "G1",
+      "file": "Gemini-1-GeoAI知識サイト体系化調査.md",
+      "bytes": 43867,
+      "lines": 203,
+      "sha256": "42276fd4b523da65d0765caf92681f4e69b5f5a906b21ebb496151c85449d65d"
+    },
+    {
+      "id": "G2",
+      "file": "Gemini-2-GeoAI実務知識体系の調査.md",
+      "bytes": 59301,
+      "lines": 231,
+      "sha256": "c0e3d00b636c5467327c790db6ab67adb7192042280c85dbf922ce5405e6abbe"
+    },
+    {
+      "id": "G3",
+      "file": "Gemini-3-GeoAI初心者向け学習サイト設計.md",
+      "bytes": 41010,
+      "lines": 210,
+      "sha256": "61adbc68e92f1f0b38c4ed5cd83ed26eabea85f24bceff412be72f9256ec85a1"
+    }
+  ]
+}
