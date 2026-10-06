@@ -43,3 +43,5 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 日次メモ、週次原稿、Substack用HTML、GitHub Pagesへの公開手順は[OPERATIONS.md](./OPERATIONS.md)にまとめている。
 
 調査9本の原文はGit対象外の `local-research/2026-10-06/` に保管。[受領台帳](editorial/atlas-research-manifest.json)と[共通点・食い違い](editorial/atlas-research-findings.md)はリポジトリで管理する。ローカル原文はpushに含まれない。
+
+Atlasは概念・選択基準・注意点を中心に保守する。新しいプログラミング演習は追加せず、具体的な実装は既存の実践記事や公式資料へ案内する。

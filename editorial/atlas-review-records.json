@@ -5,18 +5,18 @@
   },
   "atlas/data/poi-open-data-comparison.md": {
     "evidence": "Overture Placeのカテゴリ・confidenceの定義を2026-10-06に確認。記事の件数再現と他社料金の再確認は未実施。",
-    "next_action": "小地域・固定版で取得から件数検証まで実行"
+    "next_action": "比較条件・欠損の読み方と出典の鮮度を点検。取得演習は追加しない"
   },
   "atlas/methods/spatial-embeddings.md": {
     "evidence": "PDIのセットアップ・データ構造を2026-10-06に確認。日本の提供と申請前提を追記。全出典再監査ではない。",
-    "next_action": "利用条件・費用を確認後、取得と予測評価を設計"
+    "next_action": "利用条件・費用と性能主張の根拠を公式資料で確認"
   },
   "atlas/tools/geolibre.md": {
     "evidence": "v3.3.0リリースノートを2026-10-06に再確認し、用途別の入口を整理。旧版の全出典再監査ではない。",
-    "next_action": "デスクトップとMCPの接続条件・操作結果を試験"
+    "next_action": "公式資料の接続前提・提供範囲と本文を照合"
   },
   "atlas/tools/kodawari.md": {
     "evidence": "公式操作画面の説明・出典・更新目安を2026-10-06に確認。算式と精度の再現は未実施。",
-    "next_action": "スコア・所要時間の計算条件と結果の再現"
+    "next_action": "スコア・所要時間の説明と出典更新を確認"
   }
 }
