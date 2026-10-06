@@ -38,7 +38,7 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 継続保守には[全ページの確認台帳](editorial/atlas-review-register.md)と[調査との対応表](editorial/atlas-research-crosswalk.md)を使う。原調査9本の再照合と実データ比較は、毎月の必須作業とは分けて管理する。
 
-公開前には `scripts/check_site_links.py` で生成HTMLの内部リンク・アンカー・画像参照と更新履歴のハイライトを検査する。GitHub Actionsでも実行する。範囲と実行方法は[運用手順](OPERATIONS.md#リンクとハイライトの検査)を参照。
+公開前には `scripts/check_site_links.py` で生成HTMLの内部リンク・アンカー・画像参照と更新履歴のハイライトを検査する。GitHub Actionsでも実行する。範囲と実行方法は[運用手順](OPERATIONS.md#リンクとハイライトの検査)を参照。過去のハイライトを修正する際は、元の更新記録を保ち、現行の対応箇所への案内であることを明記する。
 
 日次メモ、週次原稿、Substack用HTML、GitHub Pagesへの公開手順は[OPERATIONS.md](./OPERATIONS.md)にまとめている。
 
