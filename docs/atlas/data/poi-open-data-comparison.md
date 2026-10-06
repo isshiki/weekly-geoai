@@ -96,7 +96,7 @@ Overtureの実践記事は、schema v2.0.0で旧categoriesを使わず、basic_c
 
 ## オープン版と商用サービスの料金を分ける
 
-2026年10月3日に確認したFoursquare公式料金は、Open Source Placesのデータ取得と別に、Places APIやSpatial製品の利用料を案内している。APIの無料枠を、オープン版データセットの範囲や再配布条件と混同しない。
+2026年10月6日に再確認したFoursquare公式料金は、Open Source Placesのデータ取得と別に、Places APIやSpatial製品の利用料を案内している。APIの無料枠を、オープン版データセットの範囲や再配布条件と混同しない。
 
 | サービス | 確認時点の条件 |
 | --- | --- |
@@ -104,7 +104,9 @@ Overtureの実践記事は、schema v2.0.0で旧categoriesを使わず、basic_c
 | Places API Pro | 月500回まで無料。サンドボックスの最大10,000回無料とは別の案内 |
 | Spatial Workbench | 30日試用は購読料が無料だが、計算・保存の利用料は発生 |
 
-PulseSignalのAI整理一覧を手掛かりに公式ページと照合した。特にBasicを期限のない無料プランと解釈しない。料金は確認時点の情報である。
+当初はPulseSignalのAI整理一覧を手掛かりに確認し、今回は公式料金表へ直接照合した。特にBasicを期限のない無料プランと解釈しない。料金は確認時点の情報である。
+
+同じ検索でも、要求する属性によりProとPremiumの区分が変わる。Ask APIにも別の料金があるため、「検索はすべて月500回まで無料」と広げて解釈しない。利用量だけでなく、エンドポイントと取得項目を合わせて確認する。
 
 ## 公開Web情報で補完するときの来歴と更新
 
@@ -135,7 +137,7 @@ GISuserの2026年10月3日解説は、POIを収集した後の名寄せ、住所
 - [POI件数・住所・電話・Webサイトの比較](https://blog.masahiko.info/entry/2026/09/28/163408)（2026-09-29確認）
 - [POIオープンデータ入門](https://qiita.com/isshiki/items/4a50f54cc8e5cd649f03)（2026-09-29確認）
 
-- [Foursquare公式料金](https://foursquare.com/pricing/)（2026-10-03確認）
+- [Foursquare公式料金](https://foursquare.com/pricing/)（2026-10-06再確認）
 - [PulseSignal：Foursquare pricing (2026)](https://getpulsesignal.com/pricing/foursquare)（2026-10-03確認）
 
 - [What It Takes to Build POI Datasets From Public Web Sources](https://gisuser.com/2026/10/what-it-takes-to-build-poi-datasets-from-public-web-sources/)（2026-10-05確認）

@@ -51,8 +51,8 @@
 | ページ | 確認した範囲 | 残る確認 |
 | --- | --- | --- |
 | [Mapbox Search Box](../docs/atlas/tools/mapbox-search-box.md) | 一時利用条件、課金単位、料金表、日本向け案内との対象差 | 日本の自然言語POI検索の実測・契約別条件 |
-| [POI比較](../docs/atlas/data/poi-open-data-comparison.md) | Overture現行フィールドと比較時の条件 | 旧記事の件数再現、Foursquare料金等の再確認 |
-| [地域埋め込み](../docs/atlas/methods/spatial-embeddings.md) | PDI日本リスティング、申請・権限、入力信号 | 契約・費用と取得・性能の検証 |
+| [POI比較](../docs/atlas/data/poi-open-data-comparison.md) | Overture現行フィールドと比較時の条件 | 旧記事の件数は再実行せず。Foursquare料金は10月6日に再確認済み |
+| [地域埋め込み](../docs/atlas/methods/spatial-embeddings.md) | PDI日本リスティング、申請・権限、入力信号 | 契約・費用の確認。PDFMの評価データの限界は10月6日に追記済み |
 | [GeoLibre](../docs/atlas/tools/geolibre.md) | v3.3.0の操作対象を再確認、用途別の入口を整理 | 各環境でのインストール・MCP接続試験 |
 | [Kodawari](../docs/atlas/tools/kodawari.md) | 実画面のスコア説明、出典、更新目安 | 算式全体・結果の再現と精度 |
 

@@ -4,11 +4,11 @@
     "next_action": "日本のPOIと自然言語検索の対象範囲・適用料金を確認"
   },
   "atlas/data/poi-open-data-comparison.md": {
-    "evidence": "Overture Placeのカテゴリ・confidenceの定義を2026-10-06に確認。記事の件数再現と他社料金の再確認は未実施。",
+    "evidence": "Overture Placeのカテゴリ・confidenceの定義を2026-10-06に確認。記事の件数再現と他社料金の再確認は未実施。 2026-10-06にFoursquare公式料金を再確認。Pro/Premiumの属性による区分とAsk別料金を補足。",
     "next_action": "比較条件・欠損の読み方と出典の鮮度を点検。取得演習は追加しない"
   },
   "atlas/methods/spatial-embeddings.md": {
-    "evidence": "PDIのセットアップ・データ構造を2026-10-06に確認。日本の提供と申請前提を追記。全出典再監査ではない。",
+    "evidence": "PDIのセットアップ・データ構造を2026-10-06に確認。日本の提供と申請前提を追記。全出典再監査ではない。 同日、発表が引用するPDFM論文のDiscussionで、評価データに推計値を含む限界を確認。全実験の監査ではない。",
     "next_action": "利用条件・費用と性能主張の根拠を公式資料で確認"
   },
   "atlas/tools/geolibre.md": {
@@ -18,5 +18,13 @@
   "atlas/tools/kodawari.md": {
     "evidence": "公式操作画面の説明・出典・更新目安を2026-10-06に確認。算式と精度の再現は未実施。",
     "next_action": "スコア・所要時間の説明と出典更新を確認"
+  },
+  "atlas/data/human-flow-data-sources-japan.md": {
+    "evidence": "2026-10-06に国交省公開案内で2019年1月〜2021年12月という対象期間を確認。配布データセット本文は取得できず。他サービスの再確認は未実施。",
+    "next_action": "他の提供元の対象期間・提供条件を順に確認"
+  },
+  "atlas/methods/spatial-index-selection.md": {
+    "evidence": "2026-10-06にMDPIページ再取得を試みたが取得エラー。全文未確認の範囲を維持し、確認済み日とは扱わない。",
+    "next_action": "全文へアクセスできる際に研究別の条件を確認。未確認の性能数値を追加しない"
   }
 }

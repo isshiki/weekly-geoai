@@ -98,6 +98,12 @@ GoogleのPopulation Dynamics Insights（PDI）は、地域の特徴を機械学�
 
 Googleは米国の29予測対象などで性能向上を報告しているが、任意の地域や自社売上での改善を保証するものではない。発表時点の評価であり、10月の新規発表とは区別する。
 
+### 性能の紹介は、評価対象と合わせて読む
+
+発表が引用するPDFMの研究論文では、健康関連の評価対象に、既存の国勢調査データなどを使った小地域推計モデル由来の値が含まれることを限界として挙げている。評価の「正解」が、すべて現地で直接測った値とは限らない。
+
+研究モデルPDFMの実験結果と、製品PDIを自社の地域・時点・目的で使った結果も分ける。性能の数字を見るときは、何を予測したか、何と比較したか、評価対象が観測値か推計値かを確認する。今回は論文の限界節を確認したもので、全実験の再検証や全対象での性能監査ではない。
+
 ### 日本で試すための前提
 
 2026-10-06に確認した公式セットアップ資料では、日本を含む17か国が提供先として列挙されている。利用申請とオンボーディング後、国別のBigQueryリスティングを購読する。Google Cloudアカウント、BigQuery・Analytics HubのAPI有効化と所定の権限が必要で、匿名で取得できるオープンデータとは区別する。
@@ -121,3 +127,5 @@ Googleは米国の29予測対象などで性能向上を報告しているが、
 
 - [PDIセットアップ・対象国](https://developers.google.com/maps/documentation/population-dynamics-insights/cloud-setup)（2026-10-06確認）
 - [PDIデータ構造・提供範囲](https://developers.google.com/maps/documentation/population-dynamics-insights/about-data)（2026-10-06確認）
+
+- [Agarwal et al.: General Geospatial Inference with a Population Dynamics Foundation Model](https://arxiv.org/pdf/2411.07207)（2026-10-06確認。取得PDFの2025-01-29版、Discussionの評価データに関する限界）
