@@ -145,6 +145,8 @@ updated: 2026-10-06
 - [OH3（Open Hinata 3）](tools/open-hinata3.md)
 - [ShadeMapと建物データの更新](tools/shademap.md)
 - [OH3 今昔マップビューア](tools/oh3-konjaku.md)
+- [鳥瞰路線図](tools/chokan-rail-map.md)
+- [Kodawari](tools/kodawari.md)
 
 ### 地図を作成・共有する
 
@@ -252,3 +254,7 @@ updated: 2026-10-06
 ### 気候・季節の変化
 
 - [紅葉時期の変化と空間補間](cases/maple-phenology.md)
+
+### 防災・地形
+
+- [SlopeScout：住所から地形リスクを確認する](cases/slopescout-terrain-risk.md)

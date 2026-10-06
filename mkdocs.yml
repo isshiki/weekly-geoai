@@ -114,6 +114,8 @@ nav:
         - OH3（Open Hinata 3）: atlas/tools/open-hinata3.md
         - ShadeMapと建物データの更新: atlas/tools/shademap.md
         - OH3 今昔マップビューア: atlas/tools/oh3-konjaku.md
+        - 鳥瞰路線図: atlas/tools/chokan-rail-map.md
+        - Kodawari: atlas/tools/kodawari.md
       - 地図を作成・共有する:
         - GeoLibre: atlas/tools/geolibre.md
         - Felt: atlas/tools/felt.md
@@ -192,6 +194,8 @@ nav:
         - 配送経路の最適化と現場フィードバック: atlas/cases/here-fleet-route-intelligence.md
       - 気候・季節の変化:
         - 紅葉時期の変化と空間補間: atlas/cases/maple-phenology.md
+      - 防災・地形:
+        - SlopeScout：住所から地形リスクを確認する: atlas/cases/slopescout-terrain-risk.md
   - 更新履歴:
     - 一覧: updates/index.md
     - 2026年:

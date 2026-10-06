@@ -90,6 +90,14 @@ updated: 2026-10-06
 
 類似度検索・クラスタリングでは、記事は標準化や従来変数の混在が埋め込みの意味を変える点に注意を促している。この助言を全モデル共通の禁止則とせず、利用する埋め込みと距離尺度に応じて検証する。
 
+## 人の活動を表す地域埋め込み：PDI
+
+GoogleのPopulation Dynamics Insights（PDI）は、地域の特徴を機械学習へ入力するためのデータセットである。2026年4月22日のプレビュー発表では、検索傾向、Mapsの混雑・POI、天候・大気質などの集約情報を330次元のベクトルにし、月次更新でBigQueryへ提供すると説明している。発表時点の対象は17か国、単位はS2レベル12（およそ3〜6km²）である。
+
+成功店舗に似た地域の探索や、既存の需要予測モデルへ特徴を追加する用途を想定する。衛星画像由来の埋め込みとは入力情報が異なり、個人の移動履歴そのものを受け取るデータではない。自社の店舗・商圏とセルの大きさ、予測時点と月次更新の対応を確認する。
+
+Googleは米国の29予測対象などで性能向上を報告しているが、任意の地域や自社売上での改善を保証するものではない。今回確認したのは発表記事であり、提供地域・契約条件の個別確認、データ取得、性能比較は未実施。10月の新規発表とは区別する。
+
 ## 次に読む
 
 - [GeoAIの手法選択](../concepts/geoai-overview.md#choose-method)：画像抽出や操作支援との役割の違いを読む。
@@ -102,3 +110,5 @@ updated: 2026-10-06
 - [Google: Satellite Embedding V1](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL)（[2]。2026-10-06確認。データ取得・モデル実行は未実施）
 - [scikit-learn: cosine_similarity](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html)（[3]。定義を2026-10-06確認）
 - [scikit-learn: euclidean_distances](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.euclidean_distances.html)（[4]。定義を2026-10-06確認）
+
+- [Google：Population Dynamics Insightsのプレビュー発表](https://mapsplatform.google.com/resources/blog/from-static-maps-to-geospatial-ai-announcing-population-dynamics-insights/)（2026-04-22公開、2026-10-06確認）
