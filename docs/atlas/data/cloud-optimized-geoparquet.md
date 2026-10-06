@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Optimized GeoParquet（COGP）
 category: data
-updated: 2026-09-27
+updated: 2026-10-06
 ---
 
 # Cloud Optimized GeoParquet（COGP）
@@ -30,6 +30,10 @@ COGPは、GeoParquetの行グループを粗い詳細度から細かい詳細度
 HTTP Rangeの結合は重複または隣接した範囲に限定した。root LoDの最低地物数は既定で2048となったが、これは表示中の画面内ではなくデータセット全体で数える。全入力が2048件未満なら、要求した最も細かい解像度で全行を書き出す。
 
 段階表示のための並び順が、すべての全解像度検索で最速になるとは限らない。性能はデータの分布、行グループの配置、リーダーの対応に依存する。今回コードや性能測定の再実行は行っていない。
+
+## 前提と関連する形式
+
+[CNGの形式比較](../concepts/cloud-native-geospatial.md#choose-format)では、GeoParquetの基本的な役割と、COG・PMTiles・STACとの違いを整理する。COGPのLoD選択は対応リーダーの機能であり、上記の確認済み版の説明をすべてのGeoParquetに一般化しない。
 
 ## 出典
 

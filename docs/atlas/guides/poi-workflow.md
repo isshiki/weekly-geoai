@@ -1,7 +1,7 @@
 ---
 title: POIデータを選び、分析する
 category: guides
-updated: 2026-10-05
+updated: 2026-10-06
 ---
 
 # POIデータを選び、分析する
@@ -60,6 +60,8 @@ bboxは緯度・経度で囲む矩形の範囲である。最初は小さなbbox
 成果物には、取得条件、データ版、カテゴリ対応、欠損と重複の扱いを添える。小さなサンプルを原典と照合してから、別の地域へ広げる。[来歴の残し方](../data/geospatial-record-provenance.md)と[検索の網羅性](../methods/poi-retrieval-coverage.md)も参照するとよい。
 
 ## 参照した解説
+
+保存形式や公開方法を選ぶ段階では、[CNGの形式比較](../concepts/cloud-native-geospatial.md#choose-format) → [全国メッシュの配信例](../methods/national-grid-web-delivery.md)の順に読む。分析用のGeoParquetと表示用のPMTilesの役割を分けて検討できる。
 
 - [POI比較と地域特徴量](../data/poi-open-data-comparison.md)：上記実践記事の条件と出典を整理したAtlasページ（2026-10-05確認）。
 - [POIオープンデータ入門](https://qiita.com/isshiki/items/4a50f54cc8e5cd649f03)：用途別の選び方（Atlasの2026-09-29確認記録に基づく）。

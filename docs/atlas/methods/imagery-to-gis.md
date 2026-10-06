@@ -2,7 +2,7 @@
 layout: default
 title: 画像からGIS情報を作る解析と検証
 category: methods
-updated: 2026-10-02
+updated: 2026-10-06
 ---
 
 # 画像からGIS情報を作る解析と検証
@@ -18,6 +18,12 @@ updated: 2026-10-02
 | ArcGIS Online | インフラ管理を利用者が担わない画像公開・解析 |
 
 150以上のラスター関数を用意し、補正・植生指数・地形・変化検出などを組み合わせてテンプレートにできると説明する。深層学習で建物・道路・樹木などを抽出した後は、サンプル確認と精度評価を経て利用する。ArcPy・ArcGIS API for Python・REST APIによる自動化と、結果の品質検証は別に設計する。
+
+## データ取得の前提を読む
+
+- [ベクターとラスター](../concepts/vector-raster-data.md)：画像のセル・バンドと抽出する地物の違いを確認する。
+- [CNGの構成例](../concepts/cloud-native-geospatial.md#workflow)：STACによる発見とCOGからの読み取りを区別する。
+- [検証と適用範囲](spatial-analysis-validation.md)：取得できたことと解析結果が妥当なことを分ける。
 
 ## 出典
 

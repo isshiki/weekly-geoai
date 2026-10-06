@@ -2,7 +2,7 @@
 layout: default
 title: 全国メッシュデータのWeb配信
 category: methods
-updated: 2026-09-09
+updated: 2026-10-06
 ---
 
 # 全国メッシュデータのWeb配信
@@ -55,6 +55,9 @@ DuckDBではメッシュコード完全一致のmedianが1.030ms、0.05度のBBO
 - 容量、検索時間、生成時間は、属性数、圧縮、空間順序、ハードウェアを添えて記録する。
 
 ## 関連項目
+
+- [CNGの形式比較](../concepts/cloud-native-geospatial.md#choose-format)：GeoParquet・COG・PMTiles・STACの役割を確認する。
+- [部分取得の条件](../concepts/cloud-native-geospatial.md#partial-reads)：Range応答とブラウザーのCORSを分けて確認する。
 
 - [MapLibre GL JS](../tools/maplibre-gl-js.md)
 - [geoparquet-io](../tools/geoparquet-io.md)

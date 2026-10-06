@@ -124,6 +124,23 @@ def foundations():
          "評価は使う場面から決める", "観測点付近を含む地図、未知の地域、将来の時点に応じて検証を設計する。三つの用途は排他的ではなく、性能の優劣を示す図ではない。", body)
 
 
+def cng_roles():
+    body = box(30, 80, 480, 80, "STAC：資産を探す", "時点・範囲・取得先を記述", "#fff0e6")
+    body += text(270, 198, "導入は任意。以下は三つの利用例", 22)
+    for y, source, source_note, target, target_note in [
+        (230, "GeoParquet", "形状と属性", "SQL分析", "抽出・集計"),
+        (350, "COG", "画像・標高", "画像解析", "必要な範囲を読む"),
+        (470, "PMTiles", "地図タイル", "Web地図", "表示する"),
+    ]:
+        body += box(20, y, 226, 80, source, source_note)
+        body += arrow(f"M 247 {y + 40} H 289")
+        body += box(292, y, 226, 80, target, target_note)
+    body += text(270, 602, "部分取得は配置・配信・読むツール次第", 21)
+    save("cloud-native-geospatial", "format-roles.svg", 632,
+         "形式と処理の役割を分ける", "STACは任意の発見用カタログ。三つの独立した例として、GeoParquetをSQL分析、COGを画像解析、PMTilesをWeb表示に使う。変換の順序や必須構成を示す図ではない。", body)
+
+
 if __name__ == "__main__":
     main()
     foundations()
+    cng_roles()

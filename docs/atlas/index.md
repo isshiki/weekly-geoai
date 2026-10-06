@@ -14,6 +14,7 @@ updated: 2026-10-06
 | --- | --- |
 | 基礎から順に学ぶ | [5テーマと経験別ルート](guides/getting-started.md#foundations) → [GeoAIの全体像](concepts/geoai-overview.md) |
 | 小さな例で手を動かす | [4店舗の空間結合演習](guides/spatial-join-exercise.md) → [実際のPOIを選ぶ](guides/poi-workflow.md) |
+| 保存形式と配信方法を選ぶ | [CNGの形式比較](concepts/cloud-native-geospatial.md#choose-format) → [部分取得の条件](concepts/cloud-native-geospatial.md#partial-reads) → [Web配信例](methods/national-grid-web-delivery.md) |
 | 集計や予測の結果を確かめる | [空間結合](methods/spatial-join-and-aggregation.md) → [予測・説明・因果](concepts/geographic-model-reasoning.md) → [検証と適用範囲](methods/spatial-analysis-validation.md) |
 | 店舗・施設のデータを分析する | [POIの案内](guides/poi-workflow.md) → [データ比較](data/poi-open-data-comparison.md) → [取得の網羅性](methods/poi-retrieval-coverage.md) |
 | 人の動きを分析する | [種類](data/human-flow-data-types.md) → [品質](data/human-flow-data-quality.md) → [集計](methods/human-flow-time-processing.md) → [プライバシー](methods/location-data-privacy.md) |
