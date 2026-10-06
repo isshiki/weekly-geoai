@@ -2,12 +2,27 @@
 layout: default
 title: 空間分析への埋め込みの組み込み
 category: methods
-updated: 2026-09-17
+updated: 2026-10-06
 ---
 
 # 空間分析への埋め込みの組み込み
 
 埋め込みは、画像や文章などの複雑な情報を数値ベクトルで表す方法である。空間分析へ結び付ける際は、生成時の空間単位と用途を確認する。
+
+## 入力から検証まで { #workflow }
+
+埋め込みは特徴を表す数値の並びであり、売上や人口などの予測値そのものではない。例えばGoogleのSatellite Embedding V1は、地表の年間の観測を64次元で表すデータである。数値の各軸を、そのまま特定の土地被覆クラス名と読むものではない。
+
+| 段階 | 確認すること |
+| --- | --- |
+| 入力 | 生成モデル・版、観測期間、空間単位、欠損、利用条件 |
+| 処理 | 類似度検索、グループ分け、予測モデルへの入力のどれに使うか |
+| 出力 | 類似度や順位、グループID、別途学習したモデルの予測値 |
+| 検証 | 検索目的に合うか、グループが安定しているか、予測誤差が改善するかを用途別に調べる |
+
+ベクトルが近いことは、その表現と距離尺度において似ていることを意味する。地図上で近いこと、用途が同じこと、売上が同じことを自動的には意味しない。比較する埋め込みはモデル・版・前処理の互換性を確認し、次元数が同じという理由だけで混ぜない。
+
+予測に使うなら、従来の説明変数だけの場合と、埋め込みを加えた場合を同じ評価条件で比べる。類似地域を探すなら、上位結果を元画像・地域属性と照合し、業務上の「似ている」に合うかを確認する。この比較手順はAtlasの実務上の案内であり、特定データでの精度向上を実証したものではない。
 
 ## 空間スケールを合わせる
 
@@ -23,6 +38,13 @@ updated: 2026-09-17
 
 類似度検索・クラスタリングでは、記事は標準化や従来変数の混在が埋め込みの意味を変える点に注意を促している。この助言を全モデル共通の禁止則とせず、利用する埋め込みと距離尺度に応じて検証する。
 
+## 次に読む
+
+- [GeoAIの手法選択](../concepts/geoai-overview.md#choose-method)：画像抽出や操作支援との役割の違いを読む。
+- [予測・説明・因果](../concepts/geographic-model-reasoning.md)：予測に役立つ特徴と原因の説明を区別する。
+- [検証と適用範囲](spatial-analysis-validation.md#ai-results)：類似度と予測精度を分けて評価する。
+
 ## 出典
 
-- [Including Embeddings in Your Spatial Analysis Workflows](https://www.esri.com/arcgis-blog/products/arcgis-pro/geoai/including-embeddings-in-your-spatial-analysis-workflows)（2026-09-17確認）
+- [Including Embeddings in Your Spatial Analysis Workflows](https://www.esri.com/arcgis-blog/products/arcgis-pro/geoai/including-embeddings-in-your-spatial-analysis-workflows)（2026-10-06再確認）
+- [Google: Satellite Embedding V1](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL)（2026-10-06確認。データ取得・モデル実行は未実施）

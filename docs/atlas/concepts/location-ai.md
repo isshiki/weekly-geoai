@@ -2,7 +2,7 @@
 layout: default
 title: Location AI
 category: concepts
-updated: 2026-10-05
+updated: 2026-10-06
 ---
 
 # Location AI
@@ -19,6 +19,26 @@ AIへ依頼する文章、実際に検索・計算するツール、根拠にな
   ![地理空間データから業務結果までをつなぐLocation AIの5層](../../assets/atlas/location-ai/location-ai-layers.svg)
   <figcaption>Location AIを構成するデータ、接続、指示、実行、結果の関係。GeoAIアトラス作成。</figcaption>
 </figure>
+
+## 入力から検証まで { #workflow }
+
+| 段階 | 確認すること |
+| --- | --- |
+| 入力 | 対象地域・時点・求める成果物、許可したデータと操作 |
+| 処理 | 依頼を検索・結合・計算・表示に分け、各ツールへ条件を渡す |
+| 出力 | 地図や表だけでなく、データの版、実行条件、処理履歴 |
+| 検証 | ツールのエラー、件数・単位・範囲、依頼への適合、成果物の読み戻し |
+
+例えば「徒歩10分以内」と「直線距離800m以内」は異なる条件である。依頼が曖昧なら、必要な条件を確定してから計算する。以下はAtlasの設計例であり、特定サービスの実行結果ではない。
+
+1. 依頼を、地域・時点・条件・成果物に分ける。
+2. 使用するデータと処理を決め、座標系・単位・権限を確認する。
+3. 小さな対象で処理し、件数や既知の例と照合する。
+4. 保存先から成果物を読み戻し、処理条件とともに報告する。
+
+MCPはツールの呼び出しと結果の受け渡しを規定する。参照した2025-06-18版では、ツール内の処理失敗を`isError`で返す仕組みもある。通信が成立したことだけで、GISの計算や依頼全体の成功と判断しない。
+
+公開・更新・削除を伴う処理は、読み取りだけの処理と権限を分け、影響を確認できる段階を設ける。[検証ページ](../methods/spatial-analysis-validation.md#ai-results)では、操作と分析内容の確認を分けて整理する。
 
 ## 構成要素
 
@@ -75,6 +95,8 @@ PinMeToの2026年10月1日の論考は、Yahoo Financeの試用報告を引用�
 - [知識グラフとLLMエージェントによる地理空間データ探索](../methods/intelligent-geospatial-data-discovery.md)
 
 ## 出典
+
+- [MCP specification: Tools（2025-06-18版）](https://modelcontextprotocol.io/specification/2025-06-18/server/tools)（2026-10-06確認。GIS製品の動作確認ではない）
 
 - [Top announcements from BUILD with Mapbox 2026](https://www.mapbox.com/blog/top-announcements-from-build-with-mapbox-2026)（2026-09-18確認）
 - [Mapbox Announces Location Infrastructure for AI](https://www.prnewswire.com/news-releases/mapbox-announces-location-infrastructure-for-ai-mapbox-announces-location-infrastructure-for-ai-302882326.html)（2026-09-18確認）

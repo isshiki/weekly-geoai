@@ -13,6 +13,7 @@ updated: 2026-10-06
 | 目的 | 読む順序 |
 | --- | --- |
 | 基礎から順に学ぶ | [5テーマと経験別ルート](guides/getting-started.md#foundations) → [GeoAIの全体像](concepts/geoai-overview.md) |
+| AIで分析するか、操作を任せるか選ぶ | [手法比較](concepts/geoai-overview.md#choose-method) → [画像解析](methods/imagery-to-gis.md#workflow)／[埋め込み](methods/spatial-embeddings.md#workflow)／[GIS操作](concepts/location-ai.md#workflow) → [検証](methods/spatial-analysis-validation.md#ai-results) |
 | 小さな例で手を動かす | [4店舗の空間結合演習](guides/spatial-join-exercise.md) → [実際のPOIを選ぶ](guides/poi-workflow.md) |
 | 保存形式と配信方法を選ぶ | [CNGの形式比較](concepts/cloud-native-geospatial.md#choose-format) → [部分取得の条件](concepts/cloud-native-geospatial.md#partial-reads) → [Web配信例](methods/national-grid-web-delivery.md) |
 | 集計や予測の結果を確かめる | [空間結合](methods/spatial-join-and-aggregation.md) → [予測・説明・因果](concepts/geographic-model-reasoning.md) → [検証と適用範囲](methods/spatial-analysis-validation.md) |

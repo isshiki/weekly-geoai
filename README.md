@@ -28,6 +28,8 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 ## 運営者向け情報
 
+[GeoAIの手法比較](https://isshiki.github.io/weekly-geoai/atlas/concepts/geoai-overview/#choose-method)から、画像解析・埋め込み・GIS操作支援を入力・出力で選び、各手法の検証へ進める。
+
 [CNGの形式比較と構成例](https://isshiki.github.io/weekly-geoai/atlas/concepts/cloud-native-geospatial/#choose-format)では、GeoParquet・COG・PMTiles・STACを役割で選び、部分取得が働く条件を確認できる。
 
 基礎解説の整備状況と次の優先課題は[Atlasの点検・整備計画](editorial/atlas-roadmap.md)にまとめる。

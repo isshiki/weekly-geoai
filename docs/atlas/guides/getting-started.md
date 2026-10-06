@@ -67,6 +67,7 @@ updated: 2026-10-06
 | 地図がずれる理由を知りたい | [座標参照系](../concepts/coordinate-reference-systems.md) | [投影法の選び方](../concepts/map-projections.md) |
 | データをWeb地図にしたい | [Felt](../tools/felt.md)で共有の流れを知る | コードで作るなら[MapLibre](../tools/maplibre-gl-js.md)・[OpenLayers](../tools/openlayers.md) |
 | AIにGIS操作を任せたい | [Location AI](../concepts/location-ai.md) | [AI向け開発環境](../methods/ai-ready-geospatial-development.md) |
+| GeoAIの手法を選びたい | [入力・出力で選ぶ比較表](../concepts/geoai-overview.md#choose-method) | [出力ごとの検証](../methods/spatial-analysis-validation.md#ai-results) |
 | 防災データを使いたい | [ハザードデータの再利用条件](../data/hazard-data-reuse.md) | [ポリゴンのメッシュ集計](../methods/polygon-mesh-aggregation.md) |
 
 ## 道具を選ぶ前に
