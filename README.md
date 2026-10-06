@@ -36,4 +36,6 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 基礎解説の整備状況と次の優先課題は[Atlasの点検・整備計画](editorial/atlas-roadmap.md)にまとめる。
 
+公開前には `scripts/check_site_links.py` で生成HTMLの内部リンク・アンカー・画像参照と更新履歴のハイライトを検査する。GitHub Actionsでも実行する。範囲と実行方法は[運用手順](OPERATIONS.md#リンクとハイライトの検査)を参照。
+
 日次メモ、週次原稿、Substack用HTML、GitHub Pagesへの公開手順は[OPERATIONS.md](./OPERATIONS.md)にまとめている。

@@ -132,12 +132,26 @@ CNGの形式と処理を示す `format-roles.svg` も同スクリプトで再生
 ```powershell
 python scripts/sync_update_history.py --date YYYY-MM-DD --base <当日の最初の変更より前のコミット>
 python -m mkdocs build --strict
+python scripts/check_site_links.py --history-date YYYY-MM-DD
 python scripts/check_public.py --all
 ```
 
 リンク・表示・差分と公開内容を確認した後、対象変更だけをコミット・プッシュする。公開URLの到達とGitHub Pagesのデプロイ結果を確認して報告する。ニュースレターの原稿や配信設定は月次整理の対象に含めない。
 
 ## 公開前チェック
+
+### リンクとハイライトの検査
+
+ビルド後に `python scripts/check_site_links.py` を実行する。既定では生成済み更新履歴の最新日を厳密に検査する。特定の作業日は `--history-date YYYY-MM-DD` で指定でき、指定日のページがなければ失敗する。別のビルド先は `--site-dir PATH` で指定する。
+
+- 全生成HTMLの `href`・`src` に含まれる内部ページ・画像・スクリプト等の存在と、HTMLのアンカーを確認する。同じ公開サイトの絶対URLにも対応する。
+- テキストフラグメントは、履歴生成ツールの `text=文章` と `text=始点,終点` を検査する。複数指定とパーセント符号化にも対応する。
+- 指定日以降の履歴・通常ページの不一致はエラー（終了コード1）。それより古い履歴の文章不一致は警告のみとし、過去の記録を自動で書き換えない。リンク先やアンカーの欠落は過去履歴でもエラーにする。
+- 外部サイトの到達性、CSS内のURL、`srcset`、JavaScriptで生成するリンク、ブラウザーでの実際のハイライト表示は対象外。テキストはscript/styleを除いたHTMLの静的照合であり、CSSによる可視性やブラウザー固有の一致規則を再現しない。
+
+GitHub Actionsはビルド後に同じ検査を実行し、エラーがあれば公開を止める。チェック自体の回帰テストは `python -m unittest discover -s tests` で実行する。秘密情報の検査は引き続き `check_public.py` が担当する。
+
+### 公開対象の確認
 
 このリポジトリは全履歴を含めて公開される。push前に毎回、次を確認する。
 

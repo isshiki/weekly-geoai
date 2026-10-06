@@ -37,6 +37,9 @@ jobs:
       - name: Build MkDocs site
         run: uv run --group site mkdocs build --strict
 
+      - name: Check internal links and latest history highlights
+        run: uv run --group site python scripts/check_site_links.py
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
