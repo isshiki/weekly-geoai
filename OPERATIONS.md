@@ -113,6 +113,14 @@ GitHub Pagesは次の設定で公開する。
 
 ## Atlasの月次整理
 
+月次の点検は[確認台帳](editorial/atlas-review-register.md)から5〜10ページを選ぶ。元の調査9本の照合は初回に一度、実データの性能比較は個別企画として扱う。[暫定対応表と初回候補](editorial/atlas-research-crosswalk.md)に未完了事項を残す。予約の実行頻度は変更しない。
+
+日次追加・月次編集の後は `python scripts/build_atlas_review_register.py` で台帳を更新する。`--check` は再生成が必要なら失敗する。外部サイトを取得するツールではなく、既存本文の出典確認日と未確認表記を集める。
+
+GitHub Actionsでも `--check` を実行し、台帳の更新漏れがあれば公開前に止める。
+
+ページ全体を点検した場合だけ `editorial/atlas-review-records.json` に、`atlas/tools/xxx.md` のようなdocs相対パスをキーとして `reviewed_on`（YYYY-MM-DD）、`evidence`（確認した出典・節・判断・残課題）を記録する。次回の具体的な作業は任意の `next_action` に記録できる。全体点検なしで次の作業だけ記録する場合は `reviewed_on` を省略する。再生成はこの手動記録を上書きしない。
+
 初心者案内・POI案内・OpenLayers・空間結合・検証方法の図は、`python scripts/build_atlas_learning_figures.py`でSVGを再生成できる。生成先は`docs/assets/atlas/`。本文と図の説明をそろえ、変更時はスマートフォン幅と明暗テーマでも表示を確認する。
 
 埋め込みの検索・予測を対比する `spatial-embeddings/search-and-prediction.svg` も `scripts/build_atlas_learning_figures.py` で再生成する。模式図であり、実モデルの性能を表さない。

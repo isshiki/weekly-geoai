@@ -34,6 +34,9 @@ jobs:
       - name: Sync site assets
         run: uv run --group site python scripts/sync_site_assets.py
 
+      - name: Check Atlas review register freshness
+        run: uv run --group site python scripts/build_atlas_review_register.py --check
+
       - name: Build MkDocs site
         run: uv run --group site mkdocs build --strict
 
