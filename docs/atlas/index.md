@@ -20,7 +20,7 @@ updated: 2026-10-06
 | 店舗・施設のデータを分析する | [POIの案内](guides/poi-workflow.md) → [データ比較](data/poi-open-data-comparison.md) → [取得の網羅性](methods/poi-retrieval-coverage.md) |
 | 人の動きを分析する | [種類](data/human-flow-data-types.md) → [品質](data/human-flow-data-quality.md) → [集計](methods/human-flow-time-processing.md) → [プライバシー](methods/location-data-privacy.md) |
 | 地図を作り、公開する | [座標系](concepts/coordinate-reference-systems.md) → [Felt](tools/felt.md)／[MapLibre](tools/maplibre-gl-js.md)／[OpenLayers](tools/openlayers.md) → [Web配信](methods/national-grid-web-delivery.md) |
-| AIにGIS操作を任せる | [仕組み](concepts/location-ai.md) → [開発環境](methods/ai-ready-geospatial-development.md) → [CARTO MCP](tools/carto-mcp-server.md) |
+| AIにGIS操作を任せる | [条件を決める例](concepts/location-ai.md#request-example) → [依頼ひな形](concepts/location-ai.md#request-template) → [結果確認](concepts/location-ai.md#result-checks) → [開発環境](methods/ai-ready-geospatial-development.md) |
 | 防災・地形データを使う | [再利用条件](data/hazard-data-reuse.md) → [メッシュ集計](methods/polygon-mesh-aggregation.md) → [地形のスケール](methods/terrain-scale.md) |
 
 類似地域検索と予測の違いは、[埋め込みの具体例](methods/spatial-embeddings.md#search-vs-prediction)で確認できる。特徴・距離尺度・空間単位を変えると何が変わるかを読む。

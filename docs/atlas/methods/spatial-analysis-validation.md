@@ -70,6 +70,8 @@ updated: 2026-10-06
 
 [埋め込みの確認例](spatial-embeddings.md#check-results)では、検索の関連性・予測誤差・因果効果を分け、同じ評価条件で比較する。
 
+GIS操作の確認には、[Location AIの結果確認表](../concepts/location-ai.md#result-checks)を使う。0件、重複、座標のずれ、部分取得、保存後の表示を切り分ける。
+
 ## 手を動かして確かめる
 
 [16画素の画像評価演習](../guides/imagery-evaluation-exercise.md)では、正解と予測を図で照合し、誤検出・見逃しと評価指標を手計算・Pythonで確認できる。

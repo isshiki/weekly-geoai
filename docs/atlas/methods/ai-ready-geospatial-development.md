@@ -2,7 +2,7 @@
 layout: default
 title: AIが扱いやすい地理空間開発環境
 category: methods
-updated: 2026-10-01
+updated: 2026-10-06
 ---
 
 # AIが扱いやすい地理空間開発環境
@@ -35,6 +35,8 @@ Google Maps Platform Agent Skillsは、タスクに応じたサブスキルと�
 Agent SkillsはAPIそのものではない。エージェントが最新資料と制約に沿ってAPIを利用するための手順・ガバナンス層である。リポジトリはApache 2.0で公開されているが、READMEには公式サポート対象のGoogle製品ではないと明記されている。
 
 ## 実装・評価の順序
+
+実装前に、[Location AIの依頼ひな形](../concepts/location-ai.md#request-template)で対象範囲・距離条件・操作権限・出力を明示する。[結果確認表](../concepts/location-ai.md#result-checks)は、件数や表示状態を返す仕組みの設計に使える。
 
 1. 用途、対象環境、データ量、必要な地図操作を定義する。
 2. 最新の公式文書と推奨APIを取得する。

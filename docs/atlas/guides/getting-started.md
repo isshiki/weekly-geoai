@@ -68,7 +68,7 @@ AIの出力を評価したい場合は、[16画素で試す画像分類の評価
 | 人の動きを知りたい | [人流データの種類](../data/human-flow-data-types.md) | [誤差と品質](../data/human-flow-data-quality.md) → [プライバシー](../methods/location-data-privacy.md) |
 | 地図がずれる理由を知りたい | [座標参照系](../concepts/coordinate-reference-systems.md) | [投影法の選び方](../concepts/map-projections.md) |
 | データをWeb地図にしたい | [Felt](../tools/felt.md)で共有の流れを知る | コードで作るなら[MapLibre](../tools/maplibre-gl-js.md)・[OpenLayers](../tools/openlayers.md) |
-| AIにGIS操作を任せたい | [Location AI](../concepts/location-ai.md) | [AI向け開発環境](../methods/ai-ready-geospatial-development.md) |
+| AIにGIS操作を任せたい | [依頼を実行条件へ分ける例](../concepts/location-ai.md#request-example) | [依頼ひな形](../concepts/location-ai.md#request-template) → [AI向け開発環境](../methods/ai-ready-geospatial-development.md) |
 | GeoAIの手法を選びたい | [入力・出力で選ぶ比較表](../concepts/geoai-overview.md#choose-method) | [出力ごとの検証](../methods/spatial-analysis-validation.md#ai-results) |
 | 防災データを使いたい | [ハザードデータの再利用条件](../data/hazard-data-reuse.md) | [ポリゴンのメッシュ集計](../methods/polygon-mesh-aggregation.md) |
 
