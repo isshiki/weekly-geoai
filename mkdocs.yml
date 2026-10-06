@@ -36,6 +36,7 @@ nav:
   - はじめに:
     - 初めてのGeoAI: atlas/guides/getting-started.md
     - 4店舗で試す空間結合: atlas/guides/spatial-join-exercise.md
+    - 16画素で試す画像分類の評価: atlas/guides/imagery-evaluation-exercise.md
     - POIデータを選び、分析する: atlas/guides/poi-workflow.md
   - 知識マップ:
     - 全体を見る: atlas/index.md

@@ -1,7 +1,7 @@
 ---
 title: 4店舗で試す空間結合と件数の検証
 category: guides
-updated: 2026-10-05
+updated: 2026-10-06
 ---
 
 # 4店舗で試す空間結合と件数の検証
@@ -74,6 +74,8 @@ uv run --no-project spatial_join.py
 このコードは各点と全区域を順に比較する小規模な学習例である。大量データの高速化、測位誤差、無効な形状、複雑な区域の修復は扱わない。実データでは[CRSの確認](../concepts/coordinate-reference-systems.md)と[結果の検証](../methods/spatial-analysis-validation.md)へ進む。
 
 ## 次に試す
+
+- [16画素の画像評価演習](imagery-evaluation-exercise.md)：データの対応確認から、AIの予測結果の評価へ進む。
 
 - [POIデータを選び、分析する](poi-workflow.md)：実際の店舗データの取得範囲・カテゴリ・重複を確認する。
 - [人流データの計測誤差と推計誤差](../data/human-flow-data-quality.md)：点の件数と人数の推計が違うことを学ぶ。人流では観測点をそのまま人数と数えない。

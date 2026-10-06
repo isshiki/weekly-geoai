@@ -119,6 +119,8 @@ CNGの形式と処理を示す `format-roles.svg` も同スクリプトで再生
 
 空間結合の演習コードは `docs/assets/exercises/spatial_join.py` が公開用の原本である。`uv run --no-project docs/assets/exercises/spatial_join.py` で独立した依存環境から検証し、演習ページの対応表・環境記録と照合する。サイト用の依存関係へShapelyを追加する必要はない。
 
+画像評価の演習は `python docs/assets/exercises/imagery_evaluation.py` で実行する。追加依存は不要。図は `python scripts/build_imagery_evaluation_figure.py` で同じ入力から再生成する。`python -m unittest discover -s tests` で分母ゼロ・入力形状の検査も行う。
+
 毎月第1月曜日の9:00（日本時間）に、このチャットのCodex自動実行「GeoAIアトラスの月次整理」で見直す。初回は2026年10月5日に実施。予約はCodexアプリで管理し、GitHub Actionsの定期ジョブではない。
 
 内容の基準は[Atlas編集ガイド](editorial/atlas-guide.md#月次整理)を参照する。前月の蓄積から5〜10ページ程度を選び、入口・分類・基礎説明・情報の鮮度を改善する。変更がない場合は通知を控え、改善結果、失敗、要対応事項を報告する。

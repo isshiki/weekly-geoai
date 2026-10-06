@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 850" role="img" aria-labelledby="title desc">
+<title id="title">16画素の正解・予測・照合</title>
+<desc id="desc">正解は建物6画素。予測との照合はTP4、FP1、FN2、TN9。</desc>
+<rect width="420" height="850" fill="#ffffff"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#1E3A5F">
+<text x="210" y="30" font-size="20">正解：建物 6画素</text>
+<rect x="106" y="48" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="132" y="81" font-size="20" fill="#ffffff">1</text>
+<rect x="158" y="48" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="184" y="81" font-size="20" fill="#ffffff">1</text>
+<rect x="210" y="48" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="236" y="81" font-size="20" fill="#ffffff">1</text>
+<rect x="262" y="48" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="288" y="81" font-size="20" fill="#1E3A5F">0</text>
+<rect x="106" y="100" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="132" y="133" font-size="20" fill="#ffffff">1</text>
+<rect x="158" y="100" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="184" y="133" font-size="20" fill="#ffffff">1</text>
+<rect x="210" y="100" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="236" y="133" font-size="20" fill="#ffffff">1</text>
+<rect x="262" y="100" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="288" y="133" font-size="20" fill="#1E3A5F">0</text>
+<rect x="106" y="152" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="132" y="185" font-size="20" fill="#1E3A5F">0</text>
+<rect x="158" y="152" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="184" y="185" font-size="20" fill="#1E3A5F">0</text>
+<rect x="210" y="152" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="236" y="185" font-size="20" fill="#1E3A5F">0</text>
+<rect x="262" y="152" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="288" y="185" font-size="20" fill="#1E3A5F">0</text>
+<rect x="106" y="204" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="132" y="237" font-size="20" fill="#1E3A5F">0</text>
+<rect x="158" y="204" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="184" y="237" font-size="20" fill="#1E3A5F">0</text>
+<rect x="210" y="204" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="236" y="237" font-size="20" fill="#1E3A5F">0</text>
+<rect x="262" y="204" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="288" y="237" font-size="20" fill="#1E3A5F">0</text>
+<text x="210" y="300" font-size="20">予測：建物 5画素</text>
+<rect x="106" y="318" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="132" y="351" font-size="20" fill="#ffffff">1</text>
+<rect x="158" y="318" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="184" y="351" font-size="20" fill="#ffffff">1</text>
+<rect x="210" y="318" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="236" y="351" font-size="20" fill="#1E3A5F">0</text>
+<rect x="262" y="318" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="288" y="351" font-size="20" fill="#1E3A5F">0</text>
+<rect x="106" y="370" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="132" y="403" font-size="20" fill="#ffffff">1</text>
+<rect x="158" y="370" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="184" y="403" font-size="20" fill="#1E3A5F">0</text>
+<rect x="210" y="370" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="236" y="403" font-size="20" fill="#ffffff">1</text>
+<rect x="262" y="370" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="288" y="403" font-size="20" fill="#1E3A5F">0</text>
+<rect x="106" y="422" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="132" y="455" font-size="20" fill="#1E3A5F">0</text>
+<rect x="158" y="422" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="184" y="455" font-size="20" fill="#1E3A5F">0</text>
+<rect x="210" y="422" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="236" y="455" font-size="20" fill="#1E3A5F">0</text>
+<rect x="262" y="422" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="288" y="455" font-size="20" fill="#ffffff">1</text>
+<rect x="106" y="474" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="132" y="507" font-size="20" fill="#1E3A5F">0</text>
+<rect x="158" y="474" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="184" y="507" font-size="20" fill="#1E3A5F">0</text>
+<rect x="210" y="474" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="236" y="507" font-size="20" fill="#1E3A5F">0</text>
+<rect x="262" y="474" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="288" y="507" font-size="20" fill="#1E3A5F">0</text>
+<text x="210" y="570" font-size="20">照合：TP 4 / FP 1 / FN 2 / TN 9</text>
+<rect x="106" y="588" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="132" y="621" font-size="20" fill="#ffffff">TP</text>
+<rect x="158" y="588" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="184" y="621" font-size="20" fill="#ffffff">TP</text>
+<rect x="210" y="588" width="52" height="52" fill="#ffddc7" stroke="#778899"/>
+<text x="236" y="621" font-size="20" fill="#1E3A5F">FN</text>
+<rect x="262" y="588" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="288" y="621" font-size="20" fill="#1E3A5F">TN</text>
+<rect x="106" y="640" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="132" y="673" font-size="20" fill="#ffffff">TP</text>
+<rect x="158" y="640" width="52" height="52" fill="#ffddc7" stroke="#778899"/>
+<text x="184" y="673" font-size="20" fill="#1E3A5F">FN</text>
+<rect x="210" y="640" width="52" height="52" fill="#1E3A5F" stroke="#778899"/>
+<text x="236" y="673" font-size="20" fill="#ffffff">TP</text>
+<rect x="262" y="640" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="288" y="673" font-size="20" fill="#1E3A5F">TN</text>
+<rect x="106" y="692" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="132" y="725" font-size="20" fill="#1E3A5F">TN</text>
+<rect x="158" y="692" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="184" y="725" font-size="20" fill="#1E3A5F">TN</text>
+<rect x="210" y="692" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="236" y="725" font-size="20" fill="#1E3A5F">TN</text>
+<rect x="262" y="692" width="52" height="52" fill="#FF8A3D" stroke="#778899"/>
+<text x="288" y="725" font-size="20" fill="#1E3A5F">FP</text>
+<rect x="106" y="744" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="132" y="777" font-size="20" fill="#1E3A5F">TN</text>
+<rect x="158" y="744" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="184" y="777" font-size="20" fill="#1E3A5F">TN</text>
+<rect x="210" y="744" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="236" y="777" font-size="20" fill="#1E3A5F">TN</text>
+<rect x="262" y="744" width="52" height="52" fill="#edf2f7" stroke="#778899"/>
+<text x="288" y="777" font-size="20" fill="#1E3A5F">TN</text>
+<text x="210" y="840" font-size="17">1 = 建物 / 0 = 背景（架空データ）</text></g></svg>

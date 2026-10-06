@@ -44,6 +44,10 @@ updated: 2026-10-06
 - [CNGの構成例](../concepts/cloud-native-geospatial.md#workflow)：STACによる発見とCOGからの読み取りを区別する。
 - [検証と適用範囲](spatial-analysis-validation.md)：取得できたことと解析結果が妥当なことを分ける。
 
+## 手を動かして確かめる
+
+[16画素の画像評価演習](../guides/imagery-evaluation-exercise.md)では、正解と予測を図で照合し、誤検出・見逃しと評価指標を手計算・Pythonで確認できる。
+
 ## 出典
 
 - [From Imagery to Information: Image Analysis Across ArcGIS](https://www.esri.com/arcgis-blog/products/arcgis/imagery/from-imagery-to-information-image-analysis-across-arcgis)（2026-10-06再確認）
