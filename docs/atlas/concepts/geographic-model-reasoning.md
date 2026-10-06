@@ -2,7 +2,7 @@
 layout: default
 title: 地理空間モデルの予測と地理的理解
 category: concepts
-updated: 2026-10-05
+updated: 2026-10-06
 ---
 
 # 地理空間モデルの予測と地理的理解
@@ -53,7 +53,7 @@ updated: 2026-10-05
 
 - [GeoAIの全体像](geoai-overview.md)：分析と操作支援の役割をつかむ。
 - [空間結合と集計の基本](../methods/spatial-join-and-aggregation.md)：集計単位や重複を確認する。
-- [空間分析への埋め込みの組み込み](../methods/spatial-embeddings.md)
+- [埋め込みの検索と予測の具体例](../methods/spatial-embeddings.md#search-vs-prediction)：類似地域の順位と売上の予測、施策の効果を区別する。
 - [渋谷の街区別年代構成と人流の読み方](../cases/shibuya-age-distribution.md)
 
 ## 出典

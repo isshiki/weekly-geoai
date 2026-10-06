@@ -68,6 +68,8 @@ updated: 2026-10-06
 - [人流データの計測誤差と推計誤差](../data/human-flow-data-quality.md)：観測や推計の偏りを確認する。
 - [地理空間データの来歴](../data/geospatial-record-provenance.md)：再現に必要な記録を残す。
 
+[埋め込みの確認例](spatial-embeddings.md#check-results)では、検索の関連性・予測誤差・因果効果を分け、同じ評価条件で比較する。
+
 ## 手を動かして確かめる
 
 [16画素の画像評価演習](../guides/imagery-evaluation-exercise.md)では、正解と予測を図で照合し、誤検出・見逃しと評価指標を手計算・Pythonで確認できる。

@@ -115,6 +115,8 @@ GitHub Pagesは次の設定で公開する。
 
 初心者案内・POI案内・OpenLayers・空間結合・検証方法の図は、`python scripts/build_atlas_learning_figures.py`でSVGを再生成できる。生成先は`docs/assets/atlas/`。本文と図の説明をそろえ、変更時はスマートフォン幅と明暗テーマでも表示を確認する。
 
+埋め込みの検索・予測を対比する `spatial-embeddings/search-and-prediction.svg` も `scripts/build_atlas_learning_figures.py` で再生成する。模式図であり、実モデルの性能を表さない。
+
 CNGの形式と処理を示す `format-roles.svg` も同スクリプトで再生成する。既存の `layers.svg` は別の図であり、再生成対象に含まない。
 
 空間結合の演習コードは `docs/assets/exercises/spatial_join.py` が公開用の原本である。`uv run --no-project docs/assets/exercises/spatial_join.py` で独立した依存環境から検証し、演習ページの対応表・環境記録と照合する。サイト用の依存関係へShapelyを追加する必要はない。

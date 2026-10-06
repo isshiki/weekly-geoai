@@ -23,6 +23,8 @@ updated: 2026-10-06
 | AIにGIS操作を任せる | [仕組み](concepts/location-ai.md) → [開発環境](methods/ai-ready-geospatial-development.md) → [CARTO MCP](tools/carto-mcp-server.md) |
 | 防災・地形データを使う | [再利用条件](data/hazard-data-reuse.md) → [メッシュ集計](methods/polygon-mesh-aggregation.md) → [地形のスケール](methods/terrain-scale.md) |
 
+類似地域検索と予測の違いは、[埋め込みの具体例](methods/spatial-embeddings.md#search-vs-prediction)で確認できる。特徴・距離尺度・空間単位を変えると何が変わるかを読む。
+
 ## 分類から探す { #by-category }
 
 [概念](#concepts) / [手法](#methods) / [データ](#data) / [ツール](#tools) / [事例](#cases)

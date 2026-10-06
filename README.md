@@ -28,6 +28,8 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 ## 運営者向け情報
 
+[埋め込みの具体例](https://isshiki.github.io/weekly-geoai/atlas/methods/spatial-embeddings/#search-vs-prediction)で、類似地域の検索と売上予測の違い、距離尺度と正規化の関係を確認できる。
+
 [16画素の画像評価演習](https://isshiki.github.io/weekly-geoai/atlas/guides/imagery-evaluation-exercise/)では、図と標準Pythonだけで誤検出・見逃しと評価指標を照合できる。
 
 [GeoAIの手法比較](https://isshiki.github.io/weekly-geoai/atlas/concepts/geoai-overview/#choose-method)から、画像解析・埋め込み・GIS操作支援を入力・出力で選び、各手法の検証へ進める。
