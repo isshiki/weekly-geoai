@@ -75,6 +75,8 @@ uv run --no-project spatial_join.py
 
 ## 次に試す
 
+[データ分析ルート](getting-started.md#route-analysis)で到達点を確認し、以下から次の課題を選ぶ。
+
 - [16画素の画像評価演習](imagery-evaluation-exercise.md)：データの対応確認から、AIの予測結果の評価へ進む。
 
 - [POIデータを選び、分析する](poi-workflow.md)：実際の店舗データの取得範囲・カテゴリ・重複を確認する。

@@ -16,9 +16,15 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 目的別の読む順序と、概念・手法・データ・ツール・事例の索引から内容を探せる。日次の情報追加に加え、毎月第1月曜日に分類・説明・情報の鮮度を見直す。運用は[月次整理](OPERATIONS.md#atlas-monthly)を参照する。
 
-[基礎5テーマと経験別ルート](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/#foundations)では、GeoAIの全体像、座標と測定、空間結合、予測・説明・因果、結果の検証をつなぐ。GIS経験者、Python経験者、画面操作中心の読者が入口を選べる。
+## 学習の入口
 
-[4店舗の空間結合演習](https://isshiki.github.io/weekly-geoai/atlas/guides/spatial-join-exercise/)では、手計算と実行用Pythonコードで、境界・未所属・重複が件数へ与える影響を確かめられる。
+読む順序と到達点は[初心者向け3ルート](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/#learning-routes)にまとめている。
+
+| ルート | 学ぶこと |
+| --- | --- |
+| [基礎理解](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/#route-foundations) | GeoAIの全体像、データ表現、座標、手法選択 |
+| [データ分析](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/#route-analysis) | 4店舗・16画素の演習で集計と評価を確認 |
+| [AI操作](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/#route-agent) | 条件・権限・成果物・検証を依頼文へ整理 |
 
 ## 週刊GeoAI
 
@@ -27,16 +33,6 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 週刊GeoAIのバックナンバーはSubstackで公開する。
 
 ## 運営者向け情報
-
-[GIS操作の依頼ひな形](https://isshiki.github.io/weekly-geoai/atlas/concepts/location-ai/#request-template)を使い、対象・距離・時点・権限・成果物と検証方法を整理できる。
-
-[埋め込みの具体例](https://isshiki.github.io/weekly-geoai/atlas/methods/spatial-embeddings/#search-vs-prediction)で、類似地域の検索と売上予測の違い、距離尺度と正規化の関係を確認できる。
-
-[16画素の画像評価演習](https://isshiki.github.io/weekly-geoai/atlas/guides/imagery-evaluation-exercise/)では、図と標準Pythonだけで誤検出・見逃しと評価指標を照合できる。
-
-[GeoAIの手法比較](https://isshiki.github.io/weekly-geoai/atlas/concepts/geoai-overview/#choose-method)から、画像解析・埋め込み・GIS操作支援を入力・出力で選び、各手法の検証へ進める。
-
-[CNGの形式比較と構成例](https://isshiki.github.io/weekly-geoai/atlas/concepts/cloud-native-geospatial/#choose-format)では、GeoParquet・COG・PMTiles・STACを役割で選び、部分取得が働く条件を確認できる。
 
 基礎解説の整備状況と次の優先課題は[Atlasの点検・整備計画](editorial/atlas-roadmap.md)にまとめる。
 

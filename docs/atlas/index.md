@@ -10,20 +10,26 @@ updated: 2026-10-06
 
 ## 目的から探す { #by-purpose }
 
+初めて読む場合は、[3つの学習ルート](guides/getting-started.md#learning-routes)から選ぶ。読む順序と到達点は初心者案内にまとめている。
+
+| 学びたいこと | 入口 |
+| --- | --- |
+| 基礎理解：手法を選ぶ | [全体像から手法比較へ](guides/getting-started.md#route-foundations) |
+| データ分析：結果を確かめる | [空間結合・画像評価の2演習へ](guides/getting-started.md#route-analysis) |
+| AI操作：依頼文を作る | [条件整理・依頼ひな形・結果確認へ](guides/getting-started.md#route-agent) |
+
+### 用途を決めて調べる
+
 | 目的 | 読む順序 |
 | --- | --- |
-| 基礎から順に学ぶ | [5テーマと経験別ルート](guides/getting-started.md#foundations) → [GeoAIの全体像](concepts/geoai-overview.md) |
-| AIで分析するか、操作を任せるか選ぶ | [手法比較](concepts/geoai-overview.md#choose-method) → [画像解析](methods/imagery-to-gis.md#workflow)／[埋め込み](methods/spatial-embeddings.md#workflow)／[GIS操作](concepts/location-ai.md#workflow) → [検証](methods/spatial-analysis-validation.md#ai-results) |
-| 小さな例で手を動かす | [4店舗の空間結合演習](guides/spatial-join-exercise.md) → [16画素の画像評価演習](guides/imagery-evaluation-exercise.md) |
 | 保存形式と配信方法を選ぶ | [CNGの形式比較](concepts/cloud-native-geospatial.md#choose-format) → [部分取得の条件](concepts/cloud-native-geospatial.md#partial-reads) → [Web配信例](methods/national-grid-web-delivery.md) |
 | 集計や予測の結果を確かめる | [空間結合](methods/spatial-join-and-aggregation.md) → [予測・説明・因果](concepts/geographic-model-reasoning.md) → [検証と適用範囲](methods/spatial-analysis-validation.md) |
 | 店舗・施設のデータを分析する | [POIの案内](guides/poi-workflow.md) → [データ比較](data/poi-open-data-comparison.md) → [取得の網羅性](methods/poi-retrieval-coverage.md) |
 | 人の動きを分析する | [種類](data/human-flow-data-types.md) → [品質](data/human-flow-data-quality.md) → [集計](methods/human-flow-time-processing.md) → [プライバシー](methods/location-data-privacy.md) |
 | 地図を作り、公開する | [座標系](concepts/coordinate-reference-systems.md) → [Felt](tools/felt.md)／[MapLibre](tools/maplibre-gl-js.md)／[OpenLayers](tools/openlayers.md) → [Web配信](methods/national-grid-web-delivery.md) |
-| AIにGIS操作を任せる | [条件を決める例](concepts/location-ai.md#request-example) → [依頼ひな形](concepts/location-ai.md#request-template) → [結果確認](concepts/location-ai.md#result-checks) → [開発環境](methods/ai-ready-geospatial-development.md) |
 | 防災・地形データを使う | [再利用条件](data/hazard-data-reuse.md) → [メッシュ集計](methods/polygon-mesh-aggregation.md) → [地形のスケール](methods/terrain-scale.md) |
 
-類似地域検索と予測の違いは、[埋め込みの具体例](methods/spatial-embeddings.md#search-vs-prediction)で確認できる。特徴・距離尺度・空間単位を変えると何が変わるかを読む。
+類似地域検索と予測の違いは[埋め込みの具体例](methods/spatial-embeddings.md#search-vs-prediction)、AI手法の選択は[入力・出力の比較表](concepts/geoai-overview.md#choose-method)を参照する。
 
 ## 分類から探す { #by-category }
 

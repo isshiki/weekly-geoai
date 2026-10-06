@@ -79,6 +79,8 @@ PASSは架空例の計算確認であり、AIの性能や他地域での精度�
 
 ## 次に読む
 
+[データ分析ルート](getting-started.md#route-analysis)で到達点を確認し、以下から次の課題を選ぶ。
+
 - [4店舗の空間結合演習](spatial-join-exercise.md)：合計が合っていても対応が誤る例を確認する。
 - [分析結果の検証と適用範囲](../methods/spatial-analysis-validation.md)：未使用の地域・時点での評価へ進む。
 - [ベクターとラスター](../concepts/vector-raster-data.md)：画素と地物の表現の違いを確認する。

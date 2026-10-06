@@ -8,6 +8,43 @@ updated: 2026-10-06
 
 地図・位置情報とAIを学ぶ入口である。最初から製品名を覚えるより、「どの場所について、何を知りたいか」を一つ決めると、必要なデータと道具を選びやすい。
 
+## 目的に合わせて3ルートから選ぶ { #learning-routes }
+
+一つのルートから始め、分からない言葉だけ基礎へ戻ればよい。ここでの到達点は学習内容を確かめる目安であり、製品や実データを操作できたことの保証ではない。
+
+| ルート | 向いている人 | 最初に読む | 到達点 |
+| --- | --- | --- | --- |
+| [基礎理解](#route-foundations) | GIS・GeoAIの関係をつかみたい | [GeoAIの全体像](../concepts/geoai-overview.md) | 分析と操作支援の違いを説明し、目的に合う手法を選べる |
+| [データ分析](#route-analysis) | 地図データを集計し、結果を確かめたい | [空間結合の基本](../methods/spatial-join-and-aggregation.md) | 重複・未所属と評価指標を確認し、結果の限界を説明できる |
+| [AI操作](#route-agent) | GIS操作をAIに依頼したい | [依頼を条件へ分ける例](../concepts/location-ai.md#request-example) | 対象・距離・権限・出力・検証を記した依頼文を作れる |
+
+### 1. 基礎理解：手法を選べるようになる { #route-foundations }
+
+1. [GeoAIの全体像](../concepts/geoai-overview.md)で、AIによる分析とGIS操作支援を分ける。
+2. [ベクターとラスター](../concepts/vector-raster-data.md)で、点・線・面と画素の違いをつかむ。
+3. [座標と距離・面積](../concepts/coordinate-reference-systems.md#measurement)を確認する。
+4. [手法比較](../concepts/geoai-overview.md#choose-method)に戻り、やりたいことに合う入力・出力・検証を選ぶ。
+
+**確認すること**：「カフェを数える」「画像から建物を抽出する」「GIS操作を任せる」の違いを説明できるか。さらに体系的に読むなら[基礎5テーマ](#foundations)、具体的に試すなら次のデータ分析へ進む。
+
+### 2. データ分析：件数と評価を確かめる { #route-analysis }
+
+1. [空間結合の基本](../methods/spatial-join-and-aggregation.md) → [4店舗の演習](spatial-join-exercise.md)で、未所属と重複を数える。
+2. [画像解析の評価](../methods/imagery-to-gis.md#workflow) → [16画素の演習](imagery-evaluation-exercise.md)で、誤検出と見逃しを分ける。
+3. [検証と適用範囲](../methods/spatial-analysis-validation.md)で、何を確認でき、何が未確認かを整理する。
+
+二つの演習は**手計算だけでも取り組める**。Pythonでの照合は任意で、環境と実行範囲は各演習に記載している。店舗の分析が目的なら1から[POIの実データ選び](poi-workflow.md)へ、画像の評価が目的なら2から始めてもよい。
+
+**確認すること**：合計件数が合うだけで正しいと言えない理由と、適合率・再現率の違いを説明できるか。予測へ進む場合は[埋め込みの検索と予測](../methods/spatial-embeddings.md#search-vs-prediction)を読む。
+
+### 3. AI操作：条件と確認方法を依頼文にする { #route-agent }
+
+1. [駅周辺の施設を探す例](../concepts/location-ai.md#request-example)で、曖昧な言葉を実行条件へ分ける。
+2. [依頼ひな形](../concepts/location-ai.md#request-template)に、対象データ・距離・出力・操作範囲を記入する。
+3. [結果確認表](../concepts/location-ai.md#result-checks)で、0件・重複・座標のずれ・部分取得を確認する方法を決める。
+
+**確認すること**：依頼文を別の人に渡しても、同じ条件と許可範囲で作業できるか。このルートは依頼設計までを扱う。実際に接続・実装する段階では[AI向け開発環境](../methods/ai-ready-geospatial-development.md)と利用するツールの公式資料へ進む。
+
 ## まず押さえる言葉
 
 | 言葉 | このサイトで扱う意味 | 身近な例 |
@@ -48,29 +85,11 @@ updated: 2026-10-06
 | 4 | [予測・説明・因果の違い](../concepts/geographic-model-reasoning.md#prediction-explanation-causality) | 同じ回帰モデルでも問いと検証が変わることを説明できる |
 | 5 | [分析結果の検証と適用範囲](../methods/spatial-analysis-validation.md) | 利用する地域・時点に合わせ、何を照合すべきか挙げられる |
 
-### 経験に合わせて入口を選ぶ
+基礎5テーマは参照用の順序である。すべてを読了する前でも、[3ルート](#learning-routes)から必要な演習や依頼例へ進める。
 
-- **GIS経験がある人**：1 → 4 → 5。機械学習の目的と評価を押さえ、必要に応じて画像解析や埋め込みへ進む。
-- **Python・データ分析経験がある人**：2 → 3 → 5。座標・境界・集計の違いを押さえ、4で結果の解釈を確認する。
-- **コードを書かずに使いたい人**：1 → 2 → 3。境界上の点の模式例を紙の上で数え、5の入力・単位・件数の確認へ進む。モデル開発の詳細は後から読める。
+## 別の目的へ進む
 
-これは編集上の学習案内である。すべてのページを順番に読了することを、地図を試すための条件にはしない。
-
-## 目的別の読む順序
-
-AIの出力を評価したい場合は、[16画素で試す画像分類の評価](imagery-evaluation-exercise.md)で、誤検出・見逃しを数え、適合率・再現率・IoUを比べられる。
-
-手を動かして確かめたい場合は、[4店舗で試す空間結合と件数の検証](spatial-join-exercise.md)へ進む。手計算でもPythonでも、境界の扱いと未所属・重複を確認できる。
-
-| やりたいこと | 最初に読む | 次に読む |
-| --- | --- | --- |
-| 店舗・施設を分析したい | [POIデータを選び、分析する](poi-workflow.md) | [POI比較と地域特徴量](../data/poi-open-data-comparison.md) |
-| 人の動きを知りたい | [人流データの種類](../data/human-flow-data-types.md) | [誤差と品質](../data/human-flow-data-quality.md) → [プライバシー](../methods/location-data-privacy.md) |
-| 地図がずれる理由を知りたい | [座標参照系](../concepts/coordinate-reference-systems.md) | [投影法の選び方](../concepts/map-projections.md) |
-| データをWeb地図にしたい | [Felt](../tools/felt.md)で共有の流れを知る | コードで作るなら[MapLibre](../tools/maplibre-gl-js.md)・[OpenLayers](../tools/openlayers.md) |
-| AIにGIS操作を任せたい | [依頼を実行条件へ分ける例](../concepts/location-ai.md#request-example) | [依頼ひな形](../concepts/location-ai.md#request-template) → [AI向け開発環境](../methods/ai-ready-geospatial-development.md) |
-| GeoAIの手法を選びたい | [入力・出力で選ぶ比較表](../concepts/geoai-overview.md#choose-method) | [出力ごとの検証](../methods/spatial-analysis-validation.md#ai-results) |
-| 防災データを使いたい | [ハザードデータの再利用条件](../data/hazard-data-reuse.md) | [ポリゴンのメッシュ集計](../methods/polygon-mesh-aggregation.md) |
+人流・Web地図・防災・保存形式などは、[知識マップの目的別案内](../index.md#by-purpose)から選ぶ。ここでは読む順序を案内し、手法の詳しい説明・出典は各ページにまとめる。
 
 ## 道具を選ぶ前に
 

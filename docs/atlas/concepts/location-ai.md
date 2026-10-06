@@ -170,6 +170,8 @@ PinMeToの2026年10月1日の論考は、Yahoo Financeの試用報告を引用�
 
 ## 関連項目
 
+依頼文と確認項目を用意できたら、[AI操作ルート](../guides/getting-started.md#route-agent)で到達点を確認する。実装に進む場合は次の開発環境を読む。
+
 - [ロケーションインテリジェンス](location-intelligence.md)
 - [AIが扱いやすい地理空間開発環境](../methods/ai-ready-geospatial-development.md)
 - [CARTO MCP Server](../tools/carto-mcp-server.md)

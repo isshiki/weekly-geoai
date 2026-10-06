@@ -19,20 +19,20 @@ hide:
 
 <div class="atlas-grid" markdown>
 <div class="atlas-card" markdown>
-### [初めてのGeoAI](atlas/guides/getting-started.md)
-基礎5テーマと経験別ルートで、問い・データ・分析・検証の流れをつかむ。
+### [基礎理解から始める](atlas/guides/getting-started.md#route-foundations)
+GISとAIの関係をつかみ、目的に合う手法を選ぶ。
 </div>
 <div class="atlas-card atlas-card--accent" markdown>
-### [POIデータを選び、分析する](atlas/guides/poi-workflow.md)
-Foursquare・Overture・OpenStreetMapを目的に合わせて試す。
+### [データを分析して確かめる](atlas/guides/getting-started.md#route-analysis)
+4店舗と16画素の演習で、件数と評価指標を確認する。手計算でも学べる。
 </div>
 <div class="atlas-card atlas-card--accent" markdown>
-### [目的から探す](atlas/index.md#by-purpose)
-人流、Web地図、AIによるGIS操作、防災など、やりたいことから読む。
+### [AIへGIS操作を依頼する](atlas/guides/getting-started.md#route-agent)
+対象・距離・権限・出力・検証をそろえた依頼文を作る。
 </div>
 <div class="atlas-card" markdown>
-### [分類から探す](atlas/index.md#by-category)
-概念・手法・データ・ツール・事例の索引から調べる。
+### [知識マップから調べる](atlas/index.md#by-purpose)
+POI、人流、Web地図、防災などの目的、または分類から探す。
 </div>
 </div>
 
