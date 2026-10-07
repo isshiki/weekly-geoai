@@ -2,7 +2,7 @@
 layout: default
 title: 空間分析への埋め込みの組み込み
 category: methods
-updated: 2026-10-06
+updated: 2026-10-07
 ---
 
 # 空間分析への埋め込みの組み込み
@@ -110,6 +110,32 @@ Googleは米国の29予測対象などで性能向上を報告しているが、
 
 330次元の入力信号は検索傾向、Maps・混雑、天候・大気質に分かれるが、個々の次元がそのまま「カフェ数」などを表すわけではない。生の検索履歴や移動履歴は提供されない。国・セル・時点を揃えて自社データへ結合する必要がある。契約ごとの費用・利用条件、実際のデータ取得、予測性能の比較は未確認である。
 
+## 比較の基準と区域への集約
+
+CARTOの2026年10月5日の記事は、クラウドDWH（データウェアハウス）内で動くWorkflowsへ、次の処理を追加したと説明する。利用にはCARTOと対応するDWH環境が必要である。
+
+| 処理 | 答える問い・役割 |
+| --- | --- |
+| Embedding Profile | 複数の埋め込みから、必要に応じ重み付きの代表ベクトルを作る |
+| Mean Deviation | 全体・グループ・期間の平均と、どれだけ異なるか |
+| Neighborhood Deviation | 空間索引付きセルが近隣セルとどれだけ異なるか |
+| Spatial Aggregation | セルの表現を対象ポリゴンへ集約する |
+| Vector Normalization | ベクトルの長さを1にそろえ、内積による比較へつなぐ |
+
+全体の平均からの違いと、近隣からの違いは別の問いである。区域へ集約する際は重なり面積と集約方法を確認する。記事の小売商圏と保険ポートフォリオにはシミュレーション例が含まれ、実際の売上改善を示す実験とは区別する。
+
+## 埋め込みの予測寄与を分野別に読む
+
+Esriの2026年10月6日の解説は、USA Geodemographic Embeddingsの256次元を、仕様に従い64次元ずつ「住宅・世帯」「環境」「社会経済」「人口構成」に分ける。ArcGIS ProのAutoMLで食料不安を予測した例では、社会経済分野の平均絶対SHAP値の合計が最大だった。
+
+SHAPはモデルの予測へ各特徴がどう寄与したかを説明する手法である。この集計には次の区別が必要になる。
+
+- 個々の次元をそのまま所得などの元の変数に読み替えない。分野の対応は、この埋め込みの仕様に基づく。
+- 平均絶対値の合計は寄与の大きさを表し、予測を増減させる向きは示さない。符号付きの寄与を分野内で合算してから評価する方法とも異なる。
+- 分野を除いたときの精度低下や、因果効果を表す値ではない。結果は予測対象・モデル・評価データに依存し、普遍的な分野順位ではない。
+
+CARTOとEsriの処理は記事の確認のみで、データ取得・操作・再学習は行っていない。
+
 ## 次に読む
 
 - [GeoAIの手法選択](../concepts/geoai-overview.md#choose-method)：画像抽出や操作支援との役割の違いを読む。
@@ -129,3 +155,6 @@ Googleは米国の29予測対象などで性能向上を報告しているが、
 - [PDIデータ構造・提供範囲](https://developers.google.com/maps/documentation/population-dynamics-insights/about-data)（2026-10-06確認）
 
 - [Agarwal et al.: General Geospatial Inference with a Population Dynamics Foundation Model](https://arxiv.org/pdf/2411.07207)（2026-10-06確認。取得PDFの2025-01-29版、Discussionの評価データに関する限界）
+
+- [From embeddings to spatial insights: Five new tools in CARTO Workflows](https://carto.com/blog/from-embeddings-to-spatial-insights/)（2026-10-07確認）
+- [Interpret embeddings using AutoML and SHAP in ArcGIS Pro](https://www.esri.com/arcgis-blog/products/arcgis-pro/geoai/interpret-embeddings-using-automl-and-shap-in-arcgis-pro)（2026-10-07確認）

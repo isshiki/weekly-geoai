@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-03
+updated: 2026-10-07
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -71,6 +71,14 @@ SENSYの2026年10月2日発表は、山田食品産業へのSENSY GeoScope導入
 
 同社は収集・分析の作業が丸1日〜数日から数十秒程度へ短縮したと説明する。これは導入企業と提供者の報告であり、予測誤差や検証用データの条件は示されていない。投資回収シミュレーションと適正家賃の可視化は今後の予定である。
 
+## 決済・人流・地域統計を組み合わせる
+
+技研商事インターナショナルの2026年10月6日発表は、オリコの加盟店向け出店支援「Orico Area Navi」を紹介する。同社によると、約1,000万人規模・10年以上のクレジットカード決済データと地域統計・人流を組み合わせている。
+
+MarketAnalyzer 5は決済と統計の統合・売上予測、KDDI Location Analyzerは自社と競合の来訪客層の重複、MarketAnalyzer Satelliteは商圏や出退店の初期確認に使われる。購買と来訪は異なる情報であり、単に施設が多い場所を選ぶ方法との違いを読む事例になる。
+
+発表には予測誤差や評価用データの分け方、個人単位での結合方法は示されていない。人数の規模だけから地域・業種の代表性を判断せず、すべての決済者に移動履歴を結び付けているとも解釈しない。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -88,3 +96,5 @@ SENSYの2026年10月2日発表は、山田食品産業へのSENSY GeoScope導入
 - [Expanding spatial intelligence in Tableau with Mapbox](https://www.mapbox.com/blog/expanding-spatial-intelligence-in-tableau-with-mapbox)（2026-10-02確認）
 
 - [SENSY、飲食業界初となるAI店舗開発DXサービス「SENSY GeoScope」を山田うどん（山田食品産業）に導入](https://prtimes.jp/main/html/rd/p/000000060.000013501.html)（2026-10-03確認）
+
+- [1,000万人の決済データ×位置情報で「売れる場所」を可視化オリコの加盟店向け出店支援における商圏分析GIS活用事例を公開](https://prtimes.jp/main/html/rd/p/000000077.000098428.html)（2026-10-07確認）

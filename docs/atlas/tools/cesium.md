@@ -2,7 +2,7 @@
 layout: default
 title: Cesium
 category: tools
-updated: 2026-10-03
+updated: 2026-10-07
 ---
 
 # Cesium
@@ -57,6 +57,14 @@ Cesiumは2026年9月2日、3D Tiles 2.0へ向けたベクタータイルの技�
 
 UnrealではBlueprintsによるスタイリングを拡充し、UnityではGeoJSONのPoint・MultiPoint描画とポリゴン読み込みに対応した。ionのBIM/CADバージョン管理と変更検出は9月発表の技術プレビューを含む月次整理であり、すべてが10月初出の機能ではない。
 
+## 公開データによる検証と報道向けの可視化
+
+CesiumJSを組み込んだKayhan SpaceのSatcatは、衛星の軌道などをブラウザー上で表示・分析するサービスである。Cesiumの2026年10月6日の事例では、CNNの調査でAIによる候補抽出を人が確認し、時刻・天候・軌道・衛星の用途を踏まえてシミュレーションを作成した。
+
+この調査には公開データを用い、記者が別の道具や情報源でも検証を追えるようにした。Satcat全体には独自データの追加や権限付きデータもあり、サービスの全データが公開されているという意味ではない。
+
+分析の軌道と、放送で理解を助ける衛星モデルを区別する。衛星モデルは説明のため大きく描かれ、CNNが収録後に追加した。3Dで観測可能性を示すことと、実際の観測・情報提供を立証することも分けて読む。今回はベンダーの事例記事の確認であり、調査結果の独立検証は行っていない。
+
 ## 出典
 
 - [PSS：設計データを3D地図に重ねるCesiumの新機能](https://note.com/pacificspatial/n/n09d882d31390)（2026-09-21公開、2026-09-22確認）
@@ -68,3 +76,5 @@ UnrealではBlueprintsによるスタイリングを拡充し、UnityではGeoJS
 - [【Cesium】ベクタータイルの技術プレビューを公開](https://note.com/pacificspatial/n/n20e3f2309503)（2026-09-08確認）
 
 - [Cesium Releases in October 2026](https://cesium.com/blog/2026/10/02/cesium-releases-in-october-2026/)（2026-10-03確認）
+
+- [Kayhan Space Investigates Satellite Intelligence for CNN with CesiumJS](https://cesium.com/blog/2026/10/06/kayhan-space-satellite-intelligence-cnn-cesiumjs/)（2026-10-07確認）

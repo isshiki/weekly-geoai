@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-10-05
+updated: 2026-10-07
 ---
 
 # MapLibre GL JS
@@ -45,6 +45,12 @@ GeoJSONでは、ワーカー処理より速い`setData`呼び出しによるメ�
 
 地形下のカメラから描画タイル外の標高を読む際に0となる問題も修正し、その読み取り処理を約40倍効率化したと説明する。地図全体の描画速度が40倍になったという意味ではない。今回はリリースノートの確認であり、実機性能は測定していない。
 
+## 地球・地形の表示と配信時の互換性
+
+v6.13.0ではglobe表示の中心を極まで移動できるようになり、従来の緯度85.05度の制限が解消された。カスタムレイヤーを地形へ沿わせ、GPUで地形上に配置するAPIも加わったが、実験的APIとして扱う。
+
+更新後の地図が古いWorkerのキャッシュでクラッシュする問題への対応として、Workerは再び自己完結する構成になった。`maplibre-gl-shared.mjs`と`maplibre-gl-shared-dev.mjs`は既存のコピー処理との互換性のため空ファイルで残るが、非推奨で次のメジャー版に削除予定である。独自に配布ファイルをコピーする場合は、移行時の依存を確認する。リリースノートを確認したもので、表示や性能の実測は行っていない。
+
 ## 関連項目
 
 - [全国メッシュデータのWeb配信](../methods/national-grid-web-delivery.md)
@@ -64,3 +70,5 @@ GeoJSONでは、ワーカー処理より速い`setData`呼び出しによるメ�
 - [MapLibre GL JS v6.9.0 release](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.9.0)（2026-09-10確認）
 
 - [MapLibre GL JS v6.12.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.12.0)（2026-10-05確認）
+
+- [MapLibre GL JS v6.13.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.13.0)（2026-10-07確認）
