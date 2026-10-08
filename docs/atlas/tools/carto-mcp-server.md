@@ -2,7 +2,7 @@
 layout: default
 title: CARTO MCP Server
 category: tools
-updated: 2026-09-18
+updated: 2026-10-08
 ---
 
 # CARTO MCP Server
@@ -47,6 +47,14 @@ AIは分析方法の提案と構築を支援するが、保存後のWorkflowは�
 
 必要条件はModel Serving対応リージョンのUnity Catalog workspaceと、利用範囲に応じたCARTOの認証である。全ツールにはOAuthクライアント、閲覧・クエリにはAPI access tokenという違いがある。Snowflake CoWork向けの接続条件と混同しない。
 
+## 初稿の速さと業務全体の速さ
+
+CARTOの2026年10月7日の論考は、データの移動、専門家への作業集中、条件変更ごとの作り直しをGIS業務の遅さとして挙げる。AIが初稿を速く作っても、手法・鮮度・地図表現を確認する人の負担が残ると指摘している。
+
+同社は分析を再利用できるWorkflowとして残し、日常のAIアシスタントから呼び出す方法を提案する。これは自社製品を含むベンダーの論考である。Atlasの運用上の確認点として、再利用時にも入力データの版、変更した条件、出力と凡例の整合を確かめる。手順を固定しただけで、更新された入力から常に同じ結果が出るわけではない。
+
+記事にある導入企業の時間短縮は個別事例の報告であり、どの業務でも同じ削減率になるという保証ではない。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -63,3 +71,5 @@ AIは分析方法の提案と構築を支援するが、保存後のWorkflowは�
 - [Geospatial Analysis in Claude with the CARTO MCP Server](https://carto.com/blog/geospatial-analysis-claude-mcp-server/)（2026-09-09確認）
 - [All of CARTO, in every agent](https://carto.com/blog/all-of-carto-in-every-agent/)（2026-09-09確認）
 - [CARTO: Connect Claude](https://docs.carto.com/carto-for-agents/connect-your-platform/claude)（2026-09-09確認）
+
+- [Why spatial work feels slow, and how AI in GIS is changing that](https://carto.com/blog/why-spatial-feels-slow/)（2026-10-08確認）

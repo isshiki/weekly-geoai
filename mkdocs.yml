@@ -143,6 +143,7 @@ nav:
         - GeoServer: atlas/tools/geoserver.md
         - ArcFM: atlas/tools/arcfm.md
         - ArcGIS Solutions: atlas/tools/arcgis-solutions.md
+        - ArcGIS for ExcelとPython in Excel: atlas/tools/arcgis-for-excel.md
       - 場所検索・交通・ナビゲーション:
         - ArcGIS Geocoding Service: atlas/tools/arcgis-geocoding.md
         - OpenPOI API: atlas/tools/openpoi-api.md
@@ -202,6 +203,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月8日: updates/2026-10-08.md
         - 10月7日: updates/2026-10-07.md
         - 10月6日: updates/2026-10-06.md
         - 10月5日: updates/2026-10-05.md

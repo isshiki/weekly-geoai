@@ -184,6 +184,7 @@ updated: 2026-10-06
 - [GeoServer](tools/geoserver.md)
 - [ArcFM](tools/arcfm.md)
 - [ArcGIS Solutions](tools/arcgis-solutions.md)
+- [ArcGIS for ExcelとPython in Excel](tools/arcgis-for-excel.md)
 
 ### 場所検索・交通・ナビゲーション
 

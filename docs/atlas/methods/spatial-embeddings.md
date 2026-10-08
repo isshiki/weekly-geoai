@@ -2,7 +2,7 @@
 layout: default
 title: 空間分析への埋め込みの組み込み
 category: methods
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # 空間分析への埋め込みの組み込み
@@ -110,6 +110,14 @@ Googleは米国の29予測対象などで性能向上を報告しているが、
 
 330次元の入力信号は検索傾向、Maps・混雑、天候・大気質に分かれるが、個々の次元がそのまま「カフェ数」などを表すわけではない。生の検索履歴や移動履歴は提供されない。国・セル・時点を揃えて自社データへ結合する必要がある。契約ごとの費用・利用条件、実際のデータ取得、予測性能の比較は未確認である。
 
+## 変化の検出と原因・予測性能を分ける
+
+CARTOの2025年12月16日の解説は、PDFMやAlphaEarthの埋め込みをBigQuery上で可視化・分類・検索・変化検出・予測に利用する例を示す。2026年10月の新機能とは別の関連資料である。
+
+バレンシアの2023年と2024年の比較では、洪水だけでなく植生や都市開発の変化も検出した。ベクトルの差が大きい場所を、すべて洪水被害と判断しない。原因の確認には元画像や別の観測を照合する。
+
+山火事の例は2021〜2023年のデータから2024年を予測し、実際の焼失区域でリスク指標が州内の他区域より平均10％高かったと報告する。この差は正答率でも、別モデルに対する精度改善率でもない。判別性能や予測確率の妥当性を示すには別の評価が必要であり、Atlasでは当該モデルを再実行していない。
+
 ## 比較の基準と区域への集約
 
 CARTOの2026年10月5日の記事は、クラウドDWH（データウェアハウス）内で動くWorkflowsへ、次の処理を追加したと説明する。利用にはCARTOと対応するDWH環境が必要である。
@@ -158,3 +166,5 @@ CARTOとEsriの処理は記事の確認のみで、データ取得・操作・�
 
 - [From embeddings to spatial insights: Five new tools in CARTO Workflows](https://carto.com/blog/from-embeddings-to-spatial-insights/)（2026-10-07確認）
 - [Interpret embeddings using AutoML and SHAP in ArcGIS Pro](https://www.esri.com/arcgis-blog/products/arcgis-pro/geoai/interpret-embeddings-using-automl-and-shap-in-arcgis-pro)（2026-10-07確認）
+
+- [Turning Geospatial Foundation Models into Decisions using CARTO Workflows](https://carto.com/blog/turning-geospatial-foundation-models-into-decisions-using-carto-workflows/)（2026-10-08確認）
