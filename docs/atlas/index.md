@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 知識マップ
-updated: 2026-10-06
+updated: 2026-10-09
 ---
 
 # GeoAIアトラス 知識マップ
@@ -185,6 +185,7 @@ updated: 2026-10-06
 - [ArcFM](tools/arcfm.md)
 - [ArcGIS Solutions](tools/arcgis-solutions.md)
 - [ArcGIS for ExcelとPython in Excel](tools/arcgis-for-excel.md)
+- [海しるAPI](tools/umishiru-api.md)
 
 ### 場所検索・交通・ナビゲーション
 
@@ -248,6 +249,7 @@ updated: 2026-10-06
 
 ### 交通・物流
 
+- [歩行距離で見る最寄り駅と鉄道空白地帯](cases/railway-walk-accessibility.md)
 - [運転支援と地図の継続更新](cases/streaming-maps-driver-assistance.md)
 - [旅客船のAIS位置情報の可視化](cases/ais-passenger-vessels.md)
 - [配送経路の最適化と現場フィードバック](cases/here-fleet-route-intelligence.md)

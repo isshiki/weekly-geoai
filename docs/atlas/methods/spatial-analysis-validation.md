@@ -1,7 +1,7 @@
 ---
 title: 分析結果の検証と適用範囲
 category: methods
-updated: 2026-10-06
+updated: 2026-10-09
 ---
 
 # 分析結果の検証と適用範囲
@@ -19,6 +19,17 @@ updated: 2026-10-06
 | AIが生成した処理 | 対象レイヤー・条件・権限を確認し、既知の小例と照合する |
 
 これらは実務上の確認手順である。地図の見た目だけでなく、元データ・件数・単位など別の手掛かりを使う。[空間結合](spatial-join-and-aggregation.md)の模式例も確認用に使える。
+
+## 地域比較では「どこへ数えた値か」を確認する
+
+求人を受け付けた地域と、実際に働く地域では、同じ求人でも集計先が変わる。一色政彦の有効求人倍率マップは、この違いを都道府県比較の注意点として示す。
+
+| 2026年8月の集計基準 | 東京 | 神奈川 |
+| --- | --- | --- |
+| 受理地別：受付ハローワークの所在地 | 1.70倍 | 0.83倍 |
+| 就業地別：実際の勤務地 | 1.07倍 | 1.02倍 |
+
+同記事の最低賃金は10月1日時点の発効済み額であり、求人倍率とは基準時点も異なる。地図の差を読む前に、集計先と基準日をそろえ、地域全体の値を個人の就職確率や賃金の因果効果へ読み替えない。数値は記事の確認であり、統計の再集計は行っていない。
 
 ## AIの出力ごとに確認を変える { #ai-results }
 
@@ -81,3 +92,5 @@ GIS操作の確認には、[Location AIの結果確認表](../concepts/location-
 - [1] [Rolf: Evaluation Challenges for Geospatial ML](https://arxiv.org/abs/2303.18087)（2023、2026-10-05確認。評価目的の整理）
 - [2] [Wadoux et al.: Spatial cross-validation is not the right way to evaluate map accuracy](https://alexandrewadoux.github.io/assets/pdf/Wadoux_et_al_2021.pdf)（Ecological Modelling、2021、2026-10-05確認。地図精度評価と標本設計の議論）
 - [3] [Meyer & Pebesma: Predicting into unknown space? Estimating the area of applicability of spatial prediction models](https://doi.org/10.1111/2041-210X.13650)（Methods in Ecology and Evolution、2021、2026-10-05確認）
+
+- [有効求人倍率・最低賃金マップ](https://blog.masahiko.info/entry/2026/10/02/164813)（2026-10-09確認）

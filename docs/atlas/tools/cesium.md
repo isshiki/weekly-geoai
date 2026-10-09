@@ -2,7 +2,7 @@
 layout: default
 title: Cesium
 category: tools
-updated: 2026-10-07
+updated: 2026-10-09
 ---
 
 # Cesium
@@ -65,6 +65,12 @@ CesiumJSを組み込んだKayhan SpaceのSatcatは、衛星の軌道などをブ
 
 分析の軌道と、放送で理解を助ける衛星モデルを区別する。衛星モデルは説明のため大きく描かれ、CNNが収録後に追加した。3Dで観測可能性を示すことと、実際の観測・情報提供を立証することも分けて読む。今回はベンダーの事例記事の確認であり、調査結果の独立検証は行っていない。
 
+## 設計案を現況に重ねて住民へ伝える
+
+JMTの道路改良事例は、Bentley Infrastructure Cloudの設計モデルをCesium for Unrealで扱い、Google Photorealistic 3D Tilesの周辺環境と重ねている。米国US 281の約20マイルの4車線化計画で、現在と計画後を比較できる映像を住民説明に使った。
+
+設計線だけでは読み取りにくい変化を、住民が知っている道路や土地との関係で伝える用途である。モデルの版比較や属性確認を役割別アプリへ広げる案は今後の検討であり、この事例で提供済みとは扱わない。映像の反響と、工事の実現・安全性・合意形成の効果測定は区別する。
+
 ## 出典
 
 - [PSS：設計データを3D地図に重ねるCesiumの新機能](https://note.com/pacificspatial/n/n09d882d31390)（2026-09-21公開、2026-09-22確認）
@@ -78,3 +84,5 @@ CesiumJSを組み込んだKayhan SpaceのSatcatは、衛星の軌道などをブ
 - [Cesium Releases in October 2026](https://cesium.com/blog/2026/10/02/cesium-releases-in-october-2026/)（2026-10-03確認）
 
 - [Kayhan Space Investigates Satellite Intelligence for CNN with CesiumJS](https://cesium.com/blog/2026/10/06/kayhan-space-satellite-intelligence-cnn-cesiumjs/)（2026-10-07確認）
+
+- [JMTの道路計画可視化](https://cesium.com/blog/2026/10/08/jmt-helps-people-see-the-future-with-cesium/)（2026-10-09確認）

@@ -144,6 +144,7 @@ nav:
         - ArcFM: atlas/tools/arcfm.md
         - ArcGIS Solutions: atlas/tools/arcgis-solutions.md
         - ArcGIS for ExcelとPython in Excel: atlas/tools/arcgis-for-excel.md
+        - 海しるAPI: atlas/tools/umishiru-api.md
       - 場所検索・交通・ナビゲーション:
         - ArcGIS Geocoding Service: atlas/tools/arcgis-geocoding.md
         - OpenPOI API: atlas/tools/openpoi-api.md
@@ -190,6 +191,7 @@ nav:
         - 富士山閉山期の人流分析: atlas/cases/mount-fuji-offseason-human-flow.md
         - 人流データによるオフィス訪問指数: atlas/cases/office-visitation-index.md
       - 交通・物流:
+        - 歩行距離で見る最寄り駅と鉄道空白地帯: atlas/cases/railway-walk-accessibility.md
         - 運転支援と地図の継続更新: atlas/cases/streaming-maps-driver-assistance.md
         - 旅客船のAIS位置情報の可視化: atlas/cases/ais-passenger-vessels.md
         - 配送経路の最適化と現場フィードバック: atlas/cases/here-fleet-route-intelligence.md
@@ -203,6 +205,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月9日: updates/2026-10-09.md
         - 10月8日: updates/2026-10-08.md
         - 10月7日: updates/2026-10-07.md
         - 10月6日: updates/2026-10-06.md

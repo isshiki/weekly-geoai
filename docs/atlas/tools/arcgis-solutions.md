@@ -2,7 +2,7 @@
 layout: default
 title: ArcGIS Solutions
 category: tools
-updated: 2026-09-30
+updated: 2026-10-09
 ---
 
 # ArcGIS Solutions
@@ -23,6 +23,14 @@ ArcGIS Solutionsは、業種・業務の目的に合わせたArcGISの構成を�
 
 通信網や犯罪分析などの既存構成にも改良を加えた。また、Electric Joint Useなど5構成はMature段階へ移行し、ヘルプはArchived helpで参照する。新しいElectric Joint Use Permittingと、Matureへ移ったElectric Joint Useを混同しない。利用環境・必要な製品構成と評価精度は個別に確認する。
 
+## パネル単位で現場点検を共有する
+
+Solar Panel Inspectionsは、太陽光施設の点検区域・担当・進捗を管理し、地図上で選んだパネルに状態、不具合、写真を結び付ける業務構成である。2026年10月8日の解説は、9月に発表済みの構成の使い方を詳しく紹介する。
+
+似た設備が多数並ぶ現場では、指摘内容だけでなく「どの設備か」を共有することが重要になる。記録の蓄積を繰り返す問題の把握や保守の優先順位付けへつなぐ。この記事はAIによる故障の自動検出や発電量改善の実測を示すものではない。導入には必要なArcGIS製品・利用権限と設備データの準備を確認する。
+
 ## 出典
 
 - [確認した原文](https://www.esri.com/arcgis-blog/products/arcgis-solutions/announcements/whats-new-in-arcgis-solutions-september-2026-release)（2026-09-30確認）
+
+- [Solar Panel Inspectionsの現場点検](https://www.esri.com/arcgis-blog/products/arcgis-solutions/field-mobility/bring-field-discoveries-into-view-with-the-solar-panel-inspections-solution)（2026-10-09確認）
