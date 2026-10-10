@@ -7,6 +7,8 @@ description: Verify and organize URLs shared for Weekly GeoAI into a public dail
 
 Work from the repository root.
 
+For a daily batch such as 今日の分, also read `editorial/developer-news-discovery.md` and search for complementary developer projects, map/POI applications, and GeoAI implementations. Aim for zero to three verified additions, deduplicated by URL and subject against daily logs, drafts, and Atlas. No additions is a valid outcome. Apply the same verification and saving steps to discovered items, and distinguish them from user-provided items in the completion report. Do not expand correction-only requests or requests limited to supplied sources. This is part of user-triggered daily capture, not an independently scheduled search.
+
 1. Read `editorial/writing-guide.md`, `editorial/atlas-guide.md`, `editorial/atlas-visual-guide.md`, and `editorial/atlas-entry-template.md`.
 2. Treat pasted summaries as leads, not source text. Open each URL and verify its canonical URL, title, publisher, date, and the facts needed for a short public summary. Remove tracking parameters only after confirming that the canonical page resolves correctly.
 3. Do not store the raw conversation or pasted summary. Preserve an attached user comment only when it is public-safe and useful as selection intent. If it contains a secret, personal data, internal information, or unpublished evaluation, omit it and ask for publishable wording; saving without a comment remains valid.

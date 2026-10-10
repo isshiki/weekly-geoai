@@ -28,7 +28,9 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 ## 週刊GeoAI
 
-「週刊GeoAI」は、GIS・位置情報の仕事をしていて、AI・機械学習側の動きを短時間で追いたい人のための日本語ニュースレターである。1週間分のニュース・論文・事例を、毎週金曜にSubstackで配信する。
+「週刊GeoAI」は、AIを使いながら地図・POI・位置情報を使ったアプリや分析を作ってみたい開発者のための日本語ニュースレターである。GISの専門知識は前提にせず、使えるデータとツールから、AIによる開発・分析、結果の検証までを毎週金曜に紹介する。Substackで配信する。
+
+[編集方針](editorial/writing-guide.md)と[開発者向けの追加収集方針](editorial/developer-news-discovery.md)に沿って、既存の収集に実装例・地図作品・GeoAIの実践を補う。
 
 週刊GeoAIのバックナンバーはSubstackで公開する。
 
