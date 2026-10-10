@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import html
 import re
+import shutil
 from datetime import date
 from pathlib import Path
 
@@ -20,6 +21,7 @@ from common import (
 
 
 ITEM_HEADING = re.compile(r"^### (\d+)\. \[(.+)\]\(<(https?://.+)>\)$", re.MULTILINE)
+IMAGE = re.compile(r"^!\[([^\]]+)\]\(([^\s)]+)\)$", re.MULTILINE)
 
 
 def _paragraphs(text: str) -> list[str]:
@@ -75,16 +77,30 @@ def validate(metadata: dict[str, str], body: str) -> tuple[int, date, str]:
     for index, match in enumerate(matches):
         start = match.end()
         end = matches[index + 1].start() if index + 1 < len(matches) else len(clean)
-        introduction = " ".join(_paragraphs(clean[start:end]))
+        section = clean[start:end].split("\n## ", 1)[0]
+        blocks = _paragraphs(section)
+        introduction = " ".join(b for b in blocks if not IMAGE.fullmatch(b) and not (b.startswith('*') and b.endswith('*') and not b.startswith('**')))
         count = _sentence_count(introduction)
-        if count not in {1, 2}:
+        news_format = metadata.get('editorial_format') == 'news-v1'
+        preceding_sections = re.findall(r'^## (.+)$', clean[:match.start()], re.MULTILINE)
+        prominent = preceding_sections and preceding_sections[-1] == '今週の注目ニュース'
+        maximum = 6 if news_format and prominent else 2
+        if not 1 <= count <= maximum:
             raise ValueError(
-                f"「{match.group(2)}」の紹介文は句点で終わる1〜2文にしてください（現在{count}文）"
+                f"「{match.group(2)}」の紹介文は句点で終わる1〜{maximum}文にしてください（現在{count}文）"
             )
+    if len(IMAGE.findall(clean)) > 2:
+        raise ValueError('画像は1号あたり2枚以内にしてください')
     return number, publication_date, expected_title
 
 
 def _render_inline(value: str) -> str:
+    if value.startswith('*') and value.endswith('*') and not value.startswith('**'):
+        return '<em>' + _render_inline(value[1:-1]) + '</em>'
+    if '**' in value:
+        parts = re.split(r'(\*\*.+?\*\*)', value)
+        if len(parts) > 1:
+            return ''.join('<strong>' + _render_inline(p[2:-2]) + '</strong>' if p.startswith('**') and p.endswith('**') else _render_inline(p) for p in parts)
     result: list[str] = []
     position = 0
     link_pattern = r"\[([^\]]+)\]\((?:<(https?://[^>]+)>|(https?://[^)]+))\)"
@@ -113,6 +129,11 @@ def markdown_to_substack_html(body: str) -> str:
         if not line.strip():
             flush()
             continue
+        image = IMAGE.fullmatch(line)
+        if image:
+            flush()
+            output.append(f'  <p><img src="{html.escape(image.group(2), quote=True)}" alt="{html.escape(image.group(1), quote=True)}" style="max-width:100%;height:auto"></p>')
+            continue
         heading = re.match(r"^(#{1,3})\s+(.+)$", line)
         if heading:
             flush()
@@ -137,6 +158,21 @@ def publish(draft: Path, *, force: bool = False, root: Path = REPO_ROOT) -> Path
     substack_path = substack_dir / f"{stem}.html"
     if substack_path.exists() and not force:
         raise FileExistsError(f"出力が既にあります: {substack_path}")
+
+    # Resolve every image before writing output. Local assets are uploaded separately in Substack.
+    image_files = []
+    for index, match in enumerate(IMAGE.finditer(clean_body), 1):
+        source = (draft.parent / match.group(2)).resolve()
+        if not source.is_relative_to((root / 'drafts' / 'assets').resolve()):
+            raise ValueError('画像はdrafts/assets内のローカルファイルを指定してください')
+        if source.suffix.lower() not in {'.png', '.jpg', '.jpeg', '.webp'} or not source.is_file():
+            raise ValueError(f'画像ファイルが不正または存在しません: {match.group(2)}')
+        relative = f'assets/{stem}/{index}{source.suffix.lower()}'
+        image_files.append((source, substack_dir / relative))
+        clean_body = clean_body.replace(match.group(0), f'![{match.group(1)}]({relative})')
+    for source, destination in image_files:
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source, destination)
 
     substack_path.write_text(markdown_to_substack_html(clean_body), encoding="utf-8")
     return substack_path

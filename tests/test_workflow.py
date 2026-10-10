@@ -14,7 +14,8 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 from build_weekly import build  # noqa: E402
 from capture_daily import capture  # noqa: E402
 from common import COMMENTARY_PLACEHOLDERS, INTRO_PLACEHOLDER  # noqa: E402
-from publish_issue import publish  # noqa: E402
+from publish_issue import publish, validate  # noqa: E402
+from common import DEFINITION, issue_title  # noqa: E402
 from sync_site_assets import sync_logo  # noqa: E402
 
 
@@ -107,6 +108,45 @@ class WorkflowTest(unittest.TestCase):
         draft.write_text(content, encoding="utf-8")
         with self.assertRaisesRegex(ValueError, "プレースホルダ"):
             publish(draft, root=self.root)
+
+    def news_fixture(self):
+        metadata = {'issue_number': '7', 'publication_date': '2026-10-16', 'subtitle': '地図APIに新機能', 'editorial_format': 'news-v1'}
+        body = f'# {issue_title(7, date(2026, 10, 16))}\n\n所感です。\n\n次の所感です。\n\n{DEFINITION}\n\n## 今週の注目ニュース\n\n### 1. [新機能](<https://example.com/news>)\n\n機能が公開されました。検索できます。地図を表示できます。\n\n![操作の概念図](assets/2026-10-16/map.png)\n\n*本誌作成の概念図です。実画面ではありません。*\n\n## 短報\n\n### 2. [短報](<https://example.com/brief>)\n\n**改善点**を紹介します。\n'
+        return metadata, body
+
+    def test_news_images_captions_and_sections(self):
+        metadata, body = self.news_fixture()
+        assets = self.root / 'drafts/assets/2026-10-16'
+        assets.mkdir(parents=True)
+        (assets / 'map.png').write_bytes(b'fixture-image')
+        draft = self.root / 'drafts/2026-10-16.md'
+        draft.write_text('---\n' + ''.join(f'{k}: {v}\n' for k, v in metadata.items()) + '---\n' + body, encoding='utf-8')
+        output = publish(draft, root=self.root)
+        html = output.read_text(encoding='utf-8')
+        self.assertIn('src="assets/2026-10-16/1.png"', html)
+        self.assertIn('<em>本誌作成', html)
+        self.assertIn('<strong>改善点</strong>', html)
+        self.assertEqual((output.parent / 'assets/2026-10-16/1.png').read_bytes(), b'fixture-image')
+
+    def test_legacy_and_briefs_still_limit_sentences(self):
+        metadata, body = self.news_fixture()
+        with self.assertRaisesRegex(ValueError, '1〜2文'):
+            validate({k: v for k, v in metadata.items() if k != 'editorial_format'}, body)
+        with self.assertRaisesRegex(ValueError, '1〜2文'):
+            validate(metadata, body + '\n追加です。追加です。\n')
+
+    def test_image_limits_and_paths(self):
+        metadata, body = self.news_fixture()
+        with self.assertRaisesRegex(ValueError, '2枚以内'):
+            validate(metadata, body + '\n![a](assets/a.png)\n\n![b](assets/b.png)\n')
+        draft = self.root / 'drafts/2026-10-16.md'
+        draft.parent.mkdir()
+        for path in ('../../outside.png', 'assets/missing.png'):
+            invalid = body.replace('assets/2026-10-16/map.png', path)
+            draft.write_text('---\n' + ''.join(f'{k}: {v}\n' for k, v in metadata.items()) + '---\n' + invalid, encoding='utf-8')
+            with self.assertRaises(ValueError):
+                publish(draft, root=self.root)
+            self.assertFalse((self.root / 'substack/2026-10-16.html').exists())
 
     def test_sync_site_logo(self) -> None:
         (self.root / "assets").mkdir(parents=True)

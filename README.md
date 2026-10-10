@@ -34,6 +34,8 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 週刊GeoAIのバックナンバーはSubstackで公開する。
 
+2026年10月16日号から、ニュース中心の「注目3件＋短報3〜5件＋任意の地図」、図版0〜2枚を基本にする。一般の開発者が新しい動きを把握できる構成とし、手順解説に偏らせない。[Substack掲載手順](editorial/substack-handoff.md)に沿って本文の貼り付けと画像のアップロードを行う。
+
 編集構成の比較用に、[ニュース中心・画像入りの試作（10月4〜10日）](drafts/trials/2026-10-10-news-pilot.md)と[ブラウザー用プレビュー](drafts/trials/2026-10-10-news-pilot.html)を用意している。[従来の開発記事中心の試作](drafts/trials/2026-10-10-developer-pilot.md)と比較できる。正式な配信原稿ではない。
 
 ## 運営者向け情報

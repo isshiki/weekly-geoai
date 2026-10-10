@@ -3,6 +3,7 @@ issue_number: {{issue_number}}
 publication_date: {{publication_date}}
 subtitle: ［サブタイトルをここに記入］
 status: draft
+editorial_format: news-v1
 ---
 
 # {{issue_title}}
@@ -13,6 +14,6 @@ status: draft
 
 本誌では、地図・位置情報・POIなどの地理空間データを、機械学習やデータサイエンスの手法で分析・活用する領域をGeoAIと呼びます
 
-## ニュース＆記事
+## 今週の注目ニュース
 
 {{items}}
