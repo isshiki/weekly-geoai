@@ -150,6 +150,7 @@ nav:
         - OpenPOI API: atlas/tools/openpoi-api.md
         - Google MapsのAsk MapsとImmersive Navigation: atlas/tools/google-maps-gemini.md
         - Valhalla: atlas/tools/valhalla.md
+        - NextBillion.ai: atlas/tools/nextbillion-ai.md
         - TomTom Orbis APIs: atlas/tools/tomtom-orbis.md
         - Mapbox Search Box API: atlas/tools/mapbox-search-box.md
         - Galuchat: atlas/tools/galuchat.md
@@ -159,6 +160,7 @@ nav:
       - AI・MCP連携:
         - GIS Data Agent: atlas/tools/gis-data-agent.md
         - Google Maps Agentic UI Toolkit: atlas/tools/google-maps-agentic-ui.md
+        - Mapbox CLI: atlas/tools/mapbox-cli.md
         - Mapbox Figma MCP Server: atlas/tools/mapbox-figma-mcp.md
         - MCP for ArcGIS Location Services: atlas/tools/arcgis-location-services-mcp.md
         - CARTO MCP Server: atlas/tools/carto-mcp-server.md
@@ -191,6 +193,7 @@ nav:
         - 富士山閉山期の人流分析: atlas/cases/mount-fuji-offseason-human-flow.md
         - 人流データによるオフィス訪問指数: atlas/cases/office-visitation-index.md
       - 交通・物流:
+        - 交通予測・空間分析・対話を組み合わせるNYUの研究: atlas/cases/nyu-traffic-geoai.md
         - 歩行距離で見る最寄り駅と鉄道空白地帯: atlas/cases/railway-walk-accessibility.md
         - 運転支援と地図の継続更新: atlas/cases/streaming-maps-driver-assistance.md
         - 旅客船のAIS位置情報の可視化: atlas/cases/ais-passenger-vessels.md
@@ -205,6 +208,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月10日: updates/2026-10-10.md
         - 10月9日: updates/2026-10-09.md
         - 10月8日: updates/2026-10-08.md
         - 10月7日: updates/2026-10-07.md

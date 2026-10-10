@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 知識マップ
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # GeoAIアトラス 知識マップ
@@ -193,6 +193,7 @@ updated: 2026-10-09
 - [OpenPOI API](tools/openpoi-api.md)
 - [Google MapsのAsk MapsとImmersive Navigation](tools/google-maps-gemini.md)
 - [Valhalla](tools/valhalla.md)
+- [NextBillion.ai](tools/nextbillion-ai.md)
 - [TomTom Orbis APIs](tools/tomtom-orbis.md)
 - [Mapbox Search Box API](tools/mapbox-search-box.md)
 - [Galuchat](tools/galuchat.md)
@@ -204,6 +205,7 @@ updated: 2026-10-09
 
 - [GIS Data Agent](tools/gis-data-agent.md)
 - [Google Maps Agentic UI Toolkit](tools/google-maps-agentic-ui.md)
+- [Mapbox CLI](tools/mapbox-cli.md)
 - [Mapbox Figma MCP Server](tools/mapbox-figma-mcp.md)
 - [MCP for ArcGIS Location Services](tools/arcgis-location-services-mcp.md)
 - [CARTO MCP Server](tools/carto-mcp-server.md)
@@ -249,6 +251,7 @@ updated: 2026-10-09
 
 ### 交通・物流
 
+- [交通予測・空間分析・対話を組み合わせるNYUの研究](cases/nyu-traffic-geoai.md)
 - [歩行距離で見る最寄り駅と鉄道空白地帯](cases/railway-walk-accessibility.md)
 - [運転支援と地図の継続更新](cases/streaming-maps-driver-assistance.md)
 - [旅客船のAIS位置情報の可視化](cases/ais-passenger-vessels.md)
