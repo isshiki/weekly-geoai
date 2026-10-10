@@ -34,6 +34,8 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 週刊GeoAIのバックナンバーはSubstackで公開する。
 
+編集構成の比較用に、[ニュース中心・画像入りの試作（10月4〜10日）](drafts/trials/2026-10-10-news-pilot.md)と[ブラウザー用プレビュー](drafts/trials/2026-10-10-news-pilot.html)を用意している。[従来の開発記事中心の試作](drafts/trials/2026-10-10-developer-pilot.md)と比較できる。正式な配信原稿ではない。
+
 ## 運営者向け情報
 
 基礎解説の整備状況と次の優先課題は[Atlasの点検・整備計画](editorial/atlas-roadmap.md)にまとめる。
