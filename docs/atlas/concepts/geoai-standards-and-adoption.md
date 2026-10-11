@@ -2,7 +2,7 @@
 layout: default
 title: GeoAIの標準化と実務での採用
 category: concepts
-updated: 2026-09-25
+updated: 2026-10-11
 ---
 
 # GeoAIの標準化と実務での採用
@@ -36,8 +36,16 @@ ISO/TC 211は学習データの共有・相互運用性や、データ・モデ�
 
 SIG-GISの第3回公開型情報交換会は、AI標準化のSC 42、海外の3D都市モデル、ISO/TC 211・JPGIS、PLATEAUを取り上げる。開催日時などは[2026年9月25日の更新履歴](../../updates/2026-09-25.md)に記録した。
 
+## 評価できる人材と知識基盤
+
+ルンド大学が2026年10月7日に紹介したEU事業GENIUSは、4年間でGeoAIの知識・技能を整理し、共通の知識基盤と高度な人材育成の資源・手法を整える計画である。予算400万ユーロ、欧州20超の組織が参加する。
+
+同大学は、モデルを使えることに加え、使用データ・結果の信頼性・不確実性を理解する必要を強調する。これは人材育成と産学連携の計画であり、新しい技術規格の成立や教材の完成を示す発表ではない。
+
 ## 出典
 
 - [ISO/TC 211 公開カタログ](https://committee.iso.org/committee/54904/x/catalogue/)（2026-09-25確認）
 - [ISO/TC 211：Geospatial Intelligence Meets AI](https://committee.iso.org/sites/tc211/home/standards-in-action/presentation-archive/2026-04-20-geospatial-intelligen.html)（2026-09-25確認）
 - [SIG-GIS 第3回公開型情報交換会](https://sites.google.com/view/gisa-siggis/3rd-exchange-meeting)（2026-09-25確認）
+
+- [EU project on AI and geography led by Lund University](https://www.lunduniversity.lu.se/article/eu-project-ai-and-geography-led-lund-university)（2026-10-11確認）

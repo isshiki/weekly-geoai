@@ -1,7 +1,7 @@
 ---
 title: 分析結果の検証と適用範囲
 category: methods
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # 分析結果の検証と適用範囲
@@ -87,6 +87,19 @@ GIS操作の確認には、[Location AIの結果確認表](../concepts/location-
 
 [16画素の画像評価演習](../guides/imagery-evaluation-exercise.md)では、正解と予測を図で照合し、誤検出・見逃しと評価指標を手計算・Pythonで確認できる。
 
+## 配車需要の研究に見る区画とモデルの分離
+
+厦門島の配車需要を扱う2026年10月10日公開の論文は、K-means++で乗降地点をまとめ、クラスタ中心からボロノイ区画を作り、空間的な重みをニューラルネットワークで学ぶGNNWRと組み合わせた。
+
+| 確認する対象 | この研究での条件 |
+| --- | --- |
+| 区画を作るデータ | 2020年6月18〜19日の乗降地点 |
+| 需要を分析するデータ | 6月22〜26日。作成した区画は固定 |
+| 報告された当てはまり | GNNWRの平均R²は0.750。研究内の比較であり他都市への保証ではない |
+| 解釈の範囲 | 都市環境と需要の関連。公共交通との代替・補完の因果関係は未証明 |
+
+「動的分割」は需要分布に基づく区画作成を指し、リアルタイムの境界更新ではない。区画作成と需要評価の期間を分けている点は参考になるが、それだけで別の都市・時期への適用や因果説明が検証されたとはいえない。本Atlasでは分析を再実行していない。
+
 ## 出典
 
 - [1] [Rolf: Evaluation Challenges for Geospatial ML](https://arxiv.org/abs/2303.18087)（2023、2026-10-05確認。評価目的の整理）
@@ -94,3 +107,5 @@ GIS操作の確認には、[Location AIの結果確認表](../concepts/location-
 - [3] [Meyer & Pebesma: Predicting into unknown space? Estimating the area of applicability of spatial prediction models](https://doi.org/10.1111/2041-210X.13650)（Methods in Ecology and Evolution、2021、2026-10-05確認）
 
 - [有効求人倍率・最低賃金マップ](https://blog.masahiko.info/entry/2026/10/02/164813)（2026-10-09確認）
+
+- [Modeling the Relationship Between Ride-Hailing Demand Density and the Urban Built Environment on the Basis of the GNNWR and Dynamic Spatial Partitioning](https://www.mdpi.com/2220-9964/15/10/460)（2026-10-11確認）

@@ -2,7 +2,7 @@
 layout: default
 title: AIが扱いやすい地理空間開発環境
 category: methods
-updated: 2026-10-06
+updated: 2026-10-11
 ---
 
 # AIが扱いやすい地理空間開発環境
@@ -60,6 +60,12 @@ Agent SkillsはAPIそのものではない。エージェントが最新資料�
 
 環境構築と一部のデータ準備は手動である。記事は検証時のコミットを示し、接続表示の確認だけで終えず、各MCPツールを一度呼んで応答を確かめる手順も紹介している。
 
+## 再現可能なAI利用記録を成果物に含める
+
+GeoapifyのOpen Geospatial Program第2期は、OpenAPI仕様を参照する開発と、MCP経由でAIエージェントが地理空間ツールを使う開発を対象にしている。2026年10月の募集では、アプリだけでなくスクリプト・実験・再現可能なワークフローも認める。
+
+注目すべき成果物の条件は、公開コードと実行手順に加え、プロンプト、AIの設定、人の修正が必要だった点、既知の制約も記録することである。これは提供企業の募集要件であり、完成済み事例の性能評価ではない。日程は[日次の更新履歴](../../updates/2026-10-11.md)へ分けて記録する。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -73,3 +79,5 @@ Agent SkillsはAPIそのものではない。エージェントが最新資料�
 - [Google Maps Platform Agent Skills](https://github.com/googlemaps/agent-skills)（2026-09-10確認）
 - [Google Maps Platform Main Skill](https://github.com/googlemaps/agent-skills/blob/main/skills/google-maps-platform/SKILL.md)（2026-09-10確認）
 - [ソフトバンク：自然言語による地物情報の取得・可視化](https://zenn.dev/softbank/articles/a83d02f48e0e84)（2026-10-01確認）
+
+- [Open Geospatial Program Batch #2: AI × Geospatial](https://www.geoapify.com/open-geospatial-program/)（2026-10-11確認）
