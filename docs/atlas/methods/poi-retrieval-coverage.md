@@ -2,7 +2,7 @@
 layout: default
 title: POI検索の取得効率と網羅性
 category: methods
-updated: 2026-10-02
+updated: 2026-10-12
 ---
 
 # POI検索の取得効率と網羅性
@@ -22,6 +22,14 @@ updated: 2026-10-02
 
 取得率の基準は提案法が収集したデータであり、地域の全実在店舗を真値とした精度ではない。同一座標に多数の店舗がある場合などの取りこぼしにも注意する。API利用と取得データの保存・公開の条件は、アルゴリズムの有効性とは別に確認する。
 
+## AI向け場所検索とオープンデータを区別する
+
+Exa Placesは、自然言語で場所を探し、住所・座標・営業時間などを構造化して受け取る検索APIである。2026年10月5日の発表では2億1,100万地点を対象とすると説明している。公開データ一式を取得するサービスとは役割が異なる。
+
+提供元は400クエリで他サービスとの比較を報告しているが、自社用途・地域・時点での網羅率や鮮度を保証するものではない。既存APIに追加料金なしという説明も、無料・オープンなデータの意味ではない。必要な業種や地域で検索結果を点検し、利用・保存条件はサービスの契約と合わせて確認する。
+
 ## 出典
 
 - [Democratizing High-Resolution Urban Data: A Cost-Effective Greedy Algorithm for POI Retrieval using Google Places API](https://isprs-annals.copernicus.org/articles/XII-4-W2-2026/89/2026/)（2026-10-02確認）
+
+- [Introducing Exa Places: Search 211M Places with Structured Data](https://exa.ai/blog/places-search)（2026-10-12確認）

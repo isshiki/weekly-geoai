@@ -2,7 +2,7 @@
 layout: default
 title: 空間分析への埋め込みの組み込み
 category: methods
-updated: 2026-10-08
+updated: 2026-10-12
 ---
 
 # 空間分析への埋め込みの組み込み
@@ -130,6 +130,8 @@ CARTOの2026年10月5日の記事は、クラウドDWH（データウェアハ�
 | Spatial Aggregation | セルの表現を対象ポリゴンへ集約する |
 | Vector Normalization | ベクトルの長さを1にそろえ、内積による比較へつなぐ |
 
+例に使われるPlacePulseは約106万のH3解像度7セルを256次元で表す。約106万件の店舗・POIを意味するものではない。2026年10月12日のPacific Spatial Solutionsによる日本語記事も、この10月5日の発表を解説したものである。
+
 全体の平均からの違いと、近隣からの違いは別の問いである。区域へ集約する際は重なり面積と集約方法を確認する。記事の小売商圏と保険ポートフォリオにはシミュレーション例が含まれ、実際の売上改善を示す実験とは区別する。
 
 ## 埋め込みの予測寄与を分野別に読む
@@ -168,3 +170,5 @@ CARTOとEsriの処理は記事の確認のみで、データ取得・操作・�
 - [Interpret embeddings using AutoML and SHAP in ArcGIS Pro](https://www.esri.com/arcgis-blog/products/arcgis-pro/geoai/interpret-embeddings-using-automl-and-shap-in-arcgis-pro)（2026-10-07確認）
 
 - [Turning Geospatial Foundation Models into Decisions using CARTO Workflows](https://carto.com/blog/turning-geospatial-foundation-models-into-decisions-using-carto-workflows/)（2026-10-08確認）
+
+- [【GeoAI】第21回：ジオ・エンベディングで場所の「個性」を知る](https://note.com/pacificspatial/n/ne015419eb17a)（2026-10-12確認）

@@ -2,7 +2,7 @@
 layout: default
 title: オープンな基盤地図データと共同整備
 category: data
-updated: 2026-09-25
+updated: 2026-10-12
 ---
 
 # オープンな基盤地図データと共同整備
@@ -21,6 +21,12 @@ updated: 2026-09-25
 
 以下はAtlasの実務上の整理である。共通データを使う場合も、取得版、対象範囲、出所、更新時点、独自に加工した内容を残す。同じ基盤を使っていても、取得時点や施設分類が違えば分析結果は一致しない。
 
+## 建物データは面積と一棟の単位を分けて比べる
+
+建物ポリゴンは、総面積が近くても棟ごとの分割や抜けが異なる。TerraLabのVitré（フランス、2.2km²）の比較では、参照建物とIoU（重なり面積／和集合面積）が0.5超となる割合はOSM83%、Overture84%、Microsoft25%だった。Microsoftでは複数の家が一つのポリゴンにまとまる例がある。
+
+参照したIGNの建物とOSMには地籍由来の情報が含まれ、完全に独立した正解との比較ではない。棟数、分割単位、重なり、データの来歴を一緒に見る。一地区の結果から国全体や全用途での優劣を決めず、面積を測る用途と一棟ずつ数える用途も分ける。
+
 ## 関連項目
 
 - [POIオープンデータの比較と地域特徴量](poi-open-data-comparison.md)
@@ -29,3 +35,5 @@ updated: 2026-09-25
 ## 出典
 
 - [Overture：Rethinking the Foundation: Why Geospatial Innovation Demands a New Playbook](https://overturemaps.org/blog/2026/rethinking-the-foundation-why-geospatial-innovation-demands-a-new-playbook/)（2026-09-24公開、2026-09-25確認）
+
+- [Microsoft Building Footprints vs Google vs Overture, Tested](https://terra-lab.ai/blog/building-footprint-datasets-compared)（2026-10-12確認）

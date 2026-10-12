@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-10-07
+updated: 2026-10-12
 ---
 
 # MapLibre GL JS
@@ -51,6 +51,14 @@ v6.13.0ではglobe表示の中心を極まで移動できるようになり、�
 
 更新後の地図が古いWorkerのキャッシュでクラッシュする問題への対応として、Workerは再び自己完結する構成になった。`maplibre-gl-shared.mjs`と`maplibre-gl-shared-dev.mjs`は既存のコピー処理との互換性のため空ファイルで残るが、非推奨で次のメジャー版に削除予定である。独自に配布ファイルをコピーする場合は、移行時の依存を確認する。リリースノートを確認したもので、表示や性能の実測は行っていない。
 
+v6.14.0では、一部iPadOS 16 Safariでの空白表示などを修正した。デスクトップだけでなく、利用者の端末・ブラウザーで表示を確認する理由になる。地図作成・スタイル設定時の`globalState`初期値指定も追加された。実機での修正確認は本Atlasでは行っていない。
+
+## GIS基盤と地図画面をつなぐ
+
+NextGIS Frontendは、NextGIS Webで管理したデータ・スタイル・権限と、JavaScriptで作る地図画面をつなぐライブラリ群である。2026年10月2日発表の4.0は、Leaflet・OpenLayers・MapLibre間で選択、絞り込み、ポップアップ、操作部品などの扱いを共通化し、React連携を改善した。
+
+QuickMapServicesの背景地図検索用パッケージはNextGIS Webから独立して利用できる。AI開発支援向けの`llms.txt`索引も整備したが、資料があること自体はAIの実装結果の正確さを保証しない。既存利用者はフィルター指定、MapLibre GL JS 6対応、共通操作部品の移行を確認する。
+
 ## 関連項目
 
 - [全国メッシュデータのWeb配信](../methods/national-grid-web-delivery.md)
@@ -72,3 +80,7 @@ v6.13.0ではglobe表示の中心を極まで移動できるようになり、�
 - [MapLibre GL JS v6.12.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.12.0)（2026-10-05確認）
 
 - [MapLibre GL JS v6.13.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.13.0)（2026-10-07確認）
+
+- [MapLibre GL JS v6.14.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.14.0)（2026-10-12確認）
+
+- [NextGIS Frontend 4.0: Less Integration Code, More Powerful Web Maps](https://nextgis.com/blog/nextgis-frontend-4/)（2026-10-12確認）

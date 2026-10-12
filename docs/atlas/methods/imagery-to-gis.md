@@ -2,7 +2,7 @@
 layout: default
 title: 画像からGIS情報を作る解析と検証
 category: methods
-updated: 2026-10-06
+updated: 2026-10-12
 ---
 
 # 画像からGIS情報を作る解析と検証
@@ -48,7 +48,15 @@ updated: 2026-10-06
 
 [16画素の画像評価演習](../guides/imagery-evaluation-exercise.md)では、正解と予測を図で照合し、誤検出・見逃しと評価指標を手計算・Pythonで確認できる。
 
+## 画像の変化を行政の確認候補へつなぐ
+
+韓国・始興市のグリーンベルトを扱う研究は、衛星・航空・ドローン画像の変化検出、YOLOv8による構造物抽出、SegFormerによる土地被覆分類を、地籍・行政記録へ結び付ける。画像から分かる物理的な変化と、許可の有無などの法的な状態を分けて扱う設計である。
+
+研究では2,486筆を確認候補とし、手動判読の1,836件より35.4%多かった。ただし、候補が多いことは違反確定件数や再現率が35.4%改善したことを意味しない。現地確認と行政側の判断が必要になる。研究内の評価を別地域での性能保証として扱わず、本Atlasではモデルの再実行も行っていない。
+
 ## 出典
 
 - [From Imagery to Information: Image Analysis Across ArcGIS](https://www.esri.com/arcgis-blog/products/arcgis/imagery/from-imagery-to-information-image-analysis-across-arcgis)（2026-10-06再確認）
 - [scikit-learn: Metrics and scoring](https://scikit-learn.org/stable/modules/model_evaluation.html)（適合率・再現率・Jaccardの定義を2026-10-06確認）
+
+- [Integrating GeoAI and Multisource Remote Sensing with Cadastral Data for Greenbelt Compliance Screening](https://www.mdpi.com/2220-9964/15/10/461)（2026-10-12確認）

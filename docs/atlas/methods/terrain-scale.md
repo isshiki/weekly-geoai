@@ -2,7 +2,7 @@
 layout: default
 title: 標高タイルによる地形指標と測定スケール
 category: methods
-updated: 2026-10-06
+updated: 2026-10-12
 ---
 
 # 標高タイルによる地形指標と測定スケール
@@ -32,6 +32,14 @@ sz_takの2026年9月29日の実装記事は、国土地理院の標高タイル�
 - [座標と測定](../concepts/coordinate-reference-systems.md#measurement)：距離・面積の単位と計算方法を確認する。
 - [データの来歴](../data/geospatial-record-provenance.md)：標高データの版と処理条件を記録する。
 
+## 地面の高さと表面の高さを区別する
+
+DEM（数値標高モデル）という呼び名だけで用途を決めず、何の高さかを確認する。DSMは樹木や建物を含む表面、DTMは地面の高さを表す。Copernicus GLO-30はDSMである。
+
+TerraLabはフランス・ピレネーの約12km²でGLO-30とIGNのLiDAR由来地面データを比較した。樹木を含む表面と地面の差を、単純な測量誤差や世界共通の精度順位と解釈しない。傾斜を求める前には水平・鉛直方向の単位を確かめる。表示上の座標系変更だけで計算条件が整ったと判断しない。
+
 ## 出典
 
 - [確認した原文](https://qiita.com/sz_tak/items/5e3e560dc2c9d9ad0e3c)（2026-09-30確認）
+
+- [Free DEM Download: SRTM, Copernicus and LiDAR in QGIS](https://terra-lab.ai/blog/free-dem-download-qgis)（2026-10-12確認）

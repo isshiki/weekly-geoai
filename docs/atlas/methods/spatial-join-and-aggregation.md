@@ -1,7 +1,7 @@
 ---
 title: 空間結合と集計の基本
 category: methods
-updated: 2026-10-05
+updated: 2026-10-12
 ---
 
 # 空間結合と集計の基本
@@ -47,6 +47,18 @@ Shapelyの`within`と`covered_by`には上記の境界の違いがある。[2][3
 
 図の3点について、境界を含める場合と含めない場合の対応表を作る。元の点の数、対応行の数、区域別件数をそれぞれ数え、なぜ違うかを説明する。この模式例は関係を理解する課題であり、実データやGISソフトの実行結果ではない。
 
+## ヒートマップと区域別件数を使い分ける
+
+点の集中を示す地図でも、表示方法によって答える問いは異なる。TerraLabはパリの2020〜2024年の自転車等の人身事故6,041件で、次の方法を比較している。
+
+| 方法 | 読み取るもの・確認点 |
+| --- | --- |
+| 表示用ヒートマップ | 点の集中を画面で見る。表示尺度に依存する設定に注意する |
+| カーネル密度ラスタ | 指定した半径で周辺の点を平滑化する。半径と画素サイズを記録する |
+| 六角形などの区域別集計 | 区画内の件数を数える。区画の大きさと境界の影響を確認する |
+
+事故の多さや人口当たり件数を、そのまま自転車走行の危険度とは読まない。走行量などの曝露量が必要である。記事の手作業時間は操作モデルによる推計、AIの時間は実行時間であり、同条件の速度比較ではない。本Atlasでは再実行していない。
+
 ## 次に読む
 
 - [4店舗で試す空間結合と件数の検証](../guides/spatial-join-exercise.md)：区域外の点を追加し、手計算とShapelyで件数の落とし穴を確かめる。
@@ -61,3 +73,5 @@ Shapelyの`within`と`covered_by`には上記の境界の違いがある。[2][3
 - [2] [Shapely: within](https://shapely.readthedocs.io/en/stable/reference/shapely.within.html)（2026-10-05確認）
 - [3] [Shapely: covered_by](https://shapely.readthedocs.io/en/stable/reference/shapely.covered_by.html)（2026-10-05確認）
 - [4] [Esri GIS Dictionary: Modifiable Areal Unit Problem](https://support.esri.com/en-us/gis-dictionary/modifiable-areal-unit-problem)（2026-10-05確認）
+
+- [How to Make a Heat Map in QGIS (and With One Prompt)](https://terra-lab.ai/blog/heat-map-qgis)（2026-10-12確認）

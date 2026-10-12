@@ -1,7 +1,7 @@
 ---
 title: ベクターとラスター：データの表し方
 category: concepts
-updated: 2026-10-06
+updated: 2026-10-12
 ---
 
 # ベクターとラスター：データの表し方
@@ -29,6 +29,12 @@ updated: 2026-10-06
 
 値についても「標高の数値」「土地被覆の分類番号」「表示用の色」を区別する。分類番号の平均がそのまま意味を持つわけではない。欠損を示すNoDataと、意味のあるゼロも別に扱う。
 
+## 形式を変えるときは属性と見た目も確かめる
+
+KMLはXMLで地物・スタイル・説明などを表す形式で、KMZは関連ファイルをZIPでまとめたものである。地図で見える説明が通常の属性列ではなく、Description内のHTMLとして保存されている場合もある。
+
+TerraLabは、914点のKMZをQGISで直接編集したテストで、保存後に内容が失われた例を報告する。特定環境の報告を全バージョン共通の仕様とは扱わない。原本を残し、変換後は地物数、必要な属性、画像・スタイルの保持を別々に確認する。
+
 ## 次に読む
 
 - [座標参照系](coordinate-reference-systems.md)：データの位置と単位を確認する。
@@ -42,3 +48,5 @@ updated: 2026-10-06
 - [QGIS 3.44: Raster Data](https://docs.qgis.org/3.44/en/docs/gentle_gis_introduction/raster_data.html)（2026-10-06確認）
 
 比較表と読む順序はAtlasの学習案内として整理した。ソフト上での変換演習は今回実施していない。
+
+- [What Is a KML File? Open, Edit and Convert KML and KMZ](https://terra-lab.ai/blog/what-is-a-kml-file)（2026-10-12確認）
