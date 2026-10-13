@@ -2,7 +2,7 @@
 layout: default
 title: Cesium
 category: tools
-updated: 2026-10-09
+updated: 2026-10-13
 ---
 
 # Cesium
@@ -71,6 +71,14 @@ JMTの道路改良事例は、Bentley Infrastructure Cloudの設計モデルをC
 
 設計線だけでは読み取りにくい変化を、住民が知っている道路や土地との関係で伝える用途である。モデルの版比較や属性確認を役割別アプリへ広げる案は今後の検討であり、この事例で提供済みとは扱わない。映像の反響と、工事の実現・安全性・合意形成の効果測定は区別する。
 
+## MCPでアセットと設計モデルを照会する
+
+2026年10月12日公開のCesium ion MCP Serverは、CesiumがホストするAI向けの接続口である。ionアカウントで認証し、対応するAIクライアントからアセット検索、タイル化の進捗確認、BIM/CADモデルの部材照会などを依頼できる。利用者側でMCPサーバーを構築する必要はない。
+
+例えば、タイル化が完了したモデルのIDを取得して表示コードへ組み込む、同じ材質の配管を検索するといった用途が紹介されている。初版はREST APIの主要機能に絞られ、全APIに対応するわけではない。
+
+OAuth 2.0と既存のアカウント権限が適用され、アップロードやタイル化などの書き込みも扱う。公式説明は、変更前の許可を求めるようエージェントへ指示するとしている。これは読み取り専用の保証や、独立した承認機構の実証とは異なる。今回は発表本文の確認で、アカウント接続や操作は実施していない。
+
 ## 出典
 
 - [PSS：設計データを3D地図に重ねるCesiumの新機能](https://note.com/pacificspatial/n/n09d882d31390)（2026-09-21公開、2026-09-22確認）
@@ -86,3 +94,5 @@ JMTの道路改良事例は、Bentley Infrastructure Cloudの設計モデルをC
 - [Kayhan Space Investigates Satellite Intelligence for CNN with CesiumJS](https://cesium.com/blog/2026/10/06/kayhan-space-satellite-intelligence-cnn-cesiumjs/)（2026-10-07確認）
 
 - [JMTの道路計画可視化](https://cesium.com/blog/2026/10/08/jmt-helps-people-see-the-future-with-cesium/)（2026-10-09確認）
+
+- [Introducing the Cesium ion MCP Server](https://cesium.com/blog/2026/10/12/introducing-the-cesium-ion-mcp-server/)（2026-10-13確認）

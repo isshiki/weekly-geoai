@@ -2,7 +2,7 @@
 layout: default
 title: GeoLibre
 category: tools
-updated: 2026-10-06
+updated: 2026-10-13
 ---
 
 # GeoLibre
@@ -53,6 +53,14 @@ v3.3.0のリリースノートでは、Python・MCPから開いているデス�
 
 操作を依頼する前に、[GIS操作の依頼設計](../concepts/location-ai.md)で対象データ・条件・保存権限・結果確認を定める。アプリや外部データの接続設定は別途必要である。
 
+## 画像を領域に分けて分類・評価する
+
+OBIA（オブジェクトベース画像解析）は、画像を領域に分割し、その領域を単位に分類する方法である。v3.4.0のワークベンチは、画像分割、学習用・検証用サンプルのラベル付け、ランダムフォレストやルールによる分類、精度評価、ラスタ出力をつなぐ。eCognitionルールセットの取り込みも追加されたが、既存処理の完全互換を保証するものとは読まない。
+
+衛星LiDARではICESat-2・GEDIの観測範囲と軌道に沿ったプロファイル、ICESat-2 ATL03の光子データに対応した。Cesium表示ではLAS/LAZ・EPTに加え、表示範囲に応じたCOPC点群の読み込みを扱う。地図を表示する機能と分類精度の評価を分けて確認する。
+
+MCP Appsの地図プレビューは読み取り専用である。アプリの操作APIが持つ機能と、チャット内プレビューの権限を混同しない。以上はリリースノートで確認した機能であり、画像分類や点群表示の実行検証は行っていない。
+
 ## 出典
 
 - [@geolibre/map README](https://github.com/opengeos/GeoLibre/blob/main/packages/map/README.md)（2026-09-17確認）
@@ -67,3 +75,5 @@ v3.3.0のリリースノートでは、Python・MCPから開いているデス�
 - [GeoLibre v3.2.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.2.0)（2026-10-02確認）
 
 - [GeoLibre v3.3.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.3.0)（2026-10-06確認）
+
+- [GeoLibre v3.4.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.4.0)（2026-10-13確認）

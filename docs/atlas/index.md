@@ -71,7 +71,7 @@ updated: 2026-10-10
 ### AIによる分析と位置推定
 
 - [地図探索エージェントの記憶と空間推論](methods/map-agent-memory.md)
-- [空間特徴とLLMエージェントによる次の訪問地点予測](methods/spatial-agent-mobility-prediction.md)
+- [次の訪問地点予測：空間特徴・時系列・LLM](methods/spatial-agent-mobility-prediction.md)
 - [空間分析への埋め込みの組み込み](methods/spatial-embeddings.md)
 - [店舗画像によるPOIローカライゼーション](methods/storefront-poi-localization.md)
 
@@ -151,6 +151,7 @@ updated: 2026-10-10
 ### 地図を作成・共有する
 
 - [GeoLibre](tools/geolibre.md)
+- [RustGIS](tools/rustgis.md)
 - [Felt](tools/felt.md)
 - [ArcGIS StoryMaps](tools/arcgis-storymaps.md)
 

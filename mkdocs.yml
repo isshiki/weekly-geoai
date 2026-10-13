@@ -62,7 +62,7 @@ nav:
         - 分析結果の検証と適用範囲: atlas/methods/spatial-analysis-validation.md
       - AIによる分析と位置推定:
         - 地図探索エージェントの記憶と空間推論: atlas/methods/map-agent-memory.md
-        - 空間特徴とLLMエージェントによる次の訪問地点予測: atlas/methods/spatial-agent-mobility-prediction.md
+        - 次の訪問地点予測：空間特徴・時系列・LLM: atlas/methods/spatial-agent-mobility-prediction.md
         - 空間分析への埋め込みの組み込み: atlas/methods/spatial-embeddings.md
         - 店舗画像によるPOIローカライゼーション: atlas/methods/storefront-poi-localization.md
       - データの検索・取得とサービス選定:
@@ -118,6 +118,7 @@ nav:
         - Kodawari: atlas/tools/kodawari.md
       - 地図を作成・共有する:
         - GeoLibre: atlas/tools/geolibre.md
+        - RustGIS: atlas/tools/rustgis.md
         - Felt: atlas/tools/felt.md
         - ArcGIS StoryMaps: atlas/tools/arcgis-storymaps.md
       - Web地図をコードで作る:
@@ -208,6 +209,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月13日: updates/2026-10-13.md
         - 10月12日: updates/2026-10-12.md
         - 10月11日: updates/2026-10-11.md
         - 10月10日: updates/2026-10-10.md
