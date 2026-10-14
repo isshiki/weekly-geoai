@@ -2,7 +2,7 @@
 layout: default
 title: GeoAIの標準化と実務での採用
 category: concepts
-updated: 2026-10-11
+updated: 2026-10-14
 ---
 
 # GeoAIの標準化と実務での採用
@@ -42,6 +42,12 @@ SIG-GISの第3回公開型情報交換会は、AI標準化のSC 42、海外の3D
 
 同大学は、モデルを使えることに加え、使用データ・結果の信頼性・不確実性を理解する必要を強調する。これは人材育成と産学連携の計画であり、新しい技術規格の成立や教材の完成を示す発表ではない。
 
+## 業界の分類と教育を見分ける
+
+LBMA Japanの2026年カオスマップは、6回目の改訂で「ジオAI」を独立カテゴリとした。位置情報とAIの組み合わせが業界内で一つの領域として扱われる例である。これは業界団体による事業分類であり、GeoAIの唯一の定義、技術規格、市場規模の測定とは区別する。
+
+横浜市立大学・LBMA Japan・ゼンリンデータコムは、位置情報データ活用人材の育成でも連携している。教育・研究と産官学連携を扱うシンポジウムの開催案内は[10月14日の更新履歴](../../updates/2026-10-14.md)に記録した。技術の普及を追う際は、製品機能に加え、学ぶ機会や実務で評価できる人材の育成も確認する。
+
 ## 出典
 
 - [ISO/TC 211 公開カタログ](https://committee.iso.org/committee/54904/x/catalogue/)（2026-09-25確認）
@@ -49,3 +55,7 @@ SIG-GISの第3回公開型情報交換会は、AI標準化のSC 42、海外の3D
 - [SIG-GIS 第3回公開型情報交換会](https://sites.google.com/view/gisa-siggis/3rd-exchange-meeting)（2026-09-25確認）
 
 - [EU project on AI and geography led by Lund University](https://www.lunduniversity.lu.se/article/eu-project-ai-and-geography-led-lund-university)（2026-10-11確認）
+
+- [12月11日に横浜でシンポジウムを開催　位置情報とAIがもたらす教育と研究の未来](https://prtimes.jp/main/html/rd/p/000000073.000069376.html)（2026-10-14確認）
+
+- [位置情報ビジネスの業界地図「LBMA Japan カオスマップ2026」を公開－６回目のアップデートで「ジオAI」が独立カテゴリとして初登場](https://prtimes.jp/main/html/rd/p/000000048.000055226.html)（2026-10-14確認）

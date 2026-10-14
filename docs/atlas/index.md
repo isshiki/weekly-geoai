@@ -183,6 +183,7 @@ updated: 2026-10-10
 
 - [FME](tools/fme.md)
 - [GeoServer](tools/geoserver.md)
+- [GeoNode](tools/geonode.md)
 - [ArcFM](tools/arcfm.md)
 - [ArcGIS Solutions](tools/arcgis-solutions.md)
 - [ArcGIS for ExcelとPython in Excel](tools/arcgis-for-excel.md)
@@ -192,6 +193,7 @@ updated: 2026-10-10
 
 - [ArcGIS Geocoding Service](tools/arcgis-geocoding.md)
 - [OpenPOI API](tools/openpoi-api.md)
+- [Overture Maps API](tools/overture-maps-api.md)
 - [Google MapsのAsk MapsとImmersive Navigation](tools/google-maps-gemini.md)
 - [Valhalla](tools/valhalla.md)
 - [NextBillion.ai](tools/nextbillion-ai.md)
@@ -248,6 +250,7 @@ updated: 2026-10-10
 
 - [渋谷の街区別年代構成と人流の読み方](cases/shibuya-age-distribution.md)
 - [富士山閉山期の人流分析](cases/mount-fuji-offseason-human-flow.md)
+- [伊方町：人流と観光地の認知](cases/ikata-tourism-awareness.md)
 - [人流データによるオフィス訪問指数](cases/office-visitation-index.md)
 
 ### 交通・物流

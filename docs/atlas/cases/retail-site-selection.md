@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-13
+updated: 2026-10-14
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -109,6 +109,12 @@ MarketAnalyzer 5は決済と統計の統合・売上予測、KDDI Location Analy
 
 これは企業の公式な全店統計ではなく、個人の調査と考察である。店舗数の減少だけで事業規模の縮小を説明せず、移転元・移転先、複数店の統合、床面積、取扱商品の変化を区別する。施設側との事情の一致という説明は著者の解釈で、立地変更による売上効果を実証したものではない。
 
+## 業務データ基盤で売上分布を見る
+
+ArcGIS Maps for Microsoft Fabricは、FabricのデータとArcGISの地理情報を組み合わせて地図を作るワークロードで、2026年10月13日の紹介時点ではパブリックプレビューである。架空の小売例では、売上を重みにしたヒートマップと年次比較を示す。
+
+自社データを扱うにはFabric環境とArcGIS組織のユーザーアカウントが必要になる。体験用の地図は保存・共有できない。Spark上のGeoAnalyticsによる集計や最寄り店舗の分析は別の前処理であり、地図表示だけで売上予測ができるという意味ではない。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -136,3 +142,5 @@ MarketAnalyzer 5は決済と統計の統合・売上予測、KDDI Location Analy
 - [エリアマーケティングにおけるGISの活用方法！商圏分析のコツと導入事例](https://www.leadplus.co.jp/blog/area-marketing-gis)（2026-10-11確認）
 
 - [最近のBOOKOFFのこと](https://www.wasteofpops.com/entry/2026/10/11/000000)（2026-10-13確認）
+
+- [Bring spatial insights to your data analysis platform with ArcGIS Maps for Microsoft Fabric](https://www.esri.com/arcgis-blog/products/maps-for-fabric/business/bring-spatial-insights-to-your-data-analysis-platform-with-arcgis-maps-for-microsoft-fabric)（2026-10-14確認）

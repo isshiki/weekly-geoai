@@ -2,7 +2,7 @@
 layout: default
 title: ハザードデータの再利用条件
 category: data
-updated: 2026-10-11
+updated: 2026-10-14
 ---
 
 # ハザードデータの再利用条件
@@ -36,8 +36,16 @@ PNGの色を凡例と照合する方法では、元の地物を取得せずに�
 
 SwiftとJavaScriptの共通凡例を用い、27地点などで検証したと報告しているが、浸水深20m以上などの色は未確認である。本Atlasでは実装を再実行していない。
 
+## 更新頻度と保持期間を確認する
+
+ArcGIS Living AtlasのRecent Earthquakesは、最近の地震を時刻・規模で絞り込んで表示できる。2026年10月12日更新の解説では最短5分間隔で更新し、最大30日分を保持する。ただし規模3未満は3日、4.5未満は7日と保持期間が短い。
+
+更新頻度と、過去の記録が残る期間は別である。地図に見えない理由にはフィルターや保持期限もあり、「地震がなかった」とは限らない。このレイヤーは最近の状況を見る用途で、長期比較には同じ収録条件の記録が必要となる。
+
 ## 出典
 
 - [自治体のハザードマップを使って避難経路OSSを作ろうとしたら、コードを書く前に権利とフォーマットの壁に激突した](https://qiita.com/hypatia_AH1033/items/023e7c3eeb8802ec0883)（2026-09-17公開、2026-09-18確認）
 
 - [国土地理院のハザードタイルのピクセル色を読んで、住所の浸水想定区域を判定する](https://zenn.dev/pohoda/articles/970f41731fa5ba)（2026-10-11確認）
+
+- [Map in a minute: Map an earthquake using ArcGIS Online and ArcGIS Living Atlas](https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/an-earthquake-map-in-60-seconds-using-living-atlas)（2026-10-14確認）

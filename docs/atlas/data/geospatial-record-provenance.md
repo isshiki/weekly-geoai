@@ -2,7 +2,7 @@
 layout: default
 title: 地理空間データの来歴とレコード単位のメタデータ
 category: data
-updated: 2026-10-06
+updated: 2026-10-14
 ---
 
 # 地理空間データの来歴とレコード単位のメタデータ
@@ -48,6 +48,10 @@ B〜Eは実際に使った情報へ置き換える。分からない項目は「
 
 2026年9月17日のOvertureの記事は、GERSの永続ID、共通スキーマへの検証・統合、機械可読形式を関連付けている。すべての処理を通じてメタデータを保持することは同団体が示す目標であり、全レコードに必要な情報が揃っていることの保証ではない。
 
+10月13日の解説は、異なる提供者の地物をGERSで対応付け、レジストリと変更履歴で継続的に追う考え方を補足する。同じ建物でも、概形だけが必要な用途と、高さや部材まで必要な用途がある。表現を一つに統一するより、同じ対象を指すと確認できることが重要になる。
+
+入力元・受領日・版・検証結果を工程内で保持する説明は、公開ファイルの全属性にその履歴が含まれる保証ではない。分析に使う版の実際のフィールドと、識別子の変更記録を確かめる。
+
 [Overtureのデータスキーマ](overture-schema.md)も参照。
 
 ## 次に読む
@@ -60,3 +64,5 @@ B〜Eは実際に使った情報へ置き換える。分からない項目は「
 - [W3C: PROV-Overview](https://www.w3.org/TR/prov-overview/)（2013、2026-10-06確認）
 
 - [How do you trust open map data in an agentic AI world?](https://overturemaps.org/blog/2026/how-do-you-trust-open-map-data-in-an-agentic-ai-world/)（2026-09-17公開、2026-09-18確認）
+
+- [The unglamorous work of making open map data fit together](https://overturemaps.org/blog/2026/the-unglamorous-work-of-making-open-map-data-fit-together/)（2026-10-14確認）

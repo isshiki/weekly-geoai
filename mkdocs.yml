@@ -142,6 +142,7 @@ nav:
       - データ連携・配信と業務GIS:
         - FME: atlas/tools/fme.md
         - GeoServer: atlas/tools/geoserver.md
+        - GeoNode: atlas/tools/geonode.md
         - ArcFM: atlas/tools/arcfm.md
         - ArcGIS Solutions: atlas/tools/arcgis-solutions.md
         - ArcGIS for ExcelとPython in Excel: atlas/tools/arcgis-for-excel.md
@@ -149,6 +150,7 @@ nav:
       - 場所検索・交通・ナビゲーション:
         - ArcGIS Geocoding Service: atlas/tools/arcgis-geocoding.md
         - OpenPOI API: atlas/tools/openpoi-api.md
+        - Overture Maps API: atlas/tools/overture-maps-api.md
         - Google MapsのAsk MapsとImmersive Navigation: atlas/tools/google-maps-gemini.md
         - Valhalla: atlas/tools/valhalla.md
         - NextBillion.ai: atlas/tools/nextbillion-ai.md
@@ -192,6 +194,7 @@ nav:
       - 都市・観光と働き方:
         - 渋谷の街区別年代構成と人流の読み方: atlas/cases/shibuya-age-distribution.md
         - 富士山閉山期の人流分析: atlas/cases/mount-fuji-offseason-human-flow.md
+        - 伊方町：人流と観光地の認知: atlas/cases/ikata-tourism-awareness.md
         - 人流データによるオフィス訪問指数: atlas/cases/office-visitation-index.md
       - 交通・物流:
         - 交通予測・空間分析・対話を組み合わせるNYUの研究: atlas/cases/nyu-traffic-geoai.md
@@ -209,6 +212,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月14日: updates/2026-10-14.md
         - 10月13日: updates/2026-10-13.md
         - 10月12日: updates/2026-10-12.md
         - 10月11日: updates/2026-10-11.md

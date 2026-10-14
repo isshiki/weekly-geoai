@@ -2,7 +2,7 @@
 layout: default
 title: ArcGIS StoryMaps
 category: tools
-updated: 2026-09-19
+updated: 2026-10-14
 ---
 
 # ArcGIS StoryMaps
@@ -29,7 +29,15 @@ ArcGIS StoryMapsは、地図と文章・画像などを組み合わせて場所�
 
 生成結果は編集の出発点として扱える。文章と画像の併用を推奨しており、AIの自動選択フォントは29種、手動ではGoogle Fontsを追加できる。
 
+## 読者に伝わる構成と公開範囲
+
+2026年大会の応募ガイドは、想定読者を決め、地図・文章・写真を伝えたい内容に合わせて選ぶことを勧める。地図の数を増やすこと自体を目的にせず、配色や文字をそろえ、結論を裏付ける情報を置く。
+
+作品を公開しても、埋め込んだ地図やレイヤーが非公開なら読者は閲覧できない。共有範囲を構成要素ごとに確認する。応募条件と締切は[10月14日の更新履歴](../../updates/2026-10-14.md)に記録した。
+
 ## 出典
 
 - [Beef up your map tours with custom basemaps](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/constituent-engagement/beef-up-your-map-tours-with-custom-basemaps)（2026-09-17確認）
 - [Generate a theme with the ArcGIS StoryMaps assistant](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/constituent-engagement/generate-a-theme-with-the-arcgis-storymaps-assistant)（2026-09-19確認）
+
+- [Your guide to entering the 2026 ArcGIS StoryMaps competition](https://www.esri.com/arcgis-blog/products/story-maps/constituent-engagement/arcgis-storymaps-competition-criteria)（2026-10-14確認）
