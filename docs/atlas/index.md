@@ -146,6 +146,7 @@ updated: 2026-10-10
 - [ShadeMapと建物データの更新](tools/shademap.md)
 - [OH3 今昔マップビューア](tools/oh3-konjaku.md)
 - [鳥瞰路線図](tools/chokan-rail-map.md)
+- [にぎわいの地形図と駅Tier表](tools/poi-density-terrain.md)
 - [Kodawari](tools/kodawari.md)
 
 ### 地図を作成・共有する
@@ -207,6 +208,7 @@ updated: 2026-10-10
 ### AI・MCP連携
 
 - [GIS Data Agent](tools/gis-data-agent.md)
+- [Mapsuke](tools/mapsuke.md)
 - [Google Maps Agentic UI Toolkit](tools/google-maps-agentic-ui.md)
 - [Mapbox CLI](tools/mapbox-cli.md)
 - [Mapbox Figma MCP Server](tools/mapbox-figma-mcp.md)

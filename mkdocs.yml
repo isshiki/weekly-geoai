@@ -115,6 +115,7 @@ nav:
         - ShadeMapと建物データの更新: atlas/tools/shademap.md
         - OH3 今昔マップビューア: atlas/tools/oh3-konjaku.md
         - 鳥瞰路線図: atlas/tools/chokan-rail-map.md
+        - にぎわいの地形図と駅Tier表: atlas/tools/poi-density-terrain.md
         - Kodawari: atlas/tools/kodawari.md
       - 地図を作成・共有する:
         - GeoLibre: atlas/tools/geolibre.md
@@ -162,6 +163,7 @@ nav:
         - ゼンリン地図ナビ: atlas/tools/zenrin-map-navigation.md
       - AI・MCP連携:
         - GIS Data Agent: atlas/tools/gis-data-agent.md
+        - Mapsuke: atlas/tools/mapsuke.md
         - Google Maps Agentic UI Toolkit: atlas/tools/google-maps-agentic-ui.md
         - Mapbox CLI: atlas/tools/mapbox-cli.md
         - Mapbox Figma MCP Server: atlas/tools/mapbox-figma-mcp.md
@@ -212,6 +214,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月15日: updates/2026-10-15.md
         - 10月14日: updates/2026-10-14.md
         - 10月13日: updates/2026-10-13.md
         - 10月12日: updates/2026-10-12.md
