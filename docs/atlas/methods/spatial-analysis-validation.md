@@ -1,7 +1,7 @@
 ---
 title: 分析結果の検証と適用範囲
 category: methods
-updated: 2026-10-13
+updated: 2026-10-16
 ---
 
 # 分析結果の検証と適用範囲
@@ -63,6 +63,19 @@ updated: 2026-10-13
 
 空間ブロックに分けても、境界の両側で地点が接近していたり、同じ観測対象が重複していたりすれば、それだけで独立性は保証されない。地域分割だけでは、未来の情報の混入も防げない。
 
+## 未知の災害で確かめる
+
+2026年10月9日UTC提出の研究は、TerraMind・Prithvi-EO-2.0・DOFA・DINOv3を固定して抽出した特徴量で、画像内に被災建物があるかを判定した。学習と評価を画像単位でランダムに分ける場合から、一つの災害を丸ごと評価側へ外す場合へ変えると、平均バランス精度が低下した。
+
+| データ | ランダム分割 | 未知の災害で評価 |
+| --- | ---: | ---: |
+| xView2 | 80.7％ | 63.8％ |
+| BRIGHT | 81.8％ | 56.8％ |
+
+バランス精度は被災あり・なしそれぞれの再現率の平均である。災害前画像や注釈の建物数だけでも予測でき、被害以外の手掛かりも調べる必要を示す。ただし、それだけで画像モデルが有害な近道に依存したと断定できない。
+
+BRIGHTのSAR入力は3チャンネルへ繰り返した互換性検証で、センサーに最適化した方式ではない。建物単位の被害程度の評価とも異なる。未知の災害への適用を問う実験として読み、モデルの一般的な順位に置き換えない。
+
 ## スコアと一緒に残すもの
 
 - **入力の範囲**：地域、期間、センサーやデータ源、データの版。
@@ -123,3 +136,5 @@ GIS操作の確認には、[Location AIの結果確認表](../concepts/location-
 - [Modeling the Relationship Between Ride-Hailing Demand Density and the Urban Built Environment on the Basis of the GNNWR and Dynamic Spatial Partitioning](https://www.mdpi.com/2220-9964/15/10/460)（2026-10-11確認）
 
 - [地図アプリを egui_kittest でテストする: 地域メッシュの位置と色を画像比較なしで確かめる](https://zenn.dev/20220227/articles/d08c1106d03628)（2026-10-13確認）
+
+- [Shortcut Learning in Geospatial Foundation Model Embeddings for Cross-Disaster Damage Assessment](https://arxiv.org/abs/2610.13766)（2026-10-16、v1本文確認。再実験なし）

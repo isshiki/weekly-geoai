@@ -67,6 +67,7 @@ updated: 2026-10-10
 
 - [空間結合と集計の基本](methods/spatial-join-and-aggregation.md)
 - [分析結果の検証と適用範囲](methods/spatial-analysis-validation.md)
+- [地理空間AIエージェントの評価](methods/geospatial-agent-evaluation.md)
 
 ### AIによる分析と位置推定
 
@@ -110,6 +111,7 @@ updated: 2026-10-10
 - [農業統計・圃場・衛星データを統合する米作モニタリング](methods/california-rice-monitoring.md)
 - [全国メッシュデータのWeb配信](methods/national-grid-web-delivery.md)
 - [外部地図サービスの廃止と依存関係の点検](methods/map-service-lifecycle.md)
+- [移動する地物のリアルタイム描画](methods/realtime-map-rendering.md)
 
 ## データ { #data }
 
@@ -169,6 +171,7 @@ updated: 2026-10-10
 - [GeoTools](tools/geotools.md)
 - [pandas](tools/pandas.md)
 - [Spatial Polars](tools/spatial-polars.md)
+- [空間SQLエンジンの選び方](tools/spatial-sql-engines.md)
 - [MovingPandas](tools/movingpandas.md)
 - [H3](tools/h3.md)
 - [geoparquet-io](tools/geoparquet-io.md)
@@ -193,6 +196,7 @@ updated: 2026-10-10
 ### 場所検索・交通・ナビゲーション
 
 - [ArcGIS Geocoding Service](tools/arcgis-geocoding.md)
+- [Nominatim](tools/nominatim.md)
 - [OpenPOI API](tools/openpoi-api.md)
 - [Overture Maps API](tools/overture-maps-api.md)
 - [Google MapsのAsk MapsとImmersive Navigation](tools/google-maps-gemini.md)

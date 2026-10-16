@@ -2,7 +2,7 @@
 layout: default
 title: CARTO MCP Server
 category: tools
-updated: 2026-10-08
+updated: 2026-10-16
 ---
 
 # CARTO MCP Server
@@ -55,6 +55,12 @@ CARTOの2026年10月7日の論考は、データの移動、専門家への作�
 
 記事にある導入企業の時間短縮は個別事例の報告であり、どの業務でも同じ削減率になるという保証ではない。
 
+## 業務指標の意味も共有する
+
+2026年10月14日のQ3更新は、テーブル・列・指標・空間構造を定義するセマンティックモデルを紹介している。「店舗当たり売上」がどの列・結合・集計を意味するかをAIへ伝えるための情報である。WorkflowをMCPツールとして公開する前の動作確認も案内する。
+
+ツールを呼べることと、業務上正しい指標を作れることは別である。利用者の権限と監査に加え、指標の定義・対象時点・集計単位を明示する。Q3記事は複数の発表の総括で、MCP対応のすべてが10月14日に初公開されたという意味ではない。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -73,3 +79,5 @@ CARTOの2026年10月7日の論考は、データの移動、専門家への作�
 - [CARTO: Connect Claude](https://docs.carto.com/carto-for-agents/connect-your-platform/claude)（2026-09-09確認）
 
 - [Why spatial work feels slow, and how AI in GIS is changing that](https://carto.com/blog/why-spatial-feels-slow/)（2026-10-08確認）
+
+- [CARTO：What's new in CARTO - Q3 2026](https://carto.com/blog/whats-new-in-carto-q3-2026/)（2026-10-16確認）

@@ -2,7 +2,7 @@
 layout: default
 title: 空間分析への埋め込みの組み込み
 category: methods
-updated: 2026-10-12
+updated: 2026-10-16
 ---
 
 # 空間分析への埋め込みの組み込み
@@ -134,6 +134,18 @@ CARTOの2026年10月5日の記事は、クラウドDWH（データウェアハ�
 
 全体の平均からの違いと、近隣からの違いは別の問いである。区域へ集約する際は重なり面積と集約方法を確認する。記事の小売商圏と保険ポートフォリオにはシミュレーション例が含まれ、実際の売上改善を示す実験とは区別する。
 
+## PlacePulse：復元と別地域での予測を分ける
+
+CARTOの2026年10月13日の解説によると、PlacePulseは人口・事業所・通勤・気候・災害リスクなど572属性に周辺情報を加えた2,288特徴から、米国の1,055,537個のH3解像度7セルを256次元で表す。入力の30％を隠して復元する学習を行う。
+
+| 評価 | 報告値の意味 |
+| --- | --- |
+| 入力の復元 | 中央値R²＝0.887。元の情報を保持できる程度で、将来の売上予測精度ではない |
+| 未学習の予測対象 | 外部12情報源・74対象を、州単位で分けて評価 |
+| Google PDFMとの比較 | 健康・経済ではPlacePulse、POI・自然地理・起業ではPDFMが優位と報告。全用途の勝者を決める比較ではない |
+
+異なる情報から作った表現が補い合う可能性はあるが、併用の効果は今後の検証課題である。10月14日のQ3記事ではPlacePulseを非公開プレビューと説明しており、日本向けの一般公開オープンデータとは扱わない。本Atlasでは学習・評価を再実行していない。
+
 ## 埋め込みの予測寄与を分野別に読む
 
 Esriの2026年10月6日の解説は、USA Geodemographic Embeddingsの256次元を、仕様に従い64次元ずつ「住宅・世帯」「環境」「社会経済」「人口構成」に分ける。ArcGIS ProのAutoMLで食料不安を予測した例では、社会経済分野の平均絶対SHAP値の合計が最大だった。
@@ -172,3 +184,6 @@ CARTOとEsriの処理は記事の確認のみで、データ取得・操作・�
 - [Turning Geospatial Foundation Models into Decisions using CARTO Workflows](https://carto.com/blog/turning-geospatial-foundation-models-into-decisions-using-carto-workflows/)（2026-10-08確認）
 
 - [【GeoAI】第21回：ジオ・エンベディングで場所の「個性」を知る](https://note.com/pacificspatial/n/ne015419eb17a)（2026-10-12確認）
+
+- [CARTO：PlacePulseの構築と評価](https://carto.com/blog/placepulse-geospatial-foundation-model/)（2026-10-16確認）
+- [CARTO：Q3 2026更新・提供状態](https://carto.com/blog/whats-new-in-carto-q3-2026/)（2026-10-16確認）

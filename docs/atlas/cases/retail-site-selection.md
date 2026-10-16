@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-14
+updated: 2026-10-16
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -85,6 +85,8 @@ MarketAnalyzer 5は決済と統計の統合・売上予測、KDDI Location Analy
 
 この比較の単位は届け出・許可数であり、営業中の店舗数と一致するとは限らない。簡易宿所と住宅宿泊事業法の届出住宅も別の集計対象である。公的統計とPOIを比較する際は、業種分類、時点、営業状態、地域単位を確かめ、施設数の減少だけから出店余地を判断しない。Excelの取得や原統計の再集計は行っていない。
 
+Reviewの2026年10月15日の発表は、行政の開業情報から店名に「油そば」「まぜそば」「混ぜそば」を含む記録を抽出し、2024年28件から2025年49件へ75％増と報告する。これは店名条件に合う開業記録の変化で、全国の該当メニュー提供店や営業中店舗を数えた結果ではない。小さな母数と抽出条件を件数・増加率と一緒に読む。
+
 ## 既存店舗網を見直す視点
 
 流通ニュースの2026年10月9日の会見報道によると、U.S.M.Hは2030年までに不採算100店舗を閉鎖する方針を示した。対象の選定では、築40〜50年の建物など店舗の状況や人口動態を考慮する。報道時点で対象地域は確定しておらず、個別店舗が閉店済みという意味ではない。
@@ -115,6 +117,12 @@ ArcGIS Maps for Microsoft Fabricは、FabricのデータとArcGISの地理情報
 
 自社データを扱うにはFabric環境とArcGIS組織のユーザーアカウントが必要になる。体験用の地図は保存・共有できない。Spark上のGeoAnalyticsによる集計や最寄り店舗の分析は別の前処理であり、地図表示だけで売上予測ができるという意味ではない。
 
+## 類似市場の探索を仲介業務へつなぐ
+
+TSCGが2026年10月15日に紹介したBroker Intelligenceは、AIと独自情報・Esriなどのデータを統合する小売不動産向けプラットフォームである。60超の人口統計指標で既存店と似た市場を探し、候補地を保存して調査・資料作成へつなげる。
+
+2026年11月に社内導入、2027年初めに外部契約者へ提供する計画であり、発表時点で外部向けに一般提供済みではない。人口統計の類似は売上の保証ではなく、現地調査や物件条件と合わせる。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -144,3 +152,6 @@ ArcGIS Maps for Microsoft Fabricは、FabricのデータとArcGISの地理情報
 - [最近のBOOKOFFのこと](https://www.wasteofpops.com/entry/2026/10/11/000000)（2026-10-13確認）
 
 - [Bring spatial insights to your data analysis platform with ArcGIS Maps for Microsoft Fabric](https://www.esri.com/arcgis-blog/products/maps-for-fabric/business/bring-spatial-insights-to-your-data-analysis-platform-with-arcgis-maps-for-microsoft-fabric)（2026-10-14確認）
+
+- [TSCG：Broker Intelligence](https://tscg.com/tscg-develops-ai-powered-broker-intelligence-platform-to-advance-retail-site-selection/)（2026-10-16確認）
+- [Review：油そば・まぜそばの開業調査](https://prtimes.jp/main/html/rd/p/000000105.000043858.html)（2026-10-16確認）

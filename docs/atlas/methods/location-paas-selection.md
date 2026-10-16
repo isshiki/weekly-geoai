@@ -2,7 +2,7 @@
 layout: default
 title: 位置情報PaaSの選び方と相互運用性
 category: methods
-updated: 2026-10-03
+updated: 2026-10-16
 ---
 
 # 位置情報PaaSの選び方と相互運用性
@@ -28,6 +28,12 @@ Esriの記事はLeaflet、OpenLayers、MapLibre GL JS、CesiumJSなどとの連�
 
 2026年10月2日の紹介記事は公式一覧で掲載を確認したが、本文を取得できなかったため、ここでは別の公式開発文書で確認できた機能だけを記載する。言語数や対象国数など、記事固有の数値は未検証である。
 
+## APIを画面上で試して選ぶ
+
+Amazon Location Serviceは2026年10月13日、Places・Routes・Mapsの14 APIをコードなしで試すAPI Playgroundを発表した。AWSコンソールから実際のAPIを呼び、地図上の結果を見てパラメータを変え、リクエスト例をコピーできる。
+
+住所・施設検索、到達圏や訪問順、地図表示などを試して機能を比較する入口になる。東京を含む15リージョンに対応すると発表している。実APIの試用をデータの自由な再配布や無制限の無料利用と混同せず、利用するアカウント・条件を確認する。今回は発表の確認で、API実行はしていない。
+
 ## 関連項目
 
 - [外部地図サービスの廃止と依存関係の点検](map-service-lifecycle.md)
@@ -40,3 +46,5 @@ Esriの記事はLeaflet、OpenLayers、MapLibre GL JS、CesiumJSなどとの連�
 
 - [Esri Developer：Mapping and location services](https://developers.arcgis.com/documentation/mapping-and-location-services/)（2026-10-03確認）
 - [Esri：位置情報サービスの紹介](https://www.esri.com/arcgis-blog/products/platform/developers/location-services-available-through-arcgis-location-platform)（2026-10-03確認）
+
+- [AWS：API Playground発表](https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-location-service-api-playground/)（2026-10-16確認）

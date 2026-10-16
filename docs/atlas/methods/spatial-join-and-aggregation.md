@@ -1,7 +1,7 @@
 ---
 title: 空間結合と集計の基本
 category: methods
-updated: 2026-10-12
+updated: 2026-10-16
 ---
 
 # 空間結合と集計の基本
@@ -59,6 +59,18 @@ Shapelyの`within`と`covered_by`には上記の境界の違いがある。[2][3
 
 事故の多さや人口当たり件数を、そのまま自転車走行の危険度とは読まない。走行量などの曝露量が必要である。記事の手作業時間は操作モデルによる推計、AIの時間は実行時間であり、同条件の速度比較ではない。本Atlasでは再実行していない。
 
+## QGISで目的に合う結合を選ぶ
+
+| 知りたいこと | 処理の種類 |
+| --- | --- |
+| 学校が属する区名 | 位置による属性結合 |
+| 区ごとの学校数 | 集計付きの位置結合 |
+| 最寄り停留所と距離 | 最近傍結合 |
+
+TerraLabの2026年10月15日の記事は、リヨンの学校382件を用い、自社AI Agentが区域別集計と最近傍結合を22秒で実行し、集計件数が手動処理と一致したと報告する。QGIS 3.44・MacBook Air M4での単発計測で、一般的な速度比較ではない。
+
+距離はメートル単位の適切な投影座標系で確認し、直線距離と歩行経路を区別する。1対多で増えた行をそのまま店舗数として合計しない。学校の代表点が校庭にあるなど、点が建物ポリゴン内に入らない理由もある。AIへの指示でも、処理の選択と結果の点検は必要である。
+
 ## 次に読む
 
 - [4店舗で試す空間結合と件数の検証](../guides/spatial-join-exercise.md)：区域外の点を追加し、手計算とShapelyで件数の落とし穴を確かめる。
@@ -75,3 +87,5 @@ Shapelyの`within`と`covered_by`には上記の境界の違いがある。[2][3
 - [4] [Esri GIS Dictionary: Modifiable Areal Unit Problem](https://support.esri.com/en-us/gis-dictionary/modifiable-areal-unit-problem)（2026-10-05確認）
 
 - [How to Make a Heat Map in QGIS (and With One Prompt)](https://terra-lab.ai/blog/heat-map-qgis)（2026-10-12確認）
+
+- [TerraLab：Spatial Join in QGIS](https://terra-lab.ai/blog/spatial-join-qgis)（2026-10-16確認。掲載手順の再実行なし）

@@ -60,6 +60,7 @@ nav:
       - 分析の基礎と検証:
         - 空間結合と集計の基本: atlas/methods/spatial-join-and-aggregation.md
         - 分析結果の検証と適用範囲: atlas/methods/spatial-analysis-validation.md
+        - 地理空間AIエージェントの評価: atlas/methods/geospatial-agent-evaluation.md
       - AIによる分析と位置推定:
         - 地図探索エージェントの記憶と空間推論: atlas/methods/map-agent-memory.md
         - 次の訪問地点予測：空間特徴・時系列・LLM: atlas/methods/spatial-agent-mobility-prediction.md
@@ -89,6 +90,7 @@ nav:
         - 農業統計・圃場・衛星データを統合する米作モニタリング: atlas/methods/california-rice-monitoring.md
         - 全国メッシュデータのWeb配信: atlas/methods/national-grid-web-delivery.md
         - 外部地図サービスの廃止と依存関係の点検: atlas/methods/map-service-lifecycle.md
+        - 移動する地物のリアルタイム描画: atlas/methods/realtime-map-rendering.md
     - データ:
       - 人流データ:
         - 種類と加工段階: atlas/data/human-flow-data-types.md
@@ -132,6 +134,7 @@ nav:
         - GeoTools: atlas/tools/geotools.md
         - pandas: atlas/tools/pandas.md
         - Spatial Polars: atlas/tools/spatial-polars.md
+        - 空間SQLエンジンの選び方: atlas/tools/spatial-sql-engines.md
         - MovingPandas: atlas/tools/movingpandas.md
         - H3: atlas/tools/h3.md
         - geoparquet-io: atlas/tools/geoparquet-io.md
@@ -150,6 +153,7 @@ nav:
         - 海しるAPI: atlas/tools/umishiru-api.md
       - 場所検索・交通・ナビゲーション:
         - ArcGIS Geocoding Service: atlas/tools/arcgis-geocoding.md
+        - Nominatim: atlas/tools/nominatim.md
         - OpenPOI API: atlas/tools/openpoi-api.md
         - Overture Maps API: atlas/tools/overture-maps-api.md
         - Google MapsのAsk MapsとImmersive Navigation: atlas/tools/google-maps-gemini.md
@@ -214,6 +218,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月16日: updates/2026-10-16.md
         - 10月15日: updates/2026-10-15.md
         - 10月14日: updates/2026-10-14.md
         - 10月13日: updates/2026-10-13.md
