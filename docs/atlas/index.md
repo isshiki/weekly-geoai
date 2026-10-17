@@ -148,6 +148,7 @@ updated: 2026-10-10
 - [ShadeMapと建物データの更新](tools/shademap.md)
 - [OH3 今昔マップビューア](tools/oh3-konjaku.md)
 - [鳥瞰路線図](tools/chokan-rail-map.md)
+- [Maparium](tools/maparium.md)
 - [にぎわいの地形図と駅Tier表](tools/poi-density-terrain.md)
 - [Kodawari](tools/kodawari.md)
 

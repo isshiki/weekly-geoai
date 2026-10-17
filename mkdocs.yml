@@ -117,6 +117,7 @@ nav:
         - ShadeMapと建物データの更新: atlas/tools/shademap.md
         - OH3 今昔マップビューア: atlas/tools/oh3-konjaku.md
         - 鳥瞰路線図: atlas/tools/chokan-rail-map.md
+        - Maparium: atlas/tools/maparium.md
         - にぎわいの地形図と駅Tier表: atlas/tools/poi-density-terrain.md
         - Kodawari: atlas/tools/kodawari.md
       - 地図を作成・共有する:
@@ -218,6 +219,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月17日: updates/2026-10-17.md
         - 10月16日: updates/2026-10-16.md
         - 10月15日: updates/2026-10-15.md
         - 10月14日: updates/2026-10-14.md

@@ -2,7 +2,7 @@
 layout: default
 title: Google Places Insights
 category: tools
-updated: 2026-09-07
+updated: 2026-10-17
 ---
 
 # Google Places Insights
@@ -23,6 +23,19 @@ Google Places Insightsは、Google Maps Platformの場所データを集計し�
 
 対象は `PLACES_COUNT_PER_H3`、`PLACES_COUNT_V2`、`PLACES_COUNT_PER_TYPE_V2` である。H3集計を使うと、行政区域に依存しない一定の空間単位で地域差や時系列変化を比較できる。
 
+## サンプルと契約の範囲
+
+BigQuery上で利用するデータセットで、東京を含む主要都市のサンプルがある。サンプルは都市自体が対象で、周辺都市圏を含まない。完全版は購入が必要で、国ごとに登録する。実際の検索範囲がサンプルに入るか確認し、オープンデータの自由な取得・再配布と同一視しない。
+
+## 結果がないことと0件を分ける
+
+| 方法 | 用途 | 結果を返す条件 |
+| --- | --- | --- |
+| 直接SQL | 自社データとの結合、平均・合計などの柔軟な集計 | 5件未満の集計結果は除外される |
+| Places Count関数 | 件数とプレイスIDの取得 | 最小検索面積1,600㎡の条件を満たせば0件も返す |
+
+直接SQLで行が返らなくても、その地域に施設がないとは判断できない。少数件・0件の確認には関数を使う。返されたプレイスIDはPlaces APIなどによる個別情報の取得に使える。ここでは公式仕様を確認し、サンプル取得やクエリの実行は行っていない。
+
 ## 利用時の注意
 
 施設数の変化には、実世界の開店・閉店だけでなく、データの追加、修正、カテゴリー変更、検索条件の違いが含まれ得る。月ごとの増減を事業活動の変化と解釈する前に、対象カテゴリー、境界、フィルター、スナップショット日を固定する。
@@ -35,3 +48,5 @@ Google Places Insightsは、Google Maps Platformの場所データを集計し�
 ## 出典
 
 - [Places Insights release notes](https://developers.google.com/maps/documentation/placesinsights/release-notes)（2026-09-07確認）
+
+- [Google：データとクエリの仕様](https://developers.google.com/maps/documentation/placesinsights/about-data?hl=ja)（2026-10-17確認。ページ更新日2026-10-16 UTC）
