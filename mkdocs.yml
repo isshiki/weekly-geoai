@@ -126,6 +126,7 @@ nav:
         - GeoLibre: atlas/tools/geolibre.md
         - RustGIS: atlas/tools/rustgis.md
         - Felt: atlas/tools/felt.md
+        - Vespucci：AndroidでOSMを編集: atlas/tools/vespucci.md
         - ArcGIS StoryMaps: atlas/tools/arcgis-storymaps.md
       - Web地図をコードで作る:
         - MapLibre GL JS: atlas/tools/maplibre-gl-js.md

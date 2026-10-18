@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="650" viewBox="0 0 800 650" role="img" aria-labelledby="title desc">
+<title id="title">MAUPとUGCoP：区切り方と生活の場所・時間</title>
+<desc id="desc">上段は同じ6店舗を左右に区切ると3対3、上下では6対0。下段は自宅周辺の分析範囲の外に、通勤経路と職場で過ごす時間がある例。</desc>
+<rect width="800" height="650" rx="16" fill="white"/>
+<g font-family="sans-serif" fill="#1E3A5F">
+<text x="30" y="38" font-size="26" font-weight="bold">MAUP：区切り方を変えると？</text>
+<text x="30" y="70" font-size="20">同じ店舗でも、区域ごとの集計が変わる</text>
+<g stroke="#1E3A5F" stroke-width="3" fill="#f1f5f9">
+<rect x="80" y="90" width="240" height="140"/><rect x="480" y="90" width="240" height="140"/>
+<path d="M200 90V230 M480 160H720" stroke-dasharray="7 5"/>
+</g>
+<g fill="#FF8A3D" stroke="#1E3A5F">
+<circle cx="110" cy="115" r="7"/><circle cx="150" cy="130" r="7"/><circle cx="175" cy="110" r="7"/>
+<circle cx="230" cy="120" r="7"/><circle cx="270" cy="135" r="7"/><circle cx="300" cy="110" r="7"/>
+<circle cx="510" cy="115" r="7"/><circle cx="550" cy="130" r="7"/><circle cx="575" cy="110" r="7"/>
+<circle cx="630" cy="120" r="7"/><circle cx="670" cy="135" r="7"/><circle cx="700" cy="110" r="7"/>
+</g>
+<g font-size="21" text-anchor="middle"><text x="140" y="210">3件</text><text x="260" y="210">3件</text><text x="600" y="155">6件</text><text x="600" y="210">0件</text></g>
+<text x="400" y="264" font-size="20" text-anchor="middle">確かめるのは「集計単位への感度」</text>
+<path d="M30 285H770" stroke="#cbd5e1"/>
+<text x="30" y="326" font-size="26" font-weight="bold">UGCoP：その人の環境を捉えている？</text>
+<text x="30" y="358" font-size="20">自宅周辺だけでは、職場や移動中の環境が抜ける</text>
+<circle cx="170" cy="460" r="80" fill="#edf3f8" stroke="#1E3A5F" stroke-width="3" stroke-dasharray="8 5"/>
+<path d="M170 460H320L405 410H620" fill="none" stroke="#FF8A3D" stroke-width="5"/>
+<circle cx="170" cy="460" r="10" fill="#1E3A5F"/>
+<rect x="610" y="398" width="24" height="24" fill="#1E3A5F"/>
+<g font-size="20"><text x="135" y="435">自宅</text><text x="280" y="495">通勤経路（8時台）</text><text x="580" y="450">職場</text><text x="550" y="480">9〜18時</text><text x="55" y="565">破線：分析で設定した範囲</text></g>
+<text x="400" y="605" text-anchor="middle" font-size="21">確かめるのは「関わる場所・時間との対応」</text>
+<text x="400" y="636" text-anchor="middle" font-size="16">架空の模式例。経路・滞在を知っても、影響や因果関係の証明にはならない。</text>
+</g></svg>
