@@ -2,7 +2,7 @@
 layout: default
 title: 画像からGIS情報を作る解析と検証
 category: methods
-updated: 2026-10-12
+updated: 2026-10-18
 ---
 
 # 画像からGIS情報を作る解析と検証
@@ -44,6 +44,12 @@ updated: 2026-10-12
 - [CNGの構成例](../concepts/cloud-native-geospatial.md#workflow)：STACによる発見とCOGからの読み取りを区別する。
 - [検証と適用範囲](spatial-analysis-validation.md)：取得できたことと解析結果が妥当なことを分ける。
 
+## モデル入力と元の地物の対応を残す
+
+SpatialArrowの紹介記事は、元の地物ID・形状・CRSと、モデルに渡す画像・ラベルの変換を対応付ける設計を示す。切り出しや拡大縮小を画像とラベルに同じ条件で適用し、元の座標へ戻すための情報も残す。GeoParquetやGeoArrowを採用するだけで、この対応が自動的に保証されるわけではない。
+
+屋根上の太陽光パネル検出では、RF-DETR MediumのmAP@.50:.95が56.97％から59.35％へ改善したと報告する。ただし文脈範囲やサンプル頻度なども変わる比較であり、一要因の効果とは断定しない。画像上での評価件数は地図上の重複を除いた施設数ではなく、復元後の位置精度・地物の同一性・重複除去は別途確かめる。本Atlasでの再実行は行っていない。
+
 ## 手を動かして確かめる
 
 [16画素の画像評価演習](../guides/imagery-evaluation-exercise.md)では、正解と予測を図で照合し、誤検出・見逃しと評価指標を手計算・Pythonで確認できる。
@@ -60,3 +66,4 @@ updated: 2026-10-12
 - [scikit-learn: Metrics and scoring](https://scikit-learn.org/stable/modules/model_evaluation.html)（適合率・再現率・Jaccardの定義を2026-10-06確認）
 
 - [Integrating GeoAI and Multisource Remote Sensing with Cadastral Data for Greenbelt Compliance Screening](https://www.mdpi.com/2220-9964/15/10/461)（2026-10-12確認）
+- [GeoAIの精度を地理空間情報の信頼性につなぐ（データとAIの接続をSpatialArrowで整合する）](https://qiita.com/lehukuku0120/items/cd2c29d48b88c18be449)（2026-10-18本文確認）

@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -123,6 +123,10 @@ TSCGが2026年10月15日に紹介したBroker Intelligenceは、AIと独自情�
 
 2026年11月に社内導入、2027年初めに外部契約者へ提供する計画であり、発表時点で外部向けに一般提供済みではない。人口統計の類似は売上の保証ではなく、現地調査や物件条件と合わせる。
 
+ICSCの10月14日の取材では、RipcoのGIS担当者5人がデータ運用担当者と協力し、従来の分析手順を反映したMCPツールを開発している。例としてChainXYの店舗データを使い、半径1・3・5マイルのEsri人口統計から既存店と候補地を比べる流れを挙げる。
+
+着眼点は、担当者の手順と利用データを整えたうえで自然言語から呼び出すことである。基礎レポートのAI対応は2026年末を目標とする計画であり、完成済みの精度・時間削減の実証ではない。現地での出入りのしやすさや不動産実務の判断は、引き続き人が確認する。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -155,3 +159,4 @@ TSCGが2026年10月15日に紹介したBroker Intelligenceは、AIと独自情�
 
 - [TSCG：Broker Intelligence](https://tscg.com/tscg-develops-ai-powered-broker-intelligence-platform-to-advance-retail-site-selection/)（2026-10-16確認）
 - [Review：油そば・まぜそばの開業調査](https://prtimes.jp/main/html/rd/p/000000105.000043858.html)（2026-10-16確認）
+- [AI Makes Esri’s Location Intelligence Tools More Accessible to Real Estate Professionals](https://www.icsc.com/news-and-views/icsc-exchange/ai-makes-esris-location-intelligence-tools-more-accessible-to-real-estate-professionals)（2026-10-18本文確認）

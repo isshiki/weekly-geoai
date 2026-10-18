@@ -1,7 +1,7 @@
 ---
 title: 地理空間AIエージェントの評価
 category: methods
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # 地理空間AIエージェントの評価
@@ -30,6 +30,12 @@ Google Earth AIのGRAは、Geminiと地理空間の専門スキル・ツール�
 
 この採点は専門家の分析手順への適合であり、最終結果の正しさを保証しない。基本ツール側のPythonはネット接続なしという条件もある。著者らは出力を専門家が確認する初稿と位置付ける。本Atlasでは研究の評価結果を整理し、システムを再実行していない。
 
+## 研究の評価と利用できる範囲を分ける
+
+Googleの2026年10月14日の公式紹介は、CSV・GeoJSON・クラウド上の表などを持ち込み、地理空間の専門ツールと組み合わせる利用を示す。大容量データは専用の作業領域に置き、会話へ全件を詰め込まずに処理する。自分の地域データを使えることと、その地域で結果の正しさを検証したことは別である。
+
+Ask Google Earthのdeep researchとA2A APIは申請制の初期・実験的アクセスである。公開されたGeoKTools・GeoExpertQueriesも開発用の分割であり、全評価データが公開済みとは解釈しない。専門家が出力を確認する初稿という位置付けは、活用事例の紹介でも保たれている。
+
 ## 次に読む
 
 - [地理空間データ探索](intelligent-geospatial-data-discovery.md)：条件を整理して検索する仕組み。
@@ -40,3 +46,4 @@ Google Earth AIのGRAは、Geminiと地理空間の専門スキル・ツール�
 
 - [GeoFitBench-LLM](https://arxiv.org/abs/2610.12669)（2026-10-08 UTC提出、2026-10-16にv1 PDF確認）
 - [Google Earth AI Geospatial Reasoning Agent](https://arxiv.org/abs/2610.15750)（2026-10-11 UTC提出、2026-10-16にv1本文・評価表・限界を確認）
+- [Putting Earth AI to work: Geospatial agents for our planet’s biggest challenges](https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/)（2026-10-18本文確認）
