@@ -46,6 +46,7 @@ nav:
         - ロケーションインテリジェンス: atlas/concepts/location-intelligence.md
         - Location AI: atlas/concepts/location-ai.md
         - 地理空間モデルの予測と地理的理解: atlas/concepts/geographic-model-reasoning.md
+        - MAUP：集計範囲で結果が変わる問題: atlas/concepts/maup.md
       - 座標参照系と地図投影法:
         - 選び方と分類: atlas/concepts/map-projections.md
         - 座標参照系（CRS）との関係: atlas/concepts/coordinate-reference-systems.md
