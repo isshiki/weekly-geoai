@@ -47,6 +47,7 @@ updated: 2026-10-18
 - [地理空間モデルの予測と地理的理解](concepts/geographic-model-reasoning.md)
 
 - [MAUP：集計範囲で結果が変わる問題](concepts/maup.md)
+- [UGCoP：実際に関わる場所と時間を捉える](concepts/ugcop.md)
 
 ### 座標参照系と地図投影法
 

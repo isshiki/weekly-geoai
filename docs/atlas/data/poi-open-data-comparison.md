@@ -155,6 +155,8 @@ GISuserの2026年10月3日解説は、POIを収集した後の名寄せ、住所
 
 [MAUPの図解](../concepts/maup.md)では、範囲変更と対象駅の選び直し・学習の初期値変更を区別する。
 
+人の利用や行動を説明する場合は、[UGCoPの駅周辺の例](../concepts/ugcop.md#poi-example)で、起点・営業時間・実際の利用との違いも確認する。
+
 ## 関連項目
 
 - [4店舗の空間結合演習](../guides/spatial-join-exercise.md)：店舗ID、対応行数、区域別件数の違いを小例で確かめる。
