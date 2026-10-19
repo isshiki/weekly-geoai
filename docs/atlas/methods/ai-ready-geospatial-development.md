@@ -2,7 +2,7 @@
 layout: default
 title: AIが扱いやすい地理空間開発環境
 category: methods
-updated: 2026-10-11
+updated: 2026-10-19
 ---
 
 # AIが扱いやすい地理空間開発環境
@@ -33,6 +33,18 @@ CARTOは2026年9月、7つのAIモデルへ地図作成課題を与え、生成�
 Google Maps Platform Agent Skillsは、タスクに応じたサブスキルと最新資料を取得し、旧APIの回避、APIキー、費用、利用規約、典型的な実装失敗をチェックする手順を定義している。場所名、住所、評価、座標などをモデルの記憶から補わず、実際のAPIまたはGroundingから取得する規則も含む。
 
 Agent SkillsはAPIそのものではない。エージェントが最新資料と制約に沿ってAPIを利用するための手順・ガバナンス層である。リポジトリはApache 2.0で公開されているが、READMEには公式サポート対象のGoogle製品ではないと明記されている。
+
+### Mapboxの実装知識と操作機能の分担
+
+Mapbox公式のAgent Skillsは、Web・iOS・Android・Flutterの実装、地図デザイン、検索・ナビ、店舗検索、移行、性能・トークン管理などを扱う。2026年10月19日の確認時点では20種類を案内している。数は確認時点の情報で、公開日を示すものではない。
+
+| 要素 | 役割 |
+| --- | --- |
+| Agent Skills | 環境ごとの実装手順や使い方の知識を伝える |
+| Mapbox MCP Server | Mapbox APIを呼び出す機能を提供する |
+| DevKit MCP Server | スタイル管理の機能を提供する |
+
+Skillsの導入だけでAPIの認証・利用条件が不要になったり、操作が自動的に正しくなるわけではない。公式はClaude Code、Cursor、GitHub Copilot対応のVS Codeなどへの導入を案内する。今回は資料確認のみで、導入やAPI呼び出しは行っていない。
 
 ## 実装・評価の順序
 
@@ -81,3 +93,5 @@ GeoapifyのOpen Geospatial Program第2期は、OpenAPI仕様を参照する開�
 - [ソフトバンク：自然言語による地物情報の取得・可視化](https://zenn.dev/softbank/articles/a83d02f48e0e84)（2026-10-01確認）
 
 - [Open Geospatial Program Batch #2: AI × Geospatial](https://www.geoapify.com/open-geospatial-program/)（2026-10-11確認）
+
+- [Mapbox Agent Skills](https://docs.mapbox.com/location-ai/agent-skills/)（2026-10-19確認）

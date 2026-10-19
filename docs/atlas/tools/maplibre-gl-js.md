@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-10-12
+updated: 2026-10-19
 ---
 
 # MapLibre GL JS
@@ -53,6 +53,14 @@ v6.13.0ではglobe表示の中心を極まで移動できるようになり、�
 
 v6.14.0では、一部iPadOS 16 Safariでの空白表示などを修正した。デスクトップだけでなく、利用者の端末・ブラウザーで表示を確認する理由になる。地図作成・スタイル設定時の`globalState`初期値指定も追加された。実機での修正確認は本Atlasでは行っていない。
 
+## 独自の平面座標系を扱う
+
+2026年10月18日公開のv6.15.0は、独自の平面CRSと、その座標系の四分木タイルグリッドに実験対応した。`addProjection`・`removeProjection`、組み込みの`identity`投影、タイルURLの`{bbox}`を追加する。GeoJSONは定義文字列と投影ハンドラーを使い、ワーカーで登録CRSへ投影する。
+
+メルカトル以外の平面座標系を使う地図の選択肢が広がる変更だが、任意のGISデータが設定なしで表示できるという意味ではない。表示データ・タイルグリッドと[座標参照系](../concepts/coordinate-reference-systems.md)の対応を確認する。
+
+ポインター直下を軸に回転・傾斜する操作と、中心を軸にする設定も追加し、従来の`aroundCenter`は非推奨になった。`font-faces`の縦書きでOpenTypeの`vert`字形に対応し、Safari 26.6以降で背景から復帰した際のタイル読み込み停止なども修正する。本Atlasでは実験APIの動作・性能は測定していない。
+
 ## GIS基盤と地図画面をつなぐ
 
 NextGIS Frontendは、NextGIS Webで管理したデータ・スタイル・権限と、JavaScriptで作る地図画面をつなぐライブラリ群である。2026年10月2日発表の4.0は、Leaflet・OpenLayers・MapLibre間で選択、絞り込み、ポップアップ、操作部品などの扱いを共通化し、React連携を改善した。
@@ -84,3 +92,5 @@ QuickMapServicesの背景地図検索用パッケージはNextGIS Webから独�
 - [MapLibre GL JS v6.14.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.14.0)（2026-10-12確認）
 
 - [NextGIS Frontend 4.0: Less Integration Code, More Powerful Web Maps](https://nextgis.com/blog/nextgis-frontend-4/)（2026-10-12確認）
+
+- [MapLibre GL JS v6.15.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.15.0)（2026-10-19確認）

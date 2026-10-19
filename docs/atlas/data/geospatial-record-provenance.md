@@ -2,7 +2,7 @@
 layout: default
 title: 地理空間データの来歴とレコード単位のメタデータ
 category: data
-updated: 2026-10-14
+updated: 2026-10-19
 ---
 
 # 地理空間データの来歴とレコード単位のメタデータ
@@ -59,6 +59,12 @@ B〜Eは実際に使った情報へ置き換える。分からない項目は「
 - [4店舗の演習](../guides/spatial-join-exercise.md)：未所属・複数所属を含む出力記録の例を確認する。
 - [分析結果の検証と適用範囲](../methods/spatial-analysis-validation.md)：来歴と結果の妥当性を分けて確かめる。
 
+## AIが見つけた情報を地図へ載せる前に
+
+2026年10月7日の個人開発記事は、Next.js・MapLibre・OpenFreeMapで北朝鮮に関する公開資料を地図と表に整理し、4言語へ展開した例を紹介する。作者は、AIが存在しないURLや識別子を提示した経験から、原ページに記載があるか照合する処理を設けたと説明している。
+
+出典・更新時点・確かさを地図上の情報と結び付ける設計は参考になる。ただし、単語や数字が原ページに存在するだけでは、その解釈や地物との対応が正しいことまで保証しない。地図と表で同じデータを参照する設計と、内容の事実確認を分ける。Atlasでは作者の説明を確認し、個々の施設・人物情報の検証やアプリの動作試験は行っていない。
+
 ## 出典
 
 - [W3C: PROV-Overview](https://www.w3.org/TR/prov-overview/)（2013、2026-10-06確認）
@@ -66,3 +72,5 @@ B〜Eは実際に使った情報へ置き換える。分からない項目は「
 - [How do you trust open map data in an agentic AI world?](https://overturemaps.org/blog/2026/how-do-you-trust-open-map-data-in-an-agentic-ai-world/)（2026-09-17公開、2026-09-18確認）
 
 - [The unglamorous work of making open map data fit together](https://overturemaps.org/blog/2026/the-unglamorous-work-of-making-open-map-data-fit-together/)（2026-10-14確認）
+
+- [Next.js + MapLibreで北朝鮮のオープンソース地図を作った](https://zenn.dev/ahmetde/articles/b5faa4df0477b4)（2026-10-19確認）

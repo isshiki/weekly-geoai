@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -127,6 +127,14 @@ ICSCの10月14日の取材では、RipcoのGIS担当者5人がデータ運用担
 
 着眼点は、担当者の手順と利用データを整えたうえで自然言語から呼び出すことである。基礎レポートのAI対応は2026年末を目標とする計画であり、完成済みの精度・時間削減の実証ではない。現地での出入りのしやすさや不動産実務の判断は、引き続き人が確認する。
 
+## 出店目標と出店余地の考察を分ける
+
+日経ビジネスの2026年10月16日の公開冒頭は、ゼンショーHDがオリーブの丘を国内約60店からまず500店へ拡大し、すき家・はま寿司に次ぐ柱に育てる方針を報じる。これは目標であり、実際の出店件数ではない。会員限定本文は未確認のため、達成期限や出店地域を補わない。
+
+中井彰人氏の10月19日の解説は、ファミマが商品・サービスで来店機会を広げる方向と、ローソンがスーパー撤退跡地や地元小売との連携で出店余地を探る方向を対比する。食品流通再編が成長機会になるという部分は筆者の分析である。同記事のYahoo!配信本文で確認し、将来の売上効果を確定した成果として扱わない。
+
+立地分析への示唆は、同業の店舗密度だけでなく、撤退する業態、提供する商品・サービス、商圏の生活上の需要も分けて調べることである。これはAtlasとしての整理で、両記事がGISモデルの精度を検証したという意味ではない。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -160,3 +168,9 @@ ICSCの10月14日の取材では、RipcoのGIS担当者5人がデータ運用担
 - [TSCG：Broker Intelligence](https://tscg.com/tscg-develops-ai-powered-broker-intelligence-platform-to-advance-retail-site-selection/)（2026-10-16確認）
 - [Review：油そば・まぜそばの開業調査](https://prtimes.jp/main/html/rd/p/000000105.000043858.html)（2026-10-16確認）
 - [AI Makes Esri’s Location Intelligence Tools More Accessible to Real Estate Professionals](https://www.icsc.com/news-and-views/icsc-exchange/ai-makes-esris-location-intelligence-tools-more-accessible-to-real-estate-professionals)（2026-10-18本文確認）
+
+- [ゼンショー、オリーブの丘「まず500店」規模へ サイゼリヤ1強市場に攻勢](https://business.nikkei.com/atcl/gen/19/00936/101300008/)（2026-10-19確認）
+
+- [そりゃ「コンビニ離れ」と言われるわけだ…飽和市場で「派手なファミマ」と「地味なローソン」の戦略の「決定的な違い」](https://toyokeizai.net/articles/-/961460)（2026-10-19確認）
+
+- [東洋経済記事のYahoo!配信版](https://finance.yahoo.co.jp/news/detail/b03bb6c2a6f0e3471187cc62ba06b4d6dddbb62c)（2026-10-19本文確認）
