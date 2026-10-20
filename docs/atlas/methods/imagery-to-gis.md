@@ -2,7 +2,7 @@
 layout: default
 title: 画像からGIS情報を作る解析と検証
 category: methods
-updated: 2026-10-18
+updated: 2026-10-20
 ---
 
 # 画像からGIS情報を作る解析と検証
@@ -60,6 +60,18 @@ SpatialArrowの紹介記事は、元の地物ID・形状・CRSと、モデルに
 
 研究では2,486筆を確認候補とし、手動判読の1,836件より35.4%多かった。ただし、候補が多いことは違反確定件数や再現率が35.4%改善したことを意味しない。現地確認と行政側の判断が必要になる。研究内の評価を別地域での性能保証として扱わず、本Atlasではモデルの再実行も行っていない。
 
+## 街路画像のスコアを元画像で確かめる
+
+2026年10月19日の「住みやすさマップ」制作記事は、Mapillaryの画像から人の多さ・明るさ・緑・歩道を数値化する際に見つかった誤りを報告する。東京エリアのベータ版であり、スコアは実際の治安や住み心地を保証するものではない。
+
+| 観察された誤り | 作者の対処 |
+| --- | --- |
+| 一部の撮影時刻の9時間ずれで昼を夜と判定 | 画像中の空の明るさから昼夜を判定 |
+| 緑の看板を植物と数え、日陰の木を見落とす | 色だけの集計から木・植え込みの識別へ変更 |
+| 連続写真の同じ通行人や撮影者を重複計上 | 15秒以内の画像を除外し、撮影者の除外範囲も修正 |
+
+これは作者が実施した改善の報告である。15秒という間隔を万能な重複除去条件とはせず、修正後の誤検出・見逃しも確認する。Atlasではアプリの再検証は行っていない。画像が少ない地域は参考値とする表示や、何を測るスコアかを説明する工夫を参照する。
+
 ## 出典
 
 - [From Imagery to Information: Image Analysis Across ArcGIS](https://www.esri.com/arcgis-blog/products/arcgis/imagery/from-imagery-to-information-image-analysis-across-arcgis)（2026-10-06再確認）
@@ -67,3 +79,5 @@ SpatialArrowの紹介記事は、元の地物ID・形状・CRSと、モデルに
 
 - [Integrating GeoAI and Multisource Remote Sensing with Cadastral Data for Greenbelt Compliance Screening](https://www.mdpi.com/2220-9964/15/10/461)（2026-10-12確認）
 - [GeoAIの精度を地理空間情報の信頼性につなぐ（データとAIの接続をSpatialArrowで整合する）](https://qiita.com/lehukuku0120/items/cd2c29d48b88c18be449)（2026-10-18本文確認）
+
+- [すぎやま：街路画像AIの3つの落とし穴](https://zenn.dev/sugiyamanihon02/articles/0129fee1bb26ea)（2026-10-20本文確認）

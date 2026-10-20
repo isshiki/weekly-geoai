@@ -2,7 +2,7 @@
 layout: default
 title: AIが扱いやすい地理空間開発環境
 category: methods
-updated: 2026-10-19
+updated: 2026-10-20
 ---
 
 # AIが扱いやすい地理空間開発環境
@@ -78,6 +78,12 @@ GeoapifyのOpen Geospatial Program第2期は、OpenAPI仕様を参照する開�
 
 注目すべき成果物の条件は、公開コードと実行手順に加え、プロンプト、AIの設定、人の修正が必要だった点、既知の制約も記録することである。これは提供企業の募集要件であり、完成済み事例の性能評価ではない。日程は[日次の更新履歴](../../updates/2026-10-11.md)へ分けて記録する。
 
+## 居住候補地を探すアプリの開発事例
+
+NGSのCameron Panagrossoは、都市と近くに欲しい施設・サービスを指定し、候補地域を探すアプリをClaudeと開発した経験を2026年10月16日に公開した。当初の直線距離から、徒歩・自転車・車での到達時間を考慮する設計へ広げたと説明する。
+
+計画を段階に分け、生成コードのレビューに加えて本人が画面操作を確かめた点が参考になる。作者はコードレビューだけでは見つけにくい画面の問題を報告している。AIとの開発過程の事例であり、地域の推薦精度や到達時間の正確さを検証した比較研究ではない。Atlasでのアプリ動作確認も行っていない。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -95,3 +101,5 @@ GeoapifyのOpen Geospatial Program第2期は、OpenAPI仕様を参照する開�
 - [Open Geospatial Program Batch #2: AI × Geospatial](https://www.geoapify.com/open-geospatial-program/)（2026-10-11確認）
 
 - [Mapbox Agent Skills](https://docs.mapbox.com/location-ai/agent-skills/)（2026-10-19確認）
+
+- [NGS：AI-Powered Development: Jumping in the Deep End](https://newmoyergeospatial.com/2026/10/ai-powered-development-jumping-in-the-deep-end)（2026-10-20本文確認）

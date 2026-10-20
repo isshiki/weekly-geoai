@@ -1,7 +1,7 @@
 ---
 title: Nominatim
 category: tools
-updated: 2026-10-16
+updated: 2026-10-20
 ---
 
 # Nominatim
@@ -20,6 +20,12 @@ NominatimはOpenStreetMap（OSM）のデータから住所・地名を検索す�
 
 最新版を固定した導入手順ではなく、運用上の変更例である。本Atlasでは導入・移行試験を行っていない。
 
+## 住所が見つかることと正しい場所に置けること
+
+TerraLabの2026年10月19日の比較は、米国・フランス各100校について、住所から得た座標と公開された学校座標の距離を測る。米国ではNominatimが81件を検出し誤差中央値95m、同社AI Agentが93件を検出し184mだった。AI Agentの17件は1km超ずれた。検出数が多くても位置精度が高いとは限らない例である。
+
+対象は学校名を除いた住所で、自社製品を含む提供元の実験である。フランスのBANと参照座標は共通する点が多く、独立した精度評価ではないと記事が注記する。日本の住所での優劣や全サービスの一般的な順位へ広げず、番地・道路・地域代表点のどの精度で返ったかも確認する。Atlasでは再実行していない。
+
 ## 次に読む
 
 - [POI検索の取得効率と網羅性](../methods/poi-retrieval-coverage.md)：検索結果と地域全体の施設数を分けて読む。
@@ -28,3 +34,5 @@ NominatimはOpenStreetMap（OSM）のデータから住所・地名を検索す�
 
 - [公式リポジトリ・README](https://github.com/osm-search/Nominatim)（2026-10-16確認）
 - [5.3.3リリースノート](https://github.com/osm-search/Nominatim/releases/tag/v5.3.3)（2026-10-16確認）
+
+- [TerraLab：Geocoding in QGIS](https://terra-lab.ai/blog/geocoding-qgis)（2026-10-20本文確認）

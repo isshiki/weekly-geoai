@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-10-06
+updated: 2026-10-20
 ---
 
 # Cloud Native Geospatial
@@ -114,6 +114,18 @@ CARTOの2026年9月30日の解説は、データを別のGIS環境へ複製す�
 
 既存の権限・監査を分析やAIエージェントにも引き継ぎ、日常のBI・AIツールから空間情報を使うという提案である。まず依頼を2週間記録して定型質問を見極め、専門担当者は地図の品質や正式な成果物に責任を持つ。クラウド化だけで権限管理や品質確認が不要になるわけではない。これはベンダーによる運用上の提案であり、導入効果を比較実証した結果ではない。
 
+## 保存先・計算場所・AIへ渡す情報を分ける
+
+PSSの2026年10月19日の解説は、FMEによる既存システムとの接続、STACによるデータ探索、CARTO MCPによるデータ基盤内での分析を紹介する。STACは所在を記述するカタログであり、それ自体が分析を実行したり、情報の持ち出しを制御するものではない。
+
+Safe Softwareの公式解説は、公開する処理とレコード・属性を設計し、認証・ログとともにAIへ渡す内容を管理する方法を示す。CARTOのQ3公式記事も、利用者の認証でクエリをデータウェアハウス内に実行すると説明する。原本を移さないことと、検索結果・属性・メタデータがAIへ渡らないことは同義ではない。Atlasの設計上の確認点として、保存先、処理場所、AIが受け取る内容を別々に確認する。
+
+## コンテナ基盤でGISを運用する場合
+
+ArcGIS Enterprise on Kubernetesは、クラウドや自社設備でGISを運用する導入形態である。Esriの2026年10月19日の解説は需要に応じた拡縮、障害復旧、導入・更新の効率化を利点として挙げ、Windows／Linux版も継続サポートすると説明する。
+
+米国森林局の1.2万～5万人への対応は同社の事例紹介で、任意の環境の同時利用性能を保証する数字ではない。Kubernetesは運用基盤であり、COGなどの部分取得に適したデータ形式とは別の役割である。導入には基盤運用の準備が必要で、クラウド化だけで品質・権限・費用の問題が解消するわけではない。
+
 ## 関連項目
 
 - [POIデータを選び、分析する](../guides/poi-workflow.md)：店舗データの取得と分析へ進む。
@@ -146,3 +158,8 @@ CARTOの2026年9月30日の解説は、データを別のGIS環境へ複製す�
 - [【CNG】地図を読むのは、もう人間だけではない - 向かっている先は？](https://note.com/pacificspatial/n/n172bcc83a126)（2026-09-20公開、2026-09-21確認）
 - [77+ Geospatial MCP Servers, Mapped and Categorized](https://sparkgeo.com/blog/geospatial-mcp-servers-mapped-and-categorized/)（2026-09-21確認）
 - [CARTO：公共部門のGIS近代化](https://carto.com/blog/5-ways-gis-is-modernizing-public-sector/)（2026-10-01確認）
+
+- [PSS：データをその場に置いたままGeoAIを使う設計](https://note.com/pacificspatial/n/na02a7b697705)（2026-10-20確認）
+- [Safe Software：既存システムを置き換えずにAIへ接続する](https://fme.safe.com/blog/2026/10/modernizing-for-ai-without-replacing-legacy-systems-lessons-from-utilities/)（2026-10-20確認）
+- [CARTO：Q3 2026更新](https://carto.com/blog/whats-new-in-carto-q3-2026/)（2026-10-20確認）
+- [Esri：ArcGIS Enterprise on Kubernetesの導入効果](https://www.esri.com/arcgis-blog/products/arcgis-enterprise/announcements/the-business-case-for-arcgis-enterprise-on-kubernetes)（2026-10-20確認）

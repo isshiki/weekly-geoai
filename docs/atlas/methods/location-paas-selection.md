@@ -2,7 +2,7 @@
 layout: default
 title: 位置情報PaaSの選び方と相互運用性
 category: methods
-updated: 2026-10-16
+updated: 2026-10-20
 ---
 
 # 位置情報PaaSの選び方と相互運用性
@@ -34,6 +34,10 @@ Amazon Location Serviceは2026年10月13日、Places・Routes・Mapsの14 APIを
 
 住所・施設検索、到達圏や訪問順、地図表示などを試して機能を比較する入口になる。東京を含む15リージョンに対応すると発表している。実APIの試用をデータの自由な再配布や無制限の無料利用と混同せず、利用するアカウント・条件を確認する。今回は発表の確認で、API実行はしていない。
 
+### 試した要求を実装へ持ち帰る
+
+公式Playground資料では、要求・応答とパラメーターを確認し、CLI、cURL、Python、JavaScript、Rubyのコード例を取得できる。到達圏は時間・距離と移動手段などの条件を持ち、単純な円とは異なる。訪問順の最適化やGPS座標の道路への補正も、目的に応じて試すAPIとして案内されている。資料を確認したもので、コードの実行や利用料金の試算は行っていない。
+
 ## 関連項目
 
 - [外部地図サービスの廃止と依存関係の点検](map-service-lifecycle.md)
@@ -48,3 +52,5 @@ Amazon Location Serviceは2026年10月13日、Places・Routes・Mapsの14 APIを
 - [Esri：位置情報サービスの紹介](https://www.esri.com/arcgis-blog/products/platform/developers/location-services-available-through-arcgis-location-platform)（2026-10-03確認）
 
 - [AWS：API Playground発表](https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-location-service-api-playground/)（2026-10-16確認）
+
+- [AWS：API Playgroundドキュメント](https://docs.aws.amazon.com/location/latest/developerguide/api-playground.html)（2026-10-20確認）
