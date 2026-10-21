@@ -130,6 +130,7 @@ nav:
         - ArcGIS StoryMaps: atlas/tools/arcgis-storymaps.md
       - Web地図をコードで作る:
         - MapLibre GL JS: atlas/tools/maplibre-gl-js.md
+        - MachGL: atlas/tools/machgl.md
         - OpenLayers: atlas/tools/openlayers.md
         - Cesium: atlas/tools/cesium.md
         - Mapbox Standard: atlas/tools/mapbox-standard.md
@@ -222,6 +223,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月21日: updates/2026-10-21.md
         - 10月20日: updates/2026-10-20.md
         - 10月19日: updates/2026-10-19.md
         - 10月18日: updates/2026-10-18.md

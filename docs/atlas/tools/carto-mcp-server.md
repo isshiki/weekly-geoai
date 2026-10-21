@@ -2,7 +2,7 @@
 layout: default
 title: CARTO MCP Server
 category: tools
-updated: 2026-10-16
+updated: 2026-10-21
 ---
 
 # CARTO MCP Server
@@ -61,6 +61,12 @@ CARTOの2026年10月7日の論考は、データの移動、専門家への作�
 
 ツールを呼べることと、業務上正しい指標を作れることは別である。利用者の権限と監査に加え、指標の定義・対象時点・集計単位を明示する。Q3記事は複数の発表の総括で、MCP対応のすべてが10月14日に初公開されたという意味ではない。
 
+## ChatGPTから地図と分析手順を残す
+
+CARTOの2026年10月20日の記事は、ChatGPT内で地図を作成・編集し、分析手順をWorkflowとして残す例を紹介する。ハリケーンの経路を示す地図と、影響範囲の人口・病院を数える分析を分け、解析計画を確認してから構築する流れである。
+
+接続に使う認証やプラン条件はクライアントごとに異なるため、導入時に公式の接続資料を確認する。クエリが自社DWH内で動くことと、検索結果や属性がAIへ渡らないことは同義ではない。利用者の権限、AIへ返す情報、保存されたWorkflowの条件をそれぞれ確認する。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -81,3 +87,5 @@ CARTOの2026年10月7日の論考は、データの移動、専門家への作�
 - [Why spatial work feels slow, and how AI in GIS is changing that](https://carto.com/blog/why-spatial-feels-slow/)（2026-10-08確認）
 
 - [CARTO：What's new in CARTO - Q3 2026](https://carto.com/blog/whats-new-in-carto-q3-2026/)（2026-10-16確認）
+
+- [CARTO：Agentic GIS in ChatGPT](https://carto.com/blog/agentic-gis-in-chatgpt/)（2026-10-21本文確認）

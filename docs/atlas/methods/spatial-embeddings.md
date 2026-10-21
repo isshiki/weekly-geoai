@@ -2,7 +2,7 @@
 layout: default
 title: 空間分析への埋め込みの組み込み
 category: methods
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # 空間分析への埋め込みの組み込み
@@ -166,6 +166,14 @@ CARTOとEsriの処理は記事の確認のみで、データ取得・操作・�
 
 8特徴量と961カテゴリの比較は入力の違い、961カテゴリと64次元の比較は圧縮前後の違いである。Atlasでは記事の結果を参照し、再計算していない。集計範囲そのものへの依存は[MAUPの駅周辺事例](../concepts/maup.md#published-station-example)で確認する。
 
+## POIから所得を予測する例
+
+サンパウロの研究は、地域ごとのPOIカテゴリ件数をPCAやNMFで圧縮し、回帰モデルで国勢調査の所得指標を予測する。類似地域の検索とは異なり、照合する所得という目的変数がある。原論文では、世帯の代表者が受け取る月間名目総所得の平均を用いる。
+
+空間を分けた検証でNMFと勾配ブースティングが決定係数約0.65を報告する。ただし2026年4～5月のPOIと2022年の所得を対応させており、所得の変化を時系列で追跡した実証ではない。商業施設の登録偏りや他都市での性能も課題に残る。日本への応用では、日本の目的変数と対象地域を用意して別途検証する必要がある。
+
+一色政彦の10月20日のQiita記事は、上記の東京都内656駅の実験をまとめた入門である。961カテゴリの圧縮前後で、POIを二分した際の近傍一致が30.2％から26.8％となった点も説明する。これは類似順位の安定性であり、所得予測の決定係数と比較する数字ではない。
+
 ## 次に読む
 
 - [GeoAIの手法選択](../concepts/geoai-overview.md#choose-method)：画像抽出や操作支援との役割の違いを読む。
@@ -197,3 +205,7 @@ CARTOとEsriの処理は記事の確認のみで、データ取得・操作・�
 - [CARTO：Q3 2026更新・提供状態](https://carto.com/blog/whats-new-in-carto-q3-2026/)（2026-10-16確認）
 
 - [一色政彦：街をベクトルで表すと何が変わる？](https://blog.masahiko.info/entry/2026/10/17/162343)（2026-10-20本文確認）
+
+- [Kinneyほか：Crowd-Sourced Geographies of Income](https://arxiv.org/abs/2608.07871)（2026-10-21本文確認）
+- [Geoawesome：所得地図へのPOI利用](https://geoawesome.com/can-google-maps-help-update-income-maps-between-censuses/)（2026-10-21本文確認）
+- [一色政彦：地域特徴量とEmbedding入門](https://qiita.com/isshiki/items/b3431cd4fa331531d1ac)（2026-10-21本文確認）

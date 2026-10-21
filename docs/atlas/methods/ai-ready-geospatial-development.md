@@ -2,7 +2,7 @@
 layout: default
 title: AIが扱いやすい地理空間開発環境
 category: methods
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # AIが扱いやすい地理空間開発環境
@@ -84,6 +84,22 @@ NGSのCameron Panagrossoは、都市と近くに欲しい施設・サービス�
 
 計画を段階に分け、生成コードのレビューに加えて本人が画面操作を確かめた点が参考になる。作者はコードレビューだけでは見つけにくい画面の問題を報告している。AIとの開発過程の事例であり、地域の推薦精度や到達時間の正確さを検証した比較研究ではない。Atlasでのアプリ動作確認も行っていない。
 
+## AIの操作支援と評価・提供段階を分ける
+
+自然言語でGISを操作する仕組みでも、呼び出せる機能、評価の条件、提供段階は異なる。
+
+| 例 | 対象 | 確認する点 |
+| --- | --- | --- |
+| Geoapify MCP | POI検索、経路・時間行列、交差・バッファー等 | APIを呼ぶ機能と、正しい条件を選ぶ判断を分ける |
+| TerraLab AI Agent | QGIS内でデータ取得・空間分析・出典付きレイヤーを作成 | 自社評価の問題数・採点方法・比較した構成 |
+| KKC Satellite Analyst | 日本語から衛星データ選定・解析計画・GIS操作・地図出力 | ユースケース提案と正式サービスを分ける |
+
+GeoapifyのPOI・経路・幾何演算は2026年8月の拡張で、10月の新発表ではない。
+
+TerraLabは公開ベンチマークの41問を各3回実行し、Low effortの総合得点43.8/100を報告する。事前に調べたテンプレート由来の9問を除き、比較は同社が試したモデルとQGIS MCP構成に限る。「最も強力」という記事タイトルをGIS全体の順位として受け取らない。10月21日の案内ではQGIS 3.28以降、無料枠はLow effort月5タスク。Atlasではプラグインの動作や点数を再検証していない。
+
+国際航業はGeozén上のKKC Satellite Analystを10月20日に発表し、クマ出没履歴と衛星データを用いたデモを予定している。2027年度中のサービス化を目標とする開発段階であり、予測精度や時間短縮の実測値はこの発表から判断できない。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -103,3 +119,7 @@ NGSのCameron Panagrossoは、都市と近くに欲しい施設・サービス�
 - [Mapbox Agent Skills](https://docs.mapbox.com/location-ai/agent-skills/)（2026-10-19確認）
 
 - [NGS：AI-Powered Development: Jumping in the Deep End](https://newmoyergeospatial.com/2026/10/ai-powered-development-jumping-in-the-deep-end)（2026-10-20本文確認）
+
+- [Geoapify：更新一覧](https://www.geoapify.com/news-and-updates/)（2026-10-21本文確認）
+- [TerraLab：QGIS AI Agent評価](https://terra-lab.ai/blog/ai-agent-qgis-plugin-geospatial-benchmark)（2026-10-21本文確認）
+- [国際航業：KKC Satellite Analyst](https://prtimes.jp/main/html/rd/p/000000152.000086246.html)（2026-10-21本文確認）

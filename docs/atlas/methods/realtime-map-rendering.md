@@ -1,7 +1,7 @@
 ---
 title: 移動する地物のリアルタイム描画
 category: methods
-updated: 2026-10-16
+updated: 2026-10-21
 ---
 
 # 移動する地物のリアルタイム描画
@@ -28,6 +28,12 @@ EsriのArcGIS Maps SDK for Qtの検証は、次の工夫を示している。
 
 Graphics Overlaysの検証であり、過去の観測や軌跡を扱うDynamic Entitiesとは目的に応じて選ぶ。実装にはSDKと対応する開発環境が必要である。
 
+## 固定縮尺の地図ではラベル処理も測る
+
+リアルタイム表示以外でも、処理を分けて測る考え方は使える。EsriのAcadia国立公園の印刷地図では、道路の間引きと登山道の簡略化で6秒未満から5秒未満へ、動的ラベルを地物に連動する注記へ変えて0.82秒へ短縮した。
+
+固定縮尺の印刷用途に合わせた改善であり、ズームごとに配置を変える対話地図へそのまま当てはめない。Analyze Mapが示した索引・座標系の警告は、この事例では寄与が小さいとして対応を見送っている。警告をすべて消すことより、実際に重い工程を測って選ぶ例である。
+
 ## 次に読む
 
 - [分析結果の検証と適用範囲](spatial-analysis-validation.md)：地図表示の確認と分析の正しさを分ける。
@@ -35,3 +41,5 @@ Graphics Overlaysの検証であり、過去の観測や軌跡を扱うDynamic E
 ## 出典
 
 - [Esri：Real-Time Graphics Overlays in ArcGIS Maps SDKs for Native Apps](https://www.esri.com/arcgis-blog/products/developers/developers/real-time-graphics-overlays-in-arcgis-maps-sdks-for-native-apps-benchmark-and-tips)（2026-10-16、ブラウザーで本文確認）
+
+- [Esri：描画性能改善のケーススタディ](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/analyze-map-pane-part-two)（2026-10-21本文確認）

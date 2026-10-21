@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-19
+updated: 2026-10-21
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -135,6 +135,12 @@ ICSCの10月14日の取材では、RipcoのGIS担当者5人がデータ運用担
 
 立地分析への示唆は、同業の店舗密度だけでなく、撤退する業態、提供する商品・サービス、商圏の生活上の需要も分けて調べることである。これはAtlasとしての整理で、両記事がGISモデルの精度を検証したという意味ではない。
 
+## 全店の成長と既存店の需要を分ける
+
+Placer.aiのShake Shack分析では、2026年Q3の来訪数が前年比で全店18.7％増、既存店2.8％増だった。新しい店舗を含む総量だけでは、既存店舗の需要が伸びたかを判断できない。
+
+同記事は郊外の家族層への広がりも報告する。所得は商圏と地域統計を組み合わせた指標で、来店者個人の所得を直接測ったものではない。販促や出店が変化を引き起こしたという因果効果も、この比較だけでは確定しない。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -174,3 +180,5 @@ ICSCの10月14日の取材では、RipcoのGIS担当者5人がデータ運用担
 - [そりゃ「コンビニ離れ」と言われるわけだ…飽和市場で「派手なファミマ」と「地味なローソン」の戦略の「決定的な違い」](https://toyokeizai.net/articles/-/961460)（2026-10-19確認）
 
 - [東洋経済記事のYahoo!配信版](https://finance.yahoo.co.jp/news/detail/b03bb6c2a6f0e3471187cc62ba06b4d6dddbb62c)（2026-10-19本文確認）
+
+- [Placer.ai：Shake ShackのQ3分析](https://www.placer.ai/anchor/articles/shake-shacks-q3-expansion-brings-more-visits-and-new-guests)（2026-10-21本文確認）

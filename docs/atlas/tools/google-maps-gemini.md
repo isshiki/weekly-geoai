@@ -2,7 +2,7 @@
 layout: default
 title: Google MapsのAsk MapsとImmersive Navigation
 category: tools
-updated: 2026-09-29
+updated: 2026-10-21
 ---
 
 # Google MapsのAsk MapsとImmersive Navigation
@@ -18,6 +18,14 @@ Google Mapsは、Geminiを用いる対話型の場所探しと、3D表示を使�
 
 GoogleはAsk Mapsで3億カ所超の場所情報と5億人超の投稿者によるレビューなどを活用すると説明する。規模は同社公表値である。この記事は2026年3月12日公開であり、9月の新発表ではない。表は発表時の範囲であり、9月29日現在の全地域の提供状況を確認したものではない。
 
+## 店舗側は元情報と重要な翻訳を整える
+
+イクシアスの2026年3月3日の資料案内は、AIの口コミ要約を直接編集することと、元になる店舗情報を整備することを区別する。料金、アレルギー、安全に関わる情報は、自動翻訳だけに任せず人が確認した多言語表記を用意するという提案である。
+
+資料案内ページを確認したもので、配布資料本体やGoogleの全地域での提供状況は確認していない。10月の新機能発表としては扱わない。
+
 ## 出典
 
 - [Google：How we’re reimagining Maps with Gemini](https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/)（2026-09-29確認）
+
+- [STOREPAD：MEOとAIの解説資料案内](https://storepad.jp/news/oLX-Ji21)（2026-10-21本文確認）

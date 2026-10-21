@@ -2,7 +2,7 @@
 layout: default
 title: Cesium
 category: tools
-updated: 2026-10-13
+updated: 2026-10-21
 ---
 
 # Cesium
@@ -79,6 +79,10 @@ JMTの道路改良事例は、Bentley Infrastructure Cloudの設計モデルをC
 
 OAuth 2.0と既存のアカウント権限が適用され、アップロードやタイル化などの書き込みも扱う。公式説明は、変更前の許可を求めるようエージェントへ指示するとしている。これは読み取り専用の保証や、独立した承認機構の実証とは異なる。今回は発表本文の確認で、アカウント接続や操作は実施していない。
 
+## 日本語で確認する接続の範囲
+
+Pacific Spatial Solutionsの日本語解説でも、ホスト型MCPによるアセット操作とBIM/CAD照会を確認できる。既報の機能の補足資料として読む。認証・操作確認の仕組みが、対象データの選択やAIの判断の妥当性を保証するわけではない。
+
 ## 出典
 
 - [PSS：設計データを3D地図に重ねるCesiumの新機能](https://note.com/pacificspatial/n/n09d882d31390)（2026-09-21公開、2026-09-22確認）
@@ -96,3 +100,5 @@ OAuth 2.0と既存のアカウント権限が適用され、アップロード�
 - [JMTの道路計画可視化](https://cesium.com/blog/2026/10/08/jmt-helps-people-see-the-future-with-cesium/)（2026-10-09確認）
 
 - [Introducing the Cesium ion MCP Server](https://cesium.com/blog/2026/10/12/introducing-the-cesium-ion-mcp-server/)（2026-10-13確認）
+
+- [PSS：Cesium ion MCPサーバーの紹介](https://note.com/pacificspatial/n/n78e0c04b5d04)（2026-10-21本文確認）

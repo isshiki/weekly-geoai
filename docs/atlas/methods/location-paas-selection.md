@@ -2,7 +2,7 @@
 layout: default
 title: 位置情報PaaSの選び方と相互運用性
 category: methods
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # 位置情報PaaSの選び方と相互運用性
@@ -38,6 +38,12 @@ Amazon Location Serviceは2026年10月13日、Places・Routes・Mapsの14 APIを
 
 公式Playground資料では、要求・応答とパラメーターを確認し、CLI、cURL、Python、JavaScript、Rubyのコード例を取得できる。到達圏は時間・距離と移動手段などの条件を持ち、単純な円とは異なる。訪問順の最適化やGPS座標の道路への補正も、目的に応じて試すAPIとして案内されている。資料を確認したもので、コードの実行や利用料金の試算は行っていない。
 
+## 配送アプリへ地図と経路案内を組み込む
+
+MapboxのDoorDash事例では、配達員が別アプリへ移動せずに案内を受けられるよう、Maps・Navigation SDKとDirections・Matrix APIを組み合わせている。利用者側では近くの店舗表示や配送追跡に使う。
+
+選定時には地図の見た目だけでなく、経路・到着予想・配送業務を同じ画面で扱えるかを見る。このページは提供元の導入事例で、公開日と定量的な時間短縮効果は未確認である。
+
 ## 関連項目
 
 - [外部地図サービスの廃止と依存関係の点検](map-service-lifecycle.md)
@@ -54,3 +60,5 @@ Amazon Location Serviceは2026年10月13日、Places・Routes・Mapsの14 APIを
 - [AWS：API Playground発表](https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-location-service-api-playground/)（2026-10-16確認）
 
 - [AWS：API Playgroundドキュメント](https://docs.aws.amazon.com/location/latest/developerguide/api-playground.html)（2026-10-20確認）
+
+- [Mapbox：DoorDash導入事例](https://www.mapbox.com/showcase/doordash)（2026-10-21本文確認）
