@@ -2,7 +2,7 @@
 layout: default
 title: 位置情報PaaSの選び方と相互運用性
 category: methods
-updated: 2026-10-21
+updated: 2026-10-22
 ---
 
 # 位置情報PaaSの選び方と相互運用性
@@ -44,6 +44,12 @@ MapboxのDoorDash事例では、配達員が別アプリへ移動せずに案内
 
 選定時には地図の見た目だけでなく、経路・到着予想・配送業務を同じ画面で扱えるかを見る。このページは提供元の導入事例で、公開日と定量的な時間短縮効果は未確認である。
 
+## 過去の費用比較を現在の見積もりに使わない
+
+RSTの比較記事には2022年4月時点のGoogle Maps無料枠が残る。Google利用時の推計月額42万ドルと、OSM基盤の月額1,500ドルは、同社の特定案件についての説明である。開発・移行・保守の費用まで同じ条件で比較した数字とは扱わない。現在の料金表、利用回数、必要なAPI、運用担当者を置いて見積もる。
+
+OSMのデータ利用と公共タイルサーバーの利用は別である。OSMFのタイル利用方針は容量制限と無保証を明記する。自前配信や契約する配信サービスも含めて選ぶ。HEREの2020年の紹介記事も、当時の取り組みを知る資料として扱い、無料条件や対象都市数を現在の仕様として転載しない。
+
 ## 関連項目
 
 - [外部地図サービスの廃止と依存関係の点検](map-service-lifecycle.md)
@@ -62,3 +68,9 @@ MapboxのDoorDash事例では、配達員が別アプリへ移動せずに案内
 - [AWS：API Playgroundドキュメント](https://docs.aws.amazon.com/location/latest/developerguide/api-playground.html)（2026-10-20確認）
 
 - [Mapbox：DoorDash導入事例](https://www.mapbox.com/showcase/doordash)（2026-10-21本文確認）
+
+- [Google Maps vs. Mapbox vs. OpenStreetMap: which map API should you choose and why?](https://www.rst.software/blog/google-maps-vs-mapbox-vs-openstreetmap-which-map-api-should-you-choose-and-why)（2026-10-22本文確認）
+
+- [Mapping company “democratising” GIS](https://highways-news.com/mapping-company-democratising-gis/)（2026-10-22本文確認）
+
+- [OSMF：Tile Usage Policy](https://operations.osmfoundation.org/policies/tiles/)（2026-10-22確認）

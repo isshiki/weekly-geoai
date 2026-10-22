@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-21
+updated: 2026-10-22
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -141,6 +141,16 @@ Placer.aiのShake Shack分析では、2026年Q3の来訪数が前年比で全店
 
 同記事は郊外の家族層への広がりも報告する。所得は商圏と地域統計を組み合わせた指標で、来店者個人の所得を直接測ったものではない。販促や出店が変化を引き起こしたという因果効果も、この比較だけでは確定しない。
 
+## 届出・立地スコア・実際の来訪を分ける
+
+NetIB-Newsの2026年9月集計は大規模小売店舗の新設届出27件を報告し、15件がドラッグストアだった。これは届出という手続きの件数で、当月に開業した店や全規模の新店を数えたものではない。公開部分のみ確認し、会員限定の個別リストは照合していない。
+
+Factoriのツール比較は、来訪分析、GIS、売上予測、物件調査を目的別に分ける。立地スコアが高いことは売上を予測できたこととは異なり、商圏の重なりだけで既存店の売上が奪われる量は分からない。公開資料の比較で、全製品の実機試験・独立した精度評価ではない。
+
+Placer.aiのSprouts分析では、2026年Q3の既存店来訪数が前年比0.1％減となり、Q2の4.1％減から改善した。同記事は商圏の世帯所得中央値が州中央値に近い市場ほど来訪が堅調と解釈するが、所得差が原因と確定した結果ではない。個人の所得を直接測ったものでもない。
+
+競合を選ぶ際は、同業だけでなく「同じ目的・時刻に利用できる店」を見る。デライトソリューションズは架空のパン屋を例に、スーパーやコンビニ、橋を渡る迂回、営業時間を比較する。人口統計と会員記録は対象が異なるため、会員の地域分布を全来店者の分布へそのまま広げない。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -182,3 +192,11 @@ Placer.aiのShake Shack分析では、2026年Q3の来訪数が前年比で全店
 - [東洋経済記事のYahoo!配信版](https://finance.yahoo.co.jp/news/detail/b03bb6c2a6f0e3471187cc62ba06b4d6dddbb62c)（2026-10-19本文確認）
 
 - [Placer.ai：Shake ShackのQ3分析](https://www.placer.ai/anchor/articles/shake-shacks-q3-expansion-brings-more-visits-and-new-guests)（2026-10-21本文確認）
+
+- [【全国版｜2026年9月】大規模小売店舗 新設届出27件リスト・分析グラフ](https://data-max.co.jp/article/87497)（2026-10-22本文確認）
+
+- [10 Retail Site Selection Tools to Compare Before You Expand](https://factori.ai/blog/retail-site-selection-tools/)（2026-10-22本文確認）
+
+- [Sprouts Finds Steadier Ground in Q3 2026](https://www.placer.ai/anchor/articles/sprouts-finds-steadier-ground-in-q3-2026)（2026-10-22本文確認）
+
+- [競合の商圏分析｜範囲・店舗分布・人口の調べ方](https://www.delight-solutions.co.jp/column/%e3%83%a9%e3%82%a4%e3%83%90%e3%83%ab%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0/trade-area-competitor-analysis/)（2026-10-22本文確認）

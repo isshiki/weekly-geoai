@@ -2,7 +2,7 @@
 layout: default
 title: Google MapsのAsk MapsとImmersive Navigation
 category: tools
-updated: 2026-10-21
+updated: 2026-10-22
 ---
 
 # Google MapsのAsk MapsとImmersive Navigation
@@ -29,3 +29,5 @@ GoogleはAsk Mapsで3億カ所超の場所情報と5億人超の投稿者によ�
 - [Google：How we’re reimagining Maps with Gemini](https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/)（2026-09-29確認）
 
 - [STOREPAD：MEOとAIの解説資料案内](https://storepad.jp/news/oLX-Ji21)（2026-10-21本文確認）
+
+- [91mobiles：3月13日の紹介記事](https://www.91mobiles.com/hub/google-maps-immersive-navigation-ask-chat-features-announced/)（2026-10-22本文確認。既報の補足で、現在の提供地域の確認ではない）

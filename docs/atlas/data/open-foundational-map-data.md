@@ -2,7 +2,7 @@
 layout: default
 title: オープンな基盤地図データと共同整備
 category: data
-updated: 2026-10-12
+updated: 2026-10-22
 ---
 
 # オープンな基盤地図データと共同整備
@@ -27,6 +27,20 @@ updated: 2026-10-12
 
 参照したIGNの建物とOSMには地籍由来の情報が含まれ、完全に独立した正解との比較ではない。棟数、分割単位、重なり、データの来歴を一緒に見る。一地区の結果から国全体や全用途での優劣を決めず、面積を測る用途と一棟ずつ数える用途も分ける。
 
+## OSMの道具を目的別に探す
+
+Awesome OpenStreetMapは、OSMの利用と共同編集を支える道具のリンク集である。初めて探す場合は、何をしたいかで入口を選ぶ。
+
+| したいこと | 掲載されている例 |
+| --- | --- |
+| 地物を編集する | iD、JOSM、StreetComplete、Vespucci |
+| 条件に合うデータを探す | overpass-turbo |
+| データの問題を確認する | Osmose |
+| タグの使われ方を調べる | taginfo |
+| アプリへ組み込む | 言語別ライブラリ、地図・経路案内、公開APIの一覧 |
+
+保守されていないプロジェクトは別リストに分けられている。掲載先で最終更新、対応環境、利用条件を確認し、一覧への掲載だけを推奨や動作保証と受け取らない。各ツールの操作は本Atlasでは未検証である。
+
 ## 関連項目
 
 - [POIオープンデータの比較と地域特徴量](poi-open-data-comparison.md)
@@ -37,3 +51,5 @@ updated: 2026-10-12
 - [Overture：Rethinking the Foundation: Why Geospatial Innovation Demands a New Playbook](https://overturemaps.org/blog/2026/rethinking-the-foundation-why-geospatial-innovation-demands-a-new-playbook/)（2026-09-24公開、2026-09-25確認）
 
 - [Microsoft Building Footprints vs Google vs Overture, Tested](https://terra-lab.ai/blog/building-footprint-datasets-compared)（2026-10-12確認）
+
+- [Awesome OpenStreetMap](https://github.com/osmlab/awesome-openstreetmap/blob/main/README.md)（2026-10-22本文確認）

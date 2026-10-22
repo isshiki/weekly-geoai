@@ -2,7 +2,7 @@
 layout: default
 title: ハザードデータの再利用条件
 category: data
-updated: 2026-10-14
+updated: 2026-10-22
 ---
 
 # ハザードデータの再利用条件
@@ -42,6 +42,12 @@ ArcGIS Living AtlasのRecent Earthquakesは、最近の地震を時刻・規模�
 
 更新頻度と、過去の記録が残る期間は別である。地図に見えない理由にはフィルターや保持期限もあり、「地震がなかった」とは限らない。このレイヤーは最近の状況を見る用途で、長期比較には同じ収録条件の記録が必要となる。
 
+## 現在地からの高低差と避難先の安全性を分ける
+
+KAKUNIN MAPは、現在地を基準とする標高差を約250m四方の区画・半径約1.2kmで色分けし、洪水浸水想定区域と指定緊急避難場所・指定避難所を重ねる無料のiOS／Androidアプリである。ウェーブオンは2026年10月21日に、19日の提供開始を発表した。
+
+周囲より高い区画を見つける表示と、その区画へ安全に避難できるという判断は異なる。区画内の細かな地形や移動経路、災害の種類まで一つの標高差で表せるわけではない。提供元も自治体の避難情報・ハザードマップを併せて確認するよう案内する。国土地理院・国土交通省のデータを使う事例として参照し、アプリの動作・位置精度は未検証である。
+
 ## 出典
 
 - [自治体のハザードマップを使って避難経路OSSを作ろうとしたら、コードを書く前に権利とフォーマットの壁に激突した](https://qiita.com/hypatia_AH1033/items/023e7c3eeb8802ec0883)（2026-09-17公開、2026-09-18確認）
@@ -49,3 +55,5 @@ ArcGIS Living AtlasのRecent Earthquakesは、最近の地震を時刻・規模�
 - [国土地理院のハザードタイルのピクセル色を読んで、住所の浸水想定区域を判定する](https://zenn.dev/pohoda/articles/970f41731fa5ba)（2026-10-11確認）
 
 - [Map in a minute: Map an earthquake using ArcGIS Online and ArcGIS Living Atlas](https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/an-earthquake-map-in-60-seconds-using-living-atlas)（2026-10-14確認）
+
+- [防災地図アプリ「KAKUNIN MAP」をiOS・Androidで提供開始](https://prtimes.jp/main/html/rd/p/000000001.000192895.html)（2026-10-22本文確認）

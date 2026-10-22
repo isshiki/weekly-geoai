@@ -160,6 +160,7 @@ updated: 2026-10-18
 - [GeoLibre](tools/geolibre.md)
 - [RustGIS](tools/rustgis.md)
 - [Felt](tools/felt.md)
+- [GIS CloudのAIによる現場調査支援](tools/gis-cloud.md)
 - [Vespucci：AndroidでOSMを編集](tools/vespucci.md)
 - [ArcGIS StoryMaps](tools/arcgis-storymaps.md)
 

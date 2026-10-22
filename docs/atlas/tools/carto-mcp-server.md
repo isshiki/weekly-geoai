@@ -2,7 +2,7 @@
 layout: default
 title: CARTO MCP Server
 category: tools
-updated: 2026-10-21
+updated: 2026-10-22
 ---
 
 # CARTO MCP Server
@@ -67,6 +67,12 @@ CARTOの2026年10月20日の記事は、ChatGPT内で地図を作成・編集し
 
 接続に使う認証やプラン条件はクライアントごとに異なるため、導入時に公式の接続資料を確認する。クエリが自社DWH内で動くことと、検索結果や属性がAIへ渡らないことは同義ではない。利用者の権限、AIへ返す情報、保存されたWorkflowの条件をそれぞれ確認する。
 
+## 製品機能と経営方針の発表を分ける
+
+CARTOの2026年10月21日の発表は、創業者Javier de la Torreの11月1日付CEO就任と、Luis Sanzの取締役継続を案内する。Agentic GISを成長機会と位置付け、CARTO SDIとPortolanによるデータ・基盤の管理権も重視する方針を示す。
+
+これは経営方針の発表で、MCPや既存の分析機能がすべて同日に初公開されたわけではない。AIに任せる業務の範囲と、権限・手順・結果を確認する仕組みは、個別の製品資料で確かめる。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -89,3 +95,5 @@ CARTOの2026年10月20日の記事は、ChatGPT内で地図を作成・編集し
 - [CARTO：What's new in CARTO - Q3 2026](https://carto.com/blog/whats-new-in-carto-q3-2026/)（2026-10-16確認）
 
 - [CARTO：Agentic GIS in ChatGPT](https://carto.com/blog/agentic-gis-in-chatgpt/)（2026-10-21本文確認）
+
+- [CARTO enters the Agentic GIS era with its founder as CEO](https://carto.com/blog/carto-enters-the-agentic-gis-era-with-its-founder-as-ceo/)（2026-10-22本文確認）
