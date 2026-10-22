@@ -63,6 +63,19 @@ def validate(metadata: dict[str, str], body: str) -> tuple[int, date, str]:
     before_definition = clean[:definition_index]
     title_end = before_definition.find("\n")
     intro_blocks = _paragraphs(before_definition[title_end + 1 :])
+    # A figure and its immediately following italic caption may follow the commentary.
+    commentary_blocks = []
+    after_image = False
+    for block in intro_blocks:
+        if IMAGE.fullmatch(block):
+            after_image = True
+            continue
+        if after_image and block.startswith('*') and block.endswith('*') and not block.startswith('**'):
+            after_image = False
+            continue
+        commentary_blocks.append(block)
+        after_image = False
+    intro_blocks = commentary_blocks
     if len(intro_blocks) != 2:
         raise ValueError("定義文の前には所感をちょうど2段落置いてください")
 
