@@ -1,7 +1,7 @@
 ---
 title: 移動する地物のリアルタイム描画
 category: methods
-updated: 2026-10-21
+updated: 2026-10-23
 ---
 
 # 移動する地物のリアルタイム描画
@@ -34,6 +34,12 @@ Graphics Overlaysの検証であり、過去の観測や軌跡を扱うDynamic E
 
 固定縮尺の印刷用途に合わせた改善であり、ズームごとに配置を変える対話地図へそのまま当てはめない。Analyze Mapが示した索引・座標系の警告は、この事例では寄与が小さいとして対応を見送っている。警告をすべて消すことより、実際に重い工程を測って選ぶ例である。
 
+## 現場端末では通信が切れた場合も設計する
+
+ArcGIS Maps SDKs for Native Appsは、端末上で動く地図アプリを作るSDK群である。.NET・Swift・Kotlin・Qt・Flutterを使い、地図閲覧・編集・検索・経路案内をオフラインで扱い、通信復帰後に変更を同期する使い方を公式記事が紹介する。リアルタイム表示に加え、通信がない間の作業と復帰後の扱いも設計対象になる。
+
+利用するSDKと開発環境、オフライン用コンテンツの準備が必要で、本番配布には要件に応じたArcGIS認証またはライセンス文字列によるライセンスが必要である。機能紹介を特定端末の性能保証とは扱わず、今回も動作確認はしていない。
+
 ## 次に読む
 
 - [分析結果の検証と適用範囲](spatial-analysis-validation.md)：地図表示の確認と分析の正しさを分ける。
@@ -43,3 +49,4 @@ Graphics Overlaysの検証であり、過去の観測や軌跡を扱うDynamic E
 - [Esri：Real-Time Graphics Overlays in ArcGIS Maps SDKs for Native Apps](https://www.esri.com/arcgis-blog/products/developers/developers/real-time-graphics-overlays-in-arcgis-maps-sdks-for-native-apps-benchmark-and-tips)（2026-10-16、ブラウザーで本文確認）
 
 - [Esri：描画性能改善のケーススタディ](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/analyze-map-pane-part-two)（2026-10-21本文確認）
+- [Build Apps That Go Anywhere](https://www.esri.com/arcgis-blog/products/maps-sdk/3d-gis/build-apps-that-go-anywhere)（2026-10-23本文確認）

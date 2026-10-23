@@ -2,7 +2,7 @@
 layout: default
 title: Mapbox CLI
 category: tools
-updated: 2026-10-10
+updated: 2026-10-23
 ---
 
 # Mapbox CLI
@@ -20,6 +20,12 @@ Mapbox CLIは、端末からMapboxの地図・検索などのAPIを操作する�
 
 例えば、AIが地図スタイルを変更するときに、入力仕様の確認、送信前の点検、失敗時の修正を別々の段階として扱える。ただし、事前検証だけで地図の内容や業務判断の正しさまで保証されるわけではない。
 
+## コマンドの知識と互換性
+
+`mapbox generate-skills` は、コマンド群・引数・実行例をまとめたAgent Skillを生成する。操作を実行するCLIに、AIがその使い方を読める資料を組み合わせる仕組みである。macOS・Linux・Windows向けの導入方法を公式ガイドが案内する。
+
+2026年10月23日確認のガイドはセマンティックバージョニングを採用し、破壊的変更ではメジャー版を上げると説明する。一方、ベータ表記のコマンドはこの互換性保証の対象外である。CLI全体を公開ベータと一括りにせず、使うコマンドと導入版を確かめる。
+
 ## 利用条件と確認範囲
 
 CLIのMITライセンスと、接続先APIや取得データの利用条件は別である。CLIの公開を、POIデータのオープン化やAPIの無制限な無料提供とは解釈しない。本ページは公式説明の確認であり、インストールやAPI操作は試していない。
@@ -32,3 +38,4 @@ CLIのMITライセンスと、接続先APIや取得データの利用条件は�
 ## 出典
 
 - [New Mapbox CLI for coding agents](https://www.mapbox.com/blog/new-mapbox-cli-for-coding-agents)（2026-10-10確認）
+- [Mapbox CLI](https://docs.mapbox.com/cli/guides/)（2026-10-23本文確認）

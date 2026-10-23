@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-22
+updated: 2026-10-23
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -151,6 +151,12 @@ Placer.aiのSprouts分析では、2026年Q3の既存店来訪数が前年比0.1�
 
 競合を選ぶ際は、同業だけでなく「同じ目的・時刻に利用できる店」を見る。デライトソリューションズは架空のパン屋を例に、スーパーやコンビニ、橋を渡る迂回、営業時間を比較する。人口統計と会員記録は対象が異なるため、会員の地域分布を全来店者の分布へそのまま広げない。
 
+## 来訪数の増加と祝日・商圏構成を分ける
+
+Placer.aiの2026年10月22日の分析では、米国の高級商業地区10カ所で7〜9月の来訪数が前年を上回り、9月は5.9％増だった。ただし、増加の一部にはレイバーデーの日程差が影響する。前年比だけでなく、祝日の位置や季節の山を確認する例である。
+
+記事が示す家族世帯の割合は商圏の構成で、来訪者一人ひとりの家族属性を直接数えた比率ではない。体験型イベントが来訪を促した可能性は記事の解釈であり、因果効果の検証とは区別する。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -200,3 +206,4 @@ Placer.aiのSprouts分析では、2026年Q3の既存店来訪数が前年比0.1�
 - [Sprouts Finds Steadier Ground in Q3 2026](https://www.placer.ai/anchor/articles/sprouts-finds-steadier-ground-in-q3-2026)（2026-10-22本文確認）
 
 - [競合の商圏分析｜範囲・店舗分布・人口の調べ方](https://www.delight-solutions.co.jp/column/%e3%83%a9%e3%82%a4%e3%83%90%e3%83%ab%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0/trade-area-competitor-analysis/)（2026-10-22本文確認）
+- [High-Street Corridors Gain Ground Ahead of the Holiday Rush](https://www.placer.ai/anchor/articles/high-street-corridors-gain-ground-ahead-of-the-holiday-rush)（2026-10-23本文確認）
