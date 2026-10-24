@@ -2,7 +2,7 @@
 layout: default
 title: 空間分析への埋め込みの組み込み
 category: methods
-updated: 2026-10-21
+updated: 2026-10-24
 ---
 
 # 空間分析への埋め込みの組み込み
@@ -97,6 +97,10 @@ GoogleのPopulation Dynamics Insights（PDI）は、地域の特徴を機械学�
 成功店舗に似た地域の探索や、既存の需要予測モデルへ特徴を追加する用途を想定する。衛星画像由来の埋め込みとは入力情報が異なり、個人の移動履歴そのものを受け取るデータではない。自社の店舗・商圏とセルの大きさ、予測時点と月次更新の対応を確認する。
 
 Googleは米国の29予測対象などで性能向上を報告しているが、任意の地域や自社売上での改善を保証するものではない。発表時点の評価であり、10月の新規発表とは区別する。
+
+### 圧縮した特徴と実数の集計を組み合わせる
+
+PDIの公式概要は、検索傾向、施設・混雑、天気・大気質などの集計情報を機械学習モデルで330次元にまとめると説明する。一つの数値がそのままカフェの件数を表すわけではない。正確なPOI件数やブランド密度が必要な用途ではPlaces Insightsとの併用を案内している。地域埋め込みを使っても、問いに必要な件数や解釈可能な特徴量をすべて置き換える必要はない。
 
 ### 性能の紹介は、評価対象と合わせて読む
 
@@ -209,3 +213,5 @@ CARTOとEsriの処理は記事の確認のみで、データ取得・操作・�
 - [Kinneyほか：Crowd-Sourced Geographies of Income](https://arxiv.org/abs/2608.07871)（2026-10-21本文確認）
 - [Geoawesome：所得地図へのPOI利用](https://geoawesome.com/can-google-maps-help-update-income-maps-between-censuses/)（2026-10-21本文確認）
 - [一色政彦：地域特徴量とEmbedding入門](https://qiita.com/isshiki/items/b3431cd4fa331531d1ac)（2026-10-21本文確認）
+
+- [Google：Population Dynamics Insights概要](https://developers.google.com/maps/documentation/population-dynamics-insights/overview?hl=ja)（2026-10-24本文確認）

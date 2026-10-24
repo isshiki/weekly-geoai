@@ -1,7 +1,7 @@
 ---
 title: 空間SQLエンジンの選び方
 category: tools
-updated: 2026-10-17
+updated: 2026-10-24
 ---
 
 # 空間SQLエンジンの選び方
@@ -18,6 +18,20 @@ updated: 2026-10-17
 | GeoPandas | PythonのGeoDataFrameで読込・加工・空間分析を行う。SQLエンジンへの受け渡しにも使える |
 
 Matt Forrestの比較記事ではGeoPandasを読込役に用いており、SQLの速度比較には含めていない。GeoPandas自体が読込しかできないという意味ではない。記事はGeoParquetを介した併用を提案する。
+
+## ファイルの読み込みと運用を選ぶ
+
+DuckDB 2.0は2026年10月21日公開のLTSで、少なくとも2027年10月まで保守される。公式発表はクラウドファイルの非同期読み込み、サーバー動作の改善、AIエージェント向けの簡潔な出力などを紹介する。サーバーのQuackは1.5.3で導入済みであり、2.0で初めて加わった機能ではない。
+
+2.0で新規作成したデータベースファイルは旧版で読めない。一方、既存ファイルを2.0で読み書きする場合は後方互換性を保つ。ファイル形式と移行先を確認して選ぶ。
+
+Pacific Spatial Solutionsの解説は、クラウド上の全国約2,900万農地区画・約4.5GBのファイルから必要列を読み、約40秒で属性を集計した例を示す。全ファイルの手動ダウンロードを省く使い方だが、空間結合の速さや全データの転送速度を測ったものではない。
+
+### POIを速く集計できても、登録地点を確かめる
+
+Plotlyの地図デモはOvertureのPOIをH3の六角形へ集計する。記事は同じ座標に4,322事業者が登録された登記住所の例を示し、同一座標に20件以上ある地点を除外する処理を使う。これは当該デモの仮の基準で、商業施設内の店舗なども除外し得る。一般的な重複判定としてそのまま適用しない。
+
+同記事の速度比較は同じVMで各版を3回、新しいプロセスで実行した中央値である。地図アプリでは取得後のローカルキャッシュも使うため、初回取得と再表示を分けて読む。本Atlasではいずれの集計も再実行していない。
 
 ## 比較値の読み方
 
@@ -43,3 +57,9 @@ DatabricksのLakehouse//RTは、レイクハウス上のデータを低遅延・
 - [Matt Forrest：PostGIS vs GeoPandas vs DuckDB](https://forrest.nyc/postgis-geopandas-duckdb-spatial-engine/)（2026-10-16確認）
 
 - [Databricks：Lakehouse//RTの空間クエリ](https://www.databricks.com/blog/geospatial-queries-are-38x-faster-lakehousert)（2026-10-17確認）
+
+- [DuckDB：2.0.0 LTS公式発表](https://duckdb.org/2026/10/21/announcing-duckdb-200)（2026-10-24本文確認）
+
+- [Pacific Spatial Solutions：DuckDB 2.0と地理空間データ](https://note.com/pacificspatial/n/n1947bdb5e851)（2026-10-24本文確認）
+
+- [Plotly：DuckDB 2.0の検証と地図デモ](https://plotly.com/blog/duckdb-2-0/)（2026-10-24本文確認）

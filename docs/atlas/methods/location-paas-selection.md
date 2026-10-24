@@ -2,7 +2,7 @@
 layout: default
 title: 位置情報PaaSの選び方と相互運用性
 category: methods
-updated: 2026-10-22
+updated: 2026-10-24
 ---
 
 # 位置情報PaaSの選び方と相互運用性
@@ -38,11 +38,23 @@ Amazon Location Serviceは2026年10月13日、Places・Routes・Mapsの14 APIを
 
 公式Playground資料では、要求・応答とパラメーターを確認し、CLI、cURL、Python、JavaScript、Rubyのコード例を取得できる。到達圏は時間・距離と移動手段などの条件を持ち、単純な円とは異なる。訪問順の最適化やGPS座標の道路への補正も、目的に応じて試すAPIとして案内されている。資料を確認したもので、コードの実行や利用料金の試算は行っていない。
 
+## 時間で到達範囲を作る
+
+Google Maps PlatformのIsochrones APIは、出発地点から指定時間内に到達できる範囲を計算する。APIキーを用意して呼び出し、GeoJSONの区域を受け取る。公式の対応地域一覧には日本も掲載されている。2026年10月24日に既存資料を確認したもので、新規リリースの発表とは扱わない。
+
+直線距離の円、道路に沿った距離、移動時間の到達圏は異なる条件である。「駅から何分」を比べるなら、移動手段と出発点をそろえる。公式手順は、施設のPlace IDが中心点へ解決され、道路から遠いとエラーになり得ることも説明する。大きな施設では入口の座標を指定する方法を検討する。実際のAPI実行や料金試算はしていない。
+
+[MAUPと範囲の感度](../concepts/maup.md)も参照し、区域の作り方と比較したい問いを対応させる。
+
 ## 配送アプリへ地図と経路案内を組み込む
 
 MapboxのDoorDash事例では、配達員が別アプリへ移動せずに案内を受けられるよう、Maps・Navigation SDKとDirections・Matrix APIを組み合わせている。利用者側では近くの店舗表示や配送追跡に使う。
 
 選定時には地図の見た目だけでなく、経路・到着予想・配送業務を同じ画面で扱えるかを見る。このページは提供元の導入事例で、公開日と定量的な時間短縮効果は未確認である。
+
+### 計画経路をナビへ引き継ぐ
+
+Googleの2026年10月23日のRoutes API変更では、Navigation SDKへ渡すルートトークン内の経路設定がアプリ側の設定より優先される。計画時と案内時の条件をそろえるための変更である。交通状況や経路逸脱などによる再計算はあり、常に同じ道を走る保証ではない。
 
 ## 過去の費用比較を現在の見積もりに使わない
 
@@ -74,3 +86,13 @@ OSMのデータ利用と公共タイルサーバーの利用は別である。OS
 - [Mapping company “democratising” GIS](https://highways-news.com/mapping-company-democratising-gis/)（2026-10-22本文確認）
 
 - [OSMF：Tile Usage Policy](https://operations.osmfoundation.org/policies/tiles/)（2026-10-22確認）
+
+- [Google：Isochrones API](https://developers.google.com/maps/documentation/isochrones?hl=ja)（2026-10-24本文確認）
+
+- [Google：等時線の作成](https://developers.google.com/maps/documentation/isochrones/create-isochrone?hl=ja)（2026-10-24本文確認）
+
+- [Google：対応地域](https://developers.google.com/maps/documentation/isochrones/coverage?hl=ja)（2026-10-24本文確認）
+
+- [Google：Routes API変更履歴](https://developers.google.com/maps/documentation/routes/release-notes#October_23_2026)（2026-10-24本文確認）
+
+- [Google：ルートのカスタマイズ](https://developers.google.com/maps/documentation/navigation/android-sdk/customize-route)（2026-10-24本文確認）

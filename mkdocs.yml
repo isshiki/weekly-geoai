@@ -152,6 +152,8 @@ nav:
       - データ連携・配信と業務GIS:
         - FME: atlas/tools/fme.md
         - GeoServer: atlas/tools/geoserver.md
+        - MapStore: atlas/tools/mapstore.md
+        - Amazon Quick Sightの地図: atlas/tools/amazon-quick-sight.md
         - GeoNode: atlas/tools/geonode.md
         - ArcFM: atlas/tools/arcfm.md
         - ArcGIS Solutions: atlas/tools/arcgis-solutions.md
@@ -224,6 +226,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月24日: updates/2026-10-24.md
         - 10月23日: updates/2026-10-23.md
         - 10月22日: updates/2026-10-22.md
         - 10月21日: updates/2026-10-21.md

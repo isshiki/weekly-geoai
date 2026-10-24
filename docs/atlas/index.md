@@ -194,6 +194,8 @@ updated: 2026-10-18
 
 - [FME](tools/fme.md)
 - [GeoServer](tools/geoserver.md)
+- [MapStore](tools/mapstore.md)
+- [Amazon Quick Sightの地図](tools/amazon-quick-sight.md)
 - [GeoNode](tools/geonode.md)
 - [ArcFM](tools/arcfm.md)
 - [ArcGIS Solutions](tools/arcgis-solutions.md)
