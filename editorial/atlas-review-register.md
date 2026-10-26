@@ -29,7 +29,7 @@
 | [渋谷の街区別年代構成と人流の読み方](../docs/atlas/cases/shibuya-age-distribution.md) | 2026-09-22 | 2026-09-22 | 未記録 | 中・半年候補 | 事例時点・効果の根拠・一般化の範囲／記載未検出（完了を意味しない） | 未記録 |
 | [SlopeScout：住所から地形リスクを確認する](../docs/atlas/cases/slopescout-terrain-risk.md) | 2026-10-06 | 2026-10-06 | 未記録 | 中・半年候補 | 事例時点・効果の根拠・一般化の範囲／記載未検出（完了を意味しない） | 未記録 |
 | [運転支援と地図の継続更新](../docs/atlas/cases/streaming-maps-driver-assistance.md) | 2026-09-25 | 2026-09-25 | 未記録 | 中・半年候補 | 事例時点・効果の根拠・一般化の範囲／記載未検出（完了を意味しない） | 未記録 |
-| [Cloud Native Geospatial](../docs/atlas/concepts/cloud-native-geospatial.md) | 2026-10-20 | 2026-09-11〜2026-10-20 | 未記録 | 低・年次候補 | 定義・出典・断定の範囲／記載未検出（完了を意味しない） | 未記録 |
+| [Cloud Native Geospatial](../docs/atlas/concepts/cloud-native-geospatial.md) | 2026-10-26 | 2026-09-11〜2026-10-26 | 未記録 | 低・年次候補 | 定義・出典・断定の範囲／記載未検出（完了を意味しない） | 未記録 |
 | [座標参照系（CRS）と地図投影法](../docs/atlas/concepts/coordinate-reference-systems.md) | 2026-10-26 | 2026-09-08〜2026-10-26 | 未記録 | 低・年次候補 | 定義・出典・断定の範囲／記載未検出（完了を意味しない） | 未記録 |
 | [イコールアース図法](../docs/atlas/concepts/equal-earth-projection.md) | 2026-10-23 | 2026-09-06〜2026-09-07 | 未記録 | 低・年次候補 | 定義・出典・断定の範囲／記載未検出（完了を意味しない） | 未記録 |
 | [GeoAIの全体像](../docs/atlas/concepts/geoai-overview.md) | 2026-10-17 | 2026-10-05 | 未記録 | 低・年次候補 | 定義・出典・断定の範囲／本文に未確認等の記載あり：システムの実行は未検証） | 未記録 |

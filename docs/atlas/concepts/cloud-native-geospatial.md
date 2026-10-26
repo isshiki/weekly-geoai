@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-10-20
+updated: 2026-10-26
 ---
 
 # Cloud Native Geospatial
@@ -38,6 +38,12 @@ Cloud Native Geospatial（CNG）は、地理空間データをクラウド上で
 GeoParquetはParquetへの地理空間表現・メタデータの仕様である。ここでは1.1.0の仕様を参照し、最新仕様であるとの主張はしない。bboxによる絞り込みは配置と読むツールの対応にも依存する。[COGP](../data/cloud-optimized-geoparquet.md)の段階表示は追加のプロファイルであり、通常のGeoParquetすべてに同じ動作を期待しない。
 
 STACのItemは個々の資産の記述、Collectionは集合の情報、Catalogはそれらをたどる構造を担う。静的JSONのカタログもあり、STACを使うことが検索APIの稼働を意味するわけではない。検索サービスのインターフェースはSTAC APIとして区別する。
+
+### Polarsで扱う場合
+
+Polarsは表形式データを処理するライブラリである。Python Polars 2.1.0はGeoParquetの読み書きを実験的に追加した。実装PRでは、読み込み時にParquetの`geo`メタデータを解釈し、対応する列にGeoArrowのメタデータを設定すると説明している。地理空間データの受け渡しに関わる更新であり、これだけで空間結合や距離計算まで提供するという意味ではない。
+
+PRの説明では環境変数による有効化が必要で、書き込みはGeoParquet 1.0・1.1を指定する。0.x・2.xは未対応で、bboxとorientation情報は保持しない。導入時は形式・メタデータの互換性を確かめる。Python 3.10のサポート終了も移行条件となる。2026年10月26日に公式リリースとマージ済みPRを確認したもので、Atlasでの入出力試験は行っていない。[Spatial Polars](../tools/spatial-polars.md)は別の追加パッケージとして区別する。
 
 ## 組み合わせの例 { #workflow }
 
@@ -137,6 +143,8 @@ ArcGIS Enterprise on Kubernetesは、クラウドや自社設備でGISを運用�
 - [GISデータセットカタログ](../methods/gis-dataset-catalog-for-agents.md)
 
 ## 出典
+
+- [Python Polars 2.1.0：公式リリース](https://github.com/pola-rs/polars/releases/tag/py-2.1.0)・[GeoParquet入出力の実装PR](https://github.com/pola-rs/polars/pull/29987)（2026-10-26確認）
 
 - [GeoParquet 1.1.0仕様](https://geoparquet.org/releases/v1.1.0/)（2026-10-06確認）
 - [GDAL: COG driver](https://gdal.org/en/stable/drivers/raster/cog.html)（2026-10-06確認）
