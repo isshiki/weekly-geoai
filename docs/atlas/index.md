@@ -170,6 +170,7 @@ updated: 2026-10-18
 - [MachGL](tools/machgl.md)
 - [OpenLayers](tools/openlayers.md)
 - [Cesium](tools/cesium.md)
+- [Navara](tools/navara.md)
 - [Mapbox Standard](tools/mapbox-standard.md)
 - [maplibre-gl-streetview](tools/maplibre-gl-streetview.md)
 

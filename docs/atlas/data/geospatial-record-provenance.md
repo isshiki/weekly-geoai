@@ -2,7 +2,7 @@
 layout: default
 title: 地理空間データの来歴とレコード単位のメタデータ
 category: data
-updated: 2026-10-19
+updated: 2026-10-26
 ---
 
 # 地理空間データの来歴とレコード単位のメタデータ
@@ -65,6 +65,14 @@ B〜Eは実際に使った情報へ置き換える。分からない項目は「
 
 出典・更新時点・確かさを地図上の情報と結び付ける設計は参考になる。ただし、単語や数字が原ページに存在するだけでは、その解釈や地物との対応が正しいことまで保証しない。地図と表で同じデータを参照する設計と、内容の事実確認を分ける。Atlasでは作者の説明を確認し、個々の施設・人物情報の検証やアプリの動作試験は行っていない。
 
+## AI向けに自治体資料を集める基盤
+
+Plotiは、自治体に分散した用途地域・許認可・所有権・洪水などの情報をAIから問い合わせるサービスである。公式ブログはMCP・REST API・CLIを提供し、不足データの収集依頼や変更追跡にも対応すると説明する。利用にはアカウントと対象データへの利用権限が必要になる。
+
+2026年10月23日の報道は、同社の説明として57,818件の地域データセットの特定、40州での検索対応、1,823件の会議資料から20年分の採決記録を2.5日で復元した事例を伝える。これらは事業者の公表値で、第三者による精度・網羅率の検証ではない。
+
+参考になるのは、AIが回答する前段の「資料を見つけ、取り込み、更新を追う」工程も扱う点である。出典が付くことと、PDFからの抽出や地番への対応が正しいことは別に確認する。元資料・取得日・対象地域・抽出した箇所を照合できる形で利用したい。日本の自治体への対応や本サービスの動作は今回確認していない。
+
 ## 出典
 
 - [W3C: PROV-Overview](https://www.w3.org/TR/prov-overview/)（2013、2026-10-06確認）
@@ -74,3 +82,7 @@ B〜Eは実際に使った情報へ置き換える。分からない項目は「
 - [The unglamorous work of making open map data fit together](https://overturemaps.org/blog/2026/the-unglamorous-work-of-making-open-map-data-fit-together/)（2026-10-14確認）
 
 - [Next.js + MapLibreで北朝鮮のオープンソース地図を作った](https://zenn.dev/ahmetde/articles/b5faa4df0477b4)（2026-10-19確認）
+
+- [AI PropTech News：Plotiのデータ基盤](https://aiproptechnews.com/article/ploti-launches-real-estate-data-layer-for-ai/)（2026-10-26確認）
+
+- [Ploti：API・CLI・MCPの公式説明](https://www.ploti.ai/blog/real-estate-data-api-cli-and-mcp-for-ai-agents)（2026-10-26確認）

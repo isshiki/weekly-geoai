@@ -134,6 +134,7 @@ nav:
         - MachGL: atlas/tools/machgl.md
         - OpenLayers: atlas/tools/openlayers.md
         - Cesium: atlas/tools/cesium.md
+        - Navara: atlas/tools/navara.md
         - Mapbox Standard: atlas/tools/mapbox-standard.md
         - maplibre-gl-streetview: atlas/tools/maplibre-gl-streetview.md
       - 分析・変換をコードで行う:
@@ -226,6 +227,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月25日: updates/2026-10-25.md
         - 10月24日: updates/2026-10-24.md
         - 10月23日: updates/2026-10-23.md
         - 10月22日: updates/2026-10-22.md
