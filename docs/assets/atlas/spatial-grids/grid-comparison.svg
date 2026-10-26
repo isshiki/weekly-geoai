@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="920" viewBox="0 0 900 920" role="img" aria-labelledby="title desc">
+  <title id="title">標準地域メッシュ・H3・S2：区切り方と使いどころ</title>
+  <desc id="desc">標準地域メッシュは緯度経度に沿う四角い区画で日本の統計と結ぶ。H3は主に六角形で近隣を扱う。S2は球面の四角形を4分割して位置を索引する。図は模式図で、同じ縮尺ではない。</desc>
+  <style>text{font-family:'Noto Sans JP','Yu Gothic',sans-serif;fill:#1E3A5F} .title{font-size:30px;font-weight:700}.label{font-size:26px;font-weight:700}.body{font-size:22px}.small{font-size:19px}.grid{fill:#eaf0f7;stroke:#1E3A5F;stroke-width:2.5}.line{fill:none;stroke:#1E3A5F;stroke-width:2.5}.accent{fill:#FF8A3D;stroke:#1E3A5F;stroke-width:2.5}</style>
+  <rect width="900" height="920" rx="16" fill="white"/>
+  <text x="32" y="48" class="title">同じ「地域を区切る」でも、形と使いどころが違う</text>
+  <rect x="24" y="76" width="852" height="238" rx="14" fill="#f3f6fa"/>
+  <text x="48" y="116" class="label">標準地域メッシュ</text>
+  <g transform="translate(48 139)">
+    <rect width="168" height="104" class="grid"/>
+    <path d="M84 0V104 M0 52H168" class="line"/>
+    <rect width="42" height="26" class="accent"/>
+    <path d="M42 0V52 M0 26H84" class="line"/>
+  </g>
+  <text x="48" y="278" class="small">緯度・経度に沿う四角形</text>
+  <text x="340" y="158" class="label">日本の公的統計と結ぶ</text>
+  <text x="340" y="198" class="body">約1km → 500m → 250mでは</text>
+  <text x="340" y="232" class="body">縦・横を半分にして、4区画へ。</text>
+  <text x="340" y="278" class="small">「500m」は目安。厳密な500m四方ではない。</text>
+  <rect x="24" y="330" width="852" height="256" rx="14" fill="#f3f6fa"/>
+  <text x="48" y="371" class="label">H3</text>
+  <defs><polygon id="hex" points="0,-32 27.71,-16 27.71,16 0,32 -27.71,16 -27.71,-16"/></defs>
+  <g transform="translate(138 462)" class="grid">
+    <use href="#hex" x="55.42"/><use href="#hex" x="-55.42"/>
+    <use href="#hex" x="27.71" y="48"/><use href="#hex" x="-27.71" y="48"/>
+    <use href="#hex" x="27.71" y="-48"/><use href="#hex" x="-27.71" y="-48"/>
+    <use href="#hex" class="accent"/>
+  </g>
+  <text x="48" y="562" class="small">主に六角形／図は隣接関係</text>
+  <text x="340" y="409" class="label">世界の地点を集計し、近隣を調べる</text>
+  <text x="340" y="449" class="body">通常は、六角形の周りに6つのセル。</text>
+  <text x="340" y="483" class="body">各解像度に12個の五角形もある。</text>
+  <text x="340" y="529" class="small">階層はあるが、子の形が親の内側に</text>
+  <text x="340" y="555" class="small">ぴったり収まる分割ではない。</text>
+  <rect x="24" y="602" width="852" height="238" rx="14" fill="#f3f6fa"/>
+  <text x="48" y="643" class="label">S2</text>
+  <path d="M68 686 Q145 666 222 686 Q236 738 222 790 Q145 810 68 790 Q54 738 68 686Z" class="grid"/>
+  <path d="M68 686 Q106 676 145 676 L145 738 L61 738 Q61 712 68 686Z" class="accent"/>
+  <path d="M145 676V800 M61 738H229" class="line"/>
+  <text x="340" y="683" class="label">世界の位置を階層で整理する</text>
+  <text x="340" y="723" class="body">立方体の6面を球面に投影し、</text>
+  <text x="340" y="757" class="body">四角形のセルを、繰り返し4分割。</text>
+  <text x="340" y="803" class="small">球面上の区画。緯度・経度の格子とは違う。</text>
+  <text x="32" y="875" class="small">模式図：実際の境界・同じ縮尺を表していません。</text>
+  <text x="32" y="903" class="small">どの方式も全セルが等面積ではなく、レベル番号だけで細かさは比較できません。</text>
+</svg>
