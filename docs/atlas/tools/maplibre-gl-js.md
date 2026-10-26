@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-10-19
+updated: 2026-10-26
 ---
 
 # MapLibre GL JS
@@ -61,6 +61,10 @@ v6.14.0では、一部iPadOS 16 Safariでの空白表示などを修正した。
 
 ポインター直下を軸に回転・傾斜する操作と、中心を軸にする設定も追加し、従来の`aroundCenter`は非推奨になった。`font-faces`の縦書きでOpenTypeの`vert`字形に対応し、Safari 26.6以降で背景から復帰した際のタイル読み込み停止なども修正する。本Atlasでは実験APIの動作・性能は測定していない。
 
+### 表示制限と復帰時の挙動
+
+v6.16.0は`setMaxBounds`で緯度・経度の片方だけを制限し、地図の初期化時にも`transformStyle`を指定できる。iOSがWorkerを停止した後の読み込み停止や、背景から復帰した際の表示崩れも修正する。利用端末で更新・復帰を確認するための情報であり、本Atlasでの実機検証結果ではない。
+
 ## GIS基盤と地図画面をつなぐ
 
 NextGIS Frontendは、NextGIS Webで管理したデータ・スタイル・権限と、JavaScriptで作る地図画面をつなぐライブラリ群である。2026年10月2日発表の4.0は、Leaflet・OpenLayers・MapLibre間で選択、絞り込み、ポップアップ、操作部品などの扱いを共通化し、React連携を改善した。
@@ -94,3 +98,5 @@ QuickMapServicesの背景地図検索用パッケージはNextGIS Webから独�
 - [NextGIS Frontend 4.0: Less Integration Code, More Powerful Web Maps](https://nextgis.com/blog/nextgis-frontend-4/)（2026-10-12確認）
 
 - [MapLibre GL JS v6.15.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.15.0)（2026-10-19確認）
+
+- [v6.16.0（MapLibre GL JS）](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.16.0)（2026-10-26確認）

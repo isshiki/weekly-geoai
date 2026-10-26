@@ -46,6 +46,7 @@ updated: 2026-10-18
 - [Location AI](concepts/location-ai.md)
 - [地理空間モデルの予測と地理的理解](concepts/geographic-model-reasoning.md)
 
+- [メッシュと地域の区切り方](concepts/spatial-grids.md)
 - [MAUP：集計範囲で結果が変わる問題](concepts/maup.md)
 - [UGCoP：実際に関わる場所と時間を捉える](concepts/ugcop.md)
 

@@ -46,6 +46,7 @@ nav:
         - ロケーションインテリジェンス: atlas/concepts/location-intelligence.md
         - Location AI: atlas/concepts/location-ai.md
         - 地理空間モデルの予測と地理的理解: atlas/concepts/geographic-model-reasoning.md
+        - メッシュと地域の区切り方: atlas/concepts/spatial-grids.md
         - MAUP：集計範囲で結果が変わる問題: atlas/concepts/maup.md
         - UGCoP：実際に関わる場所と時間を捉える: atlas/concepts/ugcop.md
       - 座標参照系と地図投影法:
@@ -227,6 +228,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月26日: updates/2026-10-26.md
         - 10月25日: updates/2026-10-25.md
         - 10月24日: updates/2026-10-24.md
         - 10月23日: updates/2026-10-23.md
