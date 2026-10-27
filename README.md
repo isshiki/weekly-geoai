@@ -51,3 +51,7 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 調査9本の原文はGit対象外の `local-research/2026-10-06/` に保管。[受領台帳](editorial/atlas-research-manifest.json)と[共通点・食い違い](editorial/atlas-research-findings.md)はリポジトリで管理する。ローカル原文はpushに含まれない。
 
 Atlasは概念・選択基準・注意点を中心に保守する。新しいプログラミング演習は追加せず、具体的な実装は既存の実践記事や公式資料へ案内する。
+
+## 依存関係のセキュリティ更新（2026-10-27）
+
+サイト生成環境の `uv.lock` にある certifi を 2026.10.19 に対象更新しました。他のパッケージ版と対応Python範囲は維持しています。これはPython/MkDocsの生成環境の更新で、公開済みの静的HTMLへcertifiを配布する変更ではありません。更新済みvenvでの厳格なローカルサイトビルド（mkdocs build --strict）と依存整合性確認が成功しました。外部リンクのHTTP確認と公開反映は未実施です。
