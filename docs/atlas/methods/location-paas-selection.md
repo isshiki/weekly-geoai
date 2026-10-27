@@ -2,7 +2,7 @@
 layout: default
 title: 位置情報PaaSの選び方と相互運用性
 category: methods
-updated: 2026-10-24
+updated: 2026-10-27
 ---
 
 # 位置情報PaaSの選び方と相互運用性
@@ -67,6 +67,12 @@ OSMのデータ利用と公共タイルサーバーの利用は別である。OS
 - [外部地図サービスの廃止と依存関係の点検](map-service-lifecycle.md)
 - [GeoAIの標準化と実務での採用](../concepts/geoai-standards-and-adoption.md)
 
+## 課金単位と保存条件を分ける
+
+Mapboxの公式料金を2026年10月27日に確認すると、通常のGL JSの月間ロードは5万回まで無料で、次の5万回は1,000回当たり5ドルである。ロードは地図の初期化を数え、含まれるタイル取得と別の検索API呼び出しを混同しない。Seats方式など別の課金方式もある。
+
+SuperDuprの比較記事は、一時的な住所検索と結果を保存するPermanent Geocoding、検索セッションとリクエストを分けて試算している。料金比較には無料枠だけでなく段階料金・保存条件・契約をそろえる必要がある。記事のGoogleとの総額比較は著者の想定利用量による試算であり、本Atlasで全条件を再計算した正式見積もりではない。
+
 ## 出典
 
 - [Esri Community：ロケーション サービスにオープンな開発をサポートする PaaS を選ぶべき理由](https://community.esri.com/ja/discussion/1720940/)（2026-09-25確認）
@@ -96,3 +102,6 @@ OSMのデータ利用と公共タイルサーバーの利用は別である。OS
 - [Google：Routes API変更履歴](https://developers.google.com/maps/documentation/routes/release-notes#October_23_2026)（2026-10-24本文確認）
 
 - [Google：ルートのカスタマイズ](https://developers.google.com/maps/documentation/navigation/android-sdk/customize-route)（2026-10-24本文確認）
+
+- [Mapbox Pricing 2026: Free Tier, Map Loads, Geocoding, and Mapbox vs Google Maps on Real Bills](https://superdupr.com/blog/mapbox-pricing)（2026-10-27確認）
+- [Mapbox公式料金](https://www.mapbox.com/pricing)（2026-10-27確認）

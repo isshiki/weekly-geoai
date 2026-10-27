@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-23
+updated: 2026-10-27
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -162,6 +162,16 @@ Placer.aiの2026年10月22日の分析では、米国の高級商業地区10カ�
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
 - [DOCOYAフード&ビバレッジ](../tools/docoya-food-beverage.md)
 
+## 顧客データと地域需要を突き合わせる
+
+リードプラスの10月23日の解説は、購買・会員データに人口統計・人流・競合情報を組み合わせ、対象・商圏の定義からデータ統合、課題抽出、施策化へ進む。RFMは最終購買・頻度・金額による既存顧客の整理であり、地域にいる未来店者の需要とは分けて読む。地域と会員の属性が違うだけで競合への流出が実証されたとはいえず、現地調査や施策後の検証で補う。
+
+GrowthFactorは自社サービスを中心とする10月25日の解説で、人口・人流・用途地域・競合を統合し、候補地の評価理由を示す構成を紹介する。Books-A-Millionで年3,000件超を評価すると報告するが、提供者による実績紹介であり、売上予測の精度や因果効果を独立検証した結果とは区別する。
+
+## 来訪増加の対象と時間帯を分ける
+
+Placer.aiの2026年Q3分析では米国カジュアルダイニング全体の来訪は前年同期比0.2％増だった。Cheddar’sの全店4.9％増と既存店2.3％増は母集団が異なる。BJ’sの夜遅い時間帯17.4％増も全時間帯の変化ではない。所得・年代・利用時間帯を分けて比較する事例であり、来訪増を売上増や販促の因果効果と同一視しない。元データの再集計はしていない。
+
 ## 出典
 
 - [今回確認した出典](https://note.com/gsi_note/n/n169555d4574b)（2026-09-24確認）
@@ -207,3 +217,7 @@ Placer.aiの2026年10月22日の分析では、米国の高級商業地区10カ�
 
 - [競合の商圏分析｜範囲・店舗分布・人口の調べ方](https://www.delight-solutions.co.jp/column/%e3%83%a9%e3%82%a4%e3%83%90%e3%83%ab%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0/trade-area-competitor-analysis/)（2026-10-22本文確認）
 - [High-Street Corridors Gain Ground Ahead of the Holiday Rush](https://www.placer.ai/anchor/articles/high-street-corridors-gain-ground-ahead-of-the-holiday-rush)（2026-10-23本文確認）
+
+- [エリアマーケティングの顧客分析手法とは？成果を出す手順と活用例を解説](https://www.leadplus.co.jp/blog/customer-analysis)（2026-10-27確認）
+- [AI Site Analysis: Complete Guide to Top Platforms](https://www.growthfactor.ai/resources/blog/ai-site-analysis-complete-guide)（2026-10-27確認）
+- [Four Recipes for Casual Dining Growth in Q3 2026](https://www.placer.ai/anchor/articles/four-recipes-for-casual-dining-growth-in-q3-2026)（2026-10-27確認）

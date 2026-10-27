@@ -2,7 +2,7 @@
 layout: default
 title: Felt
 category: tools
-updated: 2026-10-04
+updated: 2026-10-27
 ---
 
 # Felt
@@ -40,7 +40,7 @@ Feltは自然言語から地図や空間分析を作るFelt AIを提供する。
 - カテゴリー、数値、ヒートマップ、H3のスタイル設定
 - ピン、経路、ポリゴン、注記による共同作業
 
-MCP経由の操作にはFeltユーザーの権限が引き継がれ、結果は閲覧・編集可能な地図として残る。公式発表時点ではMCP ServerはEnterprise workspace向けであるため、利用可否と契約条件は最新情報を確認する。
+MCP経由の操作にはFeltユーザーの権限が引き継がれ、結果は閲覧・編集可能な地図として残る。当初の公式発表ではEnterprise workspace向けだったが、2026年10月27日の料金ページではBusiness・Enterpriseに含まれる（下記の利用枠を参照）。
 
 ## ラスタ分析とAIからの呼び出し
 
@@ -87,6 +87,14 @@ MCP経由の操作にはFeltユーザーの権限が引き継がれ、結果は�
 - [CARTO MCP Server](carto-mcp-server.md)
 - [AIが扱いやすい地理空間開発環境](../methods/ai-ready-geospatial-development.md)
 
+## 自社サービスへの組み込みと利用枠
+
+PlatformアドオンはJavaScript SDK・認証付き埋め込みで顧客向けアプリを構成し、利用者にFeltアカウントや席を要求しない。REST APIによる連携と合わせて、地図の処理基盤と自社アプリの画面・認証を分担する。
+
+2026年10月27日の公式料金ではTeam・Businessは月払いも可能である。PSS記事の「有料プランは年間契約」という説明は現行条件にそのまま当てはめない。Platformは有料プランで最初の3カ月無料と案内されるが、新規ワークスペースの7日間トライアルとは別の条件である。通常プランの閲覧者枠と、Platformの顧客に席が不要という条件も区別する。
+
+追加使用量は処理1GBまたは地図表示1,000回につき月5ドルと案内され、80％・100％で通知し自動超過課金はしない。Business・EnterpriseにMCPが含まれることも現行公式で確認した。実際の導入では基本料金・アドオン・使用枠を合わせて確認する。
+
 ## 出典
 
 - [Felt: AI raster analysis is here](https://felt.com/blog/raster-analysis)（2026-09-15公開、2026-09-22確認）
@@ -98,3 +106,6 @@ MCP経由の操作にはFeltユーザーの権限が引き継がれ、結果は�
 - [Feltを調べてみた ― Cloud Native GISはどこまで身近になったのか](https://qiita.com/rino_yume/items/b76443c5010bf0de2ceb)（2026-09-14確認）
 
 - [Feltを使ってみる Step 2 ー QGISからWeb GISへ公開してみる](https://qiita.com/rino_yume/items/feebb0b31dcc07ee9557)（2026-10-04確認）
+
+- [【Felt】自社サービスに地図を組み込むためのFeltの開発者向け新プラン](https://note.com/pacificspatial/n/n5de3382babd8)（2026-10-27確認）
+- [Felt公式料金](https://felt.com/pricing)（2026-10-27確認）

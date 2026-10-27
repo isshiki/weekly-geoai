@@ -1,7 +1,7 @@
 ---
 title: 空間SQLエンジンの選び方
 category: tools
-updated: 2026-10-24
+updated: 2026-10-27
 ---
 
 # 空間SQLエンジンの選び方
@@ -52,6 +52,12 @@ DatabricksのLakehouse//RTは、レイクハウス上のデータを低遅延・
 - [空間結合と集計](../methods/spatial-join-and-aggregation.md)：まず同じ問い・判定になっているかを確認する。
 - [空間索引の選択と評価条件](../methods/spatial-index-selection.md)：検索時間と準備時間を分ける。
 
+## DuckDBの拡張導入と移行条件
+
+公式2.0文書は、spatialをINSTALLで導入した後にLOAD spatialで明示的に読み込むよう案内する。自動ロードには対応しない。これは導入手順であり、新機能の発表ではない。
+
+10月のQiita解説は、GeoJSON／GeoJSONLの直接入出力と最近傍結合、座標軸設定を移行時の確認点に挙げる。公式のNEAREST結合は距離や類似度で相手側の上位k件を対応付けるSQLで、空間データ専用でもR-tree利用を保証するものでもない。GEOMETRYの本体組み込みとCRS付き型は1.5由来と区別する。座標軸の設定だけでなく、変換後の位置と距離を確認する。記事のSQLと本Atlasの確認はいずれも実行試験ではない。
+
 ## 出典
 
 - [Matt Forrest：PostGIS vs GeoPandas vs DuckDB](https://forrest.nyc/postgis-geopandas-duckdb-spatial-engine/)（2026-10-16確認）
@@ -63,3 +69,7 @@ DatabricksのLakehouse//RTは、レイクハウス上のデータを低遅延・
 - [Pacific Spatial Solutions：DuckDB 2.0と地理空間データ](https://note.com/pacificspatial/n/n1947bdb5e851)（2026-10-24本文確認）
 
 - [Plotly：DuckDB 2.0の検証と地図デモ](https://plotly.com/blog/duckdb-2-0/)（2026-10-24本文確認）
+
+- [Spatial Extension – DuckDB](https://duckdb.org/docs/2.0/core_extensions/spatial/overview)（2026-10-27確認）
+- [DuckDB 2.0で変わったSpatial・GIS機能を整理する ── GeoJSON、最近傍検索、座標軸の変更と移行時の注意点](https://qiita.com/rino_yume/items/9e0cc4ab18ccaf12d14a)（2026-10-27確認）
+- [DuckDB：Nearest Joins](https://duckdb.org/docs/2.0/sql/query_syntax/from#nearest-joins)（2026-10-27確認）

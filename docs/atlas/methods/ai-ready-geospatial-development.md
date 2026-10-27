@@ -2,7 +2,7 @@
 layout: default
 title: AIが扱いやすい地理空間開発環境
 category: methods
-updated: 2026-10-21
+updated: 2026-10-27
 ---
 
 # AIが扱いやすい地理空間開発環境
@@ -107,6 +107,12 @@ TerraLabは公開ベンチマークの41問を各3回実行し、Low effortの�
 - [CARTO MCP Server](../tools/carto-mcp-server.md)
 - [GISデータセットカタログ](gis-dataset-catalog-for-agents.md)
 
+## 空間計算を専用エンジンへ渡すGeoSpark
+
+GeoSpark（PyPI名geospark-ai）は、LLMから距離・包含・交差・座標変換などを呼び出すためのOSSである。Python・CLI・REST API・MCPを提供し、Shapelyやpyprojなどの計算エンジンを使う。地図データや経路などの外部サービスへの接続には、それぞれの利用条件がある。
+
+現行説明は出典・単位・警告と、回答可能・部分回答・回答不能の状態を返す設計を重視する。Apache-2.0で公開されているが、公式ページのMCPツール数に17・追加3・15という不一致があるため、固定件数を導入条件にしない。旧要約の6ツール・距離正答率0％から70％は現行版の結果として再掲しない。開発者の性能報告を独立検証とは扱わず、本Atlasでもツールを実行していない。
+
 ## 出典
 
 - [Making deck.gl AI-Ready: What Seven Frontier Models Taught Us About Maps](https://carto.com/blog/making-deckgl-ai-ready/)（2026-09-10確認）
@@ -123,3 +129,5 @@ TerraLabは公開ベンチマークの41問を各3回実行し、Low effortの�
 - [Geoapify：更新一覧](https://www.geoapify.com/news-and-updates/)（2026-10-21本文確認）
 - [TerraLab：QGIS AI Agent評価](https://terra-lab.ai/blog/ai-agent-qgis-plugin-geospatial-benchmark)（2026-10-21本文確認）
 - [国際航業：KKC Satellite Analyst](https://prtimes.jp/main/html/rd/p/000000152.000086246.html)（2026-10-21本文確認）
+
+- [GeoSpark（geospark-ai）](https://pypi.org/project/geospark-ai/)（2026-10-27確認）

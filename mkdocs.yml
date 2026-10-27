@@ -121,6 +121,7 @@ nav:
         - OH3 今昔マップビューア: atlas/tools/oh3-konjaku.md
         - 鳥瞰路線図: atlas/tools/chokan-rail-map.md
         - Maparium: atlas/tools/maparium.md
+        - Local Wikipedia: atlas/tools/local-wikipedia.md
         - にぎわいの地形図と駅Tier表: atlas/tools/poi-density-terrain.md
         - Kodawari: atlas/tools/kodawari.md
       - 地図を作成・共有する:
@@ -163,6 +164,7 @@ nav:
         - 海しるAPI: atlas/tools/umishiru-api.md
       - 場所検索・交通・ナビゲーション:
         - ArcGIS Geocoding Service: atlas/tools/arcgis-geocoding.md
+        - LocateXT：文書から位置を抽出する: atlas/tools/locatext.md
         - Nominatim: atlas/tools/nominatim.md
         - OpenPOI API: atlas/tools/openpoi-api.md
         - Overture Maps API: atlas/tools/overture-maps-api.md
@@ -228,6 +230,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月27日: updates/2026-10-27.md
         - 10月26日: updates/2026-10-26.md
         - 10月25日: updates/2026-10-25.md
         - 10月24日: updates/2026-10-24.md

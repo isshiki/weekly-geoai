@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-10-26
+updated: 2026-10-27
 ---
 
 # Cloud Native Geospatial
@@ -142,6 +142,12 @@ ArcGIS Enterprise on Kubernetesは、クラウドや自社設備でGISを運用�
 - [全国メッシュデータのWeb配信](../methods/national-grid-web-delivery.md)
 - [GISデータセットカタログ](../methods/gis-dataset-catalog-for-agents.md)
 
+## ファイルのメタデータを型チェックに使う
+
+MIERUNEの10月26日の試作は、TypeScript 7.1ベータのcontent mapperでGeoParquetのスキーマ・統計・CRSから型を生成する。列の欠損可能性や条件による戻り値の絞り込み、座標系の取り違えをコードを書く段階で検出する試みである。
+
+著者はOvertureの約733MBのファイルに対し約1.6MBのフッタで型を生成し、札幌中心部のbboxとconfidence 0.8以上の条件に合う7,947件をフッタ込み5MB未満で取得したと報告する。型はそのファイルのスナップショットであり、更新後の内容や実行時アップロードにはそのまま使えない。統計がない場合はスキーマ由来の型に限る。ベータ機能を使う試作で、本Atlasでは再実行していない。
+
 ## 出典
 
 - [Python Polars 2.1.0：公式リリース](https://github.com/pola-rs/polars/releases/tag/py-2.1.0)・[GeoParquet入出力の実装PR](https://github.com/pola-rs/polars/pull/29987)（2026-10-26確認）
@@ -171,3 +177,6 @@ ArcGIS Enterprise on Kubernetesは、クラウドや自社設備でGISを運用�
 - [Safe Software：既存システムを置き換えずにAIへ接続する](https://fme.safe.com/blog/2026/10/modernizing-for-ai-without-replacing-legacy-systems-lessons-from-utilities/)（2026-10-20確認）
 - [CARTO：Q3 2026更新](https://carto.com/blog/whats-new-in-carto-q3-2026/)（2026-10-20確認）
 - [Esri：ArcGIS Enterprise on Kubernetesの導入効果](https://www.esri.com/arcgis-blog/products/arcgis-enterprise/announcements/the-business-case-for-arcgis-enterprise-on-kubernetes)（2026-10-20確認）
+
+- [TSのcontent mapperを使ってGeoParquetの型推論を便利に賢くしてみる](https://zenn.dev/mierune/articles/bc06573ac1884b)（2026-10-27確認）
+- [TypeScript 7.1 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/)（2026-10-27確認）

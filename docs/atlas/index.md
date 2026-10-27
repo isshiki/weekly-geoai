@@ -153,6 +153,7 @@ updated: 2026-10-18
 - [OH3 今昔マップビューア](tools/oh3-konjaku.md)
 - [鳥瞰路線図](tools/chokan-rail-map.md)
 - [Maparium](tools/maparium.md)
+- [Local Wikipedia](tools/local-wikipedia.md)
 - [にぎわいの地形図と駅Tier表](tools/poi-density-terrain.md)
 - [Kodawari](tools/kodawari.md)
 
@@ -207,6 +208,7 @@ updated: 2026-10-18
 ### 場所検索・交通・ナビゲーション
 
 - [ArcGIS Geocoding Service](tools/arcgis-geocoding.md)
+- [LocateXT：文書から位置を抽出する](tools/locatext.md)
 - [Nominatim](tools/nominatim.md)
 - [OpenPOI API](tools/openpoi-api.md)
 - [Overture Maps API](tools/overture-maps-api.md)

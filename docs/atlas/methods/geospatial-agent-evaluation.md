@@ -1,7 +1,7 @@
 ---
 title: 地理空間AIエージェントの評価
 category: methods
-updated: 2026-10-18
+updated: 2026-10-27
 ---
 
 # 地理空間AIエージェントの評価
@@ -42,8 +42,14 @@ Ask Google Earthのdeep researchとA2A APIは申請制の初期・実験的ア�
 - [分析結果の検証と適用範囲](spatial-analysis-validation.md)：予測の評価条件を決める。
 - [Mapsuke](../tools/mapsuke.md)：手元のGISを操作するツールと確認の役割。
 
+## 利用事例の短縮時間と正確性を分ける
+
+Pacific Spatial Solutionsの解説とGoogleの公式紹介は、WHO AFRO等が森林減少・鉱山・人口を組み合わせ、48集落と4万5,500人超のリスク対象を数分で特定したと報告する。People in Needの過去14件のサイクロン経路分析も紹介する。これらは提供者・利用者による業務事例であり、独立した誤差測定や対象住民全員の個別確認を意味しない。時間短縮と、分析結果の正確性・専門家レビューを分けて評価する。
+
 ## 出典
 
 - [GeoFitBench-LLM](https://arxiv.org/abs/2610.12669)（2026-10-08 UTC提出、2026-10-16にv1 PDF確認）
 - [Google Earth AI Geospatial Reasoning Agent](https://arxiv.org/abs/2610.15750)（2026-10-11 UTC提出、2026-10-16にv1本文・評価表・限界を確認）
 - [Putting Earth AI to work: Geospatial agents for our planet’s biggest challenges](https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/)（2026-10-18本文確認）
+
+- [【GeoAI】第23回：Google Earth AIエージェントが示すGeoAIの次の一手](https://note.com/pacificspatial/n/na69d4704a8f5)（2026-10-27確認）

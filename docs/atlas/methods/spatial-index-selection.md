@@ -2,7 +2,7 @@
 layout: default
 title: 空間索引の選択と評価条件
 category: methods
-updated: 2026-10-06
+updated: 2026-10-27
 ---
 
 # 空間索引の選択と評価条件
@@ -35,8 +35,17 @@ ShapelyのSTRtreeは、構築時に登録した形状の2次元bboxを使う索�
 
 2026年10月2日時点では本文取得が403となり、全文・研究別の条件・内訳は未確認である。2026年10月6日にも出版社ページの取得を試みたが、取得エラーとなり本文を確認できなかった。本ページは確認できた抄録・抜粋の範囲に限る。
 
+## PostGISで実行計画を確認する
+
+PostGISのGiST索引は外接矩形で候補を減らし、対応する空間述語が形状の判定を行う。索引が存在しても、式やデータ量によって実行計画は変わる。EXPLAIN ANALYZEは実際にクエリを実行して時間と行数を調べるための道具である。
+
+距離条件には索引を使えるST_DWithinを検討し、大量更新後はANALYZEなどで統計を更新する。ST_Subdivideによる分割は分割前の地物IDと集計重複に注意する。ST_Simplifyは形を変え、境界付近の判定も変え得るため、単なる高速化として原本へ無条件に適用しない。10月のLearnomate記事を入口に公式の索引解説と照合した。
+
 ## 出典
 
 - [Shapely STRtree](https://shapely.readthedocs.io/en/stable/strtree.html)（2.1.2ドキュメント、2026-10-06確認）
 
 - [From R-Trees to Learned Indexes: A Systematic Review of Spatial Indexing Across 2D, 3D and Point-Cloud Geospatial Query Scenarios](https://www.mdpi.com/2220-9964/15/10/452)（2026-10-02確認）
+
+- [PostGIS Performance: Indexing and EXPLAIN](https://learnomate.org/postgis-performance-indexing-explain/)（2026-10-27確認）
+- [PostGIS：Spatial Indexing](https://postgis.net/workshops/postgis-intro/indexing.html)（2026-10-27確認）
