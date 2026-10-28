@@ -2,7 +2,7 @@
 layout: default
 title: 位置情報PaaSの選び方と相互運用性
 category: methods
-updated: 2026-10-27
+updated: 2026-10-29
 ---
 
 # 位置情報PaaSの選び方と相互運用性
@@ -73,6 +73,12 @@ Mapboxの公式料金を2026年10月27日に確認すると、通常のGL JSの�
 
 SuperDuprの比較記事は、一時的な住所検索と結果を保存するPermanent Geocoding、検索セッションとリクエストを分けて試算している。料金比較には無料枠だけでなく段階料金・保存条件・契約をそろえる必要がある。記事のGoogleとの総額比較は著者の想定利用量による試算であり、本Atlasで全条件を再計算した正式見積もりではない。
 
+## APIの稼働と返却データの品質を分ける
+
+Googleの2026年10月の障害では、地図更新で住所と地域・行政区分の関連付けが一部欠落し、住所要素や言語・形式、検索結果に問題が出た。10月28日4時7分JSTの公式報告は大半の復旧と一部道路の復元・検証継続を示す。これは同報告時点の状態である。
+
+運用上は接続できるかだけでなく、必要な住所要素がそろうか、想定した言語か、空の結果が増えていないかも確認する。空の結果だけで住所が存在しないと即断しない。これは障害を踏まえたAtlasの確認項目であり、Googleが提示した回避策ではない。
+
 ## 出典
 
 - [Esri Community：ロケーション サービスにオープンな開発をサポートする PaaS を選ぶべき理由](https://community.esri.com/ja/discussion/1720940/)（2026-09-25確認）
@@ -105,3 +111,5 @@ SuperDuprの比較記事は、一時的な住所検索と結果を保存するPe
 
 - [Mapbox Pricing 2026: Free Tier, Map Loads, Geocoding, and Mapbox vs Google Maps on Real Bills](https://superdupr.com/blog/mapbox-pricing)（2026-10-27確認）
 - [Mapbox公式料金](https://www.mapbox.com/pricing)（2026-10-27確認）
+
+- [Incomplete and/or incorrectly localized addresses for some street results](https://status.cloud.google.com/maps-platform/incidents/A5nfwjNzwZbDazvxqgqC)（2026-10-29本文確認、10月28日分として収録）

@@ -2,7 +2,7 @@
 layout: default
 title: GeoLibre
 category: tools
-updated: 2026-10-26
+updated: 2026-10-29
 ---
 
 # GeoLibre
@@ -71,6 +71,12 @@ OBIA（オブジェクトベース画像解析）は、画像を領域に分割�
 
 MCP Appsの地図プレビューは読み取り専用である。アプリの操作APIが持つ機能と、チャット内プレビューの権限を混同しない。以上はリリースノートで確認した機能であり、画像分類や点群表示の実行検証は行っていない。
 
+## 複数データの反復処理と条件分岐
+
+Model Builderは処理をつないで分析手順を組み立てる機能である。v3.5.1では、地物やラスタごとに同じ処理を反復し、出力をまとめる機能と、条件によって進む枝を選ぶ機能が追加された。使わない枝の重い処理は省略できる。
+
+ループ・分岐を含むモデルもPythonへ出力でき、AI Assistantは説明からモデルを作成できる。単発の地図操作から繰り返し使う手順へつなぐ機能として読めるが、生成された条件・入力・出力の妥当性は別に確認する。リリースノートの確認であり、動作試験は行っていない。
+
 ## 出典
 
 - [@geolibre/map README](https://github.com/opengeos/GeoLibre/blob/main/packages/map/README.md)（2026-09-17確認）
@@ -89,3 +95,5 @@ MCP Appsの地図プレビューは読み取り専用である。アプリの操
 - [GeoLibre v3.4.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.4.0)（2026-10-13確認）
 
 - [v3.5.0（GeoLibre）](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.0)（2026-10-26確認）
+
+- [GeoLibre v3.5.1](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.1)（2026-10-29本文確認、10月28日分として収録）

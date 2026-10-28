@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-10-27
+updated: 2026-10-29
 ---
 
 # Cloud Native Geospatial
@@ -148,6 +148,19 @@ MIERUNEの10月26日の試作は、TypeScript 7.1ベータのcontent mapperでGe
 
 著者はOvertureの約733MBのファイルに対し約1.6MBのフッタで型を生成し、札幌中心部のbboxとconfidence 0.8以上の条件に合う7,947件をフッタ込み5MB未満で取得したと報告する。型はそのファイルのスナップショットであり、更新後の内容や実行時アップロードにはそのまま使えない。統計がない場合はスキーマ由来の型に限る。ベータ機能を使う試作で、本Atlasでは再実行していない。
 
+## クラウドDBとGISをつなぐ方式を選ぶ
+
+ファイルの部分読み取りに加え、クラウドDBのデータをGISで使う際にも、参照と複製・変換を区別する。EsriのArcGISとSnowflakeの解説は次の4方式を挙げる。
+
+| 目的 | 方式 |
+| --- | --- |
+| 元データを移さずSQLで参照する | Query layers |
+| 結合・形式整理・定期更新を行う | ArcGIS Data Pipelines |
+| 複雑な変換や双方向の連携を行う | ArcGIS Data Interoperability |
+| 住所変換や経路を処理に組み込む | ArcGIS Location Platform |
+
+直接参照はレイヤーを再読込して変更を反映する。Data PipelinesはOnlineでクレジットを消費し、Enterpriseでは12.0以降のAdvanced向けで、Kubernetes対応は予定とされる。専用のSnowflakeネイティブ・ジオコーディングアプリも記事時点では提供予定である。接続や処理を実行検証した結果ではない。
+
 ## 出典
 
 - [Python Polars 2.1.0：公式リリース](https://github.com/pola-rs/polars/releases/tag/py-2.1.0)・[GeoParquet入出力の実装PR](https://github.com/pola-rs/polars/pull/29987)（2026-10-26確認）
@@ -180,3 +193,5 @@ MIERUNEの10月26日の試作は、TypeScript 7.1ベータのcontent mapperでGe
 
 - [TSのcontent mapperを使ってGeoParquetの型推論を便利に賢くしてみる](https://zenn.dev/mierune/articles/bc06573ac1884b)（2026-10-27確認）
 - [TypeScript 7.1 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/)（2026-10-27確認）
+
+- [The Science of Where in the Modern Data Stack: Four Ways to Integrate ArcGIS and Snowflake](https://www.esri.com/arcgis-blog/products/arcgis-enterprise/data-management/the-science-of-where-in-the-modern-data-stack-four-ways-to-integrate-arcgis-and-snowflake)（2026-10-29本文確認、10月28日分として収録）

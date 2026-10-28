@@ -2,7 +2,7 @@
 layout: default
 title: GISデータセットカタログ
 category: methods
-updated: 2026-09-23
+updated: 2026-10-29
 ---
 
 # GISデータセットカタログ
@@ -80,6 +80,14 @@ MCPには結果の一覧・詳細を読み取り専用で公開し、保存パ�
 - [Portolan](../data/portolan.md)
 - [全国メッシュデータのWeb配信](national-grid-web-delivery.md)
 
+## 公開カタログを探す入口：ArcGIS Hub
+
+手元のファイル管理用カタログとは別に、公開データの発見にはArcGIS Hubのような組織横断の入口がある。行政などのデータや関連コンテンツを検索・共有するサービスであり、各サイトのAPIから対象を探せる。
+
+2026年10月27日の公式紹介は、Search（検索）、Events（イベント）、Discussions（コンテンツに関連する議論）、Feeds（コンテンツ購読）の4 APIを案内する。Python・JavaScriptライブラリも提供する。28,000超という数値は公開Hubサイト数で、データセット数ではない。
+
+MCPサービスの文書とAIクライアント向けコネクターのプレビューは今後の予定として記されている。公開サイトで見つかることと、個別データの利用許諾・品質・更新保証は別に確認する。
+
 ## 出典
 
 - [FastMCP 3 + DockerでGIS MCP Serverを作る：Step 3](https://qiita.com/rino_yume/items/d9a0277dc7878d68068a)（2026-09-22公開、2026-09-23確認）
@@ -87,3 +95,5 @@ MCPには結果の一覧・詳細を読み取り専用で公開し、保存パ�
 - [FastMCP 3 + Docker でGIS MCP Serverを作る ― Step 2](https://qiita.com/rino_yume/items/71a5872200aa24af24c1)（2026-09-18確認）
 
 - [FastMCP 3 + Docker でGIS MCP Serverを作る ― Step 1 Dataset CatalogとVector GIS登録基盤](https://qiita.com/rino_yume/items/24ee23e203af14682e97)（2026-09-10確認）
+
+- [Developer’s Lounge: Creating a Documentation Site to Help Developers Navigate ArcGIS Hub](https://www.esri.com/arcgis-blog/products/developers/sharing-collaboration/developers-lounge-creating-a-documentation-site-to-help-developers-navigate-arcgis-hub)（2026-10-29本文確認、10月28日分として収録）

@@ -2,7 +2,7 @@
 layout: default
 title: 空間分析への埋め込みの組み込み
 category: methods
-updated: 2026-10-24
+updated: 2026-10-29
 ---
 
 # 空間分析への埋め込みの組み込み
@@ -184,6 +184,12 @@ CARTOとEsriの処理は記事の確認のみで、データ取得・操作・�
 - [予測・説明・因果](../concepts/geographic-model-reasoning.md)：予測に役立つ特徴と原因の説明を区別する。
 - [検証と適用範囲](spatial-analysis-validation.md#ai-results)：類似度と予測精度を分けて評価する。
 
+## 埋め込みとAIエージェントをつなぐ
+
+CARTO AI Labの発表は、地域を表すモデル、埋め込みの分析手法、それらを使うAIエージェントを一体で研究・製品化する方針を示す。PlacePulseの既存の256次元表現を、可視化・クラスタリング・類似地域探索などへつなぐ。
+
+地域の特徴を数値で表すモデルと、目的に応じて分析手順やツールを選ぶエージェントは役割が異なる。Labの設立はPlacePulseの初公開や日本向け提供を意味しない。類似度が業務目的に合うかという検証も引き続き必要である。
+
 ## 出典
 
 - [Including Embeddings in Your Spatial Analysis Workflows](https://www.esri.com/arcgis-blog/products/arcgis-pro/geoai/including-embeddings-in-your-spatial-analysis-workflows)（[1]。2026-10-06再確認）
@@ -215,3 +221,5 @@ CARTOとEsriの処理は記事の確認のみで、データ取得・操作・�
 - [一色政彦：地域特徴量とEmbedding入門](https://qiita.com/isshiki/items/b3431cd4fa331531d1ac)（2026-10-21本文確認）
 
 - [Google：Population Dynamics Insights概要](https://developers.google.com/maps/documentation/population-dynamics-insights/overview?hl=ja)（2026-10-24本文確認）
+
+- [CARTO AI Lab: working at the frontier of geospatial AI](https://carto.com/blog/carto-ai-lab/)（2026-10-29本文確認、10月28日分として収録）
