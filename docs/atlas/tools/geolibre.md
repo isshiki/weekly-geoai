@@ -29,6 +29,12 @@ v3.5.0はMapLibre描画で極域、Plate Carrée、月・火星などの座標�
 
 STACの点群、ArcGIS VTPK／TPKX、Web版MBTilesの対応も加わった。WebAssembly処理の並列化は機能説明として扱い、具体的な速度向上は未計測である。
 
+### タイルの行番号とPythonの実行環境
+
+v3.5.2ではタイルURLまたはTileJSONの`{-y}`に対応し、TMS式の行番号を反転して読む。オフライン取得にも適用する。サービスが採用する行番号の方向に合わせる必要があり、画像の上下を見た目だけで反転する操作とは区別する。
+
+Pythonの`fly_to()`、`identify()`、`to_image()`などの待機を伴うメソッドは、Jupyter外のワーカースレッドにも対応した。公式はShiny for Pythonを例に挙げる。実行中のイベントループ内からの呼び出しとは条件が異なるため、任意の非同期処理が無条件に動くという意味ではない。保守リリースの利用条件を記録したもので、接続・動作試験は未実施である。
+
 ## UIなしで使う @geolibre/map
 
 `@geolibre/map`は、データ読み込み、レイヤー同期、スタイル処理を取り出したパッケージである。公式READMEは、公開するheadless機能にはReact、Zustandストア、Cesium、地図コントロールを含まないと説明している。
@@ -97,3 +103,5 @@ Model Builderは処理をつないで分析手順を組み立てる機能であ�
 - [v3.5.0（GeoLibre）](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.0)（2026-10-26確認）
 
 - [GeoLibre v3.5.1](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.1)（2026-10-29本文確認、10月28日分として収録）
+
+- [GeoLibre v3.5.2](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.2)（2026-10-29確認）

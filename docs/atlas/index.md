@@ -169,6 +169,7 @@ updated: 2026-10-18
 ### Web地図をコードで作る
 
 - [MapLibre GL JS](tools/maplibre-gl-js.md)
+- [MapLibre Native](tools/maplibre-native.md)
 - [MachGL](tools/machgl.md)
 - [OpenLayers](tools/openlayers.md)
 - [Cesium](tools/cesium.md)
