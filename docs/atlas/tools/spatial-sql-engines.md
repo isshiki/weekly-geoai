@@ -1,7 +1,7 @@
 ---
 title: 空間SQLエンジンの選び方
 category: tools
-updated: 2026-10-27
+updated: 2026-10-30
 ---
 
 # 空間SQLエンジンの選び方
@@ -18,6 +18,8 @@ updated: 2026-10-27
 | GeoPandas | PythonのGeoDataFrameで読込・加工・空間分析を行う。SQLエンジンへの受け渡しにも使える |
 
 Matt Forrestの比較記事ではGeoPandasを読込役に用いており、SQLの速度比較には含めていない。GeoPandas自体が読込しかできないという意味ではない。記事はGeoParquetを介した併用を提案する。
+
+DuckDBの導入版や互換性の変化は、[DuckDBの重要な更新履歴](duckdb.md#release-history)にまとめている。このページはエンジン間の選択と比較条件を中心に読む。
 
 ## ファイルの読み込みと運用を選ぶ
 

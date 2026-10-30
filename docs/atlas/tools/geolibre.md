@@ -2,7 +2,7 @@
 layout: default
 title: GeoLibre
 category: tools
-updated: 2026-10-29
+updated: 2026-10-30
 ---
 
 # GeoLibre
@@ -18,6 +18,26 @@ GeoLibreは、地理空間データの可視化、取得、編集、分析を扱
 | AIやPythonから操作する | デスクトップ地図の操作。対象アプリ・接続設定・保存権限を確認 |
 
 以下の版番号は機能を確認したリリースの目印であり、最新のインストール推奨版を示すものではない。アプリの実行・接続試験は行っていない。
+
+## 現在確認している機能
+
+3.5.2までの確認では、複数エンジンによる地図表示、点群・画像解析、AI・Pythonからの操作、分析手順の再利用を扱う。Web版または対応OSのアプリを用意し、外部データやAIサービスに必要な認証を個別に設定する。下の説明は機能別、年表は導入時期別に読む。
+
+## 重要な更新履歴 { #release-history }
+
+2026-10-30に下表の公式リリースノートを確認した。対象はGeoLibreアプリの2.9.0〜3.5.2から選んだ主要変更であり、組み込み用@geolibre/map、Python・Rパッケージの独立した全履歴ではない。未掲載の版は変更なしを意味しない。公開日はUTC。最新推奨版の一覧ではなく、動作・接続・精度試験は未実施である。
+
+| バージョン・公式出典 | 公開日（UTC） | 変わったこと・使いどころ | 状態・更新時の注意 |
+| --- | --- | --- | --- |
+| [v3.5.2](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.2) | 2026-10-28 | TMSの{-y}タイルと、Jupyter外のPythonワーカースレッドに対応 | 保守版だが利用条件が変わるため収録。実行中イベントループとは区別 |
+| [v3.5.1](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.1) | 2026-10-27 | Model Builderに繰り返し・条件分岐を追加 | 小さな版番号でも、再利用する分析手順を作れる機能追加として収録 |
+| [v3.5.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.0) | 2026-10-25 | MapLibre描画の別CRS、ArcGIS編集の値検証、探索できるストーリーマップ | CRSに合う背景地図が必要。AIが有効化するのは導入済みプラグイン |
+| [v3.4.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.4.0) | 2026-10-11 | OBIAで画像分割から分類・精度評価へ。衛星LiDAR対応も拡充 | eCognitionルール取り込みは完全互換を意味しない |
+| [v3.3.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.3.0) | 2026-10-05 | Python・MCPから開いたデスクトップ地図を操作。見通し分析・3D出力 | AIの操作機能と分析結果の妥当性は別に確認 |
+| [v3.2.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.2.0) | 2026-10-01 | 点群のラベル・3D枠・出力、Tessera埋め込み表示、認証付きS3接続 | デスクトップWMS再投影など実行環境別の対応差を確認 |
+| [v3.1.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.1.0) | 2026-09-25 | Mapbox・ArcGIS描画エンジン、音声操作、共有権限・期限を追加 | エンジンごとに表示対応・外部サービス条件が異なる |
+| [v3.0.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.0.0) | 2026-09-14 | Cesiumを描画エンジンとして選択し、機能に応じてUIを切り替える | アプリの版と@geolibre/mapの提供範囲を混同しない |
+| [v2.9.0](https://github.com/opengeos/GeoLibre/releases/tag/v2.9.0) | 2026-09-03 | Plotly Dash向けDashMapと注釈レイヤー編集を追加 | 既存アプリやWeb画面との連携を広げる更新 |
 
 ## データ表示と拡張機能
 

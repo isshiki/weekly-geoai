@@ -16,6 +16,8 @@ GeoAIアトラスはMaterial for MkDocsで構築し、階層ナビゲーショ�
 
 目的別の読む順序と、概念・手法・データ・ツール・事例の索引から内容を探せる。日次の情報追加に加え、毎月第1月曜日に分類・説明・情報の鮮度を見直す。運用は[月次整理](OPERATIONS.md#atlas-monthly)を参照する。
 
+DuckDB・Polars・MapLibre GL JS・GeoLibreの[重要な更新履歴](https://isshiki.github.io/weekly-geoai/atlas/#library-history)では、現在の機能と導入バージョン、実験対応・互換性の注意を分けて追える。日次取り込み時に更新し、月次に整理する。編集方法は[ライブラリ更新履歴の保守](editorial/library-release-history.md)を参照する。
+
 ## 学習の入口
 
 読む順序と到達点は[初心者向け3ルート](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/#learning-routes)にまとめている。

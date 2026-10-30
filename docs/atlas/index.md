@@ -1,12 +1,23 @@
 ---
 layout: default
 title: 知識マップ
-updated: 2026-10-18
+updated: 2026-10-30
 ---
 
 # GeoAIアトラス 知識マップ
 
 やりたいことから読む順序を選ぶか、分類から個別の項目を探せる。初めて読む場合は[初めてのGeoAI](guides/getting-started.md)から始める。
+
+## ライブラリ・ツールの更新を追う { #library-history }
+
+「今できること」と「どの版で変わったか」を各ページで確認できる。重要な変更の選集であり、全リリースを網羅するものではない。未調査の期間と確認日は各ページに示す。
+
+| 対象 | 更新履歴と主な役割 |
+| --- | --- |
+| DuckDB | [SQL・Spatial拡張の変化](tools/duckdb.md#release-history) |
+| Polars | [Python版のデータ入出力の変化](tools/polars.md#release-history) |
+| MapLibre GL JS | [Web地図描画の変化](tools/maplibre-gl-js.md#release-history) |
+| GeoLibre | [GISアプリ・分析操作の変化](tools/geolibre.md#release-history) |
 
 ## 目的から探す { #by-purpose }
 
@@ -182,6 +193,8 @@ updated: 2026-10-18
 
 - [GeoTools](tools/geotools.md)
 - [pandas](tools/pandas.md)
+- [DuckDBとSpatial拡張](tools/duckdb.md)
+- [Polars](tools/polars.md)
 - [Spatial Polars](tools/spatial-polars.md)
 - [空間SQLエンジンの選び方](tools/spatial-sql-engines.md)
 - [MovingPandas](tools/movingpandas.md)

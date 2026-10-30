@@ -2,12 +2,14 @@
 layout: default
 title: Spatial Polars
 category: tools
-updated: 2026-09-15
+updated: 2026-10-30
 ---
 
 # Spatial Polars
 
 Spatial Polarsは、Polarsに地理空間データの入出力と空間演算を加えるPythonパッケージである。Polars、Shapely、Pyogrio、GeoArrow Python、PyProjを組み合わせ、地図表示にはLonboardを使う。
+
+[Polars本体の更新履歴](polars.md#release-history)とは分けて読む。本ページの機能説明は2026-09-15のREADME確認に基づき、今回のリンク追加を再検証日とは扱わない。
 
 ## 確認したポイント
 

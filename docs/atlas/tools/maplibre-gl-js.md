@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-10-26
+updated: 2026-10-30
 ---
 
 # MapLibre GL JS
@@ -37,33 +37,29 @@ MapLibre GL JSは、ベクタータイルなどからインタラクティブな
 - 大量のMarkerをDOM要素として配置する前に、シンボルレイヤーやクラスタリングとの使い分けを検討する。
 - タイル配信では、空レスポンス、CORS、キャッシュ、Range Requestなど、ライブラリ外の配信条件も確認する。
 
-## 重要な更新例：継続的なデータ更新と描画
+## 重要な更新履歴 { #release-history }
 
-v6.12.0は2026年10月4日日本時間に公開された。現在地追跡のズーム調整を制御する`zoomToUserAccuracy`と、既存余白へ加算せず適用する`absolutePadding`を追加した。表示タイル変更時のラベル更新も必要部分に絞った。
+対象はWeb向けのMapLibre GL JSであり、[MapLibre Native](maplibre-native.md)とは版番号を分ける。2026-10-30に下表の公式リリースノートを確認した。収録範囲は6.8.0〜6.16.0の主要変更で、小さな修正やそれ以前の版は網羅していない。未掲載は変更なしを意味しない。公開日はUTCで、日次ニュースの収録日や日本時間の日付とは異なる場合がある。最新推奨版の一覧ではなく、実行試験は未実施である。
 
-GeoJSONでは、ワーカー処理より速い`setData`呼び出しによるメモリ増大・クラッシュ、古い処理結果による上書き、クラスタ更新の不整合を修正した。継続的にデータを差し替える地図で確認する変更である。
-
-地形下のカメラから描画タイル外の標高を読む際に0となる問題も修正し、その読み取り処理を約40倍効率化したと説明する。地図全体の描画速度が40倍になったという意味ではない。今回はリリースノートの確認であり、実機性能は測定していない。
-
-## 地球・地形の表示と配信時の互換性
-
-v6.13.0ではglobe表示の中心を極まで移動できるようになり、従来の緯度85.05度の制限が解消された。カスタムレイヤーを地形へ沿わせ、GPUで地形上に配置するAPIも加わったが、実験的APIとして扱う。
-
-更新後の地図が古いWorkerのキャッシュでクラッシュする問題への対応として、Workerは再び自己完結する構成になった。`maplibre-gl-shared.mjs`と`maplibre-gl-shared-dev.mjs`は既存のコピー処理との互換性のため空ファイルで残るが、非推奨で次のメジャー版に削除予定である。独自に配布ファイルをコピーする場合は、移行時の依存を確認する。リリースノートを確認したもので、表示や性能の実測は行っていない。
-
-v6.14.0では、一部iPadOS 16 Safariでの空白表示などを修正した。デスクトップだけでなく、利用者の端末・ブラウザーで表示を確認する理由になる。地図作成・スタイル設定時の`globalState`初期値指定も追加された。実機での修正確認は本Atlasでは行っていない。
+| バージョン・公式出典 | 公開日（UTC） | 変わったこと・使いどころ | 状態・更新時の注意 |
+| --- | --- | --- | --- |
+| [v6.16.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.16.0) | 2026-10-25 | 表示範囲を緯度・経度の一方だけに制限。初期化時のスタイル変換を追加 | iOSのWorker停止後や背景復帰時の表示・読み込みを修正。対象端末で確認 |
+| [v6.15.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.15.0) | 2026-10-18 | 独自の平面CRSとGeoJSON投影に実験対応。縦書きのvert字形にも対応 | 地図に合うタイルグリッドが必要。回転・傾斜設定のaroundCenterは非推奨 |
+| [v6.14.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.14.0) | 2026-10-11 | globalStateの初期値を地図作成・スタイル設定時に指定 | 一部iPadOS 16 Safariの空白表示を修正。利用環境による |
+| [v6.13.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.13.0) | 2026-10-06 | globeの中心を極まで移動可能に。カスタム描画を地形へ沿わせる実験API | Workerを再び自己完結に変更。shared.mjs系の配布ファイルは非推奨 |
+| [v6.12.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.12.0) | 2026-10-03 | 現在地追跡のズームと地図余白を制御。継続更新するGeoJSONの安定性を改善 | setData連続呼出しによるメモリ増大・クラッシュを修正 |
+| [v6.11.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.11.0) | 2026-09-22 | タッチ長押しのcontextmenuと、指定地点を画面上の位置に合わせるカメラ計算 | スマホの操作や地図と説明パネルの連動に利用する機能 |
+| [v6.10.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.10.0) | 2026-09-15 | globeの空表示、面の描画、地形に隠れるMarkerの判定を改善 | 古いSafariの部分的な空白表示も修正。地図全体の速度向上率とは区別 |
+| [v6.9.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.9.0) | 2026-09-09 | 複雑な文字体系を改善。アラビア語・ヘブライ語をRTLプラグインなしで描画 | setRTLTextPluginなどは非推奨。多言語地図の依存を見直す |
+| [v6.8.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.8.0) | 2026-09-07 | スタイルURL取得と塗りパターンのSDF描画を追加。地形のちらつきを改善 | 読み込み・描画の最適化は処理別の変更であり、全体性能は未計測 |
 
 ## 独自の平面座標系を扱う
 
-2026年10月18日公開のv6.15.0は、独自の平面CRSと、その座標系の四分木タイルグリッドに実験対応した。`addProjection`・`removeProjection`、組み込みの`identity`投影、タイルURLの`{bbox}`を追加する。GeoJSONは定義文字列と投影ハンドラーを使い、ワーカーで登録CRSへ投影する。
+v6.15.0の実験対応により、地図を描く「方眼紙」にあたる平面座標系を開発者が登録できる。GeoJSONは定義文字列と投影ハンドラーを使い、ワーカーで登録CRSへ投影する。CRSは座標参照系の略である。
 
-メルカトル以外の平面座標系を使う地図の選択肢が広がる変更だが、任意のGISデータが設定なしで表示できるという意味ではない。表示データ・タイルグリッドと[座標参照系](../concepts/coordinate-reference-systems.md)の対応を確認する。
+日本の地域向け座標系で分析格子や測量図を見せる用途が考えられる。ただし、タイルの中身は自動再投影されず、表示先のCRSと四分木グリッドに合うタイルを用意する必要がある。表示のCRS変更だけで距離・面積の計算が正しくなるわけではない。[座標系の基礎](../concepts/coordinate-reference-systems.md)で計算と表示の役割を分けて考える。
 
-ポインター直下を軸に回転・傾斜する操作と、中心を軸にする設定も追加し、従来の`aroundCenter`は非推奨になった。`font-faces`の縦書きでOpenTypeの`vert`字形に対応し、Safari 26.6以降で背景から復帰した際のタイル読み込み停止なども修正する。本Atlasでは実験APIの動作・性能は測定していない。
-
-### 表示制限と復帰時の挙動
-
-v6.16.0は`setMaxBounds`で緯度・経度の片方だけを制限し、地図の初期化時にも`transformStyle`を指定できる。iOSがWorkerを停止した後の読み込み停止や、背景から復帰した際の表示崩れも修正する。利用端末で更新・復帰を確認するための情報であり、本Atlasでの実機検証結果ではない。
+[公式CRSガイド](https://maplibre.org/maplibre-gl-js/docs/guides/custom-crs/)・[addProjection](https://maplibre.org/maplibre-gl-js/docs/API/functions/addProjection/)（2026-10-30確認）。日本の座標系での描画・性能は本Atlasでは未検証である。
 
 ## GIS基盤と地図画面をつなぐ
 
