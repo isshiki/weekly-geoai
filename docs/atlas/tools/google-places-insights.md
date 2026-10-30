@@ -2,7 +2,7 @@
 layout: default
 title: Google Places Insights
 category: tools
-updated: 2026-10-17
+updated: 2026-10-30
 ---
 
 # Google Places Insights
@@ -45,8 +45,16 @@ BigQuery上で利用するデータセットで、東京を含む主要都市の
 - [H3](h3.md)
 - [Foursquare Placesへのパートナーデータ取り込み](../data/foursquare-partner-places.md)
 
+## 件数とプレイスIDの出力範囲
+
+2026-10-30に概要文書を確認。PLACES_COUNT_PER_H3・PLACES_COUNT_V2・PLACES_COUNT_PER_TYPE_V2は、結果の1行につき最大250件のプレイスIDを返す。件数が250件を超える場合、このID配列を対象地域の全店舗一覧として扱わない。旧PLACES_COUNTは同じID出力の対象ではない。
+
+直接SQLはプレイスIDを返さず、0〜4件の集計行も除外する。関数による正確な件数の取得と、全POIレコードの自由な抽出は別である。ここでの確認日は新機能の公開日を意味しない。
+
 ## 出典
 
 - [Places Insights release notes](https://developers.google.com/maps/documentation/placesinsights/release-notes)（2026-09-07確認）
 
 - [Google：データとクエリの仕様](https://developers.google.com/maps/documentation/placesinsights/about-data?hl=ja)（2026-10-17確認。ページ更新日2026-10-16 UTC）
+
+- [Google：Places Insights概要](https://developers.google.com/maps/documentation/placesinsights/overview?hl=ja)（2026-10-30確認）

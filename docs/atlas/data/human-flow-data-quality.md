@@ -2,7 +2,7 @@
 layout: default
 title: 人流データの計測誤差と推計誤差
 category: data
-updated: 2026-10-05
+updated: 2026-10-30
 ---
 
 # 人流データの計測誤差と推計誤差
@@ -58,7 +58,15 @@ updated: 2026-10-05
 - [人流データの時間処理と集計定義](../methods/human-flow-time-processing.md)
 - [日本で使える人流データ](human-flow-data-sources-japan.md)
 
+## 交通事業の事前評価と運行後の成果を分ける
+
+Agoopは2026年10月29日、珠洲・金沢直行の相乗りタクシー事業で、マチレポによる事業性評価レポートが利用されたと発表した。統計化・秘匿処理した人流データを活用した事例である。
+
+移動の需要を検討する資料としての利用と、運行後の利用者数・採算が改善したことの実証は分けて読む。この発表だけでは後者の効果は判断できない。
+
 ## 出典
 
 - [国土交通省「地域課題解決のための人流データ利活用の手引き 改訂版v1.2」](https://www.mlit.go.jp/tochi_fudousan_kensetsugyo/chirikukannjoho/content/001733098.pdf)（2026-09-08確認）
 - [【人の動きを測る】第12回: 人流データの誤差の正体](https://note.com/pacificspatial/n/n640ded7f31f3)（2026-09-08確認）
+
+- [Agoop：相乗りタクシー事業での活用](https://agoop.co.jp/2026/10/29/58048/)（2026-10-30確認）

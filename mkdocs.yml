@@ -105,6 +105,7 @@ nav:
         - POIオープンデータの比較と地域特徴量: atlas/data/poi-open-data-comparison.md
         - ハザードデータの再利用条件: atlas/data/hazard-data-reuse.md
         - 国土数値情報: atlas/data/national-land-numerical-information.md
+        - HPMS：米国の道路属性データ: atlas/data/hpms.md
         - Foursquare Placesへのパートナーデータ取り込み: atlas/data/foursquare-partner-places.md
       - 形式・スキーマ・カタログ:
         - 地理空間データの来歴とレコード単位のメタデータ: atlas/data/geospatial-record-provenance.md
@@ -132,6 +133,7 @@ nav:
         - GIS CloudのAIによる現場調査支援: atlas/tools/gis-cloud.md
         - Vespucci：AndroidでOSMを編集: atlas/tools/vespucci.md
         - ArcGIS StoryMaps: atlas/tools/arcgis-storymaps.md
+        - ArcGIS Vector Tile Style Editor: atlas/tools/arcgis-vector-tile-style-editor.md
       - Web地図をコードで作る:
         - MapLibre GL JS: atlas/tools/maplibre-gl-js.md
         - MapLibre Native: atlas/tools/maplibre-native.md
@@ -140,6 +142,7 @@ nav:
         - Cesium: atlas/tools/cesium.md
         - Navara: atlas/tools/navara.md
         - Mapbox Standard: atlas/tools/mapbox-standard.md
+        - Google Maps Platformの3D地図・場所UI・スタイル: atlas/tools/google-maps-platform-visualization.md
         - maplibre-gl-streetview: atlas/tools/maplibre-gl-streetview.md
       - 分析・変換をコードで行う:
         - GeoTools: atlas/tools/geotools.md

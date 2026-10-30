@@ -2,7 +2,7 @@
 layout: default
 title: Mapsuke
 category: tools
-updated: 2026-10-16
+updated: 2026-10-30
 ---
 
 # Mapsuke
@@ -31,8 +31,16 @@ QGIS側からCLIを呼び出し、AIが作ったPythonコードを実行して�
 
 - [分析結果の検証と適用範囲](../methods/spatial-analysis-validation.md)：実行できたことと結果が正しいことを分ける。
 
+## 組織で導入するための研修と支援
+
+MIERUNEは2026年10月29日、Mapsukeを使う公開講座・法人研修・導入運用支援を発表した。操作をAIへ任せても、データ構造、座標系、分析方法の基礎は必要とし、担当者による指示の設計と結果の検証を重視する。
+
+新しいプラグイン機能の公開ではなく、環境準備から業務への組み込みを支援する動きである。研修の利用条件は案内元で確認する。
+
 ## 出典
 
 - [Mapsukeをもっと使いこなす！複数の処理・ツール化・プラグイン連携](https://qgis.mierune.co.jp/posts/howto_plugin_mapsuke_advanced)（2026-10-16確認）
 
 - [QGISをチャットで操作！AIエージェントプラグイン「Mapsuke」の使い方](https://qgis.mierune.co.jp/posts/howto_plugin_mapsuke)（2026-10-16確認）
+
+- [MIERUNE：研修・導入支援開始](https://prtimes.jp/main/html/rd/p/000000018.000101350.html)（2026-10-30確認）

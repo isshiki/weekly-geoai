@@ -2,7 +2,7 @@
 layout: default
 title: 日本のロケーションインテリジェンス製品・サービス
 category: tools
-updated: 2026-10-23
+updated: 2026-10-30
 ---
 
 # 日本のロケーションインテリジェンス製品・サービス
@@ -124,6 +124,12 @@ ReviewのYOROZU DATAは、2026年10月20日に東京23区・大阪市24区の飲
 - [高徳地図（AMAP）](amap.md)
 - [DOCOYAフード&ビバレッジ](docoya-food-beverage.md)
 
+## 業務台帳に地図を組み込む例
+
+2026年10月29日、MAPPLE地図プラグイン for kintoneのRICOH kintone plus対応が発表された。顧客・物件などの住所を地図に表示し、訪問計画や現場管理で使う。GIS専用環境を新設する方法に加え、既存の業務台帳へ地図を付ける選択肢となる。
+
+紙をスキャンして取り込むことと、住所を位置に対応付けることは別の処理である。住所の整備状態と地図上の位置を確認する。今回、プラグインの操作は試していない。
+
 ## 出典
 
 - [日本で使えるロケーションインテリジェンス製品・サービスを整理してみた【2026年版】](https://blog.masahiko.info/entry/2026/08/31/080000)（2026-09-06確認）
@@ -147,3 +153,5 @@ ReviewのYOROZU DATAは、2026年10月20日に東京23区・大阪市24区の飲
 - [Review：区単位のYOROZU DATA](https://prtimes.jp/main/html/rd/p/000000106.000043858.html)（2026-10-21本文確認）
 - [マップル、Cybozu Days Japan 2026に出展](https://prtimes.jp/main/html/rd/p/000000063.000076637.html)（2026-10-23本文確認）
 - [ジオテクノロジーズ、小売・飲食店や商業施設利用者の詳細分析を可能にする人流分析ツール「Geo-Insight」を提供開始](https://digitalpr.jp/r/144226)（2026-10-23本文確認）
+
+- [マップル：RICOH kintone plus対応](https://prtimes.jp/main/html/rd/p/000000065.000076637.html)（2026-10-30確認）

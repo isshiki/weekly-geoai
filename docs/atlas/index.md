@@ -145,6 +145,7 @@ updated: 2026-10-30
 - [POIオープンデータの比較と地域特徴量](data/poi-open-data-comparison.md)
 - [ハザードデータの再利用条件](data/hazard-data-reuse.md)
 - [国土数値情報](data/national-land-numerical-information.md)
+- [HPMS：米国の道路属性データ](data/hpms.md)
 - [Foursquare Placesへのパートナーデータ取り込み](data/foursquare-partner-places.md)
 
 ### 形式・スキーマ・カタログ
@@ -179,6 +180,7 @@ updated: 2026-10-30
 - [GIS CloudのAIによる現場調査支援](tools/gis-cloud.md)
 - [Vespucci：AndroidでOSMを編集](tools/vespucci.md)
 - [ArcGIS StoryMaps](tools/arcgis-storymaps.md)
+- [ArcGIS Vector Tile Style Editor](tools/arcgis-vector-tile-style-editor.md)
 
 ### Web地図をコードで作る
 
@@ -189,6 +191,7 @@ updated: 2026-10-30
 - [Cesium](tools/cesium.md)
 - [Navara](tools/navara.md)
 - [Mapbox Standard](tools/mapbox-standard.md)
+- [Google Maps Platformの3D地図・場所UI・スタイル](tools/google-maps-platform-visualization.md)
 - [maplibre-gl-streetview](tools/maplibre-gl-streetview.md)
 
 ### 分析・変換をコードで行う

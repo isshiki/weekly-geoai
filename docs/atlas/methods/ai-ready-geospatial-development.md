@@ -2,7 +2,7 @@
 layout: default
 title: AIが扱いやすい地理空間開発環境
 category: methods
-updated: 2026-10-27
+updated: 2026-10-30
 ---
 
 # AIが扱いやすい地理空間開発環境
@@ -113,6 +113,12 @@ GeoSpark（PyPI名geospark-ai）は、LLMから距離・包含・交差・座標
 
 現行説明は出典・単位・警告と、回答可能・部分回答・回答不能の状態を返す設計を重視する。Apache-2.0で公開されているが、公式ページのMCPツール数に17・追加3・15という不一致があるため、固定件数を導入条件にしない。旧要約の6ツール・距離正答率0％から70％は現行版の結果として再掲しない。開発者の性能報告を独立検証とは扱わず、本Atlasでもツールを実行していない。
 
+## 地物の関係と変化履歴をAIへ渡す
+
+ゼンリン・ゼンリンデータコム・Preferred Networksは2026年10月29日、業務資本提携を発表した。土地・建物・道路などの属性だけでなく、空間的な関係や時間的変化をAIが扱いやすく構造化し、モデルと業務サービスを共同開発する方針である。
+
+公共、不動産、小売・流通を重点領域に、需要予測や出店適地選定などを検討している。これは実証・事業化を進める計画であり、完成サービスの利用開始や予測性能の実証とは異なる。AI向けの整備対象が、開発文書に加えて地物データの構造・意味・履歴にも及ぶ例として読む。
+
 ## 出典
 
 - [Making deck.gl AI-Ready: What Seven Frontier Models Taught Us About Maps](https://carto.com/blog/making-deckgl-ai-ready/)（2026-09-10確認）
@@ -131,3 +137,5 @@ GeoSpark（PyPI名geospark-ai）は、LLMから距離・包含・交差・座標
 - [国際航業：KKC Satellite Analyst](https://prtimes.jp/main/html/rd/p/000000152.000086246.html)（2026-10-21本文確認）
 
 - [GeoSpark（geospark-ai）](https://pypi.org/project/geospark-ai/)（2026-10-27確認）
+
+- [PFN：ゼンリングループとの業務資本提携](https://www.preferred.jp/ja/news/pr20261029)（2026-10-30確認）
