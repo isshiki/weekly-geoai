@@ -18,6 +18,8 @@ updated: 2026-10-30
 | Polars | [Python版のデータ入出力の変化](tools/polars.md#release-history) |
 | MapLibre GL JS | [Web地図描画の変化](tools/maplibre-gl-js.md#release-history) |
 | GeoLibre | [GISアプリ・分析操作の変化](tools/geolibre.md#release-history) |
+| GeoPandas | [属性と図形を使う分析基盤の変化](tools/geopandas.md#release-history) |
+| Shapely | [図形演算・境界検証の変化](tools/shapely.md#release-history) |
 
 ## 目的から探す { #by-purpose }
 
@@ -195,6 +197,8 @@ updated: 2026-10-30
 - [pandas](tools/pandas.md)
 - [DuckDBとSpatial拡張](tools/duckdb.md)
 - [Polars](tools/polars.md)
+- [GeoPandas](tools/geopandas.md)
+- [Shapely](tools/shapely.md)
 - [Spatial Polars](tools/spatial-polars.md)
 - [空間SQLエンジンの選び方](tools/spatial-sql-engines.md)
 - [MovingPandas](tools/movingpandas.md)

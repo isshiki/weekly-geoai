@@ -43,7 +43,7 @@ GeoAIアトラスは、日々のニュースをそのまま転載する場所で
 
 ## ライブラリの重要な更新履歴
 
-DuckDB・Polars・MapLibre GL JS・GeoLibreは、[ライブラリ更新履歴の保守](library-release-history.md)に沿って日次に更新する。機能説明と導入版の年表を分け、重要な変更だけを採用する。公開日・確認日・ニュース収録日を混同せず、未調査期間も明示する。
+DuckDB・Polars・MapLibre GL JS・GeoLibre・GeoPandas・Shapelyは、[ライブラリ更新履歴の保守](library-release-history.md)に沿って日次に更新する。機能説明と導入版の年表を分け、重要な変更だけを採用する。公開日・確認日・ニュース収録日を混同せず、未調査期間も明示する。
 
 ## 月次整理
 

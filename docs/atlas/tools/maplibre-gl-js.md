@@ -39,7 +39,7 @@ MapLibre GL JSは、ベクタータイルなどからインタラクティブな
 
 ## 重要な更新履歴 { #release-history }
 
-対象はWeb向けのMapLibre GL JSであり、[MapLibre Native](maplibre-native.md)とは版番号を分ける。2026-10-30に下表の公式リリースノートを確認した。収録範囲は6.8.0〜6.16.0の主要変更で、小さな修正やそれ以前の版は網羅していない。未掲載は変更なしを意味しない。公開日はUTCで、日次ニュースの収録日や日本時間の日付とは異なる場合がある。最新推奨版の一覧ではなく、実行試験は未実施である。
+対象はWeb向けのMapLibre GL JSであり、[MapLibre Native](maplibre-native.md)とは版番号を分ける。2026-10-30に下表の公式リリースノートを確認した。収録範囲は5.0・6.0の大きな節目と6.8.0〜6.16.0の主要変更で、中間版や小さな修正は網羅していない。未掲載は変更なしを意味しない。公開日はUTCで、日次ニュースの収録日や日本時間の日付とは異なる場合がある。最新推奨版の一覧ではなく、実行試験は未実施である。
 
 | バージョン・公式出典 | 公開日（UTC） | 変わったこと・使いどころ | 状態・更新時の注意 |
 | --- | --- | --- | --- |
@@ -52,6 +52,8 @@ MapLibre GL JSは、ベクタータイルなどからインタラクティブな
 | [v6.10.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.10.0) | 2026-09-15 | globeの空表示、面の描画、地形に隠れるMarkerの判定を改善 | 古いSafariの部分的な空白表示も修正。地図全体の速度向上率とは区別 |
 | [v6.9.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.9.0) | 2026-09-09 | 複雑な文字体系を改善。アラビア語・ヘブライ語をRTLプラグインなしで描画 | setRTLTextPluginなどは非推奨。多言語地図の依存を見直す |
 | [v6.8.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.8.0) | 2026-09-07 | スタイルURL取得と塗りパターンのSDF描画を追加。地形のちらつきを改善 | 読み込み・描画の最適化は処理別の変更であり、全体性能は未計測 |
+| [v6.0.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.0.0) | 2026-07-22 | 配布をESMへ統一。画像欠落時の解決方法やイベントAPIも変更 | UMD版のscript読込やdefault importなど既存コードの移行が必要 |
+| [v5.0.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v5.0.0) | 2024-12-31 | globeで地形を表示。WebGL設定などを拡充 | onの戻り値、WebGL設定の指定場所などに破壊的変更。独自CRSの導入版とは別 |
 
 ## 独自の平面座標系を扱う
 

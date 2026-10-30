@@ -25,7 +25,7 @@ GeoLibreは、地理空間データの可視化、取得、編集、分析を扱
 
 ## 重要な更新履歴 { #release-history }
 
-2026-10-30に下表の公式リリースノートを確認した。対象はGeoLibreアプリの2.9.0〜3.5.2から選んだ主要変更であり、組み込み用@geolibre/map、Python・Rパッケージの独立した全履歴ではない。未掲載の版は変更なしを意味しない。公開日はUTC。最新推奨版の一覧ではなく、動作・接続・精度試験は未実施である。
+2026-10-30に下表の公式リリースノートを確認した。対象はGeoLibreアプリの1.0・2.0の節目と2.9.0〜3.5.2から選んだ主要変更であり、組み込み用@geolibre/map、Python・Rパッケージの独立した全履歴ではない。未掲載の版は変更なしを意味しない。公開日はUTC。最新推奨版の一覧ではなく、動作・接続・精度試験は未実施である。
 
 | バージョン・公式出典 | 公開日（UTC） | 変わったこと・使いどころ | 状態・更新時の注意 |
 | --- | --- | --- | --- |
@@ -38,6 +38,8 @@ GeoLibreは、地理空間データの可視化、取得、編集、分析を扱
 | [v3.1.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.1.0) | 2026-09-25 | Mapbox・ArcGIS描画エンジン、音声操作、共有権限・期限を追加 | エンジンごとに表示対応・外部サービス条件が異なる |
 | [v3.0.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.0.0) | 2026-09-14 | Cesiumを描画エンジンとして選択し、機能に応じてUIを切り替える | アプリの版と@geolibre/mapの提供範囲を混同しない |
 | [v2.9.0](https://github.com/opengeos/GeoLibre/releases/tag/v2.9.0) | 2026-09-03 | Plotly Dash向けDashMapと注釈レイヤー編集を追加 | 既存アプリやWeb画面との連携を広げる更新 |
+| [v2.0.0](https://github.com/opengeos/GeoLibre/releases/tag/v2.0.0) | 2026-07-11 | 編集をGeoPackage・GeoJSONやPostGISへ書き戻し。Mapbox GLスタイルJSONの入出力 | 閲覧に加え元データを変更する機能。保存先と編集権限を確認 |
+| [v1.0.0](https://github.com/opengeos/GeoLibre/releases/tag/v1.0.0) | 2026-06-10 | プラグイン市場、プロジェクト共有、ベクター・ラスタ処理メニュー、Jupyter向けPythonパッケージ | アプリのリリースで紹介された内容。Pythonパッケージ自体の版番号とは別 |
 
 ## データ表示と拡張機能
 

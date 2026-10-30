@@ -146,6 +146,8 @@ nav:
         - pandas: atlas/tools/pandas.md
         - DuckDBとSpatial拡張: atlas/tools/duckdb.md
         - Polars: atlas/tools/polars.md
+        - GeoPandas: atlas/tools/geopandas.md
+        - Shapely: atlas/tools/shapely.md
         - Spatial Polars: atlas/tools/spatial-polars.md
         - 空間SQLエンジンの選び方: atlas/tools/spatial-sql-engines.md
         - MovingPandas: atlas/tools/movingpandas.md

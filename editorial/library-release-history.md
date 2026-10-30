@@ -10,8 +10,12 @@
 | Python Polars | docs/atlas/tools/polars.md | Rust版・Spatial Polars・GeoPolarsの独立した版と機能 |
 | MapLibre GL JS | docs/atlas/tools/maplibre-gl-js.md | MapLibre NativeのiOS/Android版 |
 | GeoLibre | docs/atlas/tools/geolibre.md | アプリと@geolibre/map、Python/Rパッケージ |
+| GeoPandas | docs/atlas/tools/geopandas.md | pandas・Shapely・Pyogrioそれぞれの提供機能 |
+| Shapely | docs/atlas/tools/shapely.md | Shapelyの版と内部GEOSの必要版 |
 
-4対象の日次取り込みでは、正本の機能説明と`#release-history`の両方を確認する。他の製品へこの形式を広げる場合も、既存URLを維持し、版体系を混在させない。
+対象一覧にあるライブラリの日次取り込みでは、正本の機能説明と`#release-history`の両方を確認する。他の製品へこの形式を広げる場合も、既存URLを維持し、版体系を混在させない。
+
+追加対象はGeoPandas（表・図形・CRSの管理）とShapely（図形演算）である。TorchGeo・geoai-pyは既存ページで学習・推論の側を案内し、今回の更新履歴の対象拡大とは分ける。
 
 ## 日次に更新する手順
 
