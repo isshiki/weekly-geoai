@@ -79,6 +79,7 @@ nav:
         - AIが扱いやすい地理空間開発環境: atlas/methods/ai-ready-geospatial-development.md
       - 人流の集計とプライバシー:
         - 人流データの時間処理と集計定義: atlas/methods/human-flow-time-processing.md
+        - 位置情報とアンケートを組み合わせる: atlas/methods/location-linked-surveys.md
         - 位置情報データのプライバシー保護: atlas/methods/location-data-privacy.md
       - 空間集計・地形と主題図:
         - ポリゴンのメッシュ集計と被覆率: atlas/methods/polygon-mesh-aggregation.md
@@ -153,6 +154,7 @@ nav:
         - Shapely: atlas/tools/shapely.md
         - Spatial Polars: atlas/tools/spatial-polars.md
         - 空間SQLエンジンの選び方: atlas/tools/spatial-sql-engines.md
+        - PostGIS: atlas/tools/postgis.md
         - MovingPandas: atlas/tools/movingpandas.md
         - H3: atlas/tools/h3.md
         - geoparquet-io: atlas/tools/geoparquet-io.md
@@ -176,6 +178,7 @@ nav:
         - LocateXT：文書から位置を抽出する: atlas/tools/locatext.md
         - Nominatim: atlas/tools/nominatim.md
         - OpenPOI API: atlas/tools/openpoi-api.md
+        - Outscraper：事業者情報の補完: atlas/tools/outscraper.md
         - Overture Maps API: atlas/tools/overture-maps-api.md
         - Google MapsのAsk MapsとImmersive Navigation: atlas/tools/google-maps-gemini.md
         - Valhalla: atlas/tools/valhalla.md
@@ -239,6 +242,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
+        - 10月31日: updates/2026-10-31.md
         - 10月30日: updates/2026-10-30.md
         - 10月29日: updates/2026-10-29.md
         - 10月28日: updates/2026-10-28.md

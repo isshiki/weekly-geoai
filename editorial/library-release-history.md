@@ -11,6 +11,7 @@
 | MapLibre GL JS | docs/atlas/tools/maplibre-gl-js.md | MapLibre NativeのiOS/Android版 |
 | GeoLibre | docs/atlas/tools/geolibre.md | アプリと@geolibre/map、Python/Rパッケージ |
 | GeoPandas | docs/atlas/tools/geopandas.md | pandas・Shapely・Pyogrioそれぞれの提供機能 |
+| PostGIS | docs/atlas/tools/postgis.md | PostgreSQL・GEOSの必要版と別配布の住所関連拡張 |
 | Shapely | docs/atlas/tools/shapely.md | Shapelyの版と内部GEOSの必要版 |
 
 対象一覧にあるライブラリの日次取り込みでは、正本の機能説明と`#release-history`の両方を確認する。他の製品へこの形式を広げる場合も、既存URLを維持し、版体系を混在させない。

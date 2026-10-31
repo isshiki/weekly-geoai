@@ -1,7 +1,7 @@
 ---
 title: 空間SQLエンジンの選び方
 category: tools
-updated: 2026-10-30
+updated: 2026-11-01
 ---
 
 # 空間SQLエンジンの選び方
@@ -60,6 +60,10 @@ DatabricksのLakehouse//RTは、レイクハウス上のデータを低遅延・
 
 10月のQiita解説は、GeoJSON／GeoJSONLの直接入出力と最近傍結合、座標軸設定を移行時の確認点に挙げる。公式のNEAREST結合は距離や類似度で相手側の上位k件を対応付けるSQLで、空間データ専用でもR-tree利用を保証するものでもない。GEOMETRYの本体組み込みとCRS付き型は1.5由来と区別する。座標軸の設定だけでなく、変換後の位置と距離を確認する。記事のSQLと本Atlasの確認はいずれも実行試験ではない。
 
+## PostGISの更新を追う
+
+継続管理するデータベース側の機能と互換性は、[PostGISの重要な更新履歴](postgis.md#release-history)にまとめる。3.7.0の機能追加だけでなく、PostgreSQLの対応範囲や分離された拡張を確認する。
+
 ## 出典
 
 - [Matt Forrest：PostGIS vs GeoPandas vs DuckDB](https://forrest.nyc/postgis-geopandas-duckdb-spatial-engine/)（2026-10-16確認）
@@ -75,3 +79,5 @@ DatabricksのLakehouse//RTは、レイクハウス上のデータを低遅延・
 - [Spatial Extension – DuckDB](https://duckdb.org/docs/2.0/core_extensions/spatial/overview)（2026-10-27確認）
 - [DuckDB 2.0で変わったSpatial・GIS機能を整理する ── GeoJSON、最近傍検索、座標軸の変更と移行時の注意点](https://qiita.com/rino_yume/items/9e0cc4ab18ccaf12d14a)（2026-10-27確認）
 - [DuckDB：Nearest Joins](https://duckdb.org/docs/2.0/sql/query_syntax/from#nearest-joins)（2026-10-27確認）
+
+- [PostGIS 3.7.0](https://postgis.net/2026/10/PostGIS-3.7.0/)（2026-11-01確認）

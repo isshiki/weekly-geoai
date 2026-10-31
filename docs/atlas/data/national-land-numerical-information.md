@@ -2,7 +2,7 @@
 layout: default
 title: 国土数値情報
 category: data
-updated: 2026-10-23
+updated: 2026-11-01
 ---
 
 # 国土数値情報
@@ -60,11 +60,18 @@ updated: 2026-10-23
 
 初心者は目的に近い教材から、使用データと集計方法のつながりを確認できる。ここでは教材の所在を確認したもので、各手順を現在のQGISで再実行したわけではない。
 
+## QGIS内から探す：KSJ Browser
+
+MIERUNEのKSJ Browserは、国土数値情報をQGISのブラウザパネルで分類・年度・地域から探して地図へ追加するプラグインである。Webサイトで取得・解凍してから読み込む手間を減らす。QGIS 3.44以降とQGIS 4に対応する。
+
+ZIPの中身を事前に確認して必要な形式だけを取得し、文字コードを自動設定する。メッシュ配布のデータは地図上で範囲を選べる。一時レイヤは削除すると取得ファイルも削除されるため、残すデータは書き出す。自動判定が誤る場合もあり、文字化けはレイヤ設定で確認する。利用条件はデータ・年度ごとに確認する。これは取得を助ける機能で、データの新しさや分析結果を保証するものではない。
+
 ## 関連項目
 
 - [全国メッシュデータのWeb配信](../methods/national-grid-web-delivery.md)
 - [GISデータセットカタログ](../methods/gis-dataset-catalog-for-agents.md)
 - [Cloud Native Geospatial](../concepts/cloud-native-geospatial.md)
+
 
 ## 出典
 
@@ -75,3 +82,5 @@ updated: 2026-10-23
 - [国土交通省：地理空間情報を活用したデータ分析コンペティションを今年度も開催します](https://www.mlit.go.jp/report/press/tochi_fudousan_kensetsugyo17_hh_000001_00090.html)（2026-10-10確認）
 - [第3回 国土交通省 地理空間情報データチャレンジ](https://user.competition.signate.jp/ja/competition/detail/?competition=d97fc46b1b4841a090ce0d042c860e1d)（2026-10-23本文確認）
 - [QGISによる国土数値情報活用マニュアル](https://nlftp.mlit.go.jp/ksj/manual/manual.html)（2026-10-23本文確認）
+
+- [QGIS LAB：KSJ Browserの使い方](https://qgis.mierune.co.jp/posts/howto_plugin_ksj-browser)（2026-11-01本文確認）

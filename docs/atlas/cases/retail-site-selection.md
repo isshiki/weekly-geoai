@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-10-27
+updated: 2026-11-01
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -157,6 +157,14 @@ Placer.aiの2026年10月22日の分析では、米国の高級商業地区10カ�
 
 記事が示す家族世帯の割合は商圏の構成で、来訪者一人ひとりの家族属性を直接数えた比率ではない。体験型イベントが来訪を促した可能性は記事の解釈であり、因果効果の検証とは区別する。
 
+## 家族・近隣・時間帯という異なる強み
+
+Placer.aiの10月28日の朝食チェーン分析は、2026年Q3の前年同期比をDenny’s全店4.4%減・既存店1.8%減、IHOP全店1.0%減、Waffle House全店6.6%増・既存店5.1%増と報告する。
+
+Denny’sの4人以上世帯28.1%は、来訪実績で重み付けした商圏の地域統計である。人口で重み付けした潜在商圏の22.6%と比較しており、来店客本人の家族構成を数えた値ではない。IHOPでは遠方からの来訪、Waffle Houseでは深夜帯など、同じ業態でも見るべき範囲や時間が異なる。
+
+店舗候補地を比べる際も、総来訪数だけでなく、想定する利用者・移動範囲・営業時間を分けると問いを整理しやすい。これは事例からの読み取りで、家族向け施策や24時間営業の因果効果が実証されたという意味ではない。
+
 ## 関連項目
 
 - [ロケーションインテリジェンス](../concepts/location-intelligence.md)
@@ -171,6 +179,7 @@ GrowthFactorは自社サービスを中心とする10月25日の解説で、人�
 ## 来訪増加の対象と時間帯を分ける
 
 Placer.aiの2026年Q3分析では米国カジュアルダイニング全体の来訪は前年同期比0.2％増だった。Cheddar’sの全店4.9％増と既存店2.3％増は母集団が異なる。BJ’sの夜遅い時間帯17.4％増も全時間帯の変化ではない。所得・年代・利用時間帯を分けて比較する事例であり、来訪増を売上増や販促の因果効果と同一視しない。元データの再集計はしていない。
+
 
 ## 出典
 
@@ -221,3 +230,5 @@ Placer.aiの2026年Q3分析では米国カジュアルダイニング全体の�
 - [エリアマーケティングの顧客分析手法とは？成果を出す手順と活用例を解説](https://www.leadplus.co.jp/blog/customer-analysis)（2026-10-27確認）
 - [AI Site Analysis: Complete Guide to Top Platforms](https://www.growthfactor.ai/resources/blog/ai-site-analysis-complete-guide)（2026-10-27確認）
 - [Four Recipes for Casual Dining Growth in Q3 2026](https://www.placer.ai/anchor/articles/four-recipes-for-casual-dining-growth-in-q3-2026)（2026-10-27確認）
+
+- [Placer.ai：米国朝食チェーンの商圏と来訪](https://www.placer.ai/anchor/articles/whats-anchoring-americas-legacy-breakfast-chains)（2026-11-01本文確認）

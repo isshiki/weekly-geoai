@@ -39,6 +39,7 @@ updated: 2026-10-30
 | 集計や予測の結果を確かめる | [空間結合](methods/spatial-join-and-aggregation.md) → [予測・説明・因果](concepts/geographic-model-reasoning.md) → [検証と適用範囲](methods/spatial-analysis-validation.md) |
 | 店舗・施設のデータを分析する | [POIの案内](guides/poi-workflow.md) → [データ比較](data/poi-open-data-comparison.md) → [取得の網羅性](methods/poi-retrieval-coverage.md) |
 | 人の動きを分析する | [種類](data/human-flow-data-types.md) → [品質](data/human-flow-data-quality.md) → [集計](methods/human-flow-time-processing.md) → [プライバシー](methods/location-data-privacy.md) |
+- [位置情報とアンケートを組み合わせる](methods/location-linked-surveys.md)
 | 地図を作り、公開する | [座標系](concepts/coordinate-reference-systems.md) → [Felt](tools/felt.md)／[MapLibre](tools/maplibre-gl-js.md)／[OpenLayers](tools/openlayers.md) → [Web配信](methods/national-grid-web-delivery.md) |
 | 防災・地形データを使う | [再利用条件](data/hazard-data-reuse.md) → [メッシュ集計](methods/polygon-mesh-aggregation.md) → [地形のスケール](methods/terrain-scale.md) |
 
@@ -108,6 +109,7 @@ updated: 2026-10-30
 ### 人流の集計とプライバシー
 
 - [人流データの時間処理と集計定義](methods/human-flow-time-processing.md)
+- [位置情報とアンケートを組み合わせる](methods/location-linked-surveys.md)
 - [位置情報データのプライバシー保護](methods/location-data-privacy.md)
 
 ### 空間集計・地形と主題図
@@ -204,6 +206,7 @@ updated: 2026-10-30
 - [Shapely](tools/shapely.md)
 - [Spatial Polars](tools/spatial-polars.md)
 - [空間SQLエンジンの選び方](tools/spatial-sql-engines.md)
+- [PostGIS](tools/postgis.md)
 - [MovingPandas](tools/movingpandas.md)
 - [H3](tools/h3.md)
 - [geoparquet-io](tools/geoparquet-io.md)
@@ -233,6 +236,7 @@ updated: 2026-10-30
 - [LocateXT：文書から位置を抽出する](tools/locatext.md)
 - [Nominatim](tools/nominatim.md)
 - [OpenPOI API](tools/openpoi-api.md)
+- [Outscraper：事業者情報の補完](tools/outscraper.md)
 - [Overture Maps API](tools/overture-maps-api.md)
 - [Google MapsのAsk MapsとImmersive Navigation](tools/google-maps-gemini.md)
 - [Valhalla](tools/valhalla.md)
