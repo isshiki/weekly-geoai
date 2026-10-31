@@ -7,6 +7,8 @@ description: Verify and organize URLs shared for Weekly GeoAI into a public dail
 
 Work from the repository root.
 
+Read `editorial/audience-and-positioning.md` first. The audience includes people beginning to use maps and regional data in work or daily life, without requiring coding experience. Use cases should distinguish ordinary GIS capabilities from what AI assists with. The separately authorized Wednesday discovery schedule follows `editorial/beginner-usecase-discovery.md`; it does not change the user-triggered daily search into a daily scheduled job.
+
 For a daily batch such as 今日の分, also read `editorial/developer-news-discovery.md` and search for complementary developer projects, map/POI applications, and GeoAI implementations. Aim for zero to three verified additions, deduplicated by URL and subject against daily logs, drafts, and Atlas. No additions is a valid outcome. Apply the same verification and saving steps to discovered items, and distinguish them from user-provided items in the completion report. Do not expand correction-only requests or requests limited to supplied sources. This is part of user-triggered daily capture, not an independently scheduled search.
 
 1. Read `editorial/writing-guide.md`, `editorial/atlas-guide.md`, `editorial/atlas-visual-guide.md`, and `editorial/atlas-entry-template.md`.

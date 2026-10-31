@@ -7,7 +7,11 @@ description: Review the previous Friday-through-Thursday daily notes, propose ca
 
 Work from the repository root.
 
-1. Read `editorial/writing-guide.md`, `editorial/weekly-template.md`, and `editorial/substack-handoff.md` before editing. From the 2026-10-16 issue, use the approved news-first format: three lead news items, three to five briefs, and optionally one map. Prioritize concrete announcements and their significance over tutorials; keep the general-developer audience. Select zero to two useful images with verified reuse permission or original explanatory artwork.
+Read `editorial/audience-and-positioning.md` first as the audience source of truth. Serve people beginning to use maps and regional data in work or daily life; coding knowledge is not required.
+
+During Thursday review, also propose a short closing column, 地図とAI、はじめの一歩, based on a familiar work or everyday use case rather than a technical lesson. Consult `editorial/usecase-candidates/` when available and distinguish evergreen material from news. After selection, place the approved 150–250-character column after news and any map under `## 地図とAI、はじめの一歩`, without a numbered news heading. Quizzes remain an optional future experiment, not an automatic addition.
+
+1. Read `editorial/writing-guide.md`, `editorial/weekly-template.md`, and `editorial/substack-handoff.md` before editing. From the 2026-10-16 issue, use the approved news-first format: three lead news items, three to five briefs, and optionally one map. Prioritize concrete announcements and their significance over tutorials, using the audience defined above. Select zero to two useful images with verified reuse permission or original explanatory artwork.
 2. Collect entries from the previous Friday through Thursday from `daily/`. Open every candidate source again; use the Atlas pages as context, not as a substitute for checking the source.
 
 ## Stage 1: Thursday review

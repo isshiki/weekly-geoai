@@ -17,3 +17,5 @@ editorial_format: news-v1
 ## 今週の注目ニュース
 
 {{items}}
+
+<!-- 選定済みのニュース・短報・任意の地図の後に、## 地図とAI、はじめの一歩 と短い活用コラムを追加する。editorial/audience-and-positioning.mdを参照。ニュースの連番に含めず、クイズは自動追加しない。 -->

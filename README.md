@@ -8,6 +8,12 @@
 - [POIデータを選び、分析する](https://isshiki.github.io/weekly-geoai/atlas/guides/poi-workflow/)
 - [週刊GeoAI バックナンバー](https://weeklygeoai.substack.com/archive)
 
+## 最優先：誰に届けるか
+
+**AIをきっかけに、仕事や暮らしで地図・地域データを使い始めたい人へ。** プログラミングやGISの経験は必須にしない。次回以降の選定・執筆・Atlas整備では、[読者と編集方針の正本](editorial/audience-and-positioning.md)を最初に参照する。
+
+[2026-10-31の決定・保留事項](editorial/decisions/2026-10-31-audience.md)に、議論の採用・修正・検討案を記録している。
+
 ## このリポジトリについて
 
 このリポジトリでは、GeoAIに関する技術、データ、ツール、活用事例などを、長く参照できる形で整理していく。あわせて、ニュースレター「週刊GeoAI」の制作に使用する。
@@ -30,13 +36,17 @@ DuckDB・Polars・MapLibre GL JS・GeoLibre・GeoPandas・Shapelyの[重要な�
 
 ## 週刊GeoAI
 
-「週刊GeoAI」は、AIを使いながら地図・POI・位置情報を使ったアプリや分析を作ってみたい開発者のための日本語ニュースレターである。GISの専門知識は前提にせず、使えるデータとツールから、AIによる開発・分析、結果の検証までを毎週金曜に紹介する。Substackで配信する。
+**週刊GeoAI — AIで地図・地域データを使ってみたい人へ**
 
-[編集方針](editorial/writing-guide.md)と[開発者向けの追加収集方針](editorial/developer-news-discovery.md)に沿って、既存の収集に実装例・地図作品・GeoAIの実践を補う。
+街・店舗・人口・移動などのデータ活用につながるニュースを、毎週金曜に厳選。新しい道具と事例、その理解を助ける小さな知識を届けます。
+
+[編集ガイド](editorial/writing-guide.md)に沿ってニュースを選び、末尾に身近な仕事・暮らしの活用を紹介する短い初心者コラムを置く。技術解説はAtlasや原典へ分ける。クイズは検討段階で必須ではない。
+
+日次提供時の[追加検索](editorial/developer-news-discovery.md)に加え、水曜9時に[初心者向け活用事例](editorial/beginner-usecase-discovery.md)、木曜9時に参考媒体を確認する（日本時間）。有用な新情報がない場合は通知しない。
 
 週刊GeoAIのバックナンバーはSubstackで公開する。
 
-2026年10月16日号から、ニュース中心の「注目3件＋短報3〜5件＋任意の地図」、図版0〜2枚を基本にする。一般の開発者が新しい動きを把握できる構成とし、手順解説に偏らせない。[Substack掲載手順](editorial/substack-handoff.md)に沿って本文の貼り付けと画像のアップロードを行う。
+2026年10月16日号から、ニュース中心の「注目3件＋短報3〜5件＋任意の地図」、図版0〜2枚を基本にする。地図・地域データを使い始める人が新しい動きを把握できる構成とし、手順解説に偏らせない。[Substack掲載手順](editorial/substack-handoff.md)に沿って本文の貼り付けと画像のアップロードを行う。
 
 編集構成の比較用に、[ニュース中心・画像入りの試作（10月4〜10日）](drafts/trials/2026-10-10-news-pilot.md)と[ブラウザー用プレビュー](drafts/trials/2026-10-10-news-pilot.html)を用意している。[従来の開発記事中心の試作](drafts/trials/2026-10-10-developer-pilot.md)と比較できる。正式な配信原稿ではない。
 
