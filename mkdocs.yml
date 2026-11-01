@@ -111,6 +111,7 @@ nav:
       - 形式・スキーマ・カタログ:
         - 地理空間データの来歴とレコード単位のメタデータ: atlas/data/geospatial-record-provenance.md
         - Overtureのデータスキーマ: atlas/data/overture-schema.md
+        - GeoJSON：位置と形を交換する形式: atlas/data/geojson.md
         - Portolan: atlas/data/portolan.md
         - Cloud Optimized GeoParquet（COGP）: atlas/data/cloud-optimized-geoparquet.md
         - ParquetのALP浮動小数点符号化: atlas/data/parquet-alp.md
@@ -140,6 +141,7 @@ nav:
         - MapLibre Native: atlas/tools/maplibre-native.md
         - MachGL: atlas/tools/machgl.md
         - OpenLayers: atlas/tools/openlayers.md
+        - anymap-ts: atlas/tools/anymap-ts.md
         - Cesium: atlas/tools/cesium.md
         - Navara: atlas/tools/navara.md
         - Mapbox Standard: atlas/tools/mapbox-standard.md
@@ -192,6 +194,7 @@ nav:
       - AI・MCP連携:
         - GIS Data Agent: atlas/tools/gis-data-agent.md
         - Mapsuke: atlas/tools/mapsuke.md
+        - GeoAgentとOpenGeoAgent: atlas/tools/geoagent.md
         - Google Maps Agentic UI Toolkit: atlas/tools/google-maps-agentic-ui.md
         - Mapbox CLI: atlas/tools/mapbox-cli.md
         - Mapbox Figma MCP Server: atlas/tools/mapbox-figma-mcp.md
@@ -240,6 +243,9 @@ nav:
     - 一覧: updates/index.md
     - 2026年:
       - 年の一覧: updates/2026/index.md
+      - 11月:
+        - 月の一覧: updates/2026/11/index.md
+        - 11月1日: updates/2026-11-01.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md
         - 10月31日: updates/2026-10-31.md

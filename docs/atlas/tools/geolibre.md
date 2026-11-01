@@ -2,7 +2,7 @@
 layout: default
 title: GeoLibre
 category: tools
-updated: 2026-10-30
+updated: 2026-11-01
 ---
 
 # GeoLibre
@@ -21,14 +21,17 @@ GeoLibreは、地理空間データの可視化、取得、編集、分析を扱
 
 ## 現在確認している機能
 
-3.5.2までの確認では、複数エンジンによる地図表示、点群・画像解析、AI・Pythonからの操作、分析手順の再利用を扱う。Web版または対応OSのアプリを用意し、外部データやAIサービスに必要な認証を個別に設定する。下の説明は機能別、年表は導入時期別に読む。
+3.6.0までの確認では、複数エンジンによる地図表示、点群・画像解析、AI・Pythonからの操作、分析手順の再利用を扱う。Web版または対応OSのアプリを用意し、外部データやAIサービスに必要な認証を個別に設定する。下の説明は機能別、年表は導入時期別に読む。
 
 ## 重要な更新履歴 { #release-history }
+
+3.6.0は2026-11-01に追加確認。既存行の確認日は次の段落のままである。
 
 2026-10-30に下表の公式リリースノートを確認した。対象はGeoLibreアプリの1.0・2.0の節目と2.9.0〜3.5.2から選んだ主要変更であり、組み込み用@geolibre/map、Python・Rパッケージの独立した全履歴ではない。未掲載の版は変更なしを意味しない。公開日はUTC。最新推奨版の一覧ではなく、動作・接続・精度試験は未実施である。
 
 | バージョン・公式出典 | 公開日（UTC） | 変わったこと・使いどころ | 状態・更新時の注意 |
 | --- | --- | --- | --- |
+| [v3.6.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.6.0) | 2026-10-31 | インドGISカタログ、点群・S3用プラグインAPI、Python非同期命令、編集レイヤ既定100万件 | 署名付きURLでのデータアクセスを確認。既定上限は性能保証ではない |
 | [v3.5.2](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.2) | 2026-10-28 | TMSの{-y}タイルと、Jupyter外のPythonワーカースレッドに対応 | 保守版だが利用条件が変わるため収録。実行中イベントループとは区別 |
 | [v3.5.1](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.1) | 2026-10-27 | Model Builderに繰り返し・条件分岐を追加 | 小さな版番号でも、再利用する分析手順を作れる機能追加として収録 |
 | [v3.5.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.0) | 2026-10-25 | MapLibre描画の別CRS、ArcGIS編集の値検証、探索できるストーリーマップ | CRSに合う背景地図が必要。AIが有効化するのは導入済みプラグイン |
@@ -105,6 +108,14 @@ Model Builderは処理をつないで分析手順を組み立てる機能であ�
 
 ループ・分岐を含むモデルもPythonへ出力でき、AI Assistantは説明からモデルを作成できる。単発の地図操作から繰り返し使う手順へつなぐ機能として読めるが、生成された条件・入力・出力の妥当性は別に確認する。リリースノートの確認であり、動作試験は行っていない。
 
+## 非同期操作とプラグインのデータアクセス
+
+v3.6.0では、待機を伴うPython Mapコマンドに*_async()版が加わり、Shiny for Pythonなどのイベントループ内で実行できる。v3.5.2のワーカースレッド対応とは別の変更である。
+
+外部プラグインはLAS・LAZ・COPC・EPTの点群を追加し、ホスト側の処理で読み込める。非公開S3は署名付きURLで取得し、プラグインへ秘密鍵を渡さない。ただしアクセスを許すデータ自体への信頼が不要になるわけではない。
+
+インドの行政区画などを追加・ダウンロードできるカタログも加わった。PostGIS・SQL Serverの編集可能レイヤは既定100万地物となり、処理サーバーのGEOLIBRE_DB_MAX_FEATURESで変更できる。これは既定取得上限で、描画速度・編集成功率の保証ではない。ブラウザーのGeoTIFF→COG変換はワーカーで実行され、中止できる。
+
 ## 出典
 
 - [@geolibre/map README](https://github.com/opengeos/GeoLibre/blob/main/packages/map/README.md)（2026-09-17確認）
@@ -127,3 +138,5 @@ Model Builderは処理をつないで分析手順を組み立てる機能であ�
 - [GeoLibre v3.5.1](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.1)（2026-10-29本文確認、10月28日分として収録）
 
 - [GeoLibre v3.5.2](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.2)（2026-10-29確認）
+
+- [GeoLibre v3.6.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.6.0)（2026-11-01公式本文・公開日時確認）

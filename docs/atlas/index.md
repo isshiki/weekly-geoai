@@ -41,6 +41,7 @@ updated: 2026-10-30
 | 人の動きを分析する | [種類](data/human-flow-data-types.md) → [品質](data/human-flow-data-quality.md) → [集計](methods/human-flow-time-processing.md) → [プライバシー](methods/location-data-privacy.md) |
 - [位置情報とアンケートを組み合わせる](methods/location-linked-surveys.md)
 | 地図を作り、公開する | [座標系](concepts/coordinate-reference-systems.md) → [Felt](tools/felt.md)／[MapLibre](tools/maplibre-gl-js.md)／[OpenLayers](tools/openlayers.md) → [Web配信](methods/national-grid-web-delivery.md) |
+- [anymap-ts](tools/anymap-ts.md)
 | 防災・地形データを使う | [再利用条件](data/hazard-data-reuse.md) → [メッシュ集計](methods/polygon-mesh-aggregation.md) → [地形のスケール](methods/terrain-scale.md) |
 
 類似地域検索と予測の違いは[埋め込みの具体例](methods/spatial-embeddings.md#search-vs-prediction)、AI手法の選択は[入力・出力の比較表](concepts/geoai-overview.md#choose-method)を参照する。
@@ -154,6 +155,7 @@ updated: 2026-10-30
 
 - [地理空間データの来歴とレコード単位のメタデータ](data/geospatial-record-provenance.md)
 - [Overtureのデータスキーマ](data/overture-schema.md)
+- [GeoJSON：位置と形を交換する形式](data/geojson.md)
 - [Portolan](data/portolan.md)
 - [Cloud Optimized GeoParquet（COGP）](data/cloud-optimized-geoparquet.md)
 - [ParquetのALP浮動小数点符号化](data/parquet-alp.md)
@@ -190,6 +192,7 @@ updated: 2026-10-30
 - [MapLibre Native](tools/maplibre-native.md)
 - [MachGL](tools/machgl.md)
 - [OpenLayers](tools/openlayers.md)
+- [anymap-ts](tools/anymap-ts.md)
 - [Cesium](tools/cesium.md)
 - [Navara](tools/navara.md)
 - [Mapbox Standard](tools/mapbox-standard.md)
@@ -252,6 +255,7 @@ updated: 2026-10-30
 
 - [GIS Data Agent](tools/gis-data-agent.md)
 - [Mapsuke](tools/mapsuke.md)
+- [GeoAgentとOpenGeoAgent](tools/geoagent.md)
 - [Google Maps Agentic UI Toolkit](tools/google-maps-agentic-ui.md)
 - [Mapbox CLI](tools/mapbox-cli.md)
 - [Mapbox Figma MCP Server](tools/mapbox-figma-mcp.md)
