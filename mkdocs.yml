@@ -216,6 +216,7 @@ nav:
         - LightBox: atlas/tools/lightbox.md
       - 学習・キャリア:
         - GIS Career Hub: atlas/tools/gis-career-hub.md
+        - yuiseki の GeoAI 研究所: atlas/tools/yuiseki-geoai-lab.md
     - 事例:
       - 小売・出店・価格比較:
         - 小売出店候補地のロケーションインテリジェンス: atlas/cases/retail-site-selection.md

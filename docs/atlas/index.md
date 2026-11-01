@@ -281,6 +281,7 @@ updated: 2026-10-30
 ### 学習・キャリア
 
 - [GIS Career Hub](tools/gis-career-hub.md)
+- [yuiseki の GeoAI 研究所](tools/yuiseki-geoai-lab.md)
 
 ## 事例 { #cases }
 
