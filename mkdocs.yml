@@ -239,6 +239,7 @@ nav:
         - 運転支援と地図の継続更新: atlas/cases/streaming-maps-driver-assistance.md
         - 旅客船のAIS位置情報の可視化: atlas/cases/ais-passenger-vessels.md
         - 配送経路の最適化と現場フィードバック: atlas/cases/here-fleet-route-intelligence.md
+        - オフライン徒歩経路と施設入口: atlas/cases/offline-walking-routes.md
       - 気候・季節の変化:
         - 紅葉時期の変化と空間補間: atlas/cases/maple-phenology.md
       - 防災・地形:

@@ -315,6 +315,7 @@ updated: 2026-11-02
 - [運転支援と地図の継続更新](cases/streaming-maps-driver-assistance.md)
 - [旅客船のAIS位置情報の可視化](cases/ais-passenger-vessels.md)
 - [配送経路の最適化と現場フィードバック](cases/here-fleet-route-intelligence.md)
+- [オフライン徒歩経路と施設入口](cases/offline-walking-routes.md)
 
 ### 気候・季節の変化
 
