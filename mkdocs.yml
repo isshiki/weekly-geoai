@@ -175,20 +175,22 @@ nav:
         - ArcGIS Solutions: atlas/tools/arcgis-solutions.md
         - ArcGIS for ExcelとPython in Excel: atlas/tools/arcgis-for-excel.md
         - 海しるAPI: atlas/tools/umishiru-api.md
-      - 場所検索・交通・ナビゲーション:
+      - 住所・施設を検索する:
         - ArcGIS Geocoding Service: atlas/tools/arcgis-geocoding.md
         - LocateXT：文書から位置を抽出する: atlas/tools/locatext.md
         - Nominatim: atlas/tools/nominatim.md
         - OpenPOI API: atlas/tools/openpoi-api.md
         - Outscraper：事業者情報の補完: atlas/tools/outscraper.md
         - Overture Maps API: atlas/tools/overture-maps-api.md
-        - Google MapsのAsk MapsとImmersive Navigation: atlas/tools/google-maps-gemini.md
+        - Mapbox Search Box API: atlas/tools/mapbox-search-box.md
+      - 経路・交通データを使う:
         - Valhalla: atlas/tools/valhalla.md
         - NextBillion.ai: atlas/tools/nextbillion-ai.md
         - TomTom Orbis APIs: atlas/tools/tomtom-orbis.md
-        - Mapbox Search Box API: atlas/tools/mapbox-search-box.md
-        - Galuchat: atlas/tools/galuchat.md
         - Mapbox Traffic: atlas/tools/mapbox-traffic.md
+      - 会話やアプリで移動を調べる:
+        - Google MapsのAsk MapsとImmersive Navigation: atlas/tools/google-maps-gemini.md
+        - Galuchat: atlas/tools/galuchat.md
         - 高徳地図（AMAP）: atlas/tools/amap.md
         - ゼンリン地図ナビ: atlas/tools/zenrin-map-navigation.md
       - AI・MCP連携:
@@ -246,6 +248,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 11月:
         - 月の一覧: updates/2026/11/index.md
+        - 11月2日: updates/2026-11-02.md
         - 11月1日: updates/2026-11-01.md
       - 10月:
         - 月の一覧: updates/2026/10/index.md

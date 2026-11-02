@@ -2,12 +2,16 @@
 layout: default
 title: MachGL
 category: tools
-updated: 2026-10-31
+updated: 2026-11-02
 ---
 
 # MachGL
 
-MachGLはGeoloniaが開発するWeb地図描画ライブラリで、Webサイトへ地図や自分のデータを重ねるために使う。2026年10月21日の発表では、11月9日にCDNで提供を始める予定である。正式公開済みとは扱わない。
+MachGLはGeoloniaが開発するWeb地図描画ライブラリで、Webサイトへ地図や自分のデータを重ねるために使う。2026年10月21日の発表では、11月9日にCDNで提供を始める予定である。2026年11月2日に公式予告を再確認した時点でも、ここでは正式公開済みとは扱わない。
+
+## 地図を描く部品と、分析する道具を分ける
+
+店舗や建物を見やすく表示するための部品である。人口を集計したり、出店候補地の売上を予測したりする処理は、描画機能とは別に用意する。地図を作る担当者は、表示したいデータと利用端末を決めてから、既存ライブラリとの互換性や導入条件を比較するとよい。
 
 ## どのような地図を想定するか
 
@@ -40,7 +44,7 @@ Geoloniaの地図デザインを名前で指定して使う方法にはAPIキー
 
 ## 出典
 
-- [Geolonia：MachGLのリリース予告](https://www.geolonia.com/archives/7002/)（2026-10-21公開・本文確認）
+- [Geolonia：MachGLのリリース予告](https://www.geolonia.com/archives/7002/)（2026-10-21公開・本文確認、2026-11-02に提供予定・容量・機能を再確認。[移転後の公式ページ](https://www.geolonia.com/news/2026-10-21-machgl-release/)）
 - [MachGLデモ一覧](https://geolonia.github.io/machgl-demo)（公式発表の案内先。操作未検証）
 
 - [INTERNET Watch：MachGLの軽量化と提供方針の取材](https://internet.watch.impress.co.jp/docs/column/chizu3/2151651.html)（2026-10-28公開、2026-10-31本文確認。開発者の説明と独立した実測を区別）

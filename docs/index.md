@@ -19,8 +19,8 @@ hide:
 
 <div class="atlas-grid" markdown>
 <div class="atlas-card" markdown>
-### [基礎理解から始める](atlas/guides/getting-started.md#route-foundations)
-GISとAIの関係をつかみ、目的に合う手法を選ぶ。
+### [仕事・暮らしの疑問から始める](atlas/guides/getting-started.md#everyday-uses)
+出店、配送、買い物、防災の場面から、地図でできることを知る。
 </div>
 <div class="atlas-card atlas-card--accent" markdown>
 ### [データを分析して確かめる](atlas/guides/getting-started.md#route-analysis)

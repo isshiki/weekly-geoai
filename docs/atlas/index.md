@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 知識マップ
-updated: 2026-10-30
+updated: 2026-11-02
 ---
 
 # GeoAIアトラス 知識マップ
@@ -20,10 +20,11 @@ updated: 2026-10-30
 | GeoLibre | [GISアプリ・分析操作の変化](tools/geolibre.md#release-history) |
 | GeoPandas | [属性と図形を使う分析基盤の変化](tools/geopandas.md#release-history) |
 | Shapely | [図形演算・境界検証の変化](tools/shapely.md#release-history) |
+| PostGIS | [データベースの空間処理の変化](tools/postgis.md#release-history) |
 
 ## 目的から探す { #by-purpose }
 
-初めて読む場合は、[3つの学習ルート](guides/getting-started.md#learning-routes)から選ぶ。読む順序と到達点は初心者案内にまとめている。
+仕事や暮らしでの使い道は[身近な4場面](guides/getting-started.md#everyday-uses)から選べる。技術を学びたい場合は、[3つの学習ルート](guides/getting-started.md#learning-routes)から選ぶ。読む順序と到達点は初心者案内にまとめている。
 
 | 学びたいこと | 入口 |
 | --- | --- |
@@ -39,9 +40,7 @@ updated: 2026-10-30
 | 集計や予測の結果を確かめる | [空間結合](methods/spatial-join-and-aggregation.md) → [予測・説明・因果](concepts/geographic-model-reasoning.md) → [検証と適用範囲](methods/spatial-analysis-validation.md) |
 | 店舗・施設のデータを分析する | [POIの案内](guides/poi-workflow.md) → [データ比較](data/poi-open-data-comparison.md) → [取得の網羅性](methods/poi-retrieval-coverage.md) |
 | 人の動きを分析する | [種類](data/human-flow-data-types.md) → [品質](data/human-flow-data-quality.md) → [集計](methods/human-flow-time-processing.md) → [プライバシー](methods/location-data-privacy.md) |
-- [位置情報とアンケートを組み合わせる](methods/location-linked-surveys.md)
 | 地図を作り、公開する | [座標系](concepts/coordinate-reference-systems.md) → [Felt](tools/felt.md)／[MapLibre](tools/maplibre-gl-js.md)／[OpenLayers](tools/openlayers.md) → [Web配信](methods/national-grid-web-delivery.md) |
-- [anymap-ts](tools/anymap-ts.md)
 | 防災・地形データを使う | [再利用条件](data/hazard-data-reuse.md) → [メッシュ集計](methods/polygon-mesh-aggregation.md) → [地形のスケール](methods/terrain-scale.md) |
 
 類似地域検索と予測の違いは[埋め込みの具体例](methods/spatial-embeddings.md#search-vs-prediction)、AI手法の選択は[入力・出力の比較表](concepts/geoai-overview.md#choose-method)を参照する。
@@ -233,7 +232,7 @@ updated: 2026-10-30
 - [ArcGIS for ExcelとPython in Excel](tools/arcgis-for-excel.md)
 - [海しるAPI](tools/umishiru-api.md)
 
-### 場所検索・交通・ナビゲーション
+### 住所・施設を検索する
 
 - [ArcGIS Geocoding Service](tools/arcgis-geocoding.md)
 - [LocateXT：文書から位置を抽出する](tools/locatext.md)
@@ -241,13 +240,19 @@ updated: 2026-10-30
 - [OpenPOI API](tools/openpoi-api.md)
 - [Outscraper：事業者情報の補完](tools/outscraper.md)
 - [Overture Maps API](tools/overture-maps-api.md)
-- [Google MapsのAsk MapsとImmersive Navigation](tools/google-maps-gemini.md)
+- [Mapbox Search Box API](tools/mapbox-search-box.md)
+
+### 経路・交通データを使う
+
 - [Valhalla](tools/valhalla.md)
 - [NextBillion.ai](tools/nextbillion-ai.md)
 - [TomTom Orbis APIs](tools/tomtom-orbis.md)
-- [Mapbox Search Box API](tools/mapbox-search-box.md)
-- [Galuchat](tools/galuchat.md)
 - [Mapbox Traffic](tools/mapbox-traffic.md)
+
+### 会話やアプリで移動を調べる
+
+- [Google MapsのAsk MapsとImmersive Navigation](tools/google-maps-gemini.md)
+- [Galuchat](tools/galuchat.md)
 - [高徳地図（AMAP）](tools/amap.md)
 - [ゼンリン地図ナビ](tools/zenrin-map-navigation.md)
 

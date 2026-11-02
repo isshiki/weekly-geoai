@@ -2,12 +2,18 @@
 layout: default
 title: Mapsuke
 category: tools
-updated: 2026-10-30
+updated: 2026-11-02
 ---
 
 # Mapsuke
 
 Mapsukeは、QGISのパネルからAIへ指示して地図作成や分析を進める、MIERUNEのオープンソースプラグイン（GPL v2）である。QGIS 3.44以降と、Claude CodeまたはCodex CLIの導入・認証が必要で、利用するAIサービスの契約またはAPIキーを別途用意する。
+
+## 最初に何を任せるか
+
+例えば「手元の店舗一覧を地図に載せ、地区ごとの件数を比べたい」という作業で使う。これは利用場面の例で、本Atlasによる実行結果ではない。まず対象ファイル、集計する地区、保存先を指定し、少量のデータで元の件数と結果を照合すると、何を任せたかを把握しやすい。
+
+プラグインがオープンソースであることと、接続先AIの利用料金が無料であることは別である。2026年11月2日に開発元の導入記事で、QGIS・CLIの準備とAIサービスの契約またはAPIキーが必要なことを再確認した。コードを自分で書かずに指示できても、最初の環境準備や結果の確認は残る。
 
 ## 動かし方と再利用
 
@@ -41,6 +47,6 @@ MIERUNEは2026年10月29日、Mapsukeを使う公開講座・法人研修・導�
 
 - [Mapsukeをもっと使いこなす！複数の処理・ツール化・プラグイン連携](https://qgis.mierune.co.jp/posts/howto_plugin_mapsuke_advanced)（2026-10-16確認）
 
-- [QGISをチャットで操作！AIエージェントプラグイン「Mapsuke」の使い方](https://qgis.mierune.co.jp/posts/howto_plugin_mapsuke)（2026-10-16確認）
+- [QGISをチャットで操作！AIエージェントプラグイン「Mapsuke」の使い方](https://qgis.mierune.co.jp/posts/howto_plugin_mapsuke)（2026-10-16確認、2026-11-02に導入条件を再確認）
 
 - [MIERUNE：研修・導入支援開始](https://prtimes.jp/main/html/rd/p/000000018.000101350.html)（2026-10-30確認）
