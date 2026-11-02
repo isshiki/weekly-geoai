@@ -48,5 +48,21 @@
   "atlas/tools/machgl.md": {
     "evidence": "2026-11-02：公式予告で11月9日の予定、gzip約98KB、表示機能・APIキー案内を再確認。旧出典URLを保ち移転先を併記。取材記事の再監査・実測・操作試験は未実施。",
     "next_action": "11月9日以降に正式提供・利用許諾・料金・互換性を確認"
+  },
+  "atlas/guides/gis-for-work.md": {
+    "evidence": " 2026-11-02：新規ページ。国土地理院の定義、ESRIジャパンの営業活用、Google OR-Toolsの目的・制約を確認。業務表は架空例で実証・操作検証ではない。",
+    "next_action": "公式資料の変更時に該当説明を確認。架空例と実証の区別を維持"
+  },
+  "atlas/guides/poi-workflow.md": {
+    "evidence": " 2026-11-02：仕事でPOIに追加する情報と限界を補足。既存のデータ提供仕様は再監査していない。",
+    "next_action": "公式資料の変更時に該当説明を確認。架空例と実証の区別を維持"
+  },
+  "atlas/methods/polygon-mesh-aggregation.md": {
+    "evidence": " 2026-11-02：Esri公式の按分・居住分布・制限を確認。人口1,000人の仮定例を追加。既存実装記事は再検証していない。",
+    "next_action": "公式資料の変更時に該当説明を確認。架空例と実証の区別を維持"
+  },
+  "atlas/cases/here-fleet-route-intelligence.md": {
+    "evidence": " 2026-11-02：Google OR-Toolsの目的・制約を確認し計画・監視・完了の一般的な区別を補足。HEREの提供段階は再確認していない。",
+    "next_action": "公式資料の変更時に該当説明を確認。架空例と実証の区別を維持"
   }
 }

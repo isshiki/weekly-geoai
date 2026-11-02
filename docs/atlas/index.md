@@ -24,7 +24,7 @@ updated: 2026-11-02
 
 ## 目的から探す { #by-purpose }
 
-仕事や暮らしでの使い道は[身近な4場面](guides/getting-started.md#everyday-uses)から選べる。技術を学びたい場合は、[3つの学習ルート](guides/getting-started.md#learning-routes)から選ぶ。読む順序と到達点は初心者案内にまとめている。
+仕事や暮らしでの使い道は[身近な4場面](guides/getting-started.md#everyday-uses)から選べる。技術を学びたい場合は、[3つの学習ルート](guides/getting-started.md#learning-routes)から選ぶ。読む順序と到達点は初心者案内にまとめている。[仕事の困りごとからGISを使う](guides/gis-for-work.md)では、業務の判断と必要な情報を見比べられる。
 
 | 学びたいこと | 入口 |
 | --- | --- |

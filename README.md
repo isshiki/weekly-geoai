@@ -26,6 +26,8 @@ DuckDB・Polars・MapLibre GL JS・GeoLibre・GeoPandas・Shapely・PostGISの[�
 
 ## 学習の入口
 
+[仕事の困りごとからGISを使う](https://isshiki.github.io/weekly-geoai/atlas/guides/gis-for-work/)では、出店・営業・配送・施設管理・用地調査について、地図で分かることと追加確認が必要なことを整理する。
+
 初めての方は[仕事・暮らしの疑問から](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/#everyday-uses)、出店・配送・買い物・防災の事例を選べる。技術の学習や演習を始める前に、使い道を一つ見つける入口である。
 
 読む順序と到達点は[初心者向け3ルート](https://isshiki.github.io/weekly-geoai/atlas/guides/getting-started/#learning-routes)にまとめている。
