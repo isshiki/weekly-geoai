@@ -2,7 +2,7 @@
 layout: default
 title: ArcGIS StoryMaps
 category: tools
-updated: 2026-10-14
+updated: 2026-11-03
 ---
 
 # ArcGIS StoryMaps
@@ -35,9 +35,17 @@ ArcGIS StoryMapsは、地図と文章・画像などを組み合わせて場所�
 
 作品を公開しても、埋め込んだ地図やレイヤーが非公開なら読者は閲覧できない。共有範囲を構成要素ごとに確認する。応募条件と締切は[10月14日の更新履歴](../../updates/2026-10-14.md)に記録した。
 
+## 手掛かりを探しながら地図に慣れる
+
+Esriの学習例は、謎解きに合わせて地図のレイヤーを重ね、読者自身が手掛かりを探す構成を紹介する。初めて地図を使う人にも、最初に機能名を覚えてもらうだけでなく、「どこにありそうか」という問いから操作を始めてもらえる。
+
+これは教材の制作例であり、学習効果を比較実験した報告ではない。架空の物語と実際の地域情報を区別し、答えの根拠を地図から確認できる構成にする。この使い方に生成AIは必須ではない。
+
 ## 出典
 
 - [Beef up your map tours with custom basemaps](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/constituent-engagement/beef-up-your-map-tours-with-custom-basemaps)（2026-09-17確認）
 - [Generate a theme with the ArcGIS StoryMaps assistant](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/constituent-engagement/generate-a-theme-with-the-arcgis-storymaps-assistant)（2026-09-19確認）
 
 - [Your guide to entering the 2026 ArcGIS StoryMaps competition](https://www.esri.com/arcgis-blog/products/story-maps/constituent-engagement/arcgis-storymaps-competition-criteria)（2026-10-14確認）
+
+- [Esri：Gamifying GIS: Injecting fun into geographic learning](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/constituent-engagement/gamifying-gis-injecting-fun-into-geographic-learning)（2026-11-02公開、2026-11-03本文確認）

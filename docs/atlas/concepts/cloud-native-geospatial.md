@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-10-29
+updated: 2026-11-03
 ---
 
 # Cloud Native Geospatial
@@ -132,6 +132,18 @@ ArcGIS Enterprise on Kubernetesは、クラウドや自社設備でGISを運用�
 
 米国森林局の1.2万～5万人への対応は同社の事例紹介で、任意の環境の同時利用性能を保証する数字ではない。Kubernetesは運用基盤であり、COGなどの部分取得に適したデータ形式とは別の役割である。導入には基盤運用の準備が必要で、クラウド化だけで品質・権限・費用の問題が解消するわけではない。
 
+## 空中写真の本体と索引を分ける
+
+広い地域の空中写真を扱うときは、画像そのものと「どこにどの画像があるか」を分けられる。練馬区の空中写真を再構成した記事は、次の役割分担を紹介する。
+
+| 部品 | 役割 |
+| --- | --- |
+| COG | 写真の画素を保持する |
+| GeoParquet | 各画像の範囲と保存先を索引として保持する |
+| GDAL GTI | 索引から画像を参照し、QGISなどで一つのラスタとして扱う |
+
+この例のGeoParquetは写真本体の代わりではない。元のTIFFに添えるTFWは配置情報を持つが、座標参照系まで指定するものではないため、元資料のCRSも確認する。記事は処理コードを公開しているが、表示速度の比較測定はしていない。Atlasでは記事とGTIの公式説明を確認し、データ変換や性能測定は行っていない。
+
 ## 関連項目
 
 - [POIデータを選び、分析する](../guides/poi-workflow.md)：店舗データの取得と分析へ進む。
@@ -195,3 +207,6 @@ MIERUNEの10月26日の試作は、TypeScript 7.1ベータのcontent mapperでGe
 - [TypeScript 7.1 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/)（2026-10-27確認）
 
 - [The Science of Where in the Modern Data Stack: Four Ways to Integrate ArcGIS and Snowflake](https://www.esri.com/arcgis-blog/products/arcgis-enterprise/data-management/the-science-of-where-in-the-modern-data-stack-four-ways-to-integrate-arcgis-and-snowflake)（2026-10-29本文確認、10月28日分として収録）
+
+- [高精細空中写真をCOGとGeoParquetで再構成する](https://qiita.com/lehukuku0120/items/c0c115dcd04b4e50621d)（2026-11-03 Qiita API本文確認）
+- [GDAL：GTIドライバー](https://gdal.org/en/stable/drivers/raster/gti.html)（2026-11-03公式説明確認）

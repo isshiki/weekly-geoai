@@ -2,7 +2,7 @@
 layout: default
 title: 空間分析への埋め込みの組み込み
 category: methods
-updated: 2026-10-29
+updated: 2026-11-03
 ---
 
 # 空間分析への埋め込みの組み込み
@@ -190,6 +190,17 @@ CARTO AI Labの発表は、地域を表すモデル、埋め込みの分析手�
 
 地域の特徴を数値で表すモデルと、目的に応じて分析手順やツールを選ぶエージェントは役割が異なる。Labの設立はPlacePulseの初公開や日本向け提供を意味しない。類似度が業務目的に合うかという検証も引き続き必要である。
 
+## 類似検索は埋め込みだけではない
+
+「似た街を探す」という目的だけで、内部に埋め込みモデルがあるとは判断できない。比較する特徴を明示し、その共通点を数える方法もある。
+
+| 例 | 比較の材料・理由の示し方 | 確認できないこと |
+| --- | --- | --- |
+| GEXT LocalGraph AIの共同調査 | 約150万件のスポット情報や生活者視点の記事、288カテゴリの施設分布などを使う。大井町に似る地域として京橋・野田阪神・北千住を紹介 | 発表だけではモデル構造や埋め込みの作り方、他手法との精度差は分からない |
+| ArcGIS KnowledgeのCommonGround試作 | 米国3万超の地域を16特性のカテゴリと結び、共通特性と重みで比較する。関係図から共通点をたどれる | 日本での再現性や、埋め込み手法より優れるかは検証されていない |
+
+自分でPOIから地域特徴量を作る場合も、まず「飲食店の構成が近い」「人口構成が近い」など、比較の理由を説明できる基準を持つとよい。埋め込みを加えた後にも、その基準と結果を見比べられる。施設構成の類似と、不動産価格や売上の予測能力は別の問いである。上記は企業の発表・試作紹介であり、Atlasでの再実験ではない。
+
 ## 出典
 
 - [Including Embeddings in Your Spatial Analysis Workflows](https://www.esri.com/arcgis-blog/products/arcgis-pro/geoai/including-embeddings-in-your-spatial-analysis-workflows)（[1]。2026-10-06再確認）
@@ -223,3 +234,6 @@ CARTO AI Labの発表は、地域を表すモデル、埋め込みの分析手�
 - [Google：Population Dynamics Insights概要](https://developers.google.com/maps/documentation/population-dynamics-insights/overview?hl=ja)（2026-10-24本文確認）
 
 - [CARTO AI Lab: working at the frontier of geospatial AI](https://carto.com/blog/carto-ai-lab/)（2026-10-29本文確認、10月28日分として収録）
+
+- [GEXT：LocalGraph AIを用いた地域類似性の共同調査](https://prtimes.jp/main/html/rd/p/000000002.000186199.html)（2026-11-02発表、2026-11-03本文確認）
+- [Esri：Exploring Similar Places Across the U.S. Using ArcGIS Knowledge](https://www.esri.com/arcgis-blog/products/arcgis-knowledge/analytics/exploring-similar-places-across-the-u-s-using-arcgis-knowledge)（2026-11-02公開、2026-11-03本文確認）
