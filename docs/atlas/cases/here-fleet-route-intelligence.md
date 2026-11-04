@@ -2,7 +2,7 @@
 layout: default
 title: 配送経路の最適化と現場フィードバック
 category: cases
-updated: 2026-11-02
+updated: 2026-11-04
 ---
 
 # 配送経路の最適化と現場フィードバック
@@ -33,8 +33,16 @@ updated: 2026-11-02
 
 大型輸送向けAIエージェントの実演も予告している。展示内容と将来の方向性を説明する発表であり、すべての機能が一般提供されたとは読み取らない。
 
+## 時間のかかる計画を受け付け、後から結果を受け取る
+
+配送先が多い場合、計算中ずっと接続を保つ方式が適さないことがある。Google Route Optimization APIは2026年9月30日、処理IDで完了を確認する非同期のOptimizeToursLongRunningと、Cloud Storageで大きな入出力を扱うOptimizeToursUriを正式提供した。これはGoogleのAPIであり、上記HERE製品とは別の選択肢である。
+
+非同期化は計算結果の受け渡し方の変更であり、経路の品質や計算速度が必ず上がることを意味しない。APIの認証・利用条件と、Storageを使う場合の権限を準備する。今回API呼び出しは行っていない。文書末尾の更新日と、個別機能の公開日も区別する。
+
 ## 出典
 
 - [HERE brings AI-powered route intelligence to fleet operations at IAA Transportation 2026](https://www.globenewswire.com/news-release/2026/09/10/3359206/0/en/here-brings-ai-powered-route-intelligence-to-fleet-operations-at-iaa-transportation-2026.html)（2026-09-17確認）
 
 - [Google OR-Tools：Vehicle Routing Problem](https://developers.google.com/optimization/routing/vrp)（2026-11-02確認）：目的・積載量・時間帯制約の説明。HEREの発表内容や提供段階は今回再確認していない。
+
+- [Google：Route Optimization APIリリースノート](https://developers.google.com/maps/documentation/route-optimization/release-notes#September_30_2026)（2026-09-30付項目、2026-11-04確認）

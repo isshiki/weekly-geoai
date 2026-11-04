@@ -2,7 +2,7 @@
 layout: default
 title: GeoLibre
 category: tools
-updated: 2026-11-01
+updated: 2026-11-04
 ---
 
 # GeoLibre
@@ -21,16 +21,17 @@ GeoLibreは、地理空間データの可視化、取得、編集、分析を扱
 
 ## 現在確認している機能
 
-3.6.0までの確認では、複数エンジンによる地図表示、点群・画像解析、AI・Pythonからの操作、分析手順の再利用を扱う。Web版または対応OSのアプリを用意し、外部データやAIサービスに必要な認証を個別に設定する。下の説明は機能別、年表は導入時期別に読む。
+3.6.1までの確認では、複数エンジンによる地図表示、点群・画像解析、AI・Pythonからの操作、分析手順の再利用を扱う。Web版または対応OSのアプリを用意し、外部データやAIサービスに必要な認証を個別に設定する。下の説明は機能別、年表は導入時期別に読む。
 
 ## 重要な更新履歴 { #release-history }
 
-3.6.0は2026-11-01に追加確認。既存行の確認日は次の段落のままである。
+3.6.1は2026-11-04、3.6.0は2026-11-01に追加確認。既存行の確認日は次の段落のままである。
 
 2026-10-30に下表の公式リリースノートを確認した。対象はGeoLibreアプリの1.0・2.0の節目と2.9.0〜3.5.2から選んだ主要変更であり、組み込み用@geolibre/map、Python・Rパッケージの独立した全履歴ではない。未掲載の版は変更なしを意味しない。公開日はUTC。最新推奨版の一覧ではなく、動作・接続・精度試験は未実施である。
 
 | バージョン・公式出典 | 公開日（UTC） | 変わったこと・使いどころ | 状態・更新時の注意 |
 | --- | --- | --- | --- |
+| [v3.6.1](https://github.com/opengeos/GeoLibre/releases/tag/v3.6.1) | 2026-11-02 | URL・プラグインからCRS指定、OSM取得改善、MCPで操作・解析を拡張 | 補助処理・Jupyter環境はPython 3.12に固定。動作未検証 |
 | [v3.6.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.6.0) | 2026-10-31 | インドGISカタログ、点群・S3用プラグインAPI、Python非同期命令、編集レイヤ既定100万件 | 署名付きURLでのデータアクセスを確認。既定上限は性能保証ではない |
 | [v3.5.2](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.2) | 2026-10-28 | TMSの{-y}タイルと、Jupyter外のPythonワーカースレッドに対応 | 保守版だが利用条件が変わるため収録。実行中イベントループとは区別 |
 | [v3.5.1](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.1) | 2026-10-27 | Model Builderに繰り返し・条件分岐を追加 | 小さな版番号でも、再利用する分析手順を作れる機能追加として収録 |
@@ -54,11 +55,15 @@ v3.5.0はMapLibre描画で極域、Plate Carrée、月・火星などの座標�
 
 STACの点群、ArcGIS VTPK／TPKX、Web版MBTilesの対応も加わった。WebAssembly処理の並列化は機能説明として扱い、具体的な速度向上は未計測である。
 
+v3.6.1では共有URLの`?crs=`やプラグインの`app.setMapCrs()`から指定できる。特定の国の座標系だけで提供されるWMSを共有する際にも、地図側のCRSを伝えられる。OSM Downloaderは取得前の範囲上限チェックと接続先の切り替えを備え、GeoJSON・GeoParquetへ出力できる。
+
 ### タイルの行番号とPythonの実行環境
 
 v3.5.2ではタイルURLまたはTileJSONの`{-y}`に対応し、TMS式の行番号を反転して読む。オフライン取得にも適用する。サービスが採用する行番号の方向に合わせる必要があり、画像の上下を見た目だけで反転する操作とは区別する。
 
 Pythonの`fly_to()`、`identify()`、`to_image()`などの待機を伴うメソッドは、Jupyter外のワーカースレッドにも対応した。公式はShiny for Pythonを例に挙げる。実行中のイベントループ内からの呼び出しとは条件が異なるため、任意の非同期処理が無条件に動くという意味ではない。保守リリースの利用条件を記録したもので、接続・動作試験は未実施である。
+
+v3.6.1ではデスクトップ補助処理とJupyter環境をPython 3.12に固定し、Python 3.15が選択された場合の起動失敗を修正した。
 
 ## UIなしで使う @geolibre/map
 
@@ -116,6 +121,8 @@ v3.6.0では、待機を伴うPython Mapコマンドに*_async()版が加わり�
 
 インドの行政区画などを追加・ダウンロードできるカタログも加わった。PostGIS・SQL Serverの編集可能レイヤは既定100万地物となり、処理サーバーのGEOLIBRE_DB_MAX_FEATURESで変更できる。これは既定取得上限で、描画速度・編集成功率の保証ではない。ブラウザーのGeoTIFF→COG変換はワーカーで実行され、中止できる。
 
+v3.6.1のMCPでは、開いたデスクトップ地図の視点移動、マーカー追加、地物照会、Whitebox・Model Builderの実行、画面取得を扱う。接続・保存権限と実行する処理を確認する。既存のMCP対応がこの版で初めて導入されたという意味ではない。
+
 ## 出典
 
 - [@geolibre/map README](https://github.com/opengeos/GeoLibre/blob/main/packages/map/README.md)（2026-09-17確認）
@@ -140,3 +147,5 @@ v3.6.0では、待機を伴うPython Mapコマンドに*_async()版が加わり�
 - [GeoLibre v3.5.2](https://github.com/opengeos/GeoLibre/releases/tag/v3.5.2)（2026-10-29確認）
 
 - [GeoLibre v3.6.0](https://github.com/opengeos/GeoLibre/releases/tag/v3.6.0)（2026-11-01公式本文・公開日時確認）
+
+- [GeoLibre v3.6.1](https://github.com/opengeos/GeoLibre/releases/tag/v3.6.1)（2026-11-02 UTC公開、2026-11-04公式本文・API確認）

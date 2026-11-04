@@ -2,7 +2,7 @@
 layout: default
 title: CARTO MCP Server
 category: tools
-updated: 2026-10-22
+updated: 2026-11-04
 ---
 
 # CARTO MCP Server
@@ -73,6 +73,12 @@ CARTOの2026年10月21日の発表は、創業者Javier de la Torreの11月1日�
 
 これは経営方針の発表で、MCPや既存の分析機能がすべて同日に初公開されたわけではない。AIに任せる業務の範囲と、権限・手順・結果を確認する仕組みは、個別の製品資料で確かめる。
 
+## 自分の問いに答えてもらうための準備
+
+CARTOの2026年11月3日の解説は、消防署から車で5分以内に到達できない地域と人口を調べる架空例を示す。施設の位置を見られるだけでは、その問いへの答えにはならない。AIが専門家の用意した分析手順を呼び、利用者の権限に応じたデータで答える構成を説明している。
+
+自然言語で聞けることに加え、到達時間の条件、人口の時点、分析方法を確認できることが重要になる。専門家の役割は、依頼ごとに操作するだけでなく、再利用できる手順を設計・確認することにも広がる。これは提供者の考え方と機能説明であり、この架空例による導入効果の実証ではない。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -97,3 +103,5 @@ CARTOの2026年10月21日の発表は、創業者Javier de la Torreの11月1日�
 - [CARTO：Agentic GIS in ChatGPT](https://carto.com/blog/agentic-gis-in-chatgpt/)（2026-10-21本文確認）
 
 - [CARTO enters the Agentic GIS era with its founder as CEO](https://carto.com/blog/carto-enters-the-agentic-gis-era-with-its-founder-as-ceo/)（2026-10-22本文確認）
+
+- [CARTO：What is self-service analytics, really?](https://carto.com/blog/what-is-self-service-analytics/)（2026-11-03公開、2026-11-04本文確認）

@@ -171,6 +171,7 @@ updated: 2026-11-02
 - [鳥瞰路線図](tools/chokan-rail-map.md)
 - [Maparium](tools/maparium.md)
 - [Local Wikipedia](tools/local-wikipedia.md)
+- [THE MAPとDiground](tools/the-map.md)
 - [ここから何分？](tools/kokokara-nanpun.md)
 - [にぎわいの地形図と駅Tier表](tools/poi-density-terrain.md)
 - [Kodawari](tools/kodawari.md)

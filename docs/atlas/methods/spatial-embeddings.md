@@ -2,7 +2,7 @@
 layout: default
 title: 空間分析への埋め込みの組み込み
 category: methods
-updated: 2026-11-03
+updated: 2026-11-04
 ---
 
 # 空間分析への埋め込みの組み込み
@@ -201,6 +201,14 @@ CARTO AI Labの発表は、地域を表すモデル、埋め込みの分析手�
 
 自分でPOIから地域特徴量を作る場合も、まず「飲食店の構成が近い」「人口構成が近い」など、比較の理由を説明できる基準を持つとよい。埋め込みを加えた後にも、その基準と結果を見比べられる。施設構成の類似と、不動産価格や売上の予測能力は別の問いである。上記は企業の発表・試作紹介であり、Atlasでの再実験ではない。
 
+## SpatialVec：形状と位置を学習する
+
+SpatialVecは、点・線・面を共通の数値ベクトルへ変換する研究である。POIの業種構成から街の性格を表す用途とは入力も評価も異なり、地物どうしの接触・包含・距離などを学習する。境界付近を重点的に取り込み、Transformerで距離・内外・境界の情報を再構成する。
+
+既定477次元の内訳は、学習した形状表現256、メタデータ17、重心・外接矩形に基づく位置の符号化204である。文章を言語モデルに入れて得る埋め込みではない。NYC・シンガポールで評価し、NYCの面同士の関係分類では86％（Geo2Vecは70％）と報告するが、計算時間は比較実験で計510分を要した。
+
+公開実装はCPUでも動作し、複数部分からなる形状は最大部分のみを使う。そのため離れた島や道路の一部を落とす可能性を用途に照らして確認する。研究の分類・推定結果は、元の図形で行う厳密な空間判定を常に代替する保証ではない。日本のデータでの性能や動作は本Atlasでは検証していない。
+
 ## 出典
 
 - [Including Embeddings in Your Spatial Analysis Workflows](https://www.esri.com/arcgis-blog/products/arcgis-pro/geoai/including-embeddings-in-your-spatial-analysis-workflows)（[1]。2026-10-06再確認）
@@ -237,3 +245,6 @@ CARTO AI Labの発表は、地域を表すモデル、埋め込みの分析手�
 
 - [GEXT：LocalGraph AIを用いた地域類似性の共同調査](https://prtimes.jp/main/html/rd/p/000000002.000186199.html)（2026-11-02発表、2026-11-03本文確認）
 - [Esri：Exploring Similar Places Across the U.S. Using ArcGIS Knowledge](https://www.esri.com/arcgis-blog/products/arcgis-knowledge/analytics/exploring-similar-places-across-the-u-s-using-arcgis-knowledge)（2026-11-02公開、2026-11-03本文確認）
+
+- [SpatialVec論文v1](https://arxiv.org/html/2611.00111v1)（2026-11-04本文確認）
+- [SpatialVec README](https://github.com/daiss-lab/SpatialVec/blob/main/README.md)（2026-11-04 raw本文確認、利用許諾の精査・実行は未実施）
