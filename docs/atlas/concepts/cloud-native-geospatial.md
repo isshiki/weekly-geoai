@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-11-03
+updated: 2026-11-06
 ---
 
 # Cloud Native Geospatial
@@ -38,6 +38,12 @@ Cloud Native Geospatial（CNG）は、地理空間データをクラウド上で
 GeoParquetはParquetへの地理空間表現・メタデータの仕様である。ここでは1.1.0の仕様を参照し、最新仕様であるとの主張はしない。bboxによる絞り込みは配置と読むツールの対応にも依存する。[COGP](../data/cloud-optimized-geoparquet.md)の段階表示は追加のプロファイルであり、通常のGeoParquetすべてに同じ動作を期待しない。
 
 STACのItemは個々の資産の記述、Collectionは集合の情報、Catalogはそれらをたどる構造を担う。静的JSONのカタログもあり、STACを使うことが検索APIの稼働を意味するわけではない。検索サービスのインターフェースはSTAC APIとして区別する。
+
+### 富士山周辺の地表面温度をQGISで見る { #jaxa-earth-api }
+
+JAXA Earth APIでは、観測した場所と日時を手がかりにSTACのカタログからファイルを探し、COGから表示範囲と解像度に必要な部分を読み取る。例えば富士山周辺の標高と地表面温度を重ねたいときは、MIERUNEのQGISプラグインを使えば、コードを書かずに地図上でデータを選べる。[JAXAのQGIS操作ガイド](https://data.earth.jaxa.jp/app/qgis/ja/)・[富士山での実演を紹介した記事](https://internet.watch.impress.co.jp/docs/column/chizu3/2152304.html)
+
+APIは登録・キー不要で、公式案内では利用回数の制限も設けていない。商用利用の可否は、使うデータのSTACに記載されたライセンスで確認する。作成した地図を公開するときは、JAXA Earth APIを使った旨も明記する。[JAXAのAPI仕様と利用条件](https://data.earth.jaxa.jp/ja/)
 
 ### Polarsで扱う場合
 
