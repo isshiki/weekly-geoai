@@ -49,7 +49,7 @@ Ask Google Earthのdeep researchとA2A APIは申請制の初期・実験的ア�
 
 - [地理空間データ探索](intelligent-geospatial-data-discovery.md)：条件を整理して検索する仕組み。
 - [分析結果の検証と適用範囲](spatial-analysis-validation.md)：予測の評価条件を決める。
-- [Mapsuke](../tools/mapsuke.md)：手元のGISを操作するツールと確認の役割。
+- [MapsukeとAutoGISプラグインの使い分け](../tools/mapsuke.md#autogis)：使うAI、地図の作り方、作業手順を別の駅や別のツールで使う方法を比べる。
 
 ## 利用事例の短縮時間と正確性を分ける
 

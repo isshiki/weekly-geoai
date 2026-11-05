@@ -2,12 +2,26 @@
 layout: default
 title: Mapsuke
 category: tools
-updated: 2026-11-02
+updated: 2026-11-05
 ---
 
 # Mapsuke
 
 Mapsukeは、QGISのパネルからAIへ指示して地図作成や分析を進める、MIERUNEのオープンソースプラグイン（GPL v2）である。QGIS 3.44以降と、Claude CodeまたはCodex CLIの導入・認証が必要で、利用するAIサービスの契約またはAPIキーを別途用意する。
+
+## AutoGISプラグインとの使い分け
+
+MapsukeもAutoGISも、自然言語で地図作業を頼めるQGISプラグインである。どちらもQGIS公式のプラグイン配布サイトに掲載され、開発元はそれぞれMIERUNEとPrince Suthar氏である。[Mapsukeの登録情報](https://plugins.qgis.org/plugins/mapsuke/)・[AutoGISの登録情報](https://plugins.qgis.org/plugins/AutoGIS/)
+
+| 比べる点 | Mapsuke（MIERUNE） | AutoGISプラグイン（Prince Suthar） |
+| --- | --- | --- |
+| 使うAI | 手元のClaude CodeやCodex CLIをQGISから呼び出す。 | クラウドのAIのほか、Ollamaなどを使って自分のPCで動かすモデルも選べる。 |
+| 地図を作る手順 | AIがPythonコードを作り、QGISの処理や導入済みプラグインを呼び出す。Askモードでは実行前に内容を確認できる。 | AIがOpenStreetMapからのデータ取得、区域ごとの画像集計、地図の書き出しなどに用意されたツールを呼び出す。 |
+| 他の作業に生かす方法 | 確認済みの手順をQGISのツールとして保存し、入力を替えて使ったり、同僚に渡したりできる。 | 内蔵のMCPサーバーを通じて、QGISの外で使っているAIエージェントからも地図のツールを呼び出せる。 |
+
+例えば「駅周辺のカフェを地図にしたい」という依頼でも、次の駅で同じ集計を繰り返すなら、Mapsukeで半径や対象カテゴリを指定するツールとして残す使い方がある。手元で動かすAIからOpenStreetMapの取得を頼みたいなら、AutoGISが候補になる。これは選び方を示す例で、精度や処理時間の比較試験は行っていない。公開資料を2026年11月5日に確認した。[Mapsukeの応用ガイド](https://qgis.mierune.co.jp/posts/howto_plugin_mapsuke_advanced)・[AutoGISプラグインの開発元README](https://github.com/sutharprin098/AutoGIS)
+
+**論文で登場するTHU-ESISのAutoGIS**は同名の別プロジェクトである。こちらはWeb画面やコマンドラインから依頼し、手元のデータを優先して探し、生成した分析コードをQGIS環境で実行する研究用基盤である。[研究用AutoGISのREADME](https://github.com/THU-ESIS/AutoGIS)・[Atlasで見る二つのAutoGIS](../methods/geospatial-agent-evaluation.md#autogisai)
 
 ## 最初に何を任せるか
 
