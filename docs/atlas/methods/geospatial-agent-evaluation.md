@@ -43,6 +43,8 @@ Ask Google Earthのdeep researchとA2A APIは申請制の初期・実験的ア�
 - **THU-ESISの研究用基盤**では、Web画面やコマンドラインから依頼する。手元のデータを優先して探し、生成した分析コードを設定済みのQGISで実行する。例えば、ある地点の周囲を分析するときは、選ばれたデータと、コードが指定した距離・単位の両方を確かめられる。[研究チームのREADMEとデモ](https://github.com/THU-ESIS/AutoGIS)
 - **sutharprin098のQGISプラグイン**では、QGISの中から操作する。1.0.3ではAIがコードを書く際にGISの実装資料を検索できるようになった。資料を参照できても、選んだ地域や分析条件が依頼に合うかは別途確かめる。[QGIS登録情報](https://plugins.qgis.org/plugins/AutoGIS/)・[1.0.3の変更履歴](https://plugins.qgis.org/plugins/AutoGIS/version/1.0.3/)
 
+THU-ESISの研究では、113件のコード評価で、エラー記録だけを使った修正後の実行成功率は76.99％、入力データと処理関数の仕様も与えると94.69％だった（いずれも修正3回後）。出力地図が依頼に合うかは別に確かめる必要がある。 [AutoGIS: an agent framework for automated geospatial data management and analysis](https://www.tandfonline.com/doi/full/10.1080/17538947.2026.2704301)（2026年11月5日確認）
+
 2026年11月5日に両者の公開資料を確認。動作や精度の比較は未実施。
 
 ## 次に読む

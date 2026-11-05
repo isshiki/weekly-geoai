@@ -2,7 +2,7 @@
 layout: default
 title: Google Maps Platformの3D地図・場所UI・スタイル
 category: tools
-updated: 2026-10-30
+updated: 2026-11-05
 ---
 
 # Google Maps Platformの3D地図・場所UI・スタイル
@@ -26,6 +26,8 @@ Google Maps PlatformのSDKやUI部品を使うと、自分のWeb・モバイル�
 AI Studioでアプリを試作すること、アプリへ場所のUIを組み込むこと、GIS分析をAIに任せることは別の機能である。[Agentic UI Toolkit](google-maps-agentic-ui.md)の提供段階も、このSDKやUI Kitの一般提供から推定しない。
 
 現地の混雑情報には提供される場所や項目の違いがある。今回、SDKの実装やアプレットの動作は検証していない。
+
+11月4日の更新で、施設詳細に普段の時間帯別の混み具合を表示できるようになった。現在の混雑も情報がある場合に表示する。普段の傾向と今の観測を読み分けたい。 [Maps JavaScript API 3.66.13d：施設詳細に混雑状況を表示](https://developers.google.com/maps/documentation/javascript/releases?hl=ja#2026-11-04)（2026年11月5日確認）
 
 ## 出典
 
