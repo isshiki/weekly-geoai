@@ -2,12 +2,19 @@
 layout: default
 title: Google Maps Platformの3D地図・場所UI・スタイル
 category: tools
-updated: 2026-11-05
+updated: 2026-11-06
 ---
 
 # Google Maps Platformの3D地図・場所UI・スタイル
 
 Google Maps PlatformのSDKやUI部品を使うと、自分のWeb・モバイルアプリへ3D地図、場所の詳細、状況に応じた地図表現を組み込める。完成したGoogleマップアプリの機能とは分けて読む。対象SDKを組み込む開発環境を用意し、サービスごとの利用条件・料金を確認する。
+
+## ナビ中の通信断に備える
+
+Navigation SDK for Android 8.1.0は、ナビ中に経路沿いの地図を自動先読みする。配送などの移動中に通信が途切れても、取得済みの経路沿いで地図表示と再探索を続けられる。先読みする範囲とタイミングがあるため、任意の地域をいつでもオフライン検索できると解釈しない。
+
+Routes APIで決めた経路は、ルートトークンだけを渡して目的地を設定できる。経由地や移動手段を二重に指定する手間が減り、実際に採用された経路設定も確認できる。従来のCustomRoutesOptionsを使う指定方法は非推奨となった。[公式リリースノート](https://developers.google.com/maps/documentation/navigation/android-sdk/release-notes#November_04_2026)（11月4日公開、2026年11月7日確認。SDK動作は未検証）
+
 
 ## 何を組み込めるか
 

@@ -2,12 +2,19 @@
 layout: default
 title: CARTO MCP Server
 category: tools
-updated: 2026-11-04
+updated: 2026-11-06
 ---
 
 # CARTO MCP Server
 
 CARTO MCP Serverは、Model Context Protocol（MCP）を通じてCARTOの地図、Workflows、空間分析、ジオコーディング、ルーティング、管理機能などをAIエージェントへ公開する接続層である。エージェントが自然言語の依頼からCARTO上の資産を操作し、結果を再利用できるWorkflowや地図として残す用途を想定している。
+
+## 作った地図アプリを社内で共有する
+
+CARTO Hosted Appsは、作成した地理空間WebアプリをCARTO内に配置し、組織の認証・閲覧権限で共有する機能である。App Studioでは、自然言語で作成を依頼し、接続済みの実データでプレビューを見ながら画面の修正を指示する。例えば出店候補地を見る画面を担当部署に渡すとき、受け手が元から閲覧できるデータだけを表示する仕組みを引き継げる。
+
+MCPによるツール接続に加え、アプリの作成・配置・版の復元までを扱う。2026年11月5日の発表では、CARTO顧客向けの限定プレビューで、CloudとSelf-hostedに対応すると説明している。利用希望者は担当窓口への問い合わせが必要。Atlasでは実動作や権限制御の試験を行っていない。[CARTOの発表](https://carto.com/blog/generative-spatial-apps-hosted-in-carto/)（2026年11月7日確認）
+
 
 ## Claudeからの利用
 
