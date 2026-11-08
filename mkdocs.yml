@@ -204,6 +204,8 @@ nav:
         - Mapbox Figma MCP Server: atlas/tools/mapbox-figma-mcp.md
         - MCP for ArcGIS Location Services: atlas/tools/arcgis-location-services-mcp.md
         - CARTO MCP Server: atlas/tools/carto-mcp-server.md
+        - ArcGIS for Teamsの対話検索: atlas/tools/arcgis-for-teams.md
+        - Planet AI app: atlas/tools/planet-ai-app.md
         - BigGeo AI: atlas/tools/biggeo-ai.md
       - 人流・商圏・不動産分析:
         - ゼンリン まっちず: atlas/tools/zenrin-matchz.md
@@ -251,6 +253,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 11月:
         - 月の一覧: updates/2026/11/index.md
+        - 11月7日: updates/2026-11-07.md
         - 11月6日: updates/2026-11-06.md
         - 11月5日: updates/2026-11-05.md
         - 11月4日: updates/2026-11-04.md

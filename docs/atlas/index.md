@@ -267,6 +267,8 @@ updated: 2026-11-02
 - [Mapbox Figma MCP Server](tools/mapbox-figma-mcp.md)
 - [MCP for ArcGIS Location Services](tools/arcgis-location-services-mcp.md)
 - [CARTO MCP Server](tools/carto-mcp-server.md)
+- [ArcGIS for Teamsの対話検索](tools/arcgis-for-teams.md)
+- [Planet AI app](tools/planet-ai-app.md)
 - [BigGeo AI](tools/biggeo-ai.md)
 
 ### 人流・商圏・不動産分析
