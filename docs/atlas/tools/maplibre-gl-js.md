@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-10-30
+updated: 2026-11-09
 ---
 
 # MapLibre GL JS
@@ -39,10 +39,13 @@ MapLibre GL JSは、ベクタータイルなどからインタラクティブな
 
 ## 重要な更新履歴 { #release-history }
 
+v6.17.0は2026-11-09に公式本文・公開日時を追加確認。ベクターソースの実験的な`sparse`オプションは、欠けたタイルを上位タイルから切り出して補う。元データにない詳細を生成する機能ではない。利用する縮尺とデータで表示を確認する。
+
 対象はWeb向けのMapLibre GL JSであり、[MapLibre Native](maplibre-native.md)とは版番号を分ける。2026-10-30に下表の公式リリースノートを確認した。収録範囲は5.0・6.0の大きな節目と6.8.0〜6.16.0の主要変更で、中間版や小さな修正は網羅していない。未掲載は変更なしを意味しない。公開日はUTCで、日次ニュースの収録日や日本時間の日付とは異なる場合がある。最新推奨版の一覧ではなく、実行試験は未実施である。
 
 | バージョン・公式出典 | 公開日（UTC） | 変わったこと・使いどころ | 状態・更新時の注意 |
 | --- | --- | --- | --- |
+| [v6.17.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.17.0) | 2026-11-07 | 欠けたベクタータイルを上位タイルで補うsparseオプション | 実験機能。iOS 15の文字・アイコン非表示、file・sandbox iframeでの読込を修正。端末検証は未実施 |
 | [v6.16.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.16.0) | 2026-10-25 | 表示範囲を緯度・経度の一方だけに制限。初期化時のスタイル変換を追加 | iOSのWorker停止後や背景復帰時の表示・読み込みを修正。対象端末で確認 |
 | [v6.15.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.15.0) | 2026-10-18 | 独自の平面CRSとGeoJSON投影に実験対応。縦書きのvert字形にも対応 | 地図に合うタイルグリッドが必要。回転・傾斜設定のaroundCenterは非推奨 |
 | [v6.14.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.14.0) | 2026-10-11 | globalStateの初期値を地図作成・スタイル設定時に指定 | 一部iPadOS 16 Safariの空白表示を修正。利用環境による |

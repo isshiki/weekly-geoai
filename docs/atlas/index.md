@@ -269,6 +269,7 @@ updated: 2026-11-02
 - [CARTO MCP Server](tools/carto-mcp-server.md)
 - [ArcGIS for Teamsの対話検索](tools/arcgis-for-teams.md)
 - [Planet AI app](tools/planet-ai-app.md)
+- [鉄道駅LOD MCPサーバー](tools/railway-lod-mcp.md)
 - [BigGeo AI](tools/biggeo-ai.md)
 
 ### 人流・商圏・不動産分析
