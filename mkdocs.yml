@@ -134,6 +134,7 @@ nav:
         - GeoLibre: atlas/tools/geolibre.md
         - RustGIS: atlas/tools/rustgis.md
         - Felt: atlas/tools/felt.md
+        - JupyterGIS: atlas/tools/jupytergis.md
         - GIS CloudのAIによる現場調査支援: atlas/tools/gis-cloud.md
         - Vespucci：AndroidでOSMを編集: atlas/tools/vespucci.md
         - ArcGIS StoryMaps: atlas/tools/arcgis-storymaps.md
@@ -254,6 +255,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 11月:
         - 月の一覧: updates/2026/11/index.md
+        - 11月10日: updates/2026-11-10.md
         - 11月9日: updates/2026-11-09.md
         - 11月8日: updates/2026-11-08.md
         - 11月7日: updates/2026-11-07.md

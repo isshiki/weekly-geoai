@@ -2,12 +2,21 @@
 layout: default
 title: Google Maps Platformの3D地図・場所UI・スタイル
 category: tools
-updated: 2026-11-06
+updated: 2026-11-10
 ---
 
 # Google Maps Platformの3D地図・場所UI・スタイル
 
 Google Maps PlatformのSDKやUI部品を使うと、自分のWeb・モバイルアプリへ3D地図、場所の詳細、状況に応じた地図表現を組み込める。完成したGoogleマップアプリの機能とは分けて読む。対象SDKを組み込む開発環境を用意し、サービスごとの利用条件・料金を確認する。
+
+## 自然言語から地図アプリを試作する
+
+2026年11月9日、GoogleはAI Studio内でMaps Platformを使うアプリを自然言語から作れると発表した。地図・3D表示、店舗検索、経路計画、大気質・花粉などを組み込み、設定やAPIキー管理を支援する。店舗検索や訪問サービスの経路計画の作例もある。
+
+発表時の無料試用はAPIごとに1日100回、24時間ごとにリセットされ、カード登録は不要。本番利用や枠拡大にはGoogle Cloudの課金アカウントが必要で、通常のMaps Platform料金が適用される。試作できることと、業務で必要な分析・経路の妥当性が検証済みであることは分ける。
+
+[Google公式発表](https://developers.googleblog.com/from-prompt-to-app-build-with-google-maps-in-ai-studio/)（2026-11-10本文確認、実操作未検証）。
+
 
 ## ナビ中の通信断に備える
 
