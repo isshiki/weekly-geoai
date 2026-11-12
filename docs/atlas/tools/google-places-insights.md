@@ -2,7 +2,7 @@
 layout: default
 title: Google Places Insights
 category: tools
-updated: 2026-10-30
+updated: 2026-11-12
 ---
 
 # Google Places Insights
@@ -50,6 +50,10 @@ BigQuery上で利用するデータセットで、東京を含む主要都市の
 2026-10-30に概要文書を確認。PLACES_COUNT_PER_H3・PLACES_COUNT_V2・PLACES_COUNT_PER_TYPE_V2は、結果の1行につき最大250件のプレイスIDを返す。件数が250件を超える場合、このID配列を対象地域の全店舗一覧として扱わない。旧PLACES_COUNTは同じID出力の対象ではない。
 
 直接SQLはプレイスIDを返さず、0〜4件の集計行も除外する。関数による正確な件数の取得と、全POIレコードの自由な抽出は別である。ここでの確認日は新機能の公開日を意味しない。
+
+## 会話から集計条件を確かめる
+
+GoogleのGeospatial Analytics Playgroundは、ロンドンのカフェが集中する場所をH3の区画ごとに探す例を紹介している。回答には実行用のBigQuery SQLが付く。対象地域、施設の条件、集計区画を読み、必要ならColab Enterpriseで条件を変えて結果を比べられる。 [Google公式の機能紹介](https://mapsplatform.google.com/resources/blog/meet-the-geospatial-analytics-playground-explore-maps-insights-with-ai/)（2026-11-12確認）。
 
 ## 出典
 

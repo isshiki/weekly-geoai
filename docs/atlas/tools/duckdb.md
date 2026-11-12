@@ -2,7 +2,7 @@
 layout: default
 title: DuckDBとSpatial拡張
 category: tools
-updated: 2026-11-09
+updated: 2026-11-12
 ---
 
 # DuckDBとSpatial拡張
@@ -62,6 +62,10 @@ LTSのサポートは原則公開後1年間と案内される。保守期限は�
 - [空間SQLエンジンの選び方](spatial-sql-engines.md)：PostGISやSedonaDBとの役割分担と比較条件。
 - [座標参照系](../concepts/coordinate-reference-systems.md)：CRSの指定と変換の違い。
 - [Polars](polars.md)：DataFrameで扱う地理空間データ入出力との接点。
+
+## 地図を動かした範囲だけ集計する
+
+SQLRoomsはReactアプリから手元のDuckDBを使えるようにする開発用ライブラリ。Foursquareの地図の例では、表示範囲に合わせてタイルを生成し、縮尺に応じて地物を間引く。AIにSQLを作ってもらう場合、元データを手元で処理しながら、列の情報や選んだクエリ結果を外部モデルに渡す構成も取れる。 [DuckDB公式ブログの実装紹介](https://duckdb.org/2026/11/12/local-analytics-without-a-database-server)（2026-11-12確認）。
 
 ## 出典
 
