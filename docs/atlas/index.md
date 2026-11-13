@@ -1,12 +1,36 @@
 ---
 layout: default
 title: 知識マップ
-updated: 2026-11-02
+updated: 2026-11-13
 ---
 
 # GeoAIアトラス 知識マップ
 
 やりたいことから読む順序を選ぶか、分類から個別の項目を探せる。初めて読む場合は[初めてのGeoAI](guides/getting-started.md)から始める。
+
+## 目的から探す { #by-purpose }
+
+| 知りたいこと | 最初に読むページ |
+| --- | --- |
+| 次の店を開くなら、駅前と住宅街のどちらを詳しく調べるか | [二つの候補地を同じ条件で比べる](cases/retail-site-selection.md#first-comparison) |
+| 引っ越し先からスーパーや公園へ歩いて行けるか | [出発点を変えて徒歩時間を見比べる](tools/kokokara-nanpun.md) |
+| 配送の遅れや、点検が必要な施設を地図で把握したい | [仕事の困りごとからGISを使う](guides/gis-for-work.md) |
+| 地図の集計をAIに頼んだら、答えのどこを確かめればよいか | [データ・手順・結果を順に確認する](methods/geospatial-agent-evaluation.md) |
+
+基礎から順に学ぶ場合は、[初めてのGeoAIの学習ルート](guides/getting-started.md#learning-routes)へ。使いたい道具が決まっている場合は、[ライブラリの更新履歴](#library-history)や[分類別の一覧](#by-category)から直接探せる。
+
+### 用途を決めて調べる
+
+| 目的 | 読む順序 |
+| --- | --- |
+| 保存形式と配信方法を選ぶ | [CNGの形式比較](concepts/cloud-native-geospatial.md#choose-format) → [部分取得の条件](concepts/cloud-native-geospatial.md#partial-reads) → [Web配信例](methods/national-grid-web-delivery.md) |
+| 集計や予測の結果を確かめる | [空間結合](methods/spatial-join-and-aggregation.md) → [予測・説明・因果](concepts/geographic-model-reasoning.md) → [検証と適用範囲](methods/spatial-analysis-validation.md) |
+| 店舗・施設のデータを分析する | [POIの案内](guides/poi-workflow.md) → [データ比較](data/poi-open-data-comparison.md) → [取得の網羅性](methods/poi-retrieval-coverage.md) |
+| 人の動きを分析する | [種類](data/human-flow-data-types.md) → [品質](data/human-flow-data-quality.md) → [集計](methods/human-flow-time-processing.md) → [プライバシー](methods/location-data-privacy.md) |
+| 地図を作り、公開する | [座標系](concepts/coordinate-reference-systems.md) → [Felt](tools/felt.md)／[MapLibre](tools/maplibre-gl-js.md)／[OpenLayers](tools/openlayers.md) → [Web配信](methods/national-grid-web-delivery.md) |
+| 防災・地形データを使う | [再利用条件](data/hazard-data-reuse.md) → [メッシュ集計](methods/polygon-mesh-aggregation.md) → [地形のスケール](methods/terrain-scale.md) |
+
+類似地域検索と予測の違いは[埋め込みの具体例](methods/spatial-embeddings.md#search-vs-prediction)、AI手法の選択は[入力・出力の比較表](concepts/geoai-overview.md#choose-method)を参照する。
 
 ## ライブラリ・ツールの更新を追う { #library-history }
 
@@ -21,29 +45,6 @@ updated: 2026-11-02
 | GeoPandas | [属性と図形を使う分析基盤の変化](tools/geopandas.md#release-history) |
 | Shapely | [図形演算・境界検証の変化](tools/shapely.md#release-history) |
 | PostGIS | [データベースの空間処理の変化](tools/postgis.md#release-history) |
-
-## 目的から探す { #by-purpose }
-
-仕事や暮らしでの使い道は[身近な4場面](guides/getting-started.md#everyday-uses)から選べる。技術を学びたい場合は、[3つの学習ルート](guides/getting-started.md#learning-routes)から選ぶ。読む順序と到達点は初心者案内にまとめている。[仕事の困りごとからGISを使う](guides/gis-for-work.md)では、業務の判断と必要な情報を見比べられる。
-
-| 学びたいこと | 入口 |
-| --- | --- |
-| 基礎理解：手法を選ぶ | [全体像から手法比較へ](guides/getting-started.md#route-foundations) |
-| データ分析：結果を確かめる | [空間結合・画像評価の2演習へ](guides/getting-started.md#route-analysis) |
-| AI操作：依頼文を作る | [条件整理・依頼ひな形・結果確認へ](guides/getting-started.md#route-agent) |
-
-### 用途を決めて調べる
-
-| 目的 | 読む順序 |
-| --- | --- |
-| 保存形式と配信方法を選ぶ | [CNGの形式比較](concepts/cloud-native-geospatial.md#choose-format) → [部分取得の条件](concepts/cloud-native-geospatial.md#partial-reads) → [Web配信例](methods/national-grid-web-delivery.md) |
-| 集計や予測の結果を確かめる | [空間結合](methods/spatial-join-and-aggregation.md) → [予測・説明・因果](concepts/geographic-model-reasoning.md) → [検証と適用範囲](methods/spatial-analysis-validation.md) |
-| 店舗・施設のデータを分析する | [POIの案内](guides/poi-workflow.md) → [データ比較](data/poi-open-data-comparison.md) → [取得の網羅性](methods/poi-retrieval-coverage.md) |
-| 人の動きを分析する | [種類](data/human-flow-data-types.md) → [品質](data/human-flow-data-quality.md) → [集計](methods/human-flow-time-processing.md) → [プライバシー](methods/location-data-privacy.md) |
-| 地図を作り、公開する | [座標系](concepts/coordinate-reference-systems.md) → [Felt](tools/felt.md)／[MapLibre](tools/maplibre-gl-js.md)／[OpenLayers](tools/openlayers.md) → [Web配信](methods/national-grid-web-delivery.md) |
-| 防災・地形データを使う | [再利用条件](data/hazard-data-reuse.md) → [メッシュ集計](methods/polygon-mesh-aggregation.md) → [地形のスケール](methods/terrain-scale.md) |
-
-類似地域検索と予測の違いは[埋め込みの具体例](methods/spatial-embeddings.md#search-vs-prediction)、AI手法の選択は[入力・出力の比較表](concepts/geoai-overview.md#choose-method)を参照する。
 
 ## 分類から探す { #by-category }
 
