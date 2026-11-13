@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre GL JS
 category: tools
-updated: 2026-11-09
+updated: 2026-11-13
 ---
 
 # MapLibre GL JS
@@ -15,6 +15,8 @@ MapLibre GL JSは、ベクタータイルなどからインタラクティブな
 - レイヤー、カメラ、Marker、Popup、ユーザー操作をAPIから制御する。
 - メルカトル表示に加え、globe表示や3D terrainを扱う。
 - PMTilesなど、追加プロトコルを介した配信形式と組み合わせられる。
+
+線や面、画像を重ねるときは、上の色と下の色をどう混ぜるかも指定できる。たとえば背景の地形を読み取れるように区域を塗る使い方が考えられる。変わるのは描画で、元の区域や数値は変わらない。
 
 ## 使い始める前に
 
@@ -45,6 +47,7 @@ v6.17.0は2026-11-09に公式本文・公開日時を追加確認。ベクター
 
 | バージョン・公式出典 | 公開日（UTC） | 変わったこと・使いどころ | 状態・更新時の注意 |
 | --- | --- | --- | --- |
+| [v6.18.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.18.0) | 2026-11-11 | 線・塗りつぶし・ラスターにレイヤー合成を追加 | 色の重ね方を指定する描画機能。端末ごとの見え方は未検証 |
 | [v6.17.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.17.0) | 2026-11-07 | 欠けたベクタータイルを上位タイルで補うsparseオプション | 実験機能。iOS 15の文字・アイコン非表示、file・sandbox iframeでの読込を修正。端末検証は未実施 |
 | [v6.16.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.16.0) | 2026-10-25 | 表示範囲を緯度・経度の一方だけに制限。初期化時のスタイル変換を追加 | iOSのWorker停止後や背景復帰時の表示・読み込みを修正。対象端末で確認 |
 | [v6.15.0](https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.15.0) | 2026-10-18 | 独自の平面CRSとGeoJSON投影に実験対応。縦書きのvert字形にも対応 | 地図に合うタイルグリッドが必要。回転・傾斜設定のaroundCenterは非推奨 |
