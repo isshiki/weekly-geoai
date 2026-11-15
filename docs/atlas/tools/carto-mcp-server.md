@@ -2,7 +2,7 @@
 layout: default
 title: CARTO MCP Server
 category: tools
-updated: 2026-11-06
+updated: 2026-11-15
 ---
 
 # CARTO MCP Server
@@ -41,6 +41,8 @@ ClaudeではCARTO MCP Serverをカスタムコネクタとして登録し、CART
 AIは分析方法の提案と構築を支援するが、保存後のWorkflowは明示的な処理パイプラインとして実行される。継続的な業務では、会話ログだけを成果物にせず、再現可能な処理と地図を残すことが重要である。
 
 ## Snowflake CoWorkからの利用
+
+CoWork自身の地図表示と、CARTOの外部ツールを呼ぶ連携は区別する。Snowflakeは2026年11月10日、会話の回答に緯度経度の点・H3・GEOGRAPHY／GEOMETRYを地図表示するプレビューを発表した。クエリ連動の地図は閲覧者の認証情報で再実行するため、共有する図だけでなく、閲覧者が元データを参照できるかも確認する。この発表だけでCARTOの分析ツールまで利用可能になったとは解釈しない。[Snowflake公式リリースノート](https://docs.snowflake.com/en/release-notes/2026/other/2026-11-10-cowork-maps-preview)（2026-11-16確認。実操作は未検証）。
 
 2026年9月14日の公式記事は、CoWorkの外部MCPコネクターへCARTOを登録し、Builderの地図やWorkflowsを作成・修正する方法を示している。SQLはSnowflakeの元テーブルに対して実行され、利用者ごとのCARTO認証を通じてロール、行アクセスポリシー、マスキングが適用される。
 
