@@ -2,7 +2,7 @@
 layout: default
 title: Location AI
 category: concepts
-updated: 2026-10-06
+updated: 2026-11-17
 ---
 
 # Location AI
@@ -19,6 +19,12 @@ AIへ依頼する文章、実際に検索・計算するツール、根拠にな
   ![地理空間データから業務結果までをつなぐLocation AIの5層](../../assets/atlas/location-ai/location-ai-layers.svg)
   <figcaption>Location AIを構成するデータ、接続、指示、実行、結果の関係。GeoAIアトラス作成。</figcaption>
 </figure>
+
+## GISエージェントと利用者の役割
+
+GISエージェントは、依頼を処理の条件と手順へ分け、Python、空間データベース、API、GISなどから適切な道具を選ぶ。画面上のGISソフトだけを操作する構成に限らない。たとえば大量の施設をデータベースで集計し、最後に地図で確かめる構成もある。
+
+利用者は目的を示し、不足している条件を決め、結果を確かめる。「徒歩15分」なら出発点や徒歩の道路網を決め、保存・上書き・外部送信の範囲を確認してから実行する。結果は、データの出典と時点、座標と分析条件、出力件数と地図上の位置の3点から読むと確認しやすい。これは[GISエージェント入門](https://blog.masahiko.info/entry/2026/11/17/113000)でも整理されている、利用者・AI・計算処理の役割分担である。
 
 ## 入力から検証まで { #workflow }
 
@@ -203,3 +209,5 @@ PinMeToの2026年10月1日の論考は、Yahoo Financeの試用報告を引用�
 - [TomTom公式発表](https://www.tomtom.com/newsroom/press-releases/general/224935140570399/tomtom-brings-location-intelligence-to-microsoft-fabric/)（2026-10-02確認）
 - [TomTom brings location intelligence to Microsoft Fabric](https://finance.yahoo.com/technology/ai/articles/tomtom-brings-location-intelligence-microsoft-053000575.html)（2026-10-02確認）
 - [What Meta’s Muse AI Agent Means for Your Location Data](https://www.pinmeto.com/blog/meta-muse-ai-agent-local-data/)（2026-10-02確認）
+
+- [GISエージェント入門 自然言語で地図分析を頼むと、内部で何が起きる？](https://blog.masahiko.info/entry/2026/11/17/113000)（2026-11-17本文確認。役割分担と初心者向けの確認観点）
