@@ -2,12 +2,12 @@
 layout: default
 title: MachGL
 category: tools
-updated: 2026-11-02
+updated: 2026-11-18
 ---
 
 # MachGL
 
-MachGLはGeoloniaが開発するWeb地図描画ライブラリで、Webサイトへ地図や自分のデータを重ねるために使う。2026年10月21日の発表では、11月9日にCDNで提供を始める予定である。2026年11月2日に公式予告を再確認した時点でも、ここでは正式公開済みとは扱わない。
+MachGLはGeoloniaが開発するWeb地図描画ライブラリで、Webサイトへ地図や自分のデータを重ねるために使う。2026年11月16日にCDNでの提供開始が発表された。以前の予告で案内された提供予定と、実際の提供開始は区別する。
 
 ## 地図を描く部品と、分析する道具を分ける
 
@@ -31,6 +31,10 @@ MachGLはGeoloniaが開発するWeb地図描画ライブラリで、Webサイト
 
 3D建物の外観にはMapLibre GL JSと同じスタイル記述を使えるという。ただし、すべてのAPIや既存アプリをそのまま移行できる意味ではない。Geolonia Mapsは両版の並行提供を予定し、取材時点でMapLibre版の廃止や料金変更は予定していないと説明している。
 
+## 既存のGeolonia Mapsから使い始める
+
+11月16日の公式案内では、Geolonia Mapsを埋め込んだページは、読み込むスクリプトURLをMachGLへ変更して移行できる。既存の2Dスタイルも使用でき、3D表示には虎ノ門のスタイル例を示している。GeoloniaのAPIキーが必要である。これはGeolonia Mapsの埋め込みについての案内であり、任意のMapLibreアプリを変更なしで移行できるという説明ではない。
+
 ## 利用前に確かめること
 
 公開されたデモと、実際に導入するライブラリの仕様は分けて確認する。バンドルの小ささだけで、同じデータを表示したときの速度やメモリー使用量の優劣は決まらない。対応ブラウザー、スタイルや既存コードとの互換性、利用許諾、配信料金を確認する。
@@ -48,3 +52,6 @@ Geoloniaの地図デザインを名前で指定して使う方法にはAPIキー
 - [MachGLデモ一覧](https://geolonia.github.io/machgl-demo)（公式発表の案内先。操作未検証）
 
 - [INTERNET Watch：MachGLの軽量化と提供方針の取材](https://internet.watch.impress.co.jp/docs/column/chizu3/2151651.html)（2026-10-28公開、2026-10-31本文確認。開発者の説明と独立した実測を区別）
+
+- [Geolonia：MachGL提供開始](https://www.geolonia.com/news/2026-11-16-machgl-release/)（2026-11-16公開、2026-11-18本文確認。移行・速度は未検証）
+- [提供開始時のデモ一覧](https://geolonia.github.io/machgl-apps/)（公式案内先。操作未検証）
