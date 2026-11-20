@@ -2,7 +2,7 @@
 layout: default
 title: MapLibre Native
 category: tools
-updated: 2026-10-29
+updated: 2026-11-20
 ---
 
 # MapLibre Native
@@ -21,6 +21,14 @@ MapLibre Nativeは、モバイルなどのネイティブアプリへ地図を�
 
 既存アプリでは対象OS、ヘッダー、地図の見た目、オフラインデータの操作を確認する。ここでは公式リリースノートを確認しており、iOSでのビルドや性能測定は行っていない。
 
+## macOS版を更新するとき
+
+MapLibre NativeにはmacOS向けの配布もある。OS別のリリース番号は別々に管理されるため、iOS版やWeb向けGL JSと同じ番号でも変更内容が同じとは限らない。
+
+macOS v7.0.0では、Objective-Cで読み込む統合ヘッダーが`Mapbox.h`から`MapLibre.h`に変わる。Swiftの`import MapLibre`はそのままでよい。また、動的フレームワークから`MLNPluginStyleLayer`と`MLNBackendResource`が公開される。
+
+リリース本文が空欄のため、同じリリースタグに固定したmacOSのCHANGELOGの`main`節を確認した。最新ブランチの未リリース変更とは区別して参照している。macOSでのビルド・描画確認は未実施。
+
 ## 次に読む
 
 - [MapLibre GL JS](maplibre-gl-js.md)：Web版との用途の違いを確認する。
@@ -28,3 +36,4 @@ MapLibre Nativeは、モバイルなどのネイティブアプリへ地図を�
 ## 出典
 
 - [MapLibre Native iOS v7.0.0](https://github.com/maplibre/maplibre-native/releases/tag/ios-v7.0.0)（2026-10-29確認）
+- [macOS v7.0.0のCHANGELOG](https://github.com/maplibre/maplibre-native/blob/macos-v7.0.0/platform/macos/CHANGELOG.md)／[リリース](https://github.com/maplibre/maplibre-native/releases/tag/macos-v7.0.0)（2026-11-20確認）

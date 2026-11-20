@@ -270,6 +270,7 @@ updated: 2026-11-13
 - [MCP for ArcGIS Location Services](tools/arcgis-location-services-mcp.md)
 - [CARTO MCP Server](tools/carto-mcp-server.md)
 - [ArcGIS for Teamsの対話検索](tools/arcgis-for-teams.md)
+- [ArcGIS Instant Apps](tools/arcgis-instant-apps.md)
 - [Planet AI app](tools/planet-ai-app.md)
 - [鉄道駅LOD MCPサーバー](tools/railway-lod-mcp.md)
 - [BigGeo AI](tools/biggeo-ai.md)

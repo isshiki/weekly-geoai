@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-11-15
+updated: 2026-11-20
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -24,6 +24,20 @@ updated: 2026-11-15
 事例の数字は発表・調査当時の対象に限られる。費用、予測精度、提供予定を全製品共通の現在値として読まない。
 
 店舗開発は開店までの業務、エリアマーケティングは地域に応じた施策、商圏分析はそれらの判断に使う分析方法。店舗POIで競合の分布を把握し、人口や自店の顧客・売上と組み合わせて候補地を比べる。 [店舗開発・商圏分析・エリアマーケティングは何が違う？](https://blog.masahiko.info/entry/2026/11/05/113000)（2026年11月5日確認）
+
+## 商圏・似た地域・競合を分ける
+
+「次の店をどこに出すか」を考えるとき、次の3つは別の情報である。
+
+| 知りたいこと | 方法の例 | 結果の読み方 |
+| --- | --- | --- |
+| 今の店へどこから来ているか | 来店元を集計し、来店の60％を占める地域を選ぶ | 観測された顧客に基づく範囲。円形や連続した範囲とは限らない |
+| 新しい店がどこから選ばれそうか | 距離と店舗の魅力度を使うHuffモデル | 仮定に基づく選択確率。実際の来店実績ではない |
+| どの地域の特徴が似ているか | 人口・所得・生活環境などの地域特徴量を比較 | 特徴量と集計範囲に依存する類似性。需要や個人の好みとは別 |
+
+CARTOのErewhon分析デモでは、13店舗の来店元から60％商圏を作り、PlacePulseの地域特徴量を用いて候補地を比較する。似た地域を探すだけでなく、予測来店数が近い候補でも既存店との商圏重複が違うことを検討する。売上の奪い合いが実際に起きると証明した結果ではない。Erewhonはこのデモに関与しておらず、実際の出店判断への採用事例としては扱わない。SQLなどの資料は公開されているが、ここでは再実行していない。
+
+ArcGIS Business Analyst Proの2026年11月更新には、Huffモデルで店舗間の選択確率が等しくなる境界を作る機能がある。店舗面積などを魅力度の入力に選び、影響の重みを設定する。観測商圏・モデル商圏・地域の類似性を区別したうえで、入力や重みを変えても候補の評価が保たれるかを確認する。
 
 ## 比較の設計 { #design }
 
@@ -297,3 +311,5 @@ Placer.aiの2026年Q3分析では米国カジュアルダイニング全体の�
 - [Four Recipes for Casual Dining Growth in Q3 2026](https://www.placer.ai/anchor/articles/four-recipes-for-casual-dining-growth-in-q3-2026)（2026-10-27確認）
 
 - [Placer.ai：米国朝食チェーンの商圏と来訪](https://www.placer.ai/anchor/articles/whats-anchoring-americas-legacy-breakfast-chains)（2026-11-01本文確認）
+- [CARTO：ErewhonとPlacePulseの出店分析デモ](https://carto.com/blog/erewhon-next-store-placepulse/)（2026-11-20本文確認。企業デモ、再実行なし）
+- [ArcGIS Business Analyst Pro：2026年11月更新](https://www.esri.com/arcgis-blog/products/bus-analyst/announcements/whats-new-in-arcgis-business-analyst-pro-november-2026)（2026-11-20本文確認。操作未検証）

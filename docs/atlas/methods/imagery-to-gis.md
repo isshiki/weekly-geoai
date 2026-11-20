@@ -2,7 +2,7 @@
 layout: default
 title: 画像からGIS情報を作る解析と検証
 category: methods
-updated: 2026-11-18
+updated: 2026-11-20
 ---
 
 # 画像からGIS情報を作る解析と検証
@@ -86,6 +86,14 @@ SpatialArrowの紹介記事は、元の地物ID・形状・CRSと、モデルに
 
 これは作者が実施した改善の報告である。15秒という間隔を万能な重複除去条件とはせず、修正後の誤検出・見逃しも確認する。Atlasではアプリの再検証は行っていない。画像が少ない地域は参考値とする表示や、何を測るスコアかを説明する工夫を参照する。
 
+## 道路の映像から設備台帳の候補を作る
+
+道路を撮影した映像から標識などを見つける場合、画像に写った対象の検出に加え、地図上の位置と同じ設備の重複を確認する必要がある。
+
+ArcGISの2026年11月の線形参照機能の紹介では、映像から地物を抽出するベータ機能が示されている。文章で対象を指定するSAM 3による抽出と、複数フレームを使う位置付け・重複除去を組み合わせ、利用者が誤検出や分類を確認してから結果を採用する。
+
+線形参照は「道路の起点から何m」のように、路線上の距離で位置を管理する方法である。画像の認識と道路上の位置管理をつなげても、見逃した設備や位置の誤差がなくなるわけではない。正式な設備台帳へ反映する前に、元映像と現場の情報で確認する。ここでは公式紹介を確認しており、製品操作や抽出精度の検証はしていない。
+
 ## 出典
 
 - [From Imagery to Information: Image Analysis Across ArcGIS](https://www.esri.com/arcgis-blog/products/arcgis/imagery/from-imagery-to-information-image-analysis-across-arcgis)（2026-10-06再確認）
@@ -97,3 +105,4 @@ SpatialArrowの紹介記事は、元の地物ID・形状・CRSと、モデルに
 - [すぎやま：街路画像AIの3つの落とし穴](https://zenn.dev/sugiyamanihon02/articles/0129fee1bb26ea)（2026-10-20本文確認）
 
 - [衛星画像のGeoAI入門　AIで土地・建物・変化をどう読み取る？](https://blog.masahiko.info/entry/2026/11/18/113000)（2026-11-18公開・本文確認。入門解説であり、新しいモデルの実測結果ではない）
+- [ArcGIS Linear Referencing：2026年11月更新](https://www.esri.com/arcgis-blog/products/arcgis-pro/data-management/whats-new-arcgis-linear-referencing-nov-2026)（2026-11-20本文確認）
