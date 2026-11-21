@@ -2,7 +2,7 @@
 layout: default
 title: 画像からGIS情報を作る解析と検証
 category: methods
-updated: 2026-11-20
+updated: 2026-11-22
 ---
 
 # 画像からGIS情報を作る解析と検証
@@ -94,6 +94,14 @@ ArcGISの2026年11月の線形参照機能の紹介では、映像から地物�
 
 線形参照は「道路の起点から何m」のように、路線上の距離で位置を管理する方法である。画像の認識と道路上の位置管理をつなげても、見逃した設備や位置の誤差がなくなるわけではない。正式な設備台帳へ反映する前に、元映像と現場の情報で確認する。ここでは公式紹介を確認しており、製品操作や抽出精度の検証はしていない。
 
+## 波長の似ている場所を探す解析
+
+ハイパースペクトル画像は、多数の波長帯で地表の反射を記録する画像である。現地で確認した樹木の反射特性を基準に、似た画素を探す使い方がある。
+
+Esriのオーク分布の例では、425バンドのAVIRIS画像から現地51地点の平均スペクトルを作り、ArcGIS Onlineで一致度を計算する。0.993を超える画素を抽出し、取り分けた9地点との重なりを目視で確かめている。0.993は正解率99.3％を意味せず、この画像で選んだしきい値である。
+
+この例のSAMはSpectral Angle Mapper（スペクトル角による比較）の略で、画像領域を分けるSegment Anything系のモデルとは別物である。スペクトル比較も画像解析の選択肢として捉え、別の季節・地域へしきい値をそのまま移せるとは考えない。
+
 ## 出典
 
 - [From Imagery to Information: Image Analysis Across ArcGIS](https://www.esri.com/arcgis-blog/products/arcgis/imagery/from-imagery-to-information-image-analysis-across-arcgis)（2026-10-06再確認）
@@ -106,3 +114,4 @@ ArcGISの2026年11月の線形参照機能の紹介では、映像から地物�
 
 - [衛星画像のGeoAI入門　AIで土地・建物・変化をどう読み取る？](https://blog.masahiko.info/entry/2026/11/18/113000)（2026-11-18公開・本文確認。入門解説であり、新しいモデルの実測結果ではない）
 - [ArcGIS Linear Referencing：2026年11月更新](https://www.esri.com/arcgis-blog/products/arcgis-pro/data-management/whats-new-arcgis-linear-referencing-nov-2026)（2026-11-20本文確認）
+- [Taking Hyperspectral Image Analysis to the Web](https://www.esri.com/arcgis-blog/products/arcgis-pro/imagery/hyperspectral-analysis-in-web)（2026-11-20公開、2026-11-22本文確認。再解析なし）

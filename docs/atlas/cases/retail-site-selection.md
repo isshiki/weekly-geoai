@@ -2,7 +2,7 @@
 layout: default
 title: 小売出店候補地のロケーションインテリジェンス
 category: cases
-updated: 2026-11-20
+updated: 2026-11-22
 ---
 
 # 小売出店候補地のロケーションインテリジェンス
@@ -38,6 +38,12 @@ updated: 2026-11-20
 CARTOのErewhon分析デモでは、13店舗の来店元から60％商圏を作り、PlacePulseの地域特徴量を用いて候補地を比較する。似た地域を探すだけでなく、予測来店数が近い候補でも既存店との商圏重複が違うことを検討する。売上の奪い合いが実際に起きると証明した結果ではない。Erewhonはこのデモに関与しておらず、実際の出店判断への採用事例としては扱わない。SQLなどの資料は公開されているが、ここでは再実行していない。
 
 ArcGIS Business Analyst Proの2026年11月更新には、Huffモデルで店舗間の選択確率が等しくなる境界を作る機能がある。店舗面積などを魅力度の入力に選び、影響の重みを設定する。観測商圏・モデル商圏・地域の類似性を区別したうえで、入力や重みを変えても候補の評価が保たれるかを確認する。
+
+## 魅力度を変えると商圏も変わる
+
+Huffモデルの「魅力度」は自然に決まる値ではなく、分析者が選ぶ指標である。Esriのオタワの美容室の例では、扱うブランド数の指数を0.25、0.5、0.75と変えると、品ぞろえの多い店の商圏が広がる。口コミの平均評価を使うと同じ店でも境界が変わる。
+
+この例はモデルの感度を示すもので、どの設定が実際の来店を最もよく説明するかを実証した結果ではない。何を魅力とみなしたか、距離の測り方と指数を結果に添え、可能なら顧客データで妥当性を確かめる。
 
 ## 比較の設計 { #design }
 
@@ -313,3 +319,4 @@ Placer.aiの2026年Q3分析では米国カジュアルダイニング全体の�
 - [Placer.ai：米国朝食チェーンの商圏と来訪](https://www.placer.ai/anchor/articles/whats-anchoring-americas-legacy-breakfast-chains)（2026-11-01本文確認）
 - [CARTO：ErewhonとPlacePulseの出店分析デモ](https://carto.com/blog/erewhon-next-store-placepulse/)（2026-11-20本文確認。企業デモ、再実行なし）
 - [ArcGIS Business Analyst Pro：2026年11月更新](https://www.esri.com/arcgis-blog/products/bus-analyst/announcements/whats-new-in-arcgis-business-analyst-pro-november-2026)（2026-11-20本文確認。操作未検証）
+- [The law of attractiveness：魅力度で変わる商圏](https://www.esri.com/arcgis-blog/products/bus-analyst/analytics/huff-equal-probability-trade-areas-business-analyst-pro)（2026-11-20公開、2026-11-22本文確認。操作・来店実績との照合は未実施）

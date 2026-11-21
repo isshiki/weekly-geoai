@@ -2,16 +2,16 @@
 layout: default
 title: MCP for ArcGIS Location Services
 category: tools
-updated: 2026-11-17
+updated: 2026-11-22
 ---
 
 # MCP for ArcGIS Location Services
 
-MCP for ArcGIS Location Servicesは、AIアプリケーションからArcGISの位置情報サービスを呼び出すためのMCPサーバーである。確認した記事ではパブリックベータとして案内されている。
+MCP for ArcGIS Location Servicesは、AIアプリケーションからArcGISの位置情報サービスを呼び出すためのMCPサーバーである。2026年11月19日に正式提供が発表された。
 
 ## 提供するツール
 
-住所検索、逆ジオコーディング、経路計算、標高取得、地図画像生成、場所の説明などを扱う。利用にはArcGIS Location Platformのアカウントとベータへのアクセスが必要である。
+住所検索（ジオコーディング）、経路検索、データ補完、静的地図、標高の5機能を提供する。利用にはArcGIS Location Platformのアカウントと、対象サービスの認証・利用設定が必要である。MCPを経由すること自体の追加料金はないが、各サービスの通常の利用料は発生する。
 
 ## 開発支援のMCPとの違い
 
@@ -25,7 +25,7 @@ ArcGISには、地図サービスを呼び出す接続と、地図アプリを�
 
 公式用語集は、開発資料向けMCPの接続先を公開していると説明する。接続先が公開されていることと、作ったアプリが使うArcGISサービスの認証・利用条件は別に確認する。資料の取得だけで利用者の地図を操作したことにはならない。
 
-2026年11月16日のESRIジャパンの案内では、Location PlatformとEnterpriseのMCPはベータで、年内の一般提供を予定している。これは発表時点の予定であり、一般提供済みとして扱わない。開発支援toolkitと、これらのサービス側MCPは提供段階も別々に確認する。
+2026年11月16日のESRIジャパンの案内では、Location PlatformとEnterpriseのMCPはベータで、年内の一般提供を予定している。その後、11月19日の公式発表でLocation ServicesのMCPは正式提供になった。Enterprise側も同時に正式提供になったとは推測しない。開発支援toolkitと、これらのサービス側MCPは提供段階も別々に確認する。
 
 ## 複数サービスを組み合わせる例
 
@@ -39,3 +39,5 @@ ArcGISには、地図サービスを呼び出す接続と、地図アプリを�
 
 - [ArcGIS agentic developer toolkit公式用語集](https://developers.arcgis.com/documentation/glossary/arcgis-agentic-developer-toolkit/)（2026-11-17確認。資料取得とSkillsの役割。接続・コード生成は未実行）
 - [Geospatial AI 最新情報（2026年11月）](https://blog.esrij.com/archives/73197)（2026-11-17確認。11月16日公開、MCPの提供段階）
+
+- [ArcGIS Location Platform：MCPの正式提供と開発支援](https://www.esri.com/arcgis-blog/products/platform/developers/whats-new-in-arcgis-location-platform-developer-tools-for-agentic-workflows-and-more)（2026-11-19公開、2026-11-22本文確認。接続・課金の実測なし）

@@ -1,7 +1,7 @@
 ---
 title: 分析結果の検証と適用範囲
 category: methods
-updated: 2026-11-08
+updated: 2026-11-22
 ---
 
 # 分析結果の検証と適用範囲
@@ -131,6 +131,14 @@ GIS操作の確認には、[Location AIの結果確認表](../concepts/location-
 
 「動的分割」は需要分布に基づく区画作成を指し、リアルタイムの境界更新ではない。区画作成と需要評価の期間を分けている点は参考になるが、それだけで別の都市・時期への適用や因果説明が検証されたとはいえない。本Atlasでは分析を再実行していない。
 
+## 同じ対象の記録が評価側へ混ざらないようにする
+
+船の航跡のように同じ対象を繰り返し観測したデータでは、観測点を無作為に分けると、同じ船の記録が学習側と評価側へ入る。初めて見る船に対して予測できるかを知りたい場合、船舶ID単位で分ける方法がある。
+
+公開AISを扱うdamastの研究は、単位・値の範囲の検証、処理設定の保存、等間隔の時系列化と航跡予測を組み合わせ、MMSI（船舶の識別番号）単位で学習・検証・テストを分ける。一方、海域・船種・報告間隔ごとの誤差を詳しく調べる部分は今後の拡張としている。再現できる処理系と、あらゆる条件で信頼できる予測は別である。
+
+地点を説明するLLMの研究でも、観測済み地点の説明を再現することと、未観測地域を説明することを分けている。ロサンゼルスとロンドンで座標を連続的な表現としてモデルへ組み込む方法を比較し、未観測地域の説明生成の改善を報告した。文章の似ている度合いと、その文章が地点推定に役立つかも別々に評価している。両研究とも本Atlasでは再実行していない。
+
 ## 出典
 
 - [1] [Rolf: Evaluation Challenges for Geospatial ML](https://arxiv.org/abs/2303.18087)（2023、2026-10-05確認。評価目的の整理）
@@ -144,3 +152,5 @@ GIS操作の確認には、[Location AIの結果確認表](../concepts/location-
 - [地図アプリを egui_kittest でテストする: 地域メッシュの位置と色を画像比較なしで確かめる](https://zenn.dev/20220227/articles/d08c1106d03628)（2026-10-13確認）
 
 - [Shortcut Learning in Geospatial Foundation Model Embeddings for Cross-Disaster Damage Assessment](https://arxiv.org/abs/2610.13766)（2026-10-16、v1本文確認。再実験なし）
+- [Trustworthy Geospatial AI Workflows](https://arxiv.org/html/2611.25884v1)（2026-11-22 v1本文確認）
+- [From Geographic Memory to Spatial Generalization in Large Language Models](https://arxiv.org/html/2611.25703v1)（2026-11-22 v1本文確認）
