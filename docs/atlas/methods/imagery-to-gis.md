@@ -2,7 +2,7 @@
 layout: default
 title: 画像からGIS情報を作る解析と検証
 category: methods
-updated: 2026-11-22
+updated: 2026-11-23
 ---
 
 # 画像からGIS情報を作る解析と検証
@@ -31,6 +31,12 @@ updated: 2026-11-22
 | 処理 | 画像の分類、物体の検出、画素ごとの領域分割のどれが目的に合うか |
 | 出力 | クラス名、検出位置、分類ラスター、抽出ポリゴンなど。スコアの意味も残す |
 | 検証 | 誤検出・見逃し、地域や時期による差、GISレイヤー化した後の位置・形状 |
+
+## 学習用の正解も点検する
+
+学習データのラベルは、人が付けた対象の種類・位置・輪郭である。建物の角が欠けたり、別の種類が付いていれば、学習前に修正する。画像をまとめて眺め、地図上の対象とラベルを対応付けて確認する工程を設ける。
+
+製品例では、ArcGIS Pro 3.8のImage Analystが、画像フォルダー・モザイク全体のレビューと地図上のラベル修正を強化した。物体検出のCOCO・YOLO形式や、地球観測画像向けの特徴抽出モデルEO-DINOにも対応する。形式を読み込めることと、ラベルやモデルが目的に合うことは別に確認する。CUDA 13対応では既存GPUとドライバーの互換性にも注意する。
 
 ## 「見つけた数」だけで評価しない
 
@@ -115,3 +121,4 @@ Esriのオーク分布の例では、425バンドのAVIRIS画像から現地51�
 - [衛星画像のGeoAI入門　AIで土地・建物・変化をどう読み取る？](https://blog.masahiko.info/entry/2026/11/18/113000)（2026-11-18公開・本文確認。入門解説であり、新しいモデルの実測結果ではない）
 - [ArcGIS Linear Referencing：2026年11月更新](https://www.esri.com/arcgis-blog/products/arcgis-pro/data-management/whats-new-arcgis-linear-referencing-nov-2026)（2026-11-20本文確認）
 - [Taking Hyperspectral Image Analysis to the Web](https://www.esri.com/arcgis-blog/products/arcgis-pro/imagery/hyperspectral-analysis-in-web)（2026-11-20公開、2026-11-22本文確認。再解析なし）
+- [Esri：Image Analyst 3.8のGeoAI更新](https://www.esri.com/arcgis-blog/products/arcgis-pro/geoai/whats-new-for-geoai-in-the-arcgis-pro-3-8-image-analyst-extension)（2026-11-19公開、2026-11-23本文確認。操作未検証）

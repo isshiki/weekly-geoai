@@ -1,7 +1,7 @@
 ---
 title: 分析結果の検証と適用範囲
 category: methods
-updated: 2026-11-22
+updated: 2026-11-23
 ---
 
 # 分析結果の検証と適用範囲
@@ -82,6 +82,12 @@ updated: 2026-11-22
 
 BRIGHTのSAR入力は3チャンネルへ繰り返した互換性検証で、センサーに最適化した方式ではない。建物単位の被害程度の評価とも異なる。未知の災害への適用を問う実験として読み、モデルの一般的な順位に置き換えない。
 
+## 密度の濃さと推定の確かさを分ける
+
+点が集まる場所を密度地図にするとき、観測数のばらつき、GPSなどの位置誤差、各地点に付く人口などの値の誤差は別の不確実性である。入力を正確な値とみなした地図だけでは、濃い場所をどの程度信頼できるかは分からない。
+
+ArcGIS Pro 3.8の確率的カーネル密度推定は、標本・位置・属性の不確実性を分析へ伝え、密度とその確かさを評価する製品例である。不確実性の仮定自体が適切かも確認する。通常の空間解析機能であり、AI操作の有無とは分けて理解する。本Atlasでは実行検証をしていない。
+
 ## スコアと一緒に残すもの
 
 - **入力の範囲**：地域、期間、センサーやデータ源、データの版。
@@ -154,3 +160,4 @@ GIS操作の確認には、[Location AIの結果確認表](../concepts/location-
 - [Shortcut Learning in Geospatial Foundation Model Embeddings for Cross-Disaster Damage Assessment](https://arxiv.org/abs/2610.13766)（2026-10-16、v1本文確認。再実験なし）
 - [Trustworthy Geospatial AI Workflows](https://arxiv.org/html/2611.25884v1)（2026-11-22 v1本文確認）
 - [From Geographic Memory to Spatial Generalization in Large Language Models](https://arxiv.org/html/2611.25703v1)（2026-11-22 v1本文確認）
+- [Esri：Spatial Analyst 3.8の更新](https://www.esri.com/arcgis-blog/products/spatial-analyst/announcements/whats-new-for-spatial-analyst-in-arcgis-pro-3-8)（2026-11-20公開、2026-11-23本文確認）

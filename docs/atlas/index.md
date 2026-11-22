@@ -266,6 +266,7 @@ updated: 2026-11-13
 - [GeoAgentとOpenGeoAgent](tools/geoagent.md)
 - [Google Maps Agentic UI Toolkit](tools/google-maps-agentic-ui.md)
 - [Mapbox CLI](tools/mapbox-cli.md)
+- [Mapbox WebMCPによるWeb地図のAI操作](tools/mapbox-webmcp.md)
 - [Mapbox Figma MCP Server](tools/mapbox-figma-mcp.md)
 - [MCP for ArcGIS Location Services](tools/arcgis-location-services-mcp.md)
 - [CARTO MCP Server](tools/carto-mcp-server.md)
