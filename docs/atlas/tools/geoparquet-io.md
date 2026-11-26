@@ -2,12 +2,20 @@
 layout: default
 title: geoparquet-io
 category: tools
-updated: 2026-09-30
+updated: 2026-11-26
 ---
 
 # geoparquet-io
 
 geoparquet-io（`gpio`）は、GeoParquetを中心とした地理空間データの変換、検査、抽出、空間ソート、インデックス付与、分割、公開を扱うCLIとPythonライブラリである。
+
+## 導入前に依存するDuckDBの版を確認する
+
+GeoParquetファイルを読みやすく整える道具であり、地図を表示するアプリとは役割が異なる。Hilbert順の空間ソート、ZSTD圧縮、bbox列の生成などをCLIとPythonから使える。現行の公式紹介はGeoParquet 1.1／2.0を挙げるが、すべての読み手が両形式を扱えるとは限らない。
+
+2026-11-26確認時の公式説明はDuckDBを`<1.6`に制限し、conda-forgeではこの指定が未反映のため、通常インストールで2.0が入るとS2・A5関連処理が壊れると注意している。condaでは`python-duckdb<1.6`の明示指定を案内する。使いたい空間インデックスの拡張が対象DuckDB向けに配布されているかを先に確認する。
+
+[公式PyPI説明](https://pypi.org/project/geoparquet-io/)と[依存制約の追跡Issue](https://github.com/geoparquet/geoparquet-io/issues/1346)を参照。インストール・実行は未検証。以下の旧版の注意点は当時の確認記録であり、現行版の導入条件とは分けて読む。
 
 ## 低ズーム向けの集約パイプライン
 
