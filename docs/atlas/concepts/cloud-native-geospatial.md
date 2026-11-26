@@ -2,7 +2,7 @@
 layout: default
 title: Cloud Native Geospatial
 category: concepts
-updated: 2026-11-06
+updated: 2026-11-26
 ---
 
 # Cloud Native Geospatial
@@ -38,6 +38,27 @@ Cloud Native Geospatial（CNG）は、地理空間データをクラウド上で
 GeoParquetはParquetへの地理空間表現・メタデータの仕様である。ここでは1.1.0の仕様を参照し、最新仕様であるとの主張はしない。bboxによる絞り込みは配置と読むツールの対応にも依存する。[COGP](../data/cloud-optimized-geoparquet.md)の段階表示は追加のプロファイルであり、通常のGeoParquetすべてに同じ動作を期待しない。
 
 STACのItemは個々の資産の記述、Collectionは集合の情報、Catalogはそれらをたどる構造を担う。静的JSONのカタログもあり、STACを使うことが検索APIの稼働を意味するわけではない。検索サービスのインターフェースはSTAC APIとして区別する。
+
+### GeoParquet 2.0：形状をParquet本体の型として渡す
+
+2026年11月24日公開のGeoParquet 2.0は、Parquet本体の`GEOMETRY`・`GEOGRAPHY`型を基礎にする。例えば店舗の位置と売上を同じ表で渡す際に、対応する読み手が位置の列を地理空間型として認識できる。単なるバイナリ列に追加情報を添える1.xからの変化であり、すべてのParquetツールが直ちに空間演算できるという意味ではない。
+
+CRS（座標参照系）を列に持ち、行をまとめた行グループの空間統計から、対象範囲と無関係な部分の読み取りを省ける。統計と読み手の対応が前提で、個々の地物の厳密な交差判定とは別である。`geo`メタデータは互換性や主ジオメトリ列などの情報のために残る。1.1のbbox covering列も廃止されず、ページ単位の絞り込みを補える。
+
+移行時は「2.0対応」という名称だけでなく、使う型・読み書き・依存ライブラリを確認する。CNGの公開時点の対応表には次の条件がある。
+
+| ツール | 公開時点での主な条件 |
+| --- | --- |
+| GDAL/OGR | 3.12以降・libarrow 21以上でネイティブ型に対応。完全なGeoParquet 2.0対応は未公開の3.14予定 |
+| DuckDB | 1.4はspatial拡張、1.5はコアで対応。公開済み版のGEOGRAPHY型は未対応 |
+| PyArrow | 21.0.0以降でネイティブ地理空間型に対応 |
+| GeoPandas | 1.2.0以降。ただしgeoメタデータが必要で、ネイティブ型だけのファイルは読めない |
+| QGIS | 4.0以降でも、同梱GDALが3.12より新しいことが条件 |
+| SedonaDB | 0.3.0以降。Apache Sedonaとは別製品である |
+
+不特定多数へ配布し、古い読み手との互換性を優先する場合、CNGは引き続きGeoParquet 1.1とbbox covering列を勧めている。自分の分析環境で2.0を試すことと、配布形式を一斉に変更することは分けて判断する。
+
+[CNGの正式公開記事](https://cloudnativegeo.org/blog/2026/11/geoparquet-2-0-released/)を2026-11-26に本文確認。対応表は同記事の整理であり、各環境での読み書き・性能は未検証。COGPのv2.0.0とは別の仕様・版番号である。
 
 ### 富士山周辺の地表面温度をQGISで見る { #jaxa-earth-api }
 
