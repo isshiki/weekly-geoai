@@ -1,7 +1,7 @@
 ---
 title: 分析結果の検証と適用範囲
 category: methods
-updated: 2026-11-25
+updated: 2026-11-27
 ---
 
 # 分析結果の検証と適用範囲
@@ -157,6 +157,12 @@ GIS操作の確認には、[Location AIの結果確認表](../concepts/location-
 
 地点を説明するLLMの研究でも、観測済み地点の説明を再現することと、未観測地域を説明することを分けている。ロサンゼルスとロンドンで座標を連続的な表現としてモデルへ組み込む方法を比較し、未観測地域の説明生成の改善を報告した。文章の似ている度合いと、その文章が地点推定に役立つかも別々に評価している。両研究とも本Atlasでは再実行していない。
 
+## 高い精度が「何を当てたか」を確かめる
+
+病院の候補地に点数を付ける研究では、専門家が決めた基準をまとめるAHP（階層分析法）のスコアを、機械学習で再現する場合がある。このとき決定係数が高くても、将来の患者数や医療サービスの改善を当てたことにはならない。
+
+2026年11月27日にJ-STAGEで公開された研究の要旨は、12基準・専門家6人による評価を扱い、通常の分割に加えて空間ブロックや地区を残す検証も報告している。地域を分けた検証は重要だが、再現対象が専門家の評価点なのか、実際の結果なのかという違いは残る。候補地の絞り込みと最終的な立地判断を分け、必要なら現地条件や医療需要を別に確かめる。要旨のみ確認し、全文・再実験は未確認。
+
 ## 出典
 
 - [1] [Rolf: Evaluation Challenges for Geospatial ML](https://arxiv.org/abs/2303.18087)（2023、2026-10-05確認。評価目的の整理）
@@ -173,3 +179,4 @@ GIS操作の確認には、[Location AIの結果確認表](../concepts/location-
 - [Trustworthy Geospatial AI Workflows](https://arxiv.org/html/2611.25884v1)（2026-11-22 v1本文確認）
 - [From Geographic Memory to Spatial Generalization in Large Language Models](https://arxiv.org/html/2611.25703v1)（2026-11-22 v1本文確認）
 - [Esri：Spatial Analyst 3.8の更新](https://www.esri.com/arcgis-blog/products/spatial-analyst/announcements/whats-new-for-spatial-analyst-in-arcgis-pro-3-8)（2026-11-20公開、2026-11-23本文確認）
+- [AHPと機械学習による病院適地評価](https://www.jstage.jst.go.jp/article/gisideas/2/4/2_40/_article/-char/ja/)（2026-11-27要旨確認）

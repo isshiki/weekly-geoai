@@ -2,7 +2,7 @@
 layout: default
 title: AIが扱いやすい地理空間開発環境
 category: methods
-updated: 2026-11-11
+updated: 2026-11-27
 ---
 
 # AIが扱いやすい地理空間開発環境
@@ -100,6 +100,12 @@ TerraLabは公開ベンチマークの41問を各3回実行し、Low effortの�
 
 国際航業はGeozén上のKKC Satellite Analystを10月20日に発表し、クマ出没履歴と衛星データを用いたデモを予定している。2027年度中のサービス化を目標とする開発段階であり、予測精度や時間短縮の実測値はこの発表から判断できない。
 
+## 読ませる資料と、実行時に渡す情報
+
+ArcGIS Maps SDK for JavaScript 5.2の紹介は、AIが読みやすいMarkdown資料・Agent Skillsと、実行中のエージェント間で資源を共有する機能を扱っている。前者はコードを書く際の参照知識、後者は、例えば選択した区域を別のエージェントの検索へ渡すための仕組みである。
+
+資料を読めるだけでは、組織の地図やデータを操作する権限は得られない。AIコンポーネントはベータで、対応する組織設定や認証が必要。SDKの旧ウィジェット・ViewModelからの移行も別途確認する。ここでは公式説明を確認し、アプリへの組み込みは試していない。
+
 ## 関連項目
 
 - [Location AI](../concepts/location-ai.md)
@@ -146,3 +152,4 @@ GeoSpark（PyPI名geospark-ai）は、LLMから距離・包含・交差・座標
 - [GeoSpark（geospark-ai）](https://pypi.org/project/geospark-ai/)（2026-10-27確認）
 
 - [PFN：ゼンリングループとの業務資本提携](https://www.preferred.jp/ja/news/pr20261029)（2026-10-30確認）
+- [ESRIジャパン：ArcGIS Maps SDK for JavaScript 5.2](https://blog.esrij.com/archives/73077)（2026-11-27本文確認）

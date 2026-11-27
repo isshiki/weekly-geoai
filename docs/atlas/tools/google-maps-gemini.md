@@ -2,7 +2,7 @@
 layout: default
 title: Google MapsのAsk MapsとImmersive Navigation
 category: tools
-updated: 2026-11-01
+updated: 2026-11-27
 ---
 
 # Google MapsのAsk MapsとImmersive Navigation
@@ -30,6 +30,12 @@ GoogleはAsk Mapsで3億カ所超の場所情報と5億人超の投稿者によ�
 
 今回提供されたX投稿本文は取得できず、投稿者の紹介日を新機能の公開日とは扱わない。上記は公式発表で確認できた背景であり、投稿内容や現在の日本での提供範囲を確認したものではない。
 
+## 旅程づくりとサービスの空き確認
+
+Googleの2026年11月16日の発表では、Ask Mapsで旅行の予定を地図上の番号付き地点として整理し、共有する機能が紹介された。サービスの予約枠をオンラインや電話で探す機能もあり、予定を調べる段階から日常の手配へ用途が広がっている。
+
+空き枠を探すことと予約を確定することは分けて扱う。予約枠探索や運転中の案内には米国からの提供という条件があり、日本で同じ機能が使えることは確認していない。発表を読んだ範囲で、実際の電話・予約操作は試していない。
+
 ## 出典
 
 - [Google：How we’re reimagining Maps with Gemini](https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/)（2026-09-29確認）
@@ -40,3 +46,4 @@ GoogleはAsk Mapsで3億カ所超の場所情報と5億人超の投稿者によ�
 
 - [Google：2024年10月のGeminiとMaps](https://blog.google/products-and-platforms/products/maps/gemini-google-maps-navigation-updates/)（2026-11-01確認）
 - [Google：2026年3月のAsk Maps](https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/)（2026-11-01再確認）
+- [Google公式：Ask Mapsの旅行・サービス探索機能](https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/)（2026-11-27本文確認）

@@ -2,7 +2,7 @@
 layout: default
 title: オープンな基盤地図データと共同整備
 category: data
-updated: 2026-11-18
+updated: 2026-11-27
 ---
 
 # オープンな基盤地図データと共同整備
@@ -51,6 +51,12 @@ Awesome OpenStreetMapは、OSMの利用と共同編集を支える道具のリ�
 
 保守されていないプロジェクトは別リストに分けられている。掲載先で最終更新、対応環境、利用条件を確認し、一覧への掲載だけを推奨や動作保証と受け取らない。各ツールの操作は本Atlasでは未検証である。
 
+## 店舗の情報を共有地図に整える
+
+OpenStreetMapは、店を持つ人も店名・営業時間・入口などの事実を更新できる共有データベースである。例えば入口が裏通りにある店なら、入口の位置が整うことは利用者の案内に役立つ。広告文を書く場ではなく、他の編集者も修正できる。編集した情報が利用先の地図へ届く時期は、そのサービスの更新方法による。
+
+参加型のサービスを使うときは、「自分も登録できる」「無料で見られる」「データを再利用できる」を分ける。Mapillary、Panoramax、iNaturalistなどを扱う紹介記事は発見の入口になるが、書き出し方法・ライセンス・運営継続性は各提供元で確認する。今回の紹介記事に挙がる全サービスの利用条件を一括で保証するものではない。
+
 ## 関連項目
 
 - [POIオープンデータの比較と地域特徴量](poi-open-data-comparison.md)
@@ -66,3 +72,4 @@ Awesome OpenStreetMapは、OSMの利用と共同編集を支える道具のリ�
 
 - [Toru Mori：日本のOverture Mapsの建物データの現在地](https://note.com/moritoru/n/nbbe3a84066d3)（2026-11-17公開、2026-11-18本文確認。2026-10-21.0版の筆者集計）
 - [Overture Buildings Guide](https://docs.overturemaps.org/guides/buildings/)（2026-11-18確認。ソースの優先順と高さ属性の統合を確認）
+- [店舗とOpenStreetMapの活用解説](https://note.com/barsaka/n/n3979827b38b0)／[参加型地理データの概観](https://qiita.com/givemegohan/items/dedfa29f02c5fb1cf205)（2026-11-27本文確認。各サービスの全規約は未確認）

@@ -166,6 +166,7 @@ nav:
         - ArcGIS API for Python: atlas/tools/arcgis-api-python.md
       - 画像解析・機械学習:
         - TorchGeo: atlas/tools/torchgeo.md
+        - geo-eval-harness: atlas/tools/geo-eval-harness.md
         - SateAIs: atlas/tools/sateais.md
         - GeoAI（geoai-py）: atlas/tools/geoai-py.md
       - データ連携・配信と業務GIS:
@@ -198,6 +199,7 @@ nav:
         - ゼンリン地図ナビ: atlas/tools/zenrin-map-navigation.md
       - AI・MCP連携:
         - GIS Data Agent: atlas/tools/gis-data-agent.md
+        - Wherobots Waldo: atlas/tools/wherobots-waldo.md
         - Mapsuke: atlas/tools/mapsuke.md
         - GeoAgentとOpenGeoAgent: atlas/tools/geoagent.md
         - Google Maps Agentic UI Toolkit: atlas/tools/google-maps-agentic-ui.md
@@ -257,6 +259,7 @@ nav:
       - 年の一覧: updates/2026/index.md
       - 11月:
         - 月の一覧: updates/2026/11/index.md
+        - 11月27日: updates/2026-11-27.md
         - 11月26日: updates/2026-11-26.md
         - 11月25日: updates/2026-11-25.md
         - 11月24日: updates/2026-11-24.md

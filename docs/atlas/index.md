@@ -220,6 +220,7 @@ updated: 2026-11-13
 ### 画像解析・機械学習
 
 - [TorchGeo](tools/torchgeo.md)
+- [geo-eval-harness](tools/geo-eval-harness.md)
 - [SateAIs](tools/sateais.md)
 - [GeoAI（geoai-py）](tools/geoai-py.md)
 
@@ -262,6 +263,7 @@ updated: 2026-11-13
 ### AI・MCP連携
 
 - [GIS Data Agent](tools/gis-data-agent.md)
+- [Wherobots Waldo](tools/wherobots-waldo.md)
 - [Mapsuke](tools/mapsuke.md)
 - [GeoAgentとOpenGeoAgent](tools/geoagent.md)
 - [Google Maps Agentic UI Toolkit](tools/google-maps-agentic-ui.md)
